@@ -1,6 +1,6 @@
-import { Button } from 'react-bootstrap';
+import { Button, ButtonToolbar } from 'react-bootstrap';
 
-# Buttons
+# Basics
 
 ## Standard
 
@@ -43,3 +43,76 @@ Indicates a dangerous or potentially negative action
 Deemphasize a button by making it look like a link while maintaining button behavior
 
 <Button bsStyle="link">Link</Button>
+
+# Sizes
+
+<ButtonToolbar>
+  <Button bsStyle="primary" bsSize="large">
+    Large button
+  </Button>
+  <Button bsSize="large">Large button</Button>
+</ButtonToolbar>
+<ButtonToolbar>
+  <Button bsStyle="primary">Default button</Button>
+  <Button>Default button</Button>
+</ButtonToolbar>
+<ButtonToolbar>
+  <Button bsStyle="primary" bsSize="small">
+    Small button
+  </Button>
+  <Button bsSize="small">Small button</Button>
+</ButtonToolbar>
+<ButtonToolbar>
+  <Button bsStyle="primary" bsSize="xsmall">
+    Extra small button
+  </Button>
+  <Button bsSize="xsmall">Extra small button</Button>
+</ButtonToolbar>
+
+# Block level
+
+<div className="well" style={{ maxWidth: 400, margin: '0 auto 10px' }}>
+  <Button bsStyle="primary" bsSize="large" block>
+    Block level button
+  </Button>
+  <Button bsSize="large" block>
+    Block level button
+  </Button>
+</div>
+
+# Active state
+
+<ButtonToolbar>
+  <Button bsStyle="primary" bsSize="large" active>
+    Primary button
+  </Button>
+  <Button bsSize="large" active>
+    Button
+  </Button>
+</ButtonToolbar>
+
+# Button tags
+
+The DOM element tag is choosen automatically for you based on the props you supply. Passing a href will result in the button using a `<a />` element otherwise a `<button />` element will be used.
+
+<ButtonToolbar>
+  <Button href="#">Link</Button>
+  <Button>Button</Button>
+</ButtonToolbar>
+
+# Disabled state
+
+Make buttons look unclickable by fading them back 50%. To do this add the disabled attribute to buttons.
+
+<ButtonToolbar>
+  <Button bsStyle="primary" bsSize="large" disabled>
+    Primary button
+  </Button>
+  <Button bsSize="large" disabled>
+    Button
+  </Button>
+</ButtonToolbar>
+
+# Button loading state
+
+TODO
