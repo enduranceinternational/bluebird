@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "npm": "6.4.1",
+    "yarn": "1.12.1",
     "node": "10.13.0"
   },
   "dependencies": {
+    "docz": "^0.12.9",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts": "2.1.1"
@@ -28,7 +29,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "docz": "^0.12.9"
-  }
+  "devDependencies": {}
 }
