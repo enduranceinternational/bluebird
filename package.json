@@ -2,10 +2,6 @@
   "name": "uaf-ui-library",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "yarn": "1.12.1",
-    "node": "10.13.0"
-  },
   "dependencies": {
     "docz": "^0.12.9",
     "react": "^16.6.0",
