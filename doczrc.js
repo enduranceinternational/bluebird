@@ -1,4 +1,7 @@
 // doczrc.js
 export default {
-  src: "./src/",
+  title: 'UAF UI Library',
+  description: 'Bluerock component library and style guide',
+  src: './src/',
+  dest: 'build',
 };
