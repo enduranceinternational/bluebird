@@ -6,12 +6,12 @@ import { Playground } from 'docz';
 
 import PlayGroundCustomProps from '../../CustomComponents/PlayGroundCustomProps';
 
--- TODO: move this to a better place. Not sure yet!!
+<!-- TODO: move this to a better place. Not sure yet!! -->
 <PlayGroundCustomProps />
 
 # Navs
 
-## tabs styled Nav
+## `tabs` styled Nav
 
 <Playground>
   <Nav bsStyle="tabs" activeKey="2" onSelect={() => {}}>
@@ -27,7 +27,7 @@ import PlayGroundCustomProps from '../../CustomComponents/PlayGroundCustomProps'
   </Nav>
 </Playground>
 
-## stacked styled Nav
+## `stacked` styled Nav
 
 <Playground>
   <Nav bsStyle="pills" stacked activeKey={1} onSelect={() => {}}>
@@ -59,3 +59,28 @@ import PlayGroundCustomProps from '../../CustomComponents/PlayGroundCustomProps'
     </NavDropdown>
   </Nav>
 </Playground>
+
+## Justified
+
+### Take full width of the containing container
+
+<Playground>
+  <Nav
+    bsStyle="tabs"
+    activeKey="1"
+    onSelect={() => {}}
+    justified
+  >
+    <NavItem eventKey="1" href="">
+      NavItem 1 content
+    </NavItem>
+    <NavDropdown eventKey="2" title="Dropdown" id="nav-dropdown">
+      <MenuItem eventKey="2.1">Action</MenuItem>
+        <MenuItem eventKey="2.2">Another action</MenuItem>
+        <MenuItem eventKey="2.3">Something else here</MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="2.4">Separated link</MenuItem>
+    </NavDropdown>
+  </Nav>
+</Playground>
+
