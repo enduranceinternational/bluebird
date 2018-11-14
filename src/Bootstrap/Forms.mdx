@@ -66,6 +66,10 @@ The `<FormControl>` component directly renders the `<input>` or other specified 
 
 If your application contains a large number of form groups, we recommend building a higher-level component encapsulating a complete field group that renders the label, the control, and any other necessary components. We don't provide this out-of-the-box, because the composition of those field groups is too specific to an individual application to admit a good one-size-fits-all solution.
 
+## Supported controls
+
+Examples of standard form controls supported in an example form layout, using a custom <FieldGroup> component. Use <FormControl> for <input>, <textarea>, and <select>. Use <Checkbox> and <Radio> for checkboxes and radios respectively, optionally with inline to render multiple on the same line. Use <FormControl.Static> for static text.
+
 <Playground>
   function FieldGroup({ id, label, help, ...props }) {
     return (
