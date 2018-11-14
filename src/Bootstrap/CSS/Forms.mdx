@@ -1,0 +1,155 @@
+import { FormGroup, FormControl, ControlLabel, HelpBlock, Checkbox, Raido, FormControl.Static, HelpBlock } from 'react-bootstrap';
+import { PropsTable } from 'docz';
+import { Playground } from 'docz';
+import PlayGroundCustomProps from '../../CustomComponents/PlayGroundCustomProps';
+
+<!-- TODO: move this to a better place. Not sure yet!! -->
+<PlayGroundCustomProps />
+
+# Forms
+
+The `<FormControl>` component renders a form control with Bootstrap styling. The `<FormGroup>` component wraps a form control with proper spacing, along with support for a label, help text, and validation state. To ensure accessibility, set controlId on `<FormGroup>`, and use `<ControlLabel>` for the label.
+
+<!-- TODO: Make glyphicons great again -->
+<Playground>
+  {() => {
+    class FormExample extends React.Component {
+      constructor(props, context) {
+        super(props, context);
+
+        this.handleChange = this.handleChange.bind(this);
+
+        this.state = {
+          value: ''
+        };
+      }
+
+      getValidationState() {
+        const length = this.state.value.length;
+        if (length > 10) return 'success';
+        else if (length > 5) return 'warning';
+        else if (length > 0) return 'error';
+        return null;
+      }
+
+      handleChange(e) {
+        this.setState({ value: e.target.value });
+      }
+
+      render() {
+        return (
+          <form>
+            <FormGroup
+              controlId="formBasicText"
+              validationState={this.getValidationState()}
+            >
+              <ControlLabel>Working example with validation</ControlLabel>
+              <FormControl
+                type="text"
+                value={this.state.value}
+                placeholder="Enter text"
+                onChange={this.handleChange}
+              />
+              <FormControl.Feedback />
+              <HelpBlock>Validation is based on string length.</HelpBlock>
+            </FormGroup>
+          </form>
+        );
+      }
+    }
+
+    return <FormExample />;
+  }}
+</Playground>
+
+The `<FormControl>` component directly renders the `<input>` or other specified component. If you need to access the value of an uncontrolled `<FormControl>`, attach a ref to it as you would with an uncontrolled input, then call `ReactDOM.findDOMNode(ref)` to get the DOM node. You can then interact with that node as you would with any other uncontrolled input.
+
+If your application contains a large number of form groups, we recommend building a higher-level component encapsulating a complete field group that renders the label, the control, and any other necessary components. We don't provide this out-of-the-box, because the composition of those field groups is too specific to an individual application to admit a good one-size-fits-all solution.
+
+<Playground>
+  function FieldGroup({ id, label, help, ...props }) {
+    return (
+      <FormGroup controlId={id}>
+        <ControlLabel>{label}</ControlLabel>
+        <FormControl {...props} />
+        {help && <HelpBlock>{help}</HelpBlock>}
+      </FormGroup>
+    );
+  }
+
+  const formInstance = (
+    <form>
+      <FieldGroup
+        id="formControlsText"
+        type="text"
+        label="Text"
+        placeholder="Enter text"
+      />
+      <FieldGroup
+        id="formControlsEmail"
+        type="email"
+        label="Email address"
+        placeholder="Enter email"
+      />
+      <FieldGroup id="formControlsPassword" label="Password" type="password" />
+      <FieldGroup
+        id="formControlsFile"
+        type="file"
+        label="File"
+        help="Example block-level help text here."
+      />
+
+      <Checkbox checked readOnly>
+        Checkbox
+      </Checkbox>
+      <Radio checked readOnly>
+        Radio
+      </Radio>
+
+      <FormGroup>
+        <Checkbox inline>1</Checkbox> <Checkbox inline>2</Checkbox>{' '}
+        <Checkbox inline>3</Checkbox>
+      </FormGroup>
+      <FormGroup>
+        <Radio name="radioGroup" inline>
+          1
+        </Radio>{' '}
+        <Radio name="radioGroup" inline>
+          2
+        </Radio>{' '}
+        <Radio name="radioGroup" inline>
+          3
+        </Radio>
+      </FormGroup>
+
+      <FormGroup controlId="formControlsSelect">
+        <ControlLabel>Select</ControlLabel>
+        <FormControl componentClass="select" placeholder="select">
+          <option value="select">select</option>
+          <option value="other">...</option>
+        </FormControl>
+      </FormGroup>
+      <FormGroup controlId="formControlsSelectMultiple">
+        <ControlLabel>Multiple select</ControlLabel>
+        <FormControl componentClass="select" multiple>
+          <option value="select">select (multiple)</option>
+          <option value="other">...</option>
+        </FormControl>
+      </FormGroup>
+
+      <FormGroup controlId="formControlsTextarea">
+        <ControlLabel>Textarea</ControlLabel>
+        <FormControl componentClass="textarea" placeholder="textarea" />
+      </FormGroup>
+
+      <FormGroup>
+        <ControlLabel>Static text</ControlLabel>
+        <FormControl.Static>email@example.com</FormControl.Static>
+      </FormGroup>
+
+      <Button type="submit">Submit</Button>
+    </form>
+  );
+
+  return formInstance;
+</Playground>
