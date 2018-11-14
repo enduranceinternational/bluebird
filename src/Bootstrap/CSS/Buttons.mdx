@@ -1,121 +1,110 @@
 import { Button, ButtonToolbar } from 'react-bootstrap';
 import { PropsTable } from 'docz';
+import { Playground } from 'docz';
 
 # Buttons
 
 ## Styles
 
-### Standard
+Use any of the available button style types to quickly create a styled button. Just modify the bsStyle prop.
 
-Just a regular old button
+<Playground>
+  <ButtonToolbar>
+    <Button>Button</Button>
+    <Button bsStyle="primary">Primary</Button>
+    <Button bsStyle="success">Success</Button>
+    <Button bsStyle="info">Info</Button>
+    <Button bsStyle="warning">Warning</Button>
+    <Button bsStyle="danger">Danger</Button>
+    <Button bsStyle="link">Link</Button>
+  </ButtonToolbar>
+</Playground>
 
-<Button>Default</Button>
-
-### Primary
-
-Provides extra visual weight and identifies the primary action in a set of buttons
-
-<Button bsStyle="primary">Primary</Button>
-
-### Success
-
-Indicates a successful or positive action
-
-<Button bsStyle="success">Success</Button>
-
-### Info
-
-Contextual button for informational alert messages
-
-<Button bsStyle="info">Info</Button>
-
-### Warning
-
-Indicates caution should be taken with this action
-
-<Button bsStyle="warning">Warning</Button>
-
-### Danger
-
-Indicates a dangerous or potentially negative action
-
-<Button bsStyle="danger">Danger</Button>
-
-### Link
-
-Deemphasize a button by making it look like a link while maintaining button behavior
-
-<Button bsStyle="link">Link</Button>
+>Button spacing
+Because React doesn't output newlines between elements, buttons on the same line are displayed flush against each other. To preserve the spacing between multiple inline buttons, wrap your button group in `<ButtonToolbar />`.
 
 ## Sizes
 
-<ButtonToolbar>
-  <Button bsStyle="primary" bsSize="large">
-    Large button
-  </Button>
-  <Button bsSize="large">Large button</Button>
-</ButtonToolbar>
-<ButtonToolbar>
-  <Button bsStyle="primary">Default button</Button>
-  <Button>Default button</Button>
-</ButtonToolbar>
-<ButtonToolbar>
-  <Button bsStyle="primary" bsSize="small">
-    Small button
-  </Button>
-  <Button bsSize="small">Small button</Button>
-</ButtonToolbar>
-<ButtonToolbar>
-  <Button bsStyle="primary" bsSize="xsmall">
-    Extra small button
-  </Button>
-  <Button bsSize="xsmall">Extra small button</Button>
-</ButtonToolbar>
+Fancy larger or smaller buttons? Add bsSize="large", bsSize="small", or bsSize="xsmall" for additional sizes.
 
-## Block level
+<Playground>
+  <ButtonToolbar>
+    <Button bsStyle="primary" bsSize="large">
+      Large button
+    </Button>
+    <Button bsSize="large">Large button</Button>
+  </ButtonToolbar>
+  <ButtonToolbar>
+    <Button bsStyle="primary">Default button</Button>
+    <Button>Default button</Button>
+  </ButtonToolbar>
+  <ButtonToolbar>
+    <Button bsStyle="primary" bsSize="small">
+      Small button
+    </Button>
+    <Button bsSize="small">Small button</Button>
+  </ButtonToolbar>
+  <ButtonToolbar>
+    <Button bsStyle="primary" bsSize="xsmall">
+      Extra small button
+    </Button>
+    <Button bsSize="xsmall">Extra small button</Button>
+  </ButtonToolbar>
+</Playground>
 
-<div className="well" style={{ maxWidth: 400, margin: '0 auto 10px' }}>
+### Block level
+
+Create block level buttons—those that span the full width of a parent— by adding the block prop.
+
+<Playground>
   <Button bsStyle="primary" bsSize="large" block>
     Block level button
   </Button>
   <Button bsSize="large" block>
     Block level button
   </Button>
-</div>
+</Playground>
 
 ## Active state
 
-<ButtonToolbar>
-  <Button bsStyle="primary" bsSize="large" active>
-    Primary button
-  </Button>
-  <Button bsSize="large" active>
-    Button
-  </Button>
-</ButtonToolbar>
+To set a buttons active state simply set the components active prop.
+
+<Playground>
+  <ButtonToolbar>
+    <Button bsStyle="primary" bsSize="large" active>
+      Primary button
+    </Button>
+    <Button bsSize="large" active>
+      Button
+    </Button>
+  </ButtonToolbar>
+</Playground>
 
 ## Button tags
 
 The DOM element tag is choosen automatically for you based on the props you supply. Passing a href will result in the button using a `<a />` element otherwise a `<button />` element will be used.
 
-<ButtonToolbar>
-  <Button href="#">Link</Button>
-  <Button>Button</Button>
-</ButtonToolbar>
+<Playground>
+  <ButtonToolbar>
+    <Button href="#">Link</Button>
+    <Button>Button</Button>
+  </ButtonToolbar>
+</Playground>
 
 ## Disabled state
 
 Make buttons look unclickable by fading them back 50%. To do this add the disabled attribute to buttons.
 
-<ButtonToolbar>
-  <Button bsStyle="primary" bsSize="large" disabled>
-    Primary button
-  </Button>
-  <Button bsSize="large" disabled>
-    Button
-  </Button>
-</ButtonToolbar>
+<Playground>
+  <ButtonToolbar>
+    <Button bsStyle="primary" bsSize="large" disabled>
+      Primary button
+    </Button>
+    <Button bsSize="large" disabled>
+      Button
+    </Button>
+  </ButtonToolbar>
+</Playground>
 
 ## Button loading state
-
-TODO
+TODO: Support Button loading state
