@@ -1,4 +1,4 @@
-import { Button, ButtonToolbar } from 'react-bootstrap';
+import { Button, ButtonGroup, ButtonToolbar, ToggleButtonGroup, ToggleButton, DropdownButton, MenuItem } from 'react-bootstrap';
 import { PropsTable } from 'docz';
 import { Playground } from 'docz';
 import PlayGroundCustomProps from '../../CustomComponents/PlayGroundCustomProps';
@@ -24,8 +24,9 @@ Use any of the available button style types to quickly create a styled button. J
   </ButtonToolbar>
 </Playground>
 
->Button spacing
-Because React doesn't output newlines between elements, buttons on the same line are displayed flush against each other. To preserve the spacing between multiple inline buttons, wrap your button group in `<ButtonToolbar />`.
+> Button spacing
+
+> Because React doesn't output newlines between elements, buttons on the same line are displayed flush against each other. To preserve the spacing between multiple inline buttons, wrap your button group in `<ButtonToolbar />`.
 
 ## Sizes
 
@@ -112,3 +113,217 @@ Make buttons look unclickable by fading them back 50%. To do this add the disabl
 
 ## Button loading state
 TODO: Support Button loading state
+
+## Button dropdowns
+
+## Button groups
+
+Group a series of buttons together on a single line with the button group.
+
+### Basic Example
+
+Wrap a series of `<Button />`s in a `<ButtonGroup />`.
+
+<Playground>
+  <ButtonGroup>
+    <Button>Left</Button>
+    <Button>Middle</Button>
+    <Button>Right</Button>
+  </ButtonGroup>
+</Playground>
+
+### Button toolbar
+
+Combine sets of `<ButtonGroup />`s into a `<ButtonToolbar />` for more complex components.
+
+<Playground>
+  <ButtonToolbar>
+    <ButtonGroup>
+      <Button>1</Button>
+      <Button>2</Button>
+      <Button>3</Button>
+      <Button>4</Button>
+    </ButtonGroup>
+
+    <ButtonGroup>
+      <Button>5</Button>
+      <Button>6</Button>
+      <Button>7</Button>
+    </ButtonGroup>
+
+    <ButtonGroup>
+      <Button>8</Button>
+    </ButtonGroup>
+  </ButtonToolbar>
+</Playground>
+
+### Sizing
+
+Instead of applying button sizing props to every button in a group, just add `bsSize` prop to the `<ButtonGroup />`.
+
+<Playground>
+  <ButtonToolbar>
+    <ButtonGroup bsSize="large">
+      <Button>Left</Button>
+      <Button>Middle</Button>
+      <Button>Right</Button>
+    </ButtonGroup>
+  </ButtonToolbar>
+
+  <ButtonToolbar>
+    <ButtonGroup>
+      <Button>Left</Button>
+      <Button>Middle</Button>
+      <Button>Right</Button>
+    </ButtonGroup>
+  </ButtonToolbar>
+
+  <ButtonToolbar>
+    <ButtonGroup bsSize="small">
+      <Button>Left</Button>
+      <Button>Middle</Button>
+      <Button>Right</Button>
+    </ButtonGroup>
+  </ButtonToolbar>
+
+  <ButtonToolbar>
+    <ButtonGroup bsSize="xsmall">
+      <Button>Left</Button>
+      <Button>Middle</Button>
+      <Button>Right</Button>
+    </ButtonGroup>
+  </ButtonToolbar>
+</Playground>
+
+
+### Nesting
+
+You can place other button types within the <ButtonGroup /> like <DropdownButton />s.
+
+
+### Vertical variation
+
+Make a set of buttons appear vertically stacked rather than horizontally. *Split button dropdowns are not supported here.*
+
+Just add `vertical` to the `<ButtonGroup />`.
+
+<Playground>
+  <ButtonGroup vertical>
+    <Button>Button</Button>
+    <Button>Button</Button>
+    <DropdownButton title="Dropdown" id="bg-vertical-dropdown-1">
+      <MenuItem eventKey="1">Dropdown link</MenuItem>
+      <MenuItem eventKey="2">Dropdown link</MenuItem>
+    </DropdownButton>
+    <Button>Button</Button>
+    <Button>Button</Button>
+    <DropdownButton title="Dropdown" id="bg-vertical-dropdown-2">
+      <MenuItem eventKey="1">Dropdown link</MenuItem>
+      <MenuItem eventKey="2">Dropdown link</MenuItem>
+    </DropdownButton>
+    <DropdownButton title="Dropdown" id="bg-vertical-dropdown-3">
+      <MenuItem eventKey="1">Dropdown link</MenuItem>
+      <MenuItem eventKey="2">Dropdown link</MenuItem>
+    </DropdownButton>
+  </ButtonGroup>
+</Playground>
+
+Moreover, you can have buttons be block level elements so they take the full width of their container, just add `block` to the `<ButtonGroup />`, in addition to the vertical you just added.
+
+<Playground>
+  <ButtonGroup vertical block>
+    <Button>Full width button</Button>
+    <Button>Full width button</Button>
+  </ButtonGroup>
+</Playground>
+
+### Justified button groups
+
+Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.
+
+> Style issues
+
+> There are some issues and workarounds required when using this property, please see bootstrap’s button group docs for more specifics.
+
+Just add `justified` to the `<ButtonGroup />`.
+
+<Playground>
+  <ButtonGroup justified>
+    <Button href="#">Left</Button>
+    <Button href="#">Middle</Button>
+    <DropdownButton title="Dropdown" id="bg-justified-dropdown">
+      <MenuItem eventKey="1">Dropdown link</MenuItem>
+      <MenuItem eventKey="2">Dropdown link</MenuItem>
+    </DropdownButton>
+  </ButtonGroup>
+</Playground>
+
+### Checkbox / Radio
+
+For checkboxes or radio buttons styled as Bootstrap buttons, use the `<ToggleButtonGroup>` and `<ToggleButton>` components. The group behaves as a form component, where the value is an array of the selected eventKeys for checkbox groups or the selected eventKey for radio groups.
+
+> Bootstrap JS issue
+
+> There is a known issue when including Bootstrap JS while using Toggle Button Groups. Therefore it is advised not use Bootstrap JS in conjunction with `<ToggleButtonGroup>` and `<ToggleButton>`.
+
+#### Uncontrolled
+
+<Playground>
+  <ButtonToolbar>
+    <ToggleButtonGroup type="checkbox" defaultValue={[1, 3]}>
+      <ToggleButton value={1}>Checkbox 1 (pre-checked)</ToggleButton>
+      <ToggleButton value={2}>Checkbox 2</ToggleButton>
+      <ToggleButton value={3}>Checkbox 3 (pre-checked)</ToggleButton>
+    </ToggleButtonGroup>
+  </ButtonToolbar>
+
+  <ButtonToolbar>
+    <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
+      <ToggleButton value={1}>Radio 1 (pre-checked)</ToggleButton>
+      <ToggleButton value={2}>Radio 2</ToggleButton>
+      <ToggleButton value={3}>Radio 3</ToggleButton>
+    </ToggleButtonGroup>
+  </ButtonToolbar>
+</Playground>
+
+#### Controlled
+
+<Playground>
+  {() => {
+    class ToggleButtonGroupControlled extends React.Component {
+      constructor(props, context) {
+        super(props, context);
+
+        this.handleChange = this.handleChange.bind(this);
+
+        this.state = {
+          value: [1, 3]
+        };
+      }
+
+      handleChange(e) {
+        this.setState({ value: e });
+      }
+
+      render() {
+        return (
+          <ToggleButtonGroup
+            type="checkbox"
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
+            <ToggleButton value={1}>Checkbox 1 (pre-checked)</ToggleButton>
+            <ToggleButton value={2}>Checkbox 2</ToggleButton>
+            <ToggleButton value={3}>Checkbox 3 (pre-checked)</ToggleButton>
+            <ToggleButton value={4} disabled>
+              Checkbox 4 (disabled)
+            </ToggleButton>
+          </ToggleButtonGroup>
+        );
+      }
+    }
+
+    return <ToggleButtonGroupControlled />;
+  }}
+</Playground>
+
