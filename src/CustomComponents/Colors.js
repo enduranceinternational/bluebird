@@ -1,5 +1,15 @@
 import React from 'react';
 
+export const Swatch = ({ color, style }) => (
+  <div style={{
+    backgroundColor: color || '#000',
+    height: '50px',
+    width: '50px',
+    ...style,
+  }}
+  />
+);
+
 const Box = ({ styleProps, children }) => (
   <div
     style={{
