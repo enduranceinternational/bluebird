@@ -14,37 +14,61 @@ import PlayGroundCustomProps from '../CustomComponents/PlayGroundCustomProps';
 # Buttons
 
 Buttons are UI elements that clearly communicate to the user that they can complete an action.
+- Buttons should indicate that they trigger an action
+- Buttons should be easy to find
+- A buttons action and state should be clear
 
 ## Usage
 
 Use any of the available button style types to quickly create a styled button. Just modify the bsStyle prop.
 
+**Primary** - Primary buttons draw the users attention to a specific action
+
 <Playground>
   <ButtonToolbar>
     <Button bsStyle="primary">Primary</Button>
+  </ButtonToolbar>
+</Playground>
+
+**Secondary** - Secondary buttons emphasize actions that are less important
+
+<Playground>
+  <ButtonToolbar>
     <Button>Secondary</Button>
+  </ButtonToolbar>
+</Playground>
+
+**Destruction** - Destructive buttons express caution to users and are tied to actions like delete or deactivate
+
+<Playground>
+  <ButtonToolbar>
     <Button bsStyle="danger">Destructive</Button>
+  </ButtonToolbar>
+</Playground>
+
+**Text** - Text buttons emphasize actions that are the least important
+
+<Playground>
+  <ButtonToolbar>
     <Button bsStyle="link">Link</Button>
+  </ButtonToolbar>
+</Playground>
+
+**Small** - Small buttons ___
+
+<Playground>
+  <ButtonToolbar>
     <Button bsStyle="primary" bsSize="small">Small button</Button>
   </ButtonToolbar>
 </Playground>
 
-**Primary** - Primary buttons draw the users attention to a specific action
-
-**Secondary** - Secondary buttons emphasize actions that are less important
-
-**Text** - Text buttons emphasize actions that are the least important
-
-**Destruction** - Destructive buttons express caution to users and are tied to actions like delete or deactivate
-
-**Small** - Small buttons ___
 
 
 > Button spacing
 
 > Because React doesn't output newlines between elements, buttons on the same line are displayed flush against each other. To preserve the spacing between multiple inline buttons, wrap your button group in `<ButtonToolbar />`.
 
-## Sizes
+## States
 
 
 ### Block level
