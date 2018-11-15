@@ -3,7 +3,7 @@ import {
 } from 'react-bootstrap';
 import { PropsTable } from 'docz';
 import { Playground } from 'docz';
-import PlayGroundCustomProps from '../CustomComponents/PlayGroundCustomProps';
+import PlayGroundCustomProps from 'CustomComponents/PlayGroundCustomProps';
 
 <PlayGroundCustomProps />
 
@@ -170,7 +170,7 @@ PanelGroup can control its own state `defaultActiveKey` prop dictates which pane
               Click to toggle
             </Button>
             <br />
-            <Panel id="collapsible-panel-example-1" expanded={this.state.open}>
+            <Panel id="collapsible-panel-example-1" expanded={this.state.open} onToggle={() => {}}>
               <Panel.Collapse>
                 <Panel.Body>
                   Panel Content

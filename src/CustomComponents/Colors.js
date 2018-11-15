@@ -6,8 +6,7 @@ export const Swatch = ({ color, style }) => (
     height: '50px',
     width: '50px',
     ...style,
-  }}
-  />
+  }} />
 );
 
 const Box = ({ styleProps, children }) => (

@@ -7,4 +7,7 @@ export default {
   dest: 'build',
 
   indexHtml: './public/index.html',
+
+  // use hashrouter so hitting 'refresh' in our external app doesn't 404
+  hashRouter: true,
 };
