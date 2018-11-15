@@ -1,5 +1,6 @@
 import {
   MenuItem, Button, DropdownButton, ButtonToolbar, SplitButton,
+  Clearfix,
 } from 'react-bootstrap';
 import { PropsTable } from 'docz';
 import { Playground } from 'docz';
@@ -285,9 +286,6 @@ The callback is called with the following arguments: `eventKey` and `event`
       <MenuItem>link</MenuItem>
       <MenuItem disabled>disabled</MenuItem>
       <MenuItem title="See? I have a title.">link with title</MenuItem>
-      <MenuItem eventKey={1} href="#someHref" onSelect={onSelectAlert}>
-        link that alerts
-      </MenuItem>
     </ul>
   </Clearfix>
 </Playground>
