@@ -18,7 +18,7 @@ const Box = ({ styleProps, children }) => (
 const setPalette = (color) => ({ backgroundColor: color });
 
 const paletteMap = {
-  primary: { color: '#3575D3', text: 'Primary'},
+  primary: { color: '#d8d8d8', text: 'Primary'},
   darkGreen: { color: '#009013', text: 'Dark Green' },
   background: { color: '#f1f5f7', text: 'Background' },
 }
