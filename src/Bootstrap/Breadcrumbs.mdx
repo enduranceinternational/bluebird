@@ -1,10 +1,32 @@
 import {
-  Alert, Button,
+  Breadcrumb
 } from 'react-bootstrap';
 import { PropsTable } from 'docz';
 import { Playground } from 'docz';
 import PlayGroundCustomProps from '../CustomComponents/PlayGroundCustomProps';
 
+import BreadCrumbs from 'uaf-main/src/common/components/BreadCrumbs';
+
 <PlayGroundCustomProps />
 
 # Breadcrumbs
+
+Breadcrumbs are used to indicate the current page's location. Add `active` attribute to active `Breadcrumb.Item`.
+
+Do not set both `active` and `href` attributes. `active` overrides `href` and `span` element is rendered instead of `a`.
+
+<Playground>
+  <Breadcrumb>
+    <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+    <Breadcrumb.Item href="http://getbootstrap.com/components/#breadcrumbs">
+      Library
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active>Data</Breadcrumb.Item>
+  </Breadcrumb>
+</Playground>
+
+<Playground>
+  <Breadcrumb name='yo' breadcrumbs={[{href: 'thing', text: 'thing'}]}>
+
+  </Breadcrumb>
+</Playground>
