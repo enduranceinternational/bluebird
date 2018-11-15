@@ -1,0 +1,84 @@
+import {
+  ProgressBar
+} from 'react-bootstrap';
+import { PropsTable } from 'docz';
+import { Playground } from 'docz';
+import PlayGroundCustomProps from '../CustomComponents/PlayGroundCustomProps';
+
+<PlayGroundCustomProps />
+
+# Progress bars
+
+Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
+
+## Basic example
+
+Default progress bar.
+
+<Playground>
+  <ProgressBar now={60} />
+</Playground>
+
+## With label
+
+Add a label `prop` to show a visible percentage. For low percentages, consider adding a min-width to ensure the label's text is fully visible.
+
+<Playground>
+  {() => {
+    const now = 60;
+    return <ProgressBar now={now} label={`${now}%`} />;
+  }}
+</Playground>
+
+## Screenreader only label
+
+Add a `srOnly` prop to hide the label visually.
+
+<Playground>
+  {() => {
+    const now = 60;
+    return <ProgressBar now={now} label={`${now}%`} srOnly />
+  }}
+</Playground>
+
+## Contextual alternatives
+
+Progress bars use some of the same button and alert classes for consistent styles.
+
+<Playground>
+  <ProgressBar bsStyle="success" now={40} />
+  <ProgressBar bsStyle="info" now={20} />
+  <ProgressBar bsStyle="warning" now={60} />
+  <ProgressBar bsStyle="danger" now={80} />
+</Playground>
+
+## Striped
+
+Uses a gradient to create a striped effect. Not available in IE8.
+
+<Playground>
+  <ProgressBar striped bsStyle="success" now={40} />
+  <ProgressBar striped bsStyle="info" now={20} />
+  <ProgressBar striped bsStyle="warning" now={60} />
+  <ProgressBar striped bsStyle="danger" now={80} />
+</Playground>
+
+## Animated
+
+Add `active` prop to animate the stripes right to left. Not available in IE9 and below.
+
+<Playground>
+  <ProgressBar active now={45} />
+</Playground>
+
+## Stacked
+
+Nest `<ProgressBar />`s to stack them.
+
+<Playground>
+  <ProgressBar>
+    <ProgressBar striped bsStyle="success" now={35} key={1} />
+    <ProgressBar bsStyle="warning" now={20} key={2} />
+    <ProgressBar active bsStyle="danger" now={10} key={3} />
+  </ProgressBar>
+</Playground>
