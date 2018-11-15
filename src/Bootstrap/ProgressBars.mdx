@@ -24,10 +24,7 @@ Default progress bar.
 Add a label `prop` to show a visible percentage. For low percentages, consider adding a min-width to ensure the label's text is fully visible.
 
 <Playground>
-  {() => {
-    const now = 60;
-    return <ProgressBar now={now} label={`${now}%`} />;
-  }}
+  <ProgressBar now={60} label="60%" />
 </Playground>
 
 ## Screenreader only label
@@ -35,10 +32,7 @@ Add a label `prop` to show a visible percentage. For low percentages, consider a
 Add a `srOnly` prop to hide the label visually.
 
 <Playground>
-  {() => {
-    const now = 60;
-    return <ProgressBar now={now} label={`${now}%`} srOnly />
-  }}
+  <ProgressBar now={60} label="60%" srOnly />
 </Playground>
 
 ## Contextual alternatives

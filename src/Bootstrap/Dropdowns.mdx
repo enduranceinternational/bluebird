@@ -1,0 +1,293 @@
+import {
+  MenuItem, Button, DropdownButton, ButtonToolbar, SplitButton,
+} from 'react-bootstrap';
+import { PropsTable } from 'docz';
+import { Playground } from 'docz';
+import PlayGroundCustomProps from '../CustomComponents/PlayGroundCustomProps';
+
+<PlayGroundCustomProps />
+
+# Dropdowns
+
+## Single button dropdowns
+
+Create a dropdown button with the `<DropdownButton />` component.
+
+<Playground>
+  <ButtonToolbar>
+
+      <DropdownButton
+        bsStyle="default"
+        title="Default"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </DropdownButton>
+
+      <DropdownButton
+        bsStyle="primary"
+        title="Primary"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </DropdownButton>
+
+      <DropdownButton
+        bsStyle="success"
+        title="Success"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </DropdownButton>
+
+      <DropdownButton
+        bsStyle="info"
+        title="Info"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </DropdownButton>
+
+      <DropdownButton
+        bsStyle="warning"
+        title="Warning"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </DropdownButton>
+
+      <DropdownButton
+        bsStyle="danger"
+        title="Danger"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </DropdownButton>
+
+  </ButtonToolbar>
+</Playground>
+
+## Split button dropdowns
+
+Similarly, create split button dropdowns with the `<SplitButton />` component.
+
+<Playground>
+  <ButtonToolbar>
+
+      <SplitButton
+        bsStyle="default"
+        title="Default"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </SplitButton>
+
+      <SplitButton
+        bsStyle="primary"
+        title="Primary"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </SplitButton>
+
+      <SplitButton
+        bsStyle="success"
+        title="Success"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </SplitButton>
+
+      <SplitButton
+        bsStyle="info"
+        title="Info"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </SplitButton>
+
+      <SplitButton
+        bsStyle="warning"
+        title="Warning"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </SplitButton>
+
+      <SplitButton
+        bsStyle="danger"
+        title="Danger"
+      >
+        <MenuItem eventKey="1">Action</MenuItem>
+        <MenuItem eventKey="2">Another action</MenuItem>
+        <MenuItem eventKey="3" active>
+          Active Item
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">Separated link</MenuItem>
+      </SplitButton>
+
+  </ButtonToolbar>
+</Playground>
+
+## Sizing
+
+Dropdowns work with buttons of all sizes.
+
+<Playground>
+   <ButtonToolbar>
+    <DropdownButton
+      bsSize="large"
+      title="Large button"
+      id="dropdown-size-large"
+    >
+      <MenuItem eventKey="1">Action</MenuItem>
+      <MenuItem eventKey="2">Another action</MenuItem>
+      <MenuItem eventKey="3">Something else here</MenuItem>
+      <MenuItem divider />
+      <MenuItem eventKey="4">Separated link</MenuItem>
+    </DropdownButton>
+  </ButtonToolbar>
+
+  <ButtonToolbar>
+    <DropdownButton title="Default button" id="dropdown-size-medium">
+      <MenuItem eventKey="1">Action</MenuItem>
+      <MenuItem eventKey="2">Another action</MenuItem>
+      <MenuItem eventKey="3">Something else here</MenuItem>
+      <MenuItem divider />
+      <MenuItem eventKey="4">Separated link</MenuItem>
+    </DropdownButton>
+  </ButtonToolbar>
+
+  <ButtonToolbar>
+    <DropdownButton
+      bsSize="small"
+      title="Small button"
+      id="dropdown-size-small"
+    >
+      <MenuItem eventKey="1">Action</MenuItem>
+      <MenuItem eventKey="2">Another action</MenuItem>
+      <MenuItem eventKey="3">Something else here</MenuItem>
+      <MenuItem divider />
+      <MenuItem eventKey="4">Separated link</MenuItem>
+    </DropdownButton>
+  </ButtonToolbar>
+
+  <ButtonToolbar>
+    <DropdownButton
+      bsSize="xsmall"
+      title="Extra small button"
+      id="dropdown-size-extra-small"
+    >
+      <MenuItem eventKey="1">Action</MenuItem>
+      <MenuItem eventKey="2">Another action</MenuItem>
+      <MenuItem eventKey="3">Something else here</MenuItem>
+      <MenuItem divider />
+      <MenuItem eventKey="4">Separated link</MenuItem>
+    </DropdownButton>
+  </ButtonToolbar>
+</Playground>
+
+## No caret variation
+
+Remove the caret using the `noCaret` prop.
+
+## Dropup variation
+
+Trigger dropdown menus that site above the button by adding the `dropup` prop.
+
+## Dropdown right variation
+
+Trigger dropdown menus that align to the right of the button using the `pullRight` prop.
+
+## Menu items MenuItem
+
+This component represents a menu item in a dropdown.
+
+It supports the basic anchor properties `href`, `target`, `title`.
+
+It also supports different properties of the normal Bootstrap MenuItem.
+
+`header`: To add a header label to sections
+
+`divider`: Adds an horizontal divider between sections
+
+`disabled`: shows the item as disabled, and prevents onSelect from firing
+
+`eventKey`: passed to the callback
+
+`onSelect`: a callback that is called when the user clicks the item.
+
+The callback is called with the following arguments: `eventKey` and `event`
+
+<Playground>
+  <Clearfix>
+    <ul className="dropdown-menu open">
+      <MenuItem header>Header</MenuItem>
+      <MenuItem>link</MenuItem>
+      <MenuItem divider />
+      <MenuItem header>Header</MenuItem>
+      <MenuItem>link</MenuItem>
+      <MenuItem disabled>disabled</MenuItem>
+      <MenuItem title="See? I have a title.">link with title</MenuItem>
+      <MenuItem eventKey={1} href="#someHref" onSelect={onSelectAlert}>
+        link that alerts
+      </MenuItem>
+    </ul>
+  </Clearfix>
+</Playground>
