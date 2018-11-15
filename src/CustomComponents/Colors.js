@@ -57,4 +57,4 @@ export default {
   Palette,
   Feedback,
   Neutral,
-}; 
+};

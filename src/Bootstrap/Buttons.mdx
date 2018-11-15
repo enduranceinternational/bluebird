@@ -4,6 +4,11 @@ import { Playground } from 'docz';
 import PlayGroundCustomProps from '../CustomComponents/PlayGroundCustomProps';
 
 <!-- TODO: move this to a better place. Not sure yet!! -->
+<!-- Unused Button Styles
+  <Button bsStyle="success">Success</Button>
+  <Button bsStyle="info">Info</Button>
+  <Button bsStyle="warning">Warning</Button>
+-->
 <PlayGroundCustomProps />
 
 # Buttons
@@ -16,15 +21,24 @@ Use any of the available button style types to quickly create a styled button. J
 
 <Playground>
   <ButtonToolbar>
-    <Button>Button</Button>
     <Button bsStyle="primary">Primary</Button>
-    <Button bsStyle="success">Success</Button>
-    <Button bsStyle="info">Info</Button>
-    <Button bsStyle="warning">Warning</Button>
-    <Button bsStyle="danger">Danger</Button>
+    <Button>Secondary</Button>
+    <Button bsStyle="danger">Destructive</Button>
     <Button bsStyle="link">Link</Button>
+    <Button bsStyle="primary" bsSize="small">Small button</Button>
   </ButtonToolbar>
 </Playground>
+
+**Primary** - Primary buttons draw the users attention to a specific action
+
+**Secondary** - Secondary buttons emphasize actions that are less important
+
+**Text** - Text buttons emphasize actions that are the least important
+
+**Destruction** - Destructive buttons express caution to users and are tied to actions like delete or deactivate
+
+**Small** - Small buttons ___
+
 
 > Button spacing
 
@@ -32,32 +46,6 @@ Use any of the available button style types to quickly create a styled button. J
 
 ## Sizes
 
-Fancy larger or smaller buttons? Add bsSize="large", bsSize="small", or bsSize="xsmall" for additional sizes.
-
-<Playground>
-  <ButtonToolbar>
-    <Button bsStyle="primary" bsSize="large">
-      Large button
-    </Button>
-    <Button bsSize="large">Large button</Button>
-  </ButtonToolbar>
-  <ButtonToolbar>
-    <Button bsStyle="primary">Default button</Button>
-    <Button>Default button</Button>
-  </ButtonToolbar>
-  <ButtonToolbar>
-    <Button bsStyle="primary" bsSize="small">
-      Small button
-    </Button>
-    <Button bsSize="small">Small button</Button>
-  </ButtonToolbar>
-  <ButtonToolbar>
-    <Button bsStyle="primary" bsSize="xsmall">
-      Extra small button
-    </Button>
-    <Button bsSize="xsmall">Extra small button</Button>
-  </ButtonToolbar>
-</Playground>
 
 ### Block level
 
