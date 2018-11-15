@@ -1,6 +1,7 @@
 import {
   Button, FormGroup, FormControl, ControlLabel,
-  Checkbox, Radio, HelpBlock,
+  Checkbox, Radio, HelpBlock, InputGroup, Form,
+  Col, Row, Glyphicon, DropdownButton, MenuItem
 } from 'react-bootstrap';
 import { PropsTable } from 'docz';
 import { Playground } from 'docz';
@@ -161,4 +162,268 @@ Examples of standard form controls supported in an example form layout, using a 
       </form>
     );
   }}
+</Playground>
+
+## Form Layout
+
+### Inline forms
+Use `<Form inline>` instead of `<form>`. JSX strips whitespace between lines, so you will need to manually add spaces. Additionally, Bootstrap assigns inline form controls `width: auto` by default, so you may need to set custom widths.
+
+<Playground>
+  <Form inline>
+    <FormGroup controlId="formInlineName">
+      <ControlLabel>Name</ControlLabel>{' '}
+      <FormControl type="text" placeholder="Jane Doe" />
+    </FormGroup>{' '}
+    <FormGroup controlId="formInlineEmail">
+      <ControlLabel>Email</ControlLabel>{' '}
+      <FormControl type="email" placeholder="jane.doe@example.com" />
+    </FormGroup>{' '}
+    <Button type="submit">Send invitation</Button>
+  </Form>
+</Playground>
+
+### Horizontal forms
+Use `<Form horizontal>` instead of `<form>`, then use `<Col>`s to align labels and controls. Do not use `<Row>` here, as `<FormGroup>` will already serve as a grid row in a horizontal form.
+
+<Playground>
+  <Form horizontal>
+    <FormGroup controlId="formHorizontalEmail">
+      <Col componentClass={ControlLabel} sm={2}>
+        Email
+      </Col>
+      <Col sm={10}>
+        <FormControl type="email" placeholder="Email" />
+      </Col>
+    </FormGroup>
+
+    <FormGroup controlId="formHorizontalPassword">
+      <Col componentClass={ControlLabel} sm={2}>
+        Password
+      </Col>
+      <Col sm={10}>
+        <FormControl type="password" placeholder="Password" />
+      </Col>
+    </FormGroup>
+
+    <FormGroup>
+      <Col smOffset={2} sm={10}>
+        <Checkbox>Remember me</Checkbox>
+      </Col>
+    </FormGroup>
+
+    <FormGroup>
+      <Col smOffset={2} sm={10}>
+        <Button type="submit">Sign in</Button>
+      </Col>
+    </FormGroup>
+  </Form>
+</Playground>
+
+## Input
+
+### Input add-ons
+
+Wrap your form control in an `<InputGroup>`, then use for normal add-ons and for button add-ons. Exotic configurations may require CSS on your side.
+
+<Playground>
+  <form>
+    <FormGroup>
+      <InputGroup>
+        <InputGroup.Addon>@</InputGroup.Addon>
+        <FormControl type="text" />
+      </InputGroup>
+    </FormGroup>
+    <FormGroup>
+      <InputGroup>
+        <FormControl type="text" />
+        <InputGroup.Addon>.00</InputGroup.Addon>
+      </InputGroup>
+    </FormGroup>
+    <FormGroup>
+      <InputGroup>
+        <InputGroup.Addon>$</InputGroup.Addon>
+        <FormControl type="text" />
+        <InputGroup.Addon>.00</InputGroup.Addon>
+      </InputGroup>
+    </FormGroup>
+
+    <FormGroup>
+      <InputGroup>
+        <FormControl type="text" />
+        <InputGroup.Addon>
+          <Glyphicon glyph="music" />
+        </InputGroup.Addon>
+      </InputGroup>
+    </FormGroup>
+
+    <FormGroup>
+      <InputGroup>
+        <InputGroup.Button>
+          <Button>Before</Button>
+        </InputGroup.Button>
+        <FormControl type="text" />
+      </InputGroup>
+    </FormGroup>
+    <FormGroup>
+      <InputGroup>
+        <FormControl type="text" />
+        <DropdownButton
+          componentClass={InputGroup.Button}
+          id="input-dropdown-addon"
+          title="Action"
+        >
+          <MenuItem key="1">Item</MenuItem>
+        </DropdownButton>
+      </InputGroup>
+    </FormGroup>
+
+    <FormGroup>
+      <InputGroup>
+        <InputGroup.Addon>
+          <input type="radio" aria-label="..." />
+        </InputGroup.Addon>
+        <FormControl type="text" />
+      </InputGroup>
+    </FormGroup>
+    <FormGroup>
+      <InputGroup>
+        <InputGroup.Addon>
+          <input type="checkbox" aria-label="..." />
+        </InputGroup.Addon>
+        <FormControl type="text" />
+      </InputGroup>
+    </FormGroup>
+  </form>
+</Playground>
+
+### Input sizes
+Use bsSize on `<FormGroup>` or `<InputGroup>` to change the size of inputs. It also works with add-ons and most other options.
+
+<Playground>
+  <form>
+    <FormGroup bsSize="large">
+      <FormControl type="text" placeholder="Large text" />
+    </FormGroup>
+    <FormGroup>
+      <FormControl type="text" placeholder="Normal text" />
+    </FormGroup>
+    <FormGroup bsSize="small">
+      <FormControl type="text" placeholder="Small text" />
+    </FormGroup>
+  </form>
+</Playground>
+
+## Validation
+Set `validationState` to one of 'success', 'warning' or 'error' to show validation state. Set `validationState` to `null` (or `undefined`) to hide validation state. Add `<FormControl.Feedback>` for a feedback icon when validation state is set.
+
+<Playground>
+  <form>
+    <FormGroup controlId="formValidationSuccess1" validationState="success">
+      <ControlLabel>Input with success</ControlLabel>
+      <FormControl type="text" />
+      <HelpBlock>Help text with validation state.</HelpBlock>
+    </FormGroup>
+
+    <FormGroup controlId="formValidationWarning1" validationState="warning">
+      <ControlLabel>Input with warning</ControlLabel>
+      <FormControl type="text" />
+    </FormGroup>
+
+    <FormGroup controlId="formValidationError1" validationState="error">
+      <ControlLabel>Input with error</ControlLabel>
+      <FormControl type="text" />
+    </FormGroup>
+
+    <FormGroup controlId="formValidationNull" validationState={null}>
+      <ControlLabel>Input with no validation state</ControlLabel>
+      <FormControl type="text" />
+    </FormGroup>
+
+    <FormGroup controlId="formValidationSuccess2" validationState="success">
+      <ControlLabel>Input with success and feedback icon</ControlLabel>
+      <FormControl type="text" />
+      <FormControl.Feedback />
+    </FormGroup>
+
+    <FormGroup controlId="formValidationWarning2" validationState="warning">
+      <ControlLabel>Input with warning and feedback icon</ControlLabel>
+      <FormControl type="text" />
+      <FormControl.Feedback />
+    </FormGroup>
+
+    <FormGroup controlId="formValidationError2" validationState="error">
+      <ControlLabel>Input with error and feedback icon</ControlLabel>
+      <FormControl type="text" />
+      <FormControl.Feedback />
+    </FormGroup>
+
+    <FormGroup controlId="formValidationSuccess3" validationState="success">
+      <ControlLabel>Input with success and custom feedback icon</ControlLabel>
+      <FormControl type="text" />
+      <FormControl.Feedback>
+        <Glyphicon glyph="music" />
+      </FormControl.Feedback>
+    </FormGroup>
+
+    <FormGroup controlId="formValidationWarning3" validationState="warning">
+      <ControlLabel>Input group with warning</ControlLabel>
+      <InputGroup>
+        <InputGroup.Addon>@</InputGroup.Addon>
+        <FormControl type="text" />
+      </InputGroup>
+      <FormControl.Feedback />
+    </FormGroup>
+
+    <Form componentClass="fieldset" horizontal>
+      <FormGroup controlId="formValidationError3" validationState="error">
+        <Col componentClass={ControlLabel} xs={3}>
+          Input with error
+        </Col>
+        <Col xs={9}>
+          <FormControl type="text" />
+          <FormControl.Feedback />
+        </Col>
+      </FormGroup>
+
+      <FormGroup controlId="formValidationSuccess4" validationState="success">
+        <Col componentClass={ControlLabel} xs={3}>
+          Input group with success
+        </Col>
+        <Col xs={9}>
+          <InputGroup>
+            <InputGroup.Addon>@</InputGroup.Addon>
+            <FormControl type="text" />
+          </InputGroup>
+          <FormControl.Feedback />
+        </Col>
+      </FormGroup>
+    </Form>
+
+    <Form componentClass="fieldset" inline>
+      <FormGroup controlId="formValidationWarning4" validationState="warning">
+        <ControlLabel>Input with warning</ControlLabel>{' '}
+        <FormControl type="text" />
+        <FormControl.Feedback />
+      </FormGroup>{' '}
+      <FormGroup controlId="formValidationError4" validationState="error">
+        <ControlLabel>Input group with error</ControlLabel>{' '}
+        <InputGroup>
+          <InputGroup.Addon>@</InputGroup.Addon>
+          <FormControl type="text" />
+        </InputGroup>
+        <FormControl.Feedback />
+      </FormGroup>
+    </Form>
+
+    <Checkbox validationState="success">Checkbox with success</Checkbox>
+    <Radio validationState="warning">Radio with warning</Radio>
+    <Checkbox validationState="error">Checkbox with error</Checkbox>
+
+    {/* This requires React 15's <span>-less spaces to be exactly correct. */}
+    <FormGroup validationState="success">
+      <Checkbox inline>Checkbox</Checkbox> <Checkbox inline>with</Checkbox>{' '}
+      <Checkbox inline>success</Checkbox>
+    </FormGroup>
+  </form>
 </Playground>

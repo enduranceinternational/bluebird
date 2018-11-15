@@ -12,9 +12,17 @@ import PlayGroundCustomProps from '../CustomComponents/PlayGroundCustomProps';
 Basic alert styles.
 
 <Playground>
+  <Alert bsStyle="success">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </Alert>
+  <Alert bsStyle="info">
+    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+  </Alert>
   <Alert bsStyle="warning">
-    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too
-    good.
+    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+  </Alert>
+  <Alert bsStyle="danger">
+    <strong>Oh snap!</strong> Change a few things up and try submitting again.
   </Alert>
 </Playground>
 
@@ -53,11 +61,6 @@ Just pass in a `onDismiss` function.
                 Change this and that and try again. Duis mollis, est non commodo
                 luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                 Cras mattis consectetur purus sit amet fermentum.
-              </p>
-              <p>
-                <Button bsStyle="danger">Take this action</Button>
-                <span> or </span>
-                <Button onClick={this.handleDismiss}>Hide Alert</Button>
               </p>
             </Alert>
           );
