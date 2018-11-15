@@ -1,10 +1,96 @@
 import {
-  Alert, Button,
+  ListGroup, ListGroupItem,
 } from 'react-bootstrap';
-import { PropsTable } from 'docz';
 import { Playground } from 'docz';
 import PlayGroundCustomProps from '../CustomComponents/PlayGroundCustomProps';
 
 <PlayGroundCustomProps />
 
 # List group
+
+<Playground>
+  <ListGroup>
+    <ListGroupItem>Item 1</ListGroupItem>
+    <ListGroupItem>Item 2</ListGroupItem>
+    <ListGroupItem>...</ListGroupItem>
+  </ListGroup>
+</Playground>
+
+## Linked ListGroupItem
+
+<Playground>
+  <ListGroup>
+    <ListGroupItem href="#link1">Link 1</ListGroupItem>
+    <ListGroupItem href="#link2">Link 2</ListGroupItem>
+    <ListGroupItem onClick={() => {alert('You clicked the third ListGroupItem')}}>Trigger an alert</ListGroupItem>
+  </ListGroup>
+</Playground>
+
+## Styling by state
+
+Set the `active` or `disabled` prop to mark or disable the item.
+
+<Playground>
+  <ListGroup>
+    <ListGroupItem href="#" active>
+      Link 1
+    </ListGroupItem>
+    <ListGroupItem href="#">Link 2</ListGroupItem>
+    <ListGroupItem href="#" disabled>
+      Link 3
+    </ListGroupItem>
+  </ListGroup>
+</Playground>
+
+## Styling by color
+
+Set the bsStyle prop to style the item
+
+<Playground>
+  <ListGroup>
+    <ListGroupItem bsStyle="success">Success</ListGroupItem>
+    <ListGroupItem bsStyle="info">Info</ListGroupItem>
+    <ListGroupItem bsStyle="warning">Warning</ListGroupItem>
+    <ListGroupItem bsStyle="danger">Danger</ListGroupItem>
+  </ListGroup>
+</Playground>
+
+## `header` prop
+
+Set the header prop to create a structured item, with a heading and a body area.
+
+<Playground>
+  <ListGroup>
+    <ListGroupItem header="Heading 1">
+      Some body text
+    </ListGroupItem>
+    <ListGroupItem header="Heading 2" bsStyle="danger">
+      Danger styling
+    </ListGroupItem>
+  </ListGroup>
+</Playground>
+
+## Custom Components as ListItems
+
+set `componentClass` prop to specify which element ListGroup should output.
+
+Note: When using ListGroupItems directly, ListGroup looks at whether the items have href or onClick props to determine which DOM elements to emit.
+
+<Playground>
+  {() => {
+    function CustomComponent({ children }) {
+      return (
+        <li className="list-group-item">
+          {children}
+        </li>
+      );
+    }
+
+    return (
+      <ListGroup componentClass="ul">
+        <CustomComponent>Custom Child 1</CustomComponent>
+        <CustomComponent>Custom Child 2</CustomComponent>
+      </ListGroup>
+    )
+  }}
+</Playground>
