@@ -1,13 +1,12 @@
 import {
   Pager, Pagination,
 } from 'react-bootstrap';
-import { PropsTable } from 'docz';
 import { Playground } from 'docz';
 
 # Pagination
 
 ## Pager
-centers by default
+Provides quick previous and next links. `centers` by default
 
 <Playground>
   <Pager>
@@ -17,7 +16,7 @@ centers by default
 </Playground>
 
 ## Aligned
-
+Set the `previous` or `next` prop to true, to align left or right.
 <Playground>
   <Pager>
     <Pager.Item previous href="#">
@@ -31,7 +30,7 @@ centers by default
 
 ## Disabled
 
-Set the disabled prop to true to disable the link.
+Set the `disabled` prop to true to disable the link.
 
 <Playground>
   <Pager>
@@ -45,6 +44,7 @@ Set the disabled prop to true to disable the link.
 </Playground>
 
 ## Pagination
+A set of presentational components for building pagination UI.
 
 <Playground>
   {() => {
@@ -73,8 +73,8 @@ Set the disabled prop to true to disable the link.
 </Playground>
 
 ## Pagination sub-components
-
-`Ellipsis`, `First`, `Previous`, `Next`, `Last` and `active` prop
+For building more complex pagination UI, there are few convenient sub-components
+for adding `First`, `Previous`, `Next`, `Last` buttons, as well as an `Ellipsis` item for indicating previous or continuing results.
 
 <Playground>
   <Pagination>

@@ -4,7 +4,7 @@ import {
 import { Playground } from 'docz';
 
 # List groups
-
+List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.
 <Playground>
   <ListGroup>
     <ListGroupItem>Item 1</ListGroupItem>
@@ -14,6 +14,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Linked ListGroupItem
+Set the `href` or `onClick` prop on ListGroupItem, to create a linked or clickable element.
 
 <Playground>
   <ListGroup>
@@ -41,7 +42,7 @@ Set the `active` or `disabled` prop to mark or disable the item.
 
 ## Styling by color
 
-Set the bsStyle prop to style the item
+Set the `bsStyle` prop to style the item
 
 <Playground>
   <ListGroup>
@@ -52,9 +53,9 @@ Set the bsStyle prop to style the item
   </ListGroup>
 </Playground>
 
-## `header` prop
+## With header
 
-Set the header prop to create a structured item, with a heading and a body area.
+Set the `header` prop to create a structured item, with a heading and a body area.
 
 <Playground>
   <ListGroup>
@@ -71,7 +72,7 @@ Set the header prop to create a structured item, with a heading and a body area.
 
 set `componentClass` prop to specify which element ListGroup should output.
 
-Note: When using ListGroupItems directly, ListGroup looks at whether the items have href or onClick props to determine which DOM elements to emit.
+Note: When using ListGroupItems directly, ListGroup looks at whether the items have `href` or `onClick` props to determine which DOM elements to emit.
 
 <Playground>
   {() => {

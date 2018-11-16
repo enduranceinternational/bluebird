@@ -1,13 +1,16 @@
 import {
   Panel, PanelGroup, Button
 } from 'react-bootstrap';
-import { PropsTable } from 'docz';
 import { Playground } from 'docz';
 
 # Panels
 
-## Basic Panel
+## Basic Panel example
 
+By default, all the `<Panel />` does is apply a basic border and padding to contain some content.
+
+You can pass on any additional properties you need, e.g. a custom onClick handler.
+They all will apply to the wrapper div element
 <Playground>
   <Panel>
     <Panel.Body>Basic panel example</Panel.Body>
@@ -15,7 +18,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Panel with Heading
-
+Add a heading container to your panel with the `<Panel.Heading>` and `<Panel.Title>` sub-components.
 <Playground>
   <Panel>
     <Panel.Heading>Panel heading without a title</Panel.Heading>
@@ -30,6 +33,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Panel with Footer
+Pass buttons or secondary text in the `<Panel.Footer>` sub-component.
 
 <Playground>
   <Panel>
@@ -39,7 +43,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Contextual Panels
-make a panel more meaningful to a particular context by adding a `bsStyle` prop
+Make a panel more meaningful to a particular context by adding a `bsStyle` prop
 
 <Playground>
   <Panel bsStyle="primary">
@@ -79,7 +83,7 @@ make a panel more meaningful to a particular context by adding a `bsStyle` prop
 </Playground>
 
 ## Controlled Panels
-
+PanelGroups can be controlled by a parent component. The `activeKey` prop dictates which panel is open.
 <Playground>
   {() => {
     class ControlledPanelGroup extends React.Component {
@@ -127,8 +131,8 @@ make a panel more meaningful to a particular context by adding a `bsStyle` prop
 
 ## Uncontrolled Panels
 
-PanelGroup can control its own state `defaultActiveKey` prop dictates which panel is open initially
-
+PanelGroups can also be uncontrolled where they manage their own state.
+The `defaultActiveKey` prop dictates which panel is open when initially.
 <Playground>
   <PanelGroup accordion id="accordion-uncontrolled-example" defaultActiveKey="2">
     <Panel eventKey="1">
@@ -213,7 +217,7 @@ PanelGroup can control its own state `defaultActiveKey` prop dictates which pane
 </Playground>
 
 ## PanelGroup Accordions
-
+Use `<PanelGroup accordion />` to create an accordion style collapsing Panel set.
 <Playground>
   <PanelGroup accordion id="accordion-example">
   <Panel eventKey="1">

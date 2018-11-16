@@ -5,9 +5,9 @@ import MenuItem from 'react-bootstrap/lib/MenuItem';
 import { Playground } from 'docz';
 
 # Navs
+Navs come in two styles, `pills` and `tabs`. Disable a tab by adding `disabled`.
 
-## Tabs
-
+## Tabs example 
 <Playground>
   <Nav bsStyle="tabs" activeKey="2" onSelect={() => {}}>
     <NavItem eventKey="1" href="">
@@ -23,7 +23,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Stacked
-
+Navs can also be `stacked` vertically.
 <Playground>
   <Nav bsStyle="pills" stacked activeKey={1} onSelect={() => {}}>
     <NavItem eventKey={1} href="">
@@ -39,7 +39,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Dropdown in Nav
-
+Add dropdowns using the `NavDropdown` component.
 <Playground>
   <Nav bsStyle="tabs" activeKey="1" onSelect={() => {}}>
     <NavItem eventKey="1" href="">
@@ -56,8 +56,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Justified
-
-Take full width of the containing container
+They can be `justified` to take the full width of their parent.
 
 <Playground>
   <Nav
