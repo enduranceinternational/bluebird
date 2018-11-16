@@ -3,34 +3,39 @@ import { Playground } from 'docz';
 # Typography
 
 ## Headings
+All HTML headings, `<h1>` through `<h6>`, are available.
 
 <Playground>
   <h1>
     h1. Bootstrap heading
   </h1>
-
   <h2>
     h2. Bootstrap heading
   </h2>
-
   <h3>
     h3. Bootstrap heading
   </h3>
-
   <h4>
     h4. Bootstrap heading
   </h4>
-
   <h5>
     h5. Bootstrap heading
   </h5>
-
   <h6>
     h6. Bootstrap heading
   </h6>
 </Playground>
 
+## Heading classes
+.h1 through .h6 classes are also available, for when you want to match the font styling of a heading
+but cannot use the associated HTML element.
+
+<Playground>
+  <p className="h1">h1. Bootstrap heading</p>
+</Playground>
+
 ## Heading with secondary
+Use the included utility classes to recreate the `small` secondary heading text
 
 <Playground>
   <h1>
@@ -38,28 +43,26 @@ import { Playground } from 'docz';
   </h1>
 </Playground>
 
-## Body copy
+## Lead
+Make a paragraph stand out by adding .lead
 
 <Playground>
-  <p>
-    Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-  </p>
-</Playground>
-
-### Lead body copy
-### Make a paragraph stand out by adding .lead.
-
-<Playground>
-
   <p className="lead">
-    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
   </p>
 
 </Playground>
 
 ## Inline text elements
+Styling for common inline HTML5 elements.
+.mark and .small classes are also available to apply the same styles as `<mark>` and `<small>` 
+while avoiding any unwanted semantic implications that the tags would bring.
+
+While not shown below, feel free to use `<b>` and `<i>` in HTML5.
+`<b>` is meant to highlight words or phrases without conveying additional importance while `<i>` is mostly for voice, technical terms, etc.
 
 ### Marked text
+You can use the mark tag to `highlight` text.
 
 <Playground>
   <p>
@@ -68,6 +71,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Deleted text
+If text is meant to be treated as deleted text
 
 <Playground>
   <p>
@@ -76,7 +80,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Strikethrough text
-
+If text is meant to be treated as `no longer accurate`
 <Playground>
   <p>
     <s>This line of text is meant to be treated as no longer accurate.</s>
@@ -84,7 +88,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Inserted text
-
+If line of text is meant to be treated as an `addition` to the document
 <Playground>
   <p>
     <ins>This line of text is meant to be treated as an addition to the document.</ins>
@@ -92,7 +96,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Underlined text
-
+If line of text is to be rendered as underlined
 <Playground>
   <p>
     <u>This line of text will render as underlined</u>
@@ -100,7 +104,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Small text
-
+If line of text is meant to be treated as `fine print`.
 <Playground>
   <p>
     <small>This line of text is meant to be treated as fine print.</small>
@@ -108,7 +112,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Bold
-
+Line rendered as bold text
 <Playground>
   <p>
     <strong>rendered as bold text</strong>
@@ -116,15 +120,19 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Italics
-
+line rendered as italicized text.
 <Playground>
   <p>
     <em>rendered as italicized text</em>
   </p>
 </Playground>
 
-## Alignment classes
+## Text Utilities
+Change text alignment, transform with text utilities
 
+### Alignment classes
+Easily realign text to components with text alignment classes.
+For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.
 <Playground>
   <p className="text-left">
     Left aligned text.
@@ -145,6 +153,19 @@ import { Playground } from 'docz';
   <p className="text-nowrap">
     No wrap text.
   </p>
+  <br />
+  <p class="text-sm-left">
+    Left aligned text on viewports sized SM (small) or wider.
+  </p>
+  <p class="text-md-left">
+    Left aligned text on viewports sized MD (medium) or wider.
+  </p>
+  <p class="text-lg-left">
+    Left aligned text on viewports sized LG (large) or wider.
+  </p>
+  <p class="text-xl-left">
+    Left aligned text on viewports sized XL (extra-large) or wider.
+  </p>
 </Playground>
 
 ## Transformation classes
@@ -164,6 +185,8 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Abbreviations
+Stylized implementation of HTML’s `<abbr>` element for abbreviations and acronyms to show the expanded version on hover.
+Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.
 
 ### Basic abbreviations
 
@@ -172,6 +195,7 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Initialism
+Add .initialism to an abbreviation for a slightly smaller font-size.
 
 <Playground>
   <abbr title="HyperText Markup Language" className="initialism">HTML</abbr>
@@ -192,7 +216,8 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Blockquotes
-
+For quoting blocks of content from another source within your document.
+Wrap `<blockquote>` around any HTML as the quote.
 <Playground>
   <blockquote>
     <p>
@@ -201,7 +226,9 @@ import { Playground } from 'docz';
   </blockquote>
 </Playground>
 
-## Blockquote options
+### Blockquote - Naming a source
+Add a `<footer>` for identifying the source.
+Wrap the name of the source work in `<cite>`.
 
 <Playground>
   <blockquote>
@@ -215,6 +242,8 @@ import { Playground } from 'docz';
 </Playground>
 
 ## Code
+The `<code>` element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code.
+By default, the content text is displayed using the user agent's default monospace font.
 
 ### Inline
 
@@ -229,7 +258,8 @@ import { Playground } from 'docz';
 </Playground>
 
 ### User input
-
+The Keyboard Input element `<kbd>` represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device.
+By convention, the user agent defaults to rendering the contents of a `<kbd>` element using its default monospace font.
 <Playground>
   <p>
     Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.
@@ -238,15 +268,17 @@ import { Playground } from 'docz';
   <p>
     To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
     <br />
-    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>alt</kbd></kbd>
   </p>
 </Playground>
 
 ### Basic block
-
+The `<pre>` element represents preformatted text which is to be presented exactly as written in the HTML file.
+The text is typically rendered using a monospace font. Whitespace inside this element is displayed as written.
 <Playground>
   <p>
-    Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.
+    Use <code>&lt;pre&gt;</code> for multiple lines of code.
+    Be sure to escape any angle brackets in the code for proper rendering.
   </p>
 
   <pre>
@@ -255,15 +287,19 @@ import { Playground } from 'docz';
 </Playground>
 
 ### Variables
-
+The Variable element `<var>` represents the name of a variable in a mathematical expression or a programming context.
+It's typically presented using an italicized version of the current typeface
 <Playground>
   <p>
-    For indicating variables use the <code>&lt;var&gt;</code> tag.
+    The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>,
+    where <var>l</var> represents the length,
+    <var>w</var> the width and <var>h</var> the height of the box.
   </p>
 </Playground>
 
 ### Sample output
-
+The Sample Element `<samp>` is used to enclose inline text which represents sample (or quoted) output from a computer program.
+Its contents are typically rendered using the browser's default monospaced font.
 <Playground>
   <samp>
     This text is meant to be treated as sample output from a computer program.
