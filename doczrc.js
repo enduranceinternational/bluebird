@@ -1,7 +1,8 @@
 // doczrc.js
 export default {
-  title: 'Design System',
-  description: 'Design System',
+  // TODO: replace emoji with bluehost icon?
+  title: '💎 Design System',
+  description: '💎 Design System',
 
   src: './src/',
   dest: 'build',

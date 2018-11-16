@@ -2,7 +2,9 @@ import { Grid, Row, Col, Clearfix } from 'react-bootstrap';
 import { PropsTable } from 'docz';
 import { Playground } from 'docz';
 
-# Basic Grid
+# Grid System
+
+## Basic Grid
 
 Bootstrap's grid system consists of `<Row>` elements that contain `<Col>` elements. Columns can be split into segments that sum to 12, according to the screen size. So, `<Col lg={6}>` is a column that on large screens is 6/12 (or 1/2) the size of the row. `<Col md={9}>` is a column that on medium and large screens is 9/12 (or 3/4) the size of the row. By mixing and matching screen sizes you can adjust the columns to collapse in the desired fashion. Also common is to hide or show columns at certain screen sizes, eg. `xsHidden`. Rows with columns that sum to more than 12 automatically cascade.
 
@@ -48,7 +50,7 @@ Below examples include borders for convenience.
   </Grid>
 </Playground>
 
-# Clearfix
+## Clearfix
 
 Use Clearfix and set to visible for the viewports with columning issues, so that columns can clear correctly.
 
