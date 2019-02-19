@@ -1,5 +1,17 @@
-import { Button, ButtonGroup, ButtonToolbar, ToggleButtonGroup, ToggleButton, DropdownButton, MenuItem } from 'react-bootstrap';
-import { PropsTable, Playground } from 'docz';
+---
+menu: Components
+---
+
+import {
+  Button,
+  ButtonGroup,
+  ButtonToolbar,
+  ToggleButtonGroup,
+  ToggleButton,
+  DropdownButton,
+  MenuItem
+} from "react-bootstrap";
+import { PropsTable, Playground } from "docz";
 
 <!-- Unused Button Styles
   <Button bsStyle="success">Success</Button>
@@ -10,6 +22,7 @@ import { PropsTable, Playground } from 'docz';
 # Buttons
 
 Buttons are UI elements that clearly communicate to the user that they can complete an action.
+
 - Buttons should indicate that they trigger an action
 - Buttons should be easy to find
 - A buttons action and state should be clear
@@ -50,22 +63,21 @@ Use any of the available button style types to quickly create a styled button. J
   </ButtonToolbar>
 </Playground>
 
-**Small** - Small buttons ___
+**Small** - Small buttons \_\_\_
 
 <Playground>
   <ButtonToolbar>
-    <Button bsStyle="primary" bsSize="small">Small button</Button>
+    <Button bsStyle="primary" bsSize="small">
+      Small button
+    </Button>
   </ButtonToolbar>
 </Playground>
-
-
 
 > Button spacing
 
 > Because React doesn't output newlines between elements, buttons on the same line are displayed flush against each other. To preserve the spacing between multiple inline buttons, wrap your button group in `<ButtonToolbar />`.
 
 ## States
-
 
 ### Block level
 
@@ -122,6 +134,7 @@ Make buttons look unclickable by fading them back 50%. To do this add the disabl
 </Playground>
 
 ## Button loading state
+
 TODO: Support Button loading state
 
 ## Button dropdowns
@@ -164,6 +177,7 @@ Combine sets of `<ButtonGroup />`s into a `<ButtonToolbar />` for more complex c
     <ButtonGroup>
       <Button>8</Button>
     </ButtonGroup>
+
   </ButtonToolbar>
 </Playground>
 
@@ -180,21 +194,21 @@ Instead of applying button sizing props to every button in a group, just add `bs
     </ButtonGroup>
   </ButtonToolbar>
 
-  <ButtonToolbar>
-    <ButtonGroup>
-      <Button>Left</Button>
-      <Button>Middle</Button>
-      <Button>Right</Button>
-    </ButtonGroup>
-  </ButtonToolbar>
+<ButtonToolbar>
+  <ButtonGroup>
+    <Button>Left</Button>
+    <Button>Middle</Button>
+    <Button>Right</Button>
+  </ButtonGroup>
+</ButtonToolbar>
 
-  <ButtonToolbar>
-    <ButtonGroup bsSize="small">
-      <Button>Left</Button>
-      <Button>Middle</Button>
-      <Button>Right</Button>
-    </ButtonGroup>
-  </ButtonToolbar>
+<ButtonToolbar>
+  <ButtonGroup bsSize="small">
+    <Button>Left</Button>
+    <Button>Middle</Button>
+    <Button>Right</Button>
+  </ButtonGroup>
+</ButtonToolbar>
 
   <ButtonToolbar>
     <ButtonGroup bsSize="xsmall">
@@ -205,15 +219,13 @@ Instead of applying button sizing props to every button in a group, just add `bs
   </ButtonToolbar>
 </Playground>
 
-
 ### Nesting
 
 You can place other button types within the `<ButtonGroup />` like `<DropdownButton />`s.
 
-
 ### Vertical variation
 
-Make a set of buttons appear vertically stacked rather than horizontally. *Split button dropdowns are not supported here.*
+Make a set of buttons appear vertically stacked rather than horizontally. _Split button dropdowns are not supported here._
 
 Just add `vertical` to the `<ButtonGroup />`.
 
@@ -334,7 +346,9 @@ For checkboxes or radio buttons styled as Bootstrap buttons, use the `<ToggleBut
     }
 
     return <ToggleButtonGroupControlled />;
-  }}
+
+}}
+
 </Playground>
 
 <!-- ## Button loading state

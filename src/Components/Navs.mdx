@@ -1,29 +1,37 @@
-import Nav from 'react-bootstrap/lib/Nav';
-import NavItem from 'react-bootstrap/lib/NavItem';
-import NavDropdown from 'react-bootstrap/lib/NavDropdown';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
-import { Playground } from 'docz';
+---
+menu: Components
+---
+
+import Nav from "react-bootstrap/lib/Nav";
+import NavItem from "react-bootstrap/lib/NavItem";
+import NavDropdown from "react-bootstrap/lib/NavDropdown";
+import MenuItem from "react-bootstrap/lib/MenuItem";
+import { Playground } from "docz";
 
 # Navs
+
 Navs come in two styles, `pills` and `tabs`. Disable a tab by adding `disabled`.
 
-## Tabs example 
+## Tabs example
+
 <Playground>
   <Nav bsStyle="tabs" activeKey="2" onSelect={() => {}}>
     <NavItem eventKey="1" href="">
       NavItem 1 content
     </NavItem>
     <NavItem eventKey="2" title="Item">
-        NavItem 2 content
+      NavItem 2 content
     </NavItem>
     <NavItem eventKey="3" disabled>
-        NavItem 3 content
+      NavItem 3 content
     </NavItem>
   </Nav>
 </Playground>
 
 ## Stacked
+
 Navs can also be `stacked` vertically.
+
 <Playground>
   <Nav bsStyle="pills" stacked activeKey={1} onSelect={() => {}}>
     <NavItem eventKey={1} href="">
@@ -39,7 +47,9 @@ Navs can also be `stacked` vertically.
 </Playground>
 
 ## Dropdown in Nav
+
 Add dropdowns using the `NavDropdown` component.
+
 <Playground>
   <Nav bsStyle="tabs" activeKey="1" onSelect={() => {}}>
     <NavItem eventKey="1" href="">
@@ -47,34 +57,29 @@ Add dropdowns using the `NavDropdown` component.
     </NavItem>
     <NavDropdown eventKey="2" title="Dropdown" id="nav-dropdown">
       <MenuItem eventKey="2.1">Action</MenuItem>
-        <MenuItem eventKey="2.2">Another action</MenuItem>
-        <MenuItem eventKey="2.3">Something else here</MenuItem>
-        <MenuItem divider />
-        <MenuItem eventKey="2.4">Separated link</MenuItem>
+      <MenuItem eventKey="2.2">Another action</MenuItem>
+      <MenuItem eventKey="2.3">Something else here</MenuItem>
+      <MenuItem divider />
+      <MenuItem eventKey="2.4">Separated link</MenuItem>
     </NavDropdown>
   </Nav>
 </Playground>
 
 ## Justified
+
 They can be `justified` to take the full width of their parent.
 
 <Playground>
-  <Nav
-    bsStyle="tabs"
-    activeKey="1"
-    onSelect={() => {}}
-    justified
-  >
+  <Nav bsStyle="tabs" activeKey="1" onSelect={() => {}} justified>
     <NavItem eventKey="1" href="">
       NavItem 1 content
     </NavItem>
     <NavDropdown eventKey="2" title="Dropdown" id="nav-dropdown">
       <MenuItem eventKey="2.1">Action</MenuItem>
-        <MenuItem eventKey="2.2">Another action</MenuItem>
-        <MenuItem eventKey="2.3">Something else here</MenuItem>
-        <MenuItem divider />
-        <MenuItem eventKey="2.4">Separated link</MenuItem>
+      <MenuItem eventKey="2.2">Another action</MenuItem>
+      <MenuItem eventKey="2.3">Something else here</MenuItem>
+      <MenuItem divider />
+      <MenuItem eventKey="2.4">Separated link</MenuItem>
     </NavDropdown>
   </Nav>
 </Playground>
-
