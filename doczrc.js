@@ -66,13 +66,13 @@ export default {
       primary: "#3575D3",
       skyBlue: "#1FB6FF",
       link: "#3575D3",
-      text: "#576373"
+      text: "#576373",
       // footerText: colors.grayDark,
       // sidebarBg: colors.grayExtraLight,
       // sidebarText: colors.dark,
       // sidebarHighlight: null,
       // sidebarBorder: colors.grayLight,
-      // background: colors.white,
+      background: "#F4F5F8"
       // border: colors.grayLight,
       // theadColor: colors.gray,
       // theadBg: colors.grayExtraLight,
@@ -94,10 +94,11 @@ export default {
         fontSize: 16,
         lineHeight: 1.6
       },
-      // container: {
-      //   width: ["100%", "100%", 920],
-      //   padding: ["20px", "0 40px 40px"]
-      // },
+      container: {
+        maxWidth: "100%",
+        width: [960, "100%", "100%"],
+        padding: ["20px", "0 40px 40px"]
+      },
       h1: {
         margin: ["30px 0 20px", "60px 0 20px", "40px 0"],
         fontFamily: "Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
