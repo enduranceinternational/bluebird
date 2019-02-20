@@ -1,16 +1,32 @@
+---
+menu: Components
+---
+
 import {
-  Button, FormGroup, FormControl, ControlLabel,
-  Checkbox, Radio, HelpBlock, InputGroup, Form,
-  Col, Row, Glyphicon, DropdownButton, MenuItem
-} from 'react-bootstrap';
-import { PropsTable } from 'docz';
-import { Playground } from 'docz';
+  Button,
+  FormGroup,
+  FormControl,
+  ControlLabel,
+  Checkbox,
+  Radio,
+  HelpBlock,
+  InputGroup,
+  Form,
+  Col,
+  Row,
+  Glyphicon,
+  DropdownButton,
+  MenuItem
+} from "react-bootstrap";
+import { PropsTable } from "docz";
+import { Playground } from "docz";
 
 # Forms
 
 The `<FormControl>` component renders a form control with Bootstrap styling. The `<FormGroup>` component wraps a form control with proper spacing, along with support for a label, help text, and validation state. To ensure accessibility, set controlId on `<FormGroup>`, and use `<ControlLabel>` for the label.
 
 <!-- TODO: Make glyphicons great again -->
+
 <Playground>
   {() => {
     class FormExample extends React.Component {
@@ -59,7 +75,9 @@ The `<FormControl>` component renders a form control with Bootstrap styling. The
     }
 
     return <FormExample />;
-  }}
+
+}}
+
 </Playground>
 
 The `<FormControl>` component directly renders the `<input>` or other specified component. If you need to access the value of an uncontrolled `<FormControl>`, attach a ref to it as you would with an uncontrolled input, then call `ReactDOM.findDOMNode(ref)` to get the DOM node. You can then interact with that node as you would with any other uncontrolled input.
@@ -157,29 +175,33 @@ Examples of standard form controls supported in an example form layout, using a 
         <Button type="submit">Submit</Button>
       </form>
     );
-  }}
+
+}}
+
 </Playground>
 
 ## Form Layout
 
 ### Inline forms
+
 Use `<Form inline>` instead of `<form>`. JSX strips whitespace between lines, so you will need to manually add spaces. Additionally, Bootstrap assigns inline form controls `width: auto` by default, so you may need to set custom widths.
 
 <Playground>
   <Form inline>
     <FormGroup controlId="formInlineName">
-      <ControlLabel>Name</ControlLabel>{' '}
+      <ControlLabel>Name</ControlLabel>{" "}
       <FormControl type="text" placeholder="Jane Doe" />
-    </FormGroup>{' '}
+    </FormGroup>{" "}
     <FormGroup controlId="formInlineEmail">
-      <ControlLabel>Email</ControlLabel>{' '}
+      <ControlLabel>Email</ControlLabel>{" "}
       <FormControl type="email" placeholder="jane.doe@example.com" />
-    </FormGroup>{' '}
+    </FormGroup>{" "}
     <Button type="submit">Send invitation</Button>
   </Form>
 </Playground>
 
 ### Horizontal forms
+
 Use `<Form horizontal>` instead of `<form>`, then use `<Col>`s to align labels and controls. Do not use `<Row>` here, as `<FormGroup>` will already serve as a grid row in a horizontal form.
 
 <Playground>
@@ -213,6 +235,7 @@ Use `<Form horizontal>` instead of `<form>`, then use `<Col>`s to align labels a
         <Button type="submit">Sign in</Button>
       </Col>
     </FormGroup>
+
   </Form>
 </Playground>
 
@@ -290,10 +313,12 @@ Wrap your form control in an `<InputGroup>`, then use for normal add-ons and for
         <FormControl type="text" />
       </InputGroup>
     </FormGroup>
+
   </form>
 </Playground>
 
 ### Input sizes
+
 Use bsSize on `<FormGroup>` or `<InputGroup>` to change the size of inputs. It also works with add-ons and most other options.
 
 <Playground>
@@ -311,6 +336,7 @@ Use bsSize on `<FormGroup>` or `<InputGroup>` to change the size of inputs. It a
 </Playground>
 
 ## Validation
+
 Set `validationState` to one of 'success', 'warning' or 'error' to show validation state. Set `validationState` to `null` (or `undefined`) to hide validation state. Add `<FormControl.Feedback>` for a feedback icon when validation state is set.
 
 <Playground>
@@ -421,5 +447,6 @@ Set `validationState` to one of 'success', 'warning' or 'error' to show validati
       <Checkbox inline>Checkbox</Checkbox> <Checkbox inline>with</Checkbox>{' '}
       <Checkbox inline>success</Checkbox>
     </FormGroup>
+
   </form>
 </Playground>

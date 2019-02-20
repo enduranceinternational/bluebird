@@ -1,22 +1,27 @@
-import {
-  Pager, Pagination,
-} from 'react-bootstrap';
-import { Playground } from 'docz';
+---
+menu: Components
+---
+
+import { Pager, Pagination } from "react-bootstrap";
+import { Playground } from "docz";
 
 # Pagination
 
 ## Pager
+
 Provides quick previous and next links. `centers` by default
 
 <Playground>
   <Pager>
-    <Pager.Item href="#">Previous</Pager.Item>{' '}
+    <Pager.Item href="#">Previous</Pager.Item>{" "}
     <Pager.Item href="#">Next</Pager.Item>
   </Pager>
 </Playground>
 
 ## Aligned
+
 Set the `previous` or `next` prop to true, to align left or right.
+
 <Playground>
   <Pager>
     <Pager.Item previous href="#">
@@ -44,6 +49,7 @@ Set the `disabled` prop to true to disable the link.
 </Playground>
 
 ## Pagination
+
 A set of presentational components for building pagination UI.
 
 <Playground>
@@ -69,10 +75,13 @@ A set of presentational components for building pagination UI.
     );
 
     return (paginationBasic);
-  }}
+
+}}
+
 </Playground>
 
 ## Pagination sub-components
+
 For building more complex pagination UI, there are few convenient sub-components
 for adding `First`, `Previous`, `Next`, `Last` buttons, as well as an `Ellipsis` item for indicating previous or continuing results.
 
@@ -93,5 +102,6 @@ for adding `First`, `Previous`, `Next`, `Last` buttons, as well as an `Ellipsis`
     <Pagination.Item>{20}</Pagination.Item>
     <Pagination.Next />
     <Pagination.Last />
+
   </Pagination>
 </Playground>

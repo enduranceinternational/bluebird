@@ -1,0 +1,73 @@
+---
+menu: Components
+---
+
+import {
+  Button,
+  ButtonGroup,
+  ButtonToolbar,
+  ToggleButtonGroup,
+  ToggleButton,
+  DropdownButton,
+  MenuItem
+} from "react-bootstrap";
+import { PropsTable, Playground } from "docz";
+
+<!-- Unused Button Styles
+  <Button bsStyle="success">Success</Button>
+  <Button bsStyle="info">Info</Button>
+  <Button bsStyle="warning">Warning</Button>
+-->
+
+# Buttons
+
+There are 2 types of buttons; Primary, Secondary
+
+- Action oriented button. Think: 'Done', 'Save', 'Next', 'Submit'.
+- Normally\* the primary positive action in any scenario.
+- Ideally there should only be one Primary button on any screen/scenario (the core action to proceed/progress/take action on the page). If there isn’t any one clear primary action, then consider using one or a combination of the other button styles.
+- Can be used in isolation or in conjunction with a Secondary, Tertiary, Link style or Icon & Link button.
+
+## Primary Button Styles
+
+| <Button bsStyle="primary">Normal</Button> | <Button bsStyle="primary">Hover</Button> | <Button bsStyle="primary">Pressed</Button> |
+| ----------------------------------------- | ---------------------------------------- | ------------------------------------------ |
+| `background-color: #3575D3`               | `background-color: #2A5DA8`              | `background-color: #5E91DB`                |
+| `color: #ffffff`                          | `color: #ffffff`                         | `color: #ffffff`                           |
+| `padding: 8px 16px`                       | `padding: 8px 16px`                      | `padding: 8px 16px`                        |
+| `font-family: Open Sans`                  | `font-family: Open Sans`                 | `font-family: Open Sans`                   |
+| `font-weight: semi-bold`                  | `font-weight: semi-bold`                 | `font-weight: semi-bold`                   |
+| `font-size: 16px`                         | `font-size: 16px`                        | `font-size: 16px`                          |
+| `border-radius: 3px`                      | `border-radius: 3px`                     | `border-radius: 3px`                       |
+
+| <Button bsStyle="primary">Loading</Button> | <Button bsStyle="primary">Disabled</Button> |
+| ------------------------------------------ | ------------------------------------------- |
+| `background-color: #3575D3`                | `background-color: #D7D7D7`                 |
+| `color: #ffffff`                           | `color: #5C5C5C`                            |
+| `padding: 8px 16px`                        | `padding: 8px 16px`                         |
+| `font-family: Open Sans`                   | `font-family: Open Sans`                    |
+| `font-weight: semi-bold`                   | `font-weight: semi-bold`                    |
+| `font-size: 16px`                          | `font-size: 16px`                           |
+| `border-radius: 3px`                       | `border-radius: 3px`                        |
+
+## Secondary Button Styles
+
+| <Button>Secondary</Button>  | <Button>Hover</Button>      | <Button>Pressed</Button>    |
+| --------------------------- | --------------------------- | --------------------------- |
+| `border: 1px solid #3575D3` | `border: 1px solid #2A5DA8` | `border: 1px solid #5C5C5C` |
+| `color: #ffffff`            | `color: #ffffff`            | `color: #ffffff`            |
+| `padding: 8px 16px`         | `padding: 8px 16px`         | `padding: 8px 16px`         |
+| `font-family: Open Sans`    | `font-family: Open Sans`    | `font-family: Open Sans`    |
+| `font-weight: semi-bold`    | `font-weight: semi-bold`    | `font-weight: semi-bold`    |
+| `font-size: 16px`           | `font-size: 16px`           | `font-size: 16px`           |
+| `border-radius: 3px`        | `border-radius: 3px`        | `border-radius: 3px`        |
+
+| <Button>Loading</Button>    | <Button>Disabled</Button>                        |
+| --------------------------- | ------------------------------------------------ |
+| `border: 1px solid #3575D3` | `border: 1px solid #D7D7D7; background: #D7D7D7` |
+| `color: #3575D3`            | `color: #5C5C5C`                                 |
+| `padding: 8px 16px`         | `padding: 8px 16px`                              |
+| `font-family: Open Sans`    | `font-family: Open Sans`                         |
+| `font-weight: semi-bold`    | `font-weight: semi-bold`                         |
+| `font-size: 16px`           | `font-size: 16px`                                |
+| `border-radius: 3px`        | `border-radius: 3px`                             |
