@@ -10,7 +10,7 @@ export default {
   menu: [
     {
       name: "Getting Started",
-      menu: ["Introduction", "Getting Started"]
+      menu: ["Introduction", "Process"]
     },
     "Foundations",
     "Components",
