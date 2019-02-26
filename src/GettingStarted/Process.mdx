@@ -1,0 +1,24 @@
+---
+menu: Getting Started
+---
+
+# Process
+
+## Component Lifecycle
+
+The new component lifecycle goes through several phases and changes hands between Product, UX and Development teams along the way.
+
+1. New components are proposed weekly in UX Design Review meetings in an open forum where a designer presents a proposed change, concept or new component to the entire UX group in an open invite meeting.
+2. In following UX Design Reviews the proposal is iterated upon, until agreement or veto is reached.
+3. In the case of approval, the new changes are moved into an approved state and get moved to a backlog for prioritization and version assignment.
+4. Once prioritization is complete, a development planning phase commences, and when planning is prepared a proposed version number will be assigned to the new component (or change).
+5. When the component makes it to a sprint, it is coded into the assigned version tag for `uaf-design-system` and upon deployment is pushed out and built by a CI/CD process which sends the new version to our internal NPM registry (http://verdaccio.dev.provo1.unifiedlayer.com/).
+6. Upon publishing, the new design library version can be consumed by development teams by installing the updated package version to their part of the app. This upgrade process often involves a degree of regression testing as there may be auxiliary or unrelated style changes that come with the upgrade(s) along the way to the desired version.
+
+## Versioning
+
+Versioning is done using semver. For reference, please see [https://semver.org/](https://semver.org/).
+
+Versions are assigned after refinement and planning has been completed to help identify priority as versions are typically deployed in a linear manner. This means subsequent versions include all previous changes.
+
+_Note:_ In special cases, a patch can be applied to previous minor or major versions, but will require subsequent versions to be updated with the patch.

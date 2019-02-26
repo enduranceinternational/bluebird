@@ -10,13 +10,14 @@ export default {
   menu: [
     {
       name: "Getting Started",
-      menu: ["Introduction", "Getting Started"]
+      menu: ["Introduction", "Process"]
     },
     "Foundations",
     "Components",
     "Component Status",
-    "FAQ",
     "Release Notes",
+    "Sitemap",
+    "FAQ",
     "Resources",
     "Roadmap",
     "Support",
