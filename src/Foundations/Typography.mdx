@@ -28,6 +28,7 @@ but cannot use the associated HTML element.
   <p className="h1">h1. Bootstrap heading</p>
 </Playground>
 
+<!--
 ## Heading with secondary
 
 Use the included utility classes to recreate the `small` secondary heading text
@@ -45,6 +46,20 @@ Make a paragraph stand out by adding .lead
 <Playground>
   <p className="lead">
     Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+  </p>
+</Playground>
+-->
+
+## Paragraphs
+
+<Playground>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
 </Playground>
 
@@ -149,15 +164,11 @@ Easily realign text to components with text alignment classes.
 For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.
 
 <Playground>
-  <p className="text-left">
-    Left aligned text.
-  </p>
+  <p className="text-left">Left aligned text.</p>
   <p className="text-center">Center aligned text.</p>
   <p className="text-right">Right aligned text.</p>
   <p className="text-justify">Justified text.</p>
-  <p className="text-nowrap">
-    No wrap text.
-  </p>
+  <p className="text-nowrap">No wrap text.</p>
   <br />
   <p class="text-sm-left">
     Left aligned text on viewports sized SM (small) or wider.
@@ -176,15 +187,12 @@ For left, right, and center alignment, responsive classes are available that use
 ## Transformation classes
 
 <Playground>
-  <p className="text-lowercase">
-    Lowercased text.
-  </p>
+  <p className="text-lowercase">Lowercased text.</p>
   <p className="text-uppercase">Uppercased text.</p>
-  <p className="text-capitalize">
-    Capitalized text.
-  </p>
+  <p className="text-capitalize">Capitalized text.</p>
 </Playground>
 
+<!--
 ## Abbreviations
 
 Stylized implementation of HTML’s `<abbr>` element for abbreviations and acronyms to show the expanded version on hover.
@@ -274,12 +282,17 @@ By convention, the user agent defaults to rendering the contents of a `<kbd>` el
 
 <Playground>
   <p>
-    Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.
+    Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered
+    via keyboard.
   </p>
   <p>
-    To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
+    To switch directories, type <kbd>cd</kbd> followed by the name of the
+    directory.
     <br />
-    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>alt</kbd></kbd>
+    To edit settings, press{" "}
+    <kbd>
+      <kbd>ctrl</kbd> + <kbd>alt</kbd>
+    </kbd>
   </p>
 </Playground>
 
@@ -290,8 +303,8 @@ The text is typically rendered using a monospace font. Whitespace inside this el
 
 <Playground>
   <p>
-    Use <code>&lt;pre&gt;</code> for multiple lines of code.
-    Be sure to escape any angle brackets in the code for proper rendering.
+    Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape
+    any angle brackets in the code for proper rendering.
   </p>
   <pre>Sample text here...</pre>
 </Playground>
@@ -302,7 +315,11 @@ The Variable element `<var>` represents the name of a variable in a mathematical
 It's typically presented using an italicized version of the current typeface
 
 <Playground>
-  <p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
+  <p>
+    The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where{" "}
+    <var>l</var> represents the length, <var>w</var> the width and <var>h</var>{" "}
+    the height of the box.
+  </p>
 </Playground>
 
 ### Sample output
@@ -315,3 +332,5 @@ Its contents are typically rendered using the browser's default monospaced font.
     This text is meant to be treated as sample output from a computer program.
   </samp>
 </Playground>
+
+-->
