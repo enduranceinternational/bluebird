@@ -10,7 +10,7 @@ import { Playground } from "docz";
 
 Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
 
-## Basic example
+## ~~Basic example~~ (DO NOT USE)
 
 Default progress bar.
 
@@ -18,7 +18,7 @@ Default progress bar.
   <ProgressBar now={60} />
 </Playground>
 
-## With label
+## ~~With label~~ (DO NOT USE)
 
 Add a label `prop` to show a visible percentage. For low percentages, consider adding a min-width to ensure the label's text is fully visible.
 
@@ -26,6 +26,7 @@ Add a label `prop` to show a visible percentage. For low percentages, consider a
   <ProgressBar now={60} label="60%" />
 </Playground>
 
+<!--
 ## Screenreader only label
 
 Add a `srOnly` prop to hide the label visually.
@@ -33,8 +34,9 @@ Add a `srOnly` prop to hide the label visually.
 <Playground>
   <ProgressBar now={60} label="60%" srOnly />
 </Playground>
+-->
 
-## Contextual alternatives
+## ~~Contextual alternatives~~ (DO NOT USE)
 
 Progress bars use some of the same button and alert classes for consistent styles.
 
@@ -45,7 +47,7 @@ Progress bars use some of the same button and alert classes for consistent style
   <ProgressBar bsStyle="danger" now={80} />
 </Playground>
 
-## Striped
+## ~~Striped~~ (DO NOT USE)
 
 Uses a gradient to create a striped effect. Not available in IE8.
 
@@ -56,6 +58,7 @@ Uses a gradient to create a striped effect. Not available in IE8.
   <ProgressBar striped bsStyle="danger" now={80} />
 </Playground>
 
+<!--
 ## Animated
 
 Add `active` prop to animate the stripes right to left. Not available in IE9 and below.
@@ -75,3 +78,4 @@ Nest `<ProgressBar />`s to stack them.
     <ProgressBar active bsStyle="danger" now={10} key={3} />
   </ProgressBar>
 </Playground>
+-->
