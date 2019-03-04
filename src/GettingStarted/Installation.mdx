@@ -1,47 +1,108 @@
 ---
 name: Installation
-route: "/"
 menu: Getting Started
 ---
 
-import { PropsTable, Playground } from "docz";
+# Installation
 
-##### Installing the Design System into a Web Project
+## Adding to a web app
 
-Coming Soon
+### Step 1: Install the package from our NPM Registry
 
-#####  Installing the Sketch Design System (for designers)
+Add the design system to your project with the package manager of your choice. We recommend [Yarn](https://yarnpkg.com).
 
-Coming Soon
+```sh
+$ yarn add @uaf/design-system --save
+# installed to dependencies in `package.json`
+```
 
-##### Installing this Repo for Local Development
+> **Tip**
 
-Coming Soon
+> You can install a specific version by specifying it in your add command, such as `yarn add @uaf/design-system@~1.0.0 --save`. The `~` symbol will allow upgrades to patches that are released after the specified version. Replacing the `~` with a `^` will allow upgrades to minor versions.
 
-##### Installing Yarn
+### Step 2: Reference the styles from your app
 
-1. Install Yarn version 1.13.0 [here](https://yarnpkg.com/en/docs/install#mac-stable). NOTE: choose the option that doesn't include Node.
-2. Merge master into your branch and resolve conflicts.
-3. If you see a conflict with `npm-shrinkwrap.json` use `git rm npm-shrinkwrap.json` (delete the shrinkwrap, we no longer use this).
-4. Delete your current node_modules directory with a command like rm -rf node_modules.
-5. Run the command `yarn install` to generate an updated `yarn.lock` file.
-6. `git add yarn.lock` to add the yarn.lock file with your changes to the merge commit.
-7. Make sure everything is staged and all conflicts are now resolved, and commit the merge with<br />`git commit --no-verify` (accept the default merge message).
-8. You should now be up to date and running with yarn. Below are some common commands you can run in place of npm.
+There are a few ways to pull our styles into your app:
 
-##### Resolving conflicts with yarn.lock
+#### SCSS
 
-If you ever run into a conflict with yarn.lock, Yarn has an automatic merge built in, but you do need to run the `yarn` command. When it runs it will automatically generate a repaired yarn.lock file without conflicts. You need to commit the updated yarn.lock file with your merge.
+The design system can be imported directly, or as a variables sheet via [Sass](https://sass-lang.com/) in `.scss` format:
 
-##### Common Yarn commands
-Install the project<br />
-`yarn install` (or just `yarn`)
+```scss
+// import everything
+@import "~@uaf/design-system";
 
-Start the app with live data<br />
-`HIDE_WARNINGS=1 yarn start`
+// import variables only
+@import "~@uaf/design-system/assets/stylesheets/variables";
+```
 
-Start the app in mock mode<br />
-`HIDE_WARNINGS=1 yarn start:mock`
+> Tip
 
-Run the test suites<br />
-`yarn test`
+> The `~` used above is used by Webpack to identify `node_modules` libraries within Sass files. If you aren't using Webpack, consult your build system documentation for the proper syntax to find the `node_modules` directory.
+
+### Webpack Loader
+
+```js
+// import directly to app
+import "@uaf/design-system";
+
+// import as object
+import styles from "@uaf/design-system";
+```
+
+> Tip
+
+> Consult your webpack loader for the proper import strategy for your usage.
+
+#### CSS
+
+To add the compiled css to your page:
+
+```html
+<link rel="stylesheet" href="@uaf/design-system/dist/styles.css" />
+```
+
+> Tip
+
+> Consult your bundler for the proper reference to the `node_modules` package.
+
+#### CDN
+
+To add our styles from our CDN, you can install the design system by adding the following tag to your app's HTML:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://bluehost-cdn.com/media/app/1.0.0/styles.css"
+/>
+```
+
+## Sketch Design System
+
+A Sketch Asset Library is maintained on [Google Drive](https://drive.google.com/open?id=1MIK8jwEdpLlEBOJ5G6tY7ixVZXFGtJSV). To gain write access you will need to speak to the lead on the Bluehost Design system.
+
+Sketch allows us to create a shared library of foundational colors, text styles, patterns and components that can be easily be used in your designs. This allows for rapid prototyping of features, using consistent elements from the design system. As the system is hosted on Google Drive, you can quickly sync changes to your design(s).
+
+## Running locally
+
+### Step 1: Install the project
+
+The project is dependent on having both [Node](https://nodejs.org/) and [Yarn](https://yarnpkg.com) installed. After you have these set up on your development machine, run the following command to install its dependencies:
+
+```sh
+$ yarn
+# installing...
+```
+
+### Step 2: Start the app
+
+Starting the app is as simple as running:
+
+```sh
+$ yarn start
+# Compiled successfully!
+#
+# You can now view uaf-ui-library in the browser.
+#
+# http://127.0.0.1:3000/
+```
