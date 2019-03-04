@@ -81,31 +81,3 @@ Although the UI is composed of multiple elements, you should never combine compo
 ```
 
 Notice how the badge in the example above is nested inside of the avatar and not combined with it. It’s important that the markup of a component remains separate from other components to ensure each can handle all of its concerns gracefully.
-
-##### Installing Yarn
-
-1. Install Yarn version 1.13.0 <a href="https://yarnpkg.com/en/docs/install#mac-stable">here</a>. NOTE: choose the option that doesn't include Node.
-2. Merge master into your branch and resolve conflicts.
-3. If you see a conflict with `npm-shrinkwrap.json` use `git rm npm-shrinkwrap.json` (delete the shrinkwrap, we no longer use this).
-4. Delete your current node_modules directory with a command like rm -rf node_modules.
-5. Run the command `yarn install` to generate an updated `yarn.lock` file.
-6. `git add yarn.lock` to add the yarn.lock file with your changes to the merge commit.
-7. Make sure everything is staged and all conflicts are now resolved, and commit the merge with<br />`git commit --no-verify` (accept the default merge message).
-8. You should now be up to date and running with yarn. Below are some common commands you can run in place of npm.
-
-##### Resolving conflicts with yarn.lock
-
-If you ever run into a conflict with yarn.lock, Yarn has an automatic merge built in, but you do need to run the `yarn` command. When it runs it will automatically generate a repaired yarn.lock file without conflicts. You need to commit the updated yarn.lock file with your merge.
-
-##### Common Yarn commands
-Install the project<br />
-`yarn install` (or just `yarn`)
-
-Start the app with live data<br />
-`HIDE_WARNINGS=1 yarn start`
-
-Start the app in mock mode<br />
-`HIDE_WARNINGS=1 yarn start:mock`
-
-Run the test suites<br />
-`yarn test`
