@@ -16,8 +16,7 @@ Our goal is to keep the master branch as clean as possible, with builds always p
 
 ## Pull Request Process
 
-l. install or build dependencies are removed before the end of the layer when doing a build.
-
+1. Install or build dependencies are removed before the end of the layer when doing a build.
 2. Update `CHANGELOG.md` with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
 3. Increase the version numbers to the new version that this Pull Request would represent. The versioning scheme we use is [Semver](https://semver.org/).
 4. The pull request can be merged once it has the sign-off of two other developers, and if you do not have permission to do that, you may request the second reviewer to merge it for you.
