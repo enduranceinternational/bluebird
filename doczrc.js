@@ -2,7 +2,7 @@
 export default {
   title: "💎 Design System",
   description: "💎 Design System",
-  src: "./src/",
+  src: "./",
   dest: "build",
   indexHtml: "./public/index.html",
   hashRouter: true,
