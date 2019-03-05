@@ -14,13 +14,10 @@ export default {
     },
     "Foundations",
     "Components",
-    "Component Status",
     "Release Notes",
     "Sitemap",
     "FAQ",
-    "Resources",
     "Roadmap",
-    "Support",
     "Utility Classes"
   ],
 
