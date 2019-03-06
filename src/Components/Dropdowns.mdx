@@ -1,12 +1,20 @@
+---
+menu: Components
+---
+
 import {
-  MenuItem, Button, DropdownButton, ButtonToolbar, SplitButton,
-  Clearfix,
-} from 'react-bootstrap';
-import { PropsTable, Playground } from 'docz';
+  MenuItem,
+  Button,
+  DropdownButton,
+  ButtonToolbar,
+  SplitButton,
+  Clearfix
+} from "react-bootstrap";
+import { PropsTable, Playground } from "docz";
 
 # Dropdowns
 
-## Single button dropdowns
+## ~~Single button dropdowns~~ (do not use)
 
 Create a dropdown button with the `<DropdownButton />` component.
 
@@ -100,7 +108,7 @@ Create a dropdown button with the `<DropdownButton />` component.
   </ButtonToolbar>
 </Playground>
 
-## Split button dropdowns
+## ~~Split button dropdowns~~ (do not use)
 
 Similarly, create split button dropdowns with the `<SplitButton />` component.
 
@@ -194,6 +202,7 @@ Similarly, create split button dropdowns with the `<SplitButton />` component.
   </ButtonToolbar>
 </Playground>
 
+<!--
 ## Sizing
 
 Dropdowns work with buttons of all sizes.
@@ -213,29 +222,25 @@ Dropdowns work with buttons of all sizes.
     </DropdownButton>
   </ButtonToolbar>
 
-  <ButtonToolbar>
-    <DropdownButton title="Default button" id="dropdown-size-medium">
-      <MenuItem eventKey="1">Action</MenuItem>
-      <MenuItem eventKey="2">Another action</MenuItem>
-      <MenuItem eventKey="3">Something else here</MenuItem>
-      <MenuItem divider />
-      <MenuItem eventKey="4">Separated link</MenuItem>
-    </DropdownButton>
-  </ButtonToolbar>
+<ButtonToolbar>
+  <DropdownButton title="Default button" id="dropdown-size-medium">
+    <MenuItem eventKey="1">Action</MenuItem>
+    <MenuItem eventKey="2">Another action</MenuItem>
+    <MenuItem eventKey="3">Something else here</MenuItem>
+    <MenuItem divider />
+    <MenuItem eventKey="4">Separated link</MenuItem>
+  </DropdownButton>
+</ButtonToolbar>
 
-  <ButtonToolbar>
-    <DropdownButton
-      bsSize="small"
-      title="Small button"
-      id="dropdown-size-small"
-    >
-      <MenuItem eventKey="1">Action</MenuItem>
-      <MenuItem eventKey="2">Another action</MenuItem>
-      <MenuItem eventKey="3">Something else here</MenuItem>
-      <MenuItem divider />
-      <MenuItem eventKey="4">Separated link</MenuItem>
-    </DropdownButton>
-  </ButtonToolbar>
+<ButtonToolbar>
+  <DropdownButton bsSize="small" title="Small button" id="dropdown-size-small">
+    <MenuItem eventKey="1">Action</MenuItem>
+    <MenuItem eventKey="2">Another action</MenuItem>
+    <MenuItem eventKey="3">Something else here</MenuItem>
+    <MenuItem divider />
+    <MenuItem eventKey="4">Separated link</MenuItem>
+  </DropdownButton>
+</ButtonToolbar>
 
   <ButtonToolbar>
     <DropdownButton
@@ -297,3 +302,4 @@ The callback is called with the following arguments: `eventKey` and `event`
     </ul>
   </Clearfix>
 </Playground>
+-->

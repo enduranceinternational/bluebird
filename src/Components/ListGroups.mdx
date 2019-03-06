@@ -1,10 +1,14 @@
-import {
-  ListGroup, ListGroupItem,
-} from 'react-bootstrap';
-import { Playground } from 'docz';
+---
+menu: Components
+---
+
+import { ListGroup, ListGroupItem } from "react-bootstrap";
+import { Playground } from "docz";
 
 # List groups
+
 List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.
+
 <Playground>
   <ListGroup>
     <ListGroupItem>Item 1</ListGroupItem>
@@ -14,13 +18,20 @@ List groups are a flexible and powerful component for displaying not only simple
 </Playground>
 
 ## Linked ListGroupItem
+
 Set the `href` or `onClick` prop on ListGroupItem, to create a linked or clickable element.
 
 <Playground>
   <ListGroup>
     <ListGroupItem href="#link1">Link 1</ListGroupItem>
     <ListGroupItem href="#link2">Link 2</ListGroupItem>
-    <ListGroupItem onClick={() => {alert('You clicked the third ListGroupItem')}}>Trigger an alert</ListGroupItem>
+    <ListGroupItem
+      onClick={() => {
+        alert("You clicked the third ListGroupItem");
+      }}
+    >
+      Trigger an alert
+    </ListGroupItem>
   </ListGroup>
 </Playground>
 
@@ -59,9 +70,7 @@ Set the `header` prop to create a structured item, with a heading and a body are
 
 <Playground>
   <ListGroup>
-    <ListGroupItem header="Heading 1">
-      Some body text
-    </ListGroupItem>
+    <ListGroupItem header="Heading 1">Some body text</ListGroupItem>
     <ListGroupItem header="Heading 2" bsStyle="danger">
       Danger styling
     </ListGroupItem>
@@ -90,5 +99,7 @@ Note: When using ListGroupItems directly, ListGroup looks at whether the items h
         <CustomComponent>Custom Child 2</CustomComponent>
       </ListGroup>
     )
-  }}
+
+}}
+
 </Playground>

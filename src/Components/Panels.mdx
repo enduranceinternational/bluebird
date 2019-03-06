@@ -1,7 +1,9 @@
-import {
-  Panel, PanelGroup, Button
-} from 'react-bootstrap';
-import { Playground } from 'docz';
+---
+menu: Components
+---
+
+import { Panel, PanelGroup, Button } from "react-bootstrap";
+import { Playground } from "docz";
 
 # Panels
 
@@ -11,6 +13,7 @@ By default, all the `<Panel />` does is apply a basic border and padding to cont
 
 You can pass on any additional properties you need, e.g. a custom onClick handler.
 They all will apply to the wrapper div element
+
 <Playground>
   <Panel>
     <Panel.Body>Basic panel example</Panel.Body>
@@ -18,7 +21,9 @@ They all will apply to the wrapper div element
 </Playground>
 
 ## Panel with Heading
+
 Add a heading container to your panel with the `<Panel.Heading>` and `<Panel.Title>` sub-components.
+
 <Playground>
   <Panel>
     <Panel.Heading>Panel heading without a title</Panel.Heading>
@@ -32,7 +37,9 @@ Add a heading container to your panel with the `<Panel.Heading>` and `<Panel.Tit
   </Panel>
 </Playground>
 
+<!--
 ## Panel with Footer
+
 Pass buttons or secondary text in the `<Panel.Footer>` sub-component.
 
 <Playground>
@@ -41,8 +48,8 @@ Pass buttons or secondary text in the `<Panel.Footer>` sub-component.
     <Panel.Footer>Panel footer</Panel.Footer>
   </Panel>
 </Playground>
-
 ## Contextual Panels
+
 Make a panel more meaningful to a particular context by adding a `bsStyle` prop
 
 <Playground>
@@ -53,26 +60,26 @@ Make a panel more meaningful to a particular context by adding a `bsStyle` prop
     <Panel.Body>Panel Primary</Panel.Body>
   </Panel>
 
-  <Panel bsStyle="success">
-    <Panel.Heading>
-      <Panel.Title componentClass="h3">Panel heading</Panel.Title>
-    </Panel.Heading>
-    <Panel.Body>Panel Success</Panel.Body>
-  </Panel>
+<Panel bsStyle="success">
+  <Panel.Heading>
+    <Panel.Title componentClass="h3">Panel heading</Panel.Title>
+  </Panel.Heading>
+  <Panel.Body>Panel Success</Panel.Body>
+</Panel>
 
-  <Panel bsStyle="info">
-    <Panel.Heading>
-      <Panel.Title componentClass="h3">Panel heading</Panel.Title>
-    </Panel.Heading>
-    <Panel.Body>Panel Info</Panel.Body>
-  </Panel>
+<Panel bsStyle="info">
+  <Panel.Heading>
+    <Panel.Title componentClass="h3">Panel heading</Panel.Title>
+  </Panel.Heading>
+  <Panel.Body>Panel Info</Panel.Body>
+</Panel>
 
-  <Panel bsStyle="warning">
-    <Panel.Heading>
-      <Panel.Title componentClass="h3">Panel heading</Panel.Title>
-    </Panel.Heading>
-    <Panel.Body>Panel warning</Panel.Body>
-  </Panel>
+<Panel bsStyle="warning">
+  <Panel.Heading>
+    <Panel.Title componentClass="h3">Panel heading</Panel.Title>
+  </Panel.Heading>
+  <Panel.Body>Panel warning</Panel.Body>
+</Panel>
 
   <Panel bsStyle="danger">
     <Panel.Heading>
@@ -83,7 +90,9 @@ Make a panel more meaningful to a particular context by adding a `bsStyle` prop
 </Playground>
 
 ## Controlled Panels
+
 PanelGroups can be controlled by a parent component. The `activeKey` prop dictates which panel is open.
+
 <Playground>
   {() => {
     class ControlledPanelGroup extends React.Component {
@@ -126,15 +135,22 @@ PanelGroups can be controlled by a parent component. The `activeKey` prop dictat
       }
     }
     return <ControlledPanelGroup />
-  }}
+
+}}
+
 </Playground>
 
 ## Uncontrolled Panels
 
 PanelGroups can also be uncontrolled where they manage their own state.
 The `defaultActiveKey` prop dictates which panel is open when initially.
+
 <Playground>
-  <PanelGroup accordion id="accordion-uncontrolled-example" defaultActiveKey="2">
+  <PanelGroup
+    accordion
+    id="accordion-uncontrolled-example"
+    defaultActiveKey="2"
+  >
     <Panel eventKey="1">
       <Panel.Heading>
         <Panel.Title toggle>Panel heading 1</Panel.Title>
@@ -149,7 +165,6 @@ The `defaultActiveKey` prop dictates which panel is open when initially.
     </Panel>
   </PanelGroup>
 </Playground>
-
 
 ## Collapsible Panel
 
@@ -213,36 +228,36 @@ The `defaultActiveKey` prop dictates which panel is open when initially.
     }
 
     return (<CollapsiblePanel />);
-  }}
+
+}}
+
 </Playground>
 
 ## PanelGroup Accordions
+
 Use `<PanelGroup accordion />` to create an accordion style collapsing Panel set.
+
 <Playground>
   <PanelGroup accordion id="accordion-example">
-  <Panel eventKey="1">
-    <Panel.Heading>
-      <Panel.Title toggle>Collapsible Group Item #1</Panel.Title>
-    </Panel.Heading>
-    <Panel.Body collapsible>
-      Panel Content 1
-    </Panel.Body>
-  </Panel>
-  <Panel eventKey="2">
-    <Panel.Heading>
-      <Panel.Title toggle>Collapsible Group Item #2</Panel.Title>
-    </Panel.Heading>
-    <Panel.Body collapsible>
-      Panel Content 2
-    </Panel.Body>
-  </Panel>
-  <Panel eventKey="3">
-    <Panel.Heading>
-      <Panel.Title toggle>Collapsible Group Item #3</Panel.Title>
-    </Panel.Heading>
-    <Panel.Body collapsible>
-      Panel Content 3
-    </Panel.Body>
-  </Panel>
-</PanelGroup>
+    <Panel eventKey="1">
+      <Panel.Heading>
+        <Panel.Title toggle>Collapsible Group Item #1</Panel.Title>
+      </Panel.Heading>
+      <Panel.Body collapsible>Panel Content 1</Panel.Body>
+    </Panel>
+    <Panel eventKey="2">
+      <Panel.Heading>
+        <Panel.Title toggle>Collapsible Group Item #2</Panel.Title>
+      </Panel.Heading>
+      <Panel.Body collapsible>Panel Content 2</Panel.Body>
+    </Panel>
+    <Panel eventKey="3">
+      <Panel.Heading>
+        <Panel.Title toggle>Collapsible Group Item #3</Panel.Title>
+      </Panel.Heading>
+      <Panel.Body collapsible>Panel Content 3</Panel.Body>
+    </Panel>
+  </PanelGroup>
 </Playground>
+
+-->

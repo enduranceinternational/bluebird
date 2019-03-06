@@ -1,0 +1,102 @@
+---
+name: Installation
+menu: Getting Started
+---
+
+# Installation
+
+## Adding to a web app
+
+### Step 1: Install the package from our NPM Registry
+
+Add the design system to your project with the package manager of your choice. We recommend [Yarn](https://yarnpkg.com).
+
+```sh
+$ yarn add @uaf/design-system --save
+# installed to dependencies in `package.json`
+```
+
+> **Tip**
+
+> You can install a specific version by specifying it in your add command, such as `yarn add @uaf/design-system@~1.0.0 --save`. The `~` symbol will allow upgrades to patches that are released after the specified version. Replacing the `~` with a `^` will allow upgrades to minor versions.
+
+### Step 2: Reference the styles from your app
+
+There are a few ways to pull our styles into your app:
+
+#### SCSS
+
+The design system can be imported directly, or as a variables sheet via [Sass](https://sass-lang.com/) in `.scss` format:
+
+```scss
+// import everything
+@import "~@uaf/design-system";
+
+// import variables only
+@import "~@uaf/design-system/assets/stylesheets/variables";
+```
+
+> Tip
+
+> The `~` used above is used by Webpack to identify `node_modules` libraries within Sass files. If you aren't using Webpack, consult your build system documentation for the proper syntax to find the `node_modules` directory.
+
+### Webpack Loader
+
+```js
+// import directly to app
+import "@uaf/design-system";
+
+// import as object
+import styles from "@uaf/design-system";
+```
+
+> Tip
+
+> Consult your webpack loader for the proper import strategy for your usage.
+
+#### CSS
+
+To add the compiled css to your page:
+
+```html
+<link rel="stylesheet" href="@uaf/design-system/dist/styles.css" />
+```
+
+> Tip
+
+> Consult your bundler for the proper reference to the `node_modules` package.
+
+#### CDN
+
+To add our styles from our CDN, you can install the design system by adding the following tag to your app's HTML:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://bluehost-cdn.com/media/app/1.0.0/styles.css"
+/>
+```
+
+## Running locally
+
+### Step 1: Install the project
+
+The project is dependent on having both [Node](https://nodejs.org/) and [Yarn](https://yarnpkg.com) installed. After you have these set up on your development machine, run the following command to install its dependencies:
+
+```sh
+$ yarn
+# installing...
+```
+
+### Step 2: Start the app
+
+Starting the app is as simple as running:
+
+```sh
+$ yarn start
+# Compiled successfully!
+#
+# You can now view uaf-ui-library in the browser.
+#
+# http://127.0.0.1:3000/
+```
