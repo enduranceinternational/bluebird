@@ -1,7 +1,7 @@
 // doczrc.js
 export default {
-  title: "💎 Design System",
-  description: "💎 Design System",
+  title: "🐦 Bluebird",
+  description: "🐦 Bluebird",
   src: "./",
   dest: "build",
   indexHtml: "./public/index.html",

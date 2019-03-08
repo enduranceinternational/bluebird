@@ -9,16 +9,16 @@ menu: Getting Started
 
 ### Step 1: Install the package from our NPM Registry
 
-Add the design system to your project with the package manager of your choice. We recommend [Yarn](https://yarnpkg.com).
+Add Bluebird to your project with the package manager of your choice. We recommend [Yarn](https://yarnpkg.com).
 
 ```sh
-$ yarn add @uaf/design-system --save
+$ yarn add @uaf/bluebird --save
 # installed to dependencies in `package.json`
 ```
 
 > **Tip**
 
-> You can install a specific version by specifying it in your add command, such as `yarn add @uaf/design-system@~1.0.0 --save`. The `~` symbol will allow upgrades to patches that are released after the specified version. Replacing the `~` with a `^` will allow upgrades to minor versions.
+> You can install a specific version by specifying it in your add command, such as `yarn add @uaf/bluebird@~1.0.0 --save`. The `~` symbol will allow upgrades to patches that are released after the specified version. Replacing the `~` with a `^` will allow upgrades to minor versions.
 
 ### Step 2: Reference the styles from your app
 
@@ -26,14 +26,14 @@ There are a few ways to pull our styles into your app:
 
 #### SCSS
 
-The design system can be imported directly, or as a variables sheet via [Sass](https://sass-lang.com/) in `.scss` format:
+Bluebird can be imported directly, or as a variables sheet via [Sass](https://sass-lang.com/) in `.scss` format:
 
 ```scss
 // import everything
-@import "~@uaf/design-system";
+@import "~@uaf/bluebird";
 
 // import variables only
-@import "~@uaf/design-system/assets/stylesheets/variables";
+@import "~@uaf/bluebird/assets/stylesheets/variables";
 ```
 
 > Tip
@@ -44,10 +44,10 @@ The design system can be imported directly, or as a variables sheet via [Sass](h
 
 ```js
 // import directly to app
-import "@uaf/design-system";
+import "@uaf/bluebird";
 
 // import as object
-import styles from "@uaf/design-system";
+import styles from "@uaf/bluebird";
 ```
 
 > Tip
@@ -59,7 +59,7 @@ import styles from "@uaf/design-system";
 To add the compiled css to your page:
 
 ```html
-<link rel="stylesheet" href="@uaf/design-system/dist/styles.css" />
+<link rel="stylesheet" href="@uaf/bluebird/dist/styles.css" />
 ```
 
 > Tip
@@ -68,7 +68,7 @@ To add the compiled css to your page:
 
 #### CDN
 
-To add our styles from our CDN, you can install the design system by adding the following tag to your app's HTML:
+To add our styles from our CDN, you can install Bluebird by adding the following tag to your app's HTML:
 
 ```html
 <link
