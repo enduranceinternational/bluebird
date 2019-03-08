@@ -1,6 +1,6 @@
-# User Apps Frontend UI Library
+# Bluebird
 
-> Bluerock component library and style guide
+> A Design System
 
 ## Overview
 
@@ -10,15 +10,15 @@ We would like all members of Product Delivery to be able to view a visual, coded
 
 In another story, we have a team working to upgrade the {{uaf-main}} repo to support Docz for component documentation. While they are in motion, we will be creating a parallel project:
 
-* Set up a new project using Create React App 2
+- Set up a new project using Create React App 2
 
-* Install Docz
+- Install Docz
 
-* Investigate ways to import components from uaf-main to be visualized in the style guide project
+- Investigate ways to import components from uaf-main to be visualized in the style guide project
 
-** Note: Might require a parallel branch in uaf-main where we add the .mdx files
+\*\* Note: Might require a parallel branch in uaf-main where we add the .mdx files
 
-* Deploy project to a web service such as Heroku that is viewable by any member of Utah Product Development
+- Deploy project to a web service such as Heroku that is viewable by any member of Utah Product Development
 
 ## Acceptance criteria
 
@@ -30,11 +30,11 @@ Monitors uaf-main {{master}} branch for changes and recompiles and deploys with 
 
 ## Component documentation roadmap
 
-* Bootstrap components (current UI Library)
+- Bootstrap components (current UI Library)
 
-* Other commonly used UI Library components
+- Other commonly used UI Library components
 
-* Most shared custom app components
+- Most shared custom app components
 
 ## Technical
 

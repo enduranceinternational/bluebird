@@ -8,19 +8,19 @@ We consider our roadmap a living document, with short timeframes and more freque
 
 #### Build System Improvements (Q1)
 
-We're looking into ways to improve how this documentation is built so we can provide the most up-to-date view of our Design System. We aim to have an automated build system that will deploy an updated version of these docs to align with `uaf-main` deployments.
+We're looking into ways to improve how this documentation is built so we can provide the most up-to-date view of Bluebird. We aim to have an automated build system that will deploy an updated version of these docs to align with `uaf-main` deployments.
 
 - [x] Transition `uaf-main` to `yarn` to gain `workspaces` ability
 - [ ] Configure `lerna` for easier monorepo management in `uaf-main`
-- [ ] Migrate `@uaf/design-system` into `uaf-main`
-- [ ] Begin migrating shared/library styles and components from `src` to `@uaf/design-system`
+- [ ] Migrate `@uaf/bluebird` into `uaf-main`
+- [ ] Begin migrating shared/library styles and components from `src` to `@uaf/bluebird`
 - [ ] Set version 1.0.0 and install on all `uaf-main` packages
 
 #### Visual Language Updates (Q1-2)
 
 Our design team is at work on a "2.0" visual language to bring improved readability, design and accessibility features to our app.
 
-- [ ] v1.0 design system implemented as we have today [EP16-65](https://jira.endurance.com/browse/EP16-65)
+- [ ] v1.0 implemented as we have today [EP16-65](https://jira.endurance.com/browse/EP16-65)
 - [ ] v1.1 typography [EP16-55](https://jira.endurance.com/browse/EP16-55)
 - [ ] v1.2 colors [EP16-215](https://jira.endurance.com/browse/EP16-215)
 - [ ] v1.3 buttons [EP16-217](https://jira.endurance.com/browse/EP16-217)
@@ -37,8 +37,8 @@ While viewing the pages that document the current state of our app, your attenti
 
 #### CSS Modules for `@uaf/main` layouts and business components (Q2)
 
-After we split the design system out from `uaf-main` we would like to research implementing css modules as the primary strategy for app-specific and layout styles. The aim will be to reduce outside collisions, and improve performance by allowing css modules to filter out unused styles.
+After we split the Bluebird out from `uaf-main` we would like to research implementing css modules as the primary strategy for app-specific and layout styles. The aim will be to reduce outside collisions, and improve performance by allowing css modules to filter out unused styles.
 
 #### Component Consolidation (Ongoing)
 
-Across the app, we have many custom components that veer from our Design System standards. We will be working to improve our suggestions for which components teams should use with `approved` and `avoid` tags within our Design System.
+Across the app, we have many custom components that veer from Bluebird standards. We will be working to improve our suggestions for which components teams should use with `approved` and `avoid` tags.
