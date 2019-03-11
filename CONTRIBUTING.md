@@ -1,6 +1,6 @@
 # How to Contribute
 
-The UAF Design System is a major step forward in modernizing and compartmentalizing our apps at Endurance. Our goal is to over time develop a framework that can be adopted across many of our brands' applications to deliver consistent user experiences.
+Bluebird is a major step forward in modernizing and compartmentalizing our apps at Endurance. Our goal is to over time develop a framework that can be adopted across many of our brands' applications to deliver consistent user experiences.
 
 ## Code of Conduct
 
