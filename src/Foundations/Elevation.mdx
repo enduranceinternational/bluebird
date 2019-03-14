@@ -6,12 +6,18 @@ import elevationChart from "assets/images/elevation-chart.png";
 
 # Elevation
 
-How to create a sense of elevation across the Bluerock Design System
-
-## Layers
+Each type of layer lives on a different imagined plane of the UI giving each its own distinct elevation. Elevation is the implied measured distance above the base layer. The affect of the elevation on a layer is defined by the intensity and depth of the shadow it casts.
 
 <img src={elevationChart} />
 
-| Level 1      | Level 2      | Level 3      | Level 4      | Level 5      |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| `z-index:??` | `z-index:??` | `z-index:??` | `z-index:??` | `z-index:??` |
+The range of imagined planes in the UI are on a scale from 0 to 24, with zero being the base and 24 the highest point. The higher the elevation is the larger the shadow each layer will cast. Each unit on the elevation scale is equal to the pixel value of the coded blur applied to shadow.
+
+## Style
+
+| Level | z-index | box-shadow                                                                                                                           |
+| ----- | ------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `0`   | `0`     | `n/a`                                                                                                                                |
+| `1`   | `?`     | `0`                                                                                                                                  |
+| `2`   | `?`     | `0 2px 5px 0 rgba(42,47,69, 0.08),' '0 1px 1.5px 0 rgba(0,0,0, 0.07),' '0 1px 2px 0 rgba(0,0,0, 0.08);`                              |
+| `6`   | `?`     | `0 2px 5px 0 rgba(42,47,69, 0.1), 0 3px 9px 0 rgba(42,47,69, 0.08), 0 1px 1.5px 0 rgba(0,0,0, 0.08), 0 1px 2px 0 rgba(0,0,0, 0.08);` |
+| `8`   | `?`     | `0 7px 14px 0 rgba(60,66,87, 0.1), 0 3px 6px 0 rgba(0, 0, 0, .07);`                                                                  |

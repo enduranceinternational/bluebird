@@ -13,6 +13,20 @@ import {
 } from "react-bootstrap";
 import { PropsTable, Playground } from "docz";
 
+import buttonPrimary from "assets/images/button_primary.png";
+import buttonPrimaryHover from "assets/images/button_primary-hover.png";
+import buttonPrimaryPressed from "assets/images/button_primary-pressed.png";
+import buttonPrimaryLoading from "assets/images/button_primary-loading.png";
+import buttonPrimaryDisabled from "assets/images/button_primary-disabled.png";
+import buttonSpecs from "assets/images/button_primaryspecs.png";
+
+import buttonSecondary from "assets/images/button_secondary.png";
+import buttonSecondaryHover from "assets/images/button_secondary-hover.png";
+import buttonSecondaryPressed from "assets/images/button_secondary-pressed.png";
+import buttonSecondaryLoading from "assets/images/button_secondary-loading.png";
+import buttonSecondaryDisabled from "assets/images/button_secondary-disabled.png";
+import buttonSecondarySpecs from "assets/images/button_secondaryspecs.png";
+
 <!-- Unused Button Styles
   <Button bsStyle="success">Success</Button>
   <Button bsStyle="info">Info</Button>
@@ -21,53 +35,68 @@ import { PropsTable, Playground } from "docz";
 
 # Buttons
 
-There are 2 types of buttons; Primary, Secondary
+## Code
 
-- Action oriented button. Think: 'Done', 'Save', 'Next', 'Submit'.
-- Normally\* the primary positive action in any scenario.
-- Ideally there should only be one Primary button on any screen/scenario (the core action to proceed/progress/take action on the page). If there isn’t any one clear primary action, then consider using one or a combination of the other button styles.
+<Playground>
+  <ButtonToolbar>
+    <Button bsStyle="primary">Primary</Button>
+    <Button>Secondary</Button>
+    <Button bsStyle="danger">Destructive</Button>
+    <Button bsStyle="link">Link</Button>
+    <Button bsStyle="primary" bsSize="small">
+      Small button
+    </Button>
+  </ButtonToolbar>
+</Playground>
+
+## Usage
+
+Primary
+
+- Reserved for primary actions on a given screen. (Think: 'Done', 'Save', 'Next', 'Submit')
+- There should only be one primary button on any screen/scenario.
+- If no clear primary action exists, consider using a different button style
 - Can be used in isolation or in conjunction with a Secondary, Tertiary, Link style or Icon & Link button.
 
-## Primary Button Styles
+## Style
 
-| <Button bsStyle="primary">Normal</Button> | <Button bsStyle="primary">Hover</Button> | <Button bsStyle="primary">Pressed</Button> |
-| ----------------------------------------- | ---------------------------------------- | ------------------------------------------ |
-| `background-color: #3575D3`               | `background-color: #2A5DA8`              | `background-color: #5E91DB`                |
-| `color: #ffffff`                          | `color: #ffffff`                         | `color: #ffffff`                           |
-| `padding: 8px 16px`                       | `padding: 8px 16px`                      | `padding: 8px 16px`                        |
-| `font-family: Open Sans`                  | `font-family: Open Sans`                 | `font-family: Open Sans`                   |
-| `font-weight: semi-bold`                  | `font-weight: semi-bold`                 | `font-weight: semi-bold`                   |
-| `font-size: 16px`                         | `font-size: 16px`                        | `font-size: 16px`                          |
-| `border-radius: 3px`                      | `border-radius: 3px`                     | `border-radius: 3px`                       |
+### Primary
 
-| <Button bsStyle="primary">Loading</Button> | <Button bsStyle="primary">Disabled</Button> |
-| ------------------------------------------ | ------------------------------------------- |
-| `background-color: #3575D3`                | `background-color: #D7D7D7`                 |
-| `color: #ffffff`                           | `color: #5C5C5C`                            |
-| `padding: 8px 16px`                        | `padding: 8px 16px`                         |
-| `font-family: Open Sans`                   | `font-family: Open Sans`                    |
-| `font-weight: semi-bold`                   | `font-weight: semi-bold`                    |
-| `font-size: 16px`                          | `font-size: 16px`                           |
-| `border-radius: 3px`                       | `border-radius: 3px`                        |
+| <img width="50" src={buttonSpecs} /> |
+| ------------------------------------ |
+| `padding: 8px 16px`                  |
+| `font-family: Open Sans`             |
+| `font-weight: semi-bold`             |
+| `font-size: 16px`                    |
+| `border-radius: 3px`                 |
 
-## Secondary Button Styles
+| <img width="98" src={buttonPrimary} /> | <img width="50" src={buttonPrimaryHover} /> | <img width="50" src={buttonPrimaryPressed} /> |
+| -------------------------------------- | ------------------------------------------- | --------------------------------------------- |
+| `background-color: #3575D3`            | `background-colo r: #2A5DA8`                | `background-color: #5E91DB`                   |
+| `color: #ffffff`                       | `color: #ffffff`                            | `color: #ffffff`                              |
+| `box-shadow: $level-2`                 | `box-shadow: $level-3`                      | `box-shadow: $level-2`                        |
 
-| <Button>Secondary</Button>  | <Button>Hover</Button>      | <Button>Pressed</Button>    |
-| --------------------------- | --------------------------- | --------------------------- |
-| `border: 1px solid #3575D3` | `border: 1px solid #2A5DA8` | `border: 1px solid #5C5C5C` |
-| `color: #ffffff`            | `color: #ffffff`            | `color: #ffffff`            |
-| `padding: 8px 16px`         | `padding: 8px 16px`         | `padding: 8px 16px`         |
-| `font-family: Open Sans`    | `font-family: Open Sans`    | `font-family: Open Sans`    |
-| `font-weight: semi-bold`    | `font-weight: semi-bold`    | `font-weight: semi-bold`    |
-| `font-size: 16px`           | `font-size: 16px`           | `font-size: 16px`           |
-| `border-radius: 3px`        | `border-radius: 3px`        | `border-radius: 3px`        |
+| <img width="50" src={buttonPrimaryLoading} /> | <img width="50" src={buttonPrimaryLoading} /> | <img width="50" src={buttonPrimaryDisabled} /> |
+| --------------------------------------------- | --------------------------------------------- | ---------------------------------------------- |
+|                                               | `background-color: #3575D3`                   | `background-color: #D7D7D7`                    |
+|                                               | `color: #ffffff`                              | `color: #5C5C5C`                               |
 
-| <Button>Loading</Button>    | <Button>Disabled</Button>                        |
-| --------------------------- | ------------------------------------------------ |
-| `border: 1px solid #3575D3` | `border: 1px solid #D7D7D7; background: #D7D7D7` |
-| `color: #3575D3`            | `color: #5C5C5C`                                 |
-| `padding: 8px 16px`         | `padding: 8px 16px`                              |
-| `font-family: Open Sans`    | `font-family: Open Sans`                         |
-| `font-weight: semi-bold`    | `font-weight: semi-bold`                         |
-| `font-size: 16px`           | `font-size: 16px`                                |
-| `border-radius: 3px`        | `border-radius: 3px`                             |
+### Secondary
+
+| <img width="50" src={buttonSecondarySpecs} /> |
+| --------------------------------------------- |
+| `padding: 8px 16px`                           |
+| `font-family: Open Sans`                      |
+| `font-weight: semi-bold`                      |
+| `font-size: 16px`                             |
+| `border-radius: 3px`                          |
+
+| <img width="98" src={buttonSecondary} /> | <img width="50" src={buttonSecondaryHover} /> | <img width="50" src={buttonSecondaryPressed} /> |
+| ---------------------------------------- | --------------------------------------------- | ----------------------------------------------- |
+| `border: 1px solid #3575D3`              | `border: 1px solid #2A5DA8`                   | `border: 1px solid #5C5C5C`                     |
+| `color: #3575D3`                         | `color: #2A5DA8`                              | `color: #5C5C5C`                                |
+
+| <img width="50" src={buttonSecondaryLoading} /> | <img width="50" src={buttonSecondaryLoading} /> | <img width="50" src={buttonSecondaryDisabled} /> |
+| ----------------------------------------------- | ----------------------------------------------- | ------------------------------------------------ |
+|                                                 | `background-color: #3575D3`                     | `background-color: #D7D7D7`                      |
+|                                                 | `color: #ffffff`                                | `color: #5C5C5C`                                 |
