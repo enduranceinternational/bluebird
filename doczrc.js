@@ -18,7 +18,8 @@ export default {
     "Sitemap",
     "FAQ",
     "Roadmap",
-    "Utility Classes"
+    "Utility Classes",
+    "Support",
   ],
 
   themeConfig: {
