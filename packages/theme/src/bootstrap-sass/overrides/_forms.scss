@@ -1,0 +1,237 @@
+// TODO: review for proper Bootstrap overriding
+
+/* Boostrap Form Overrides */
+.form-control::-webkit-input-placeholder {
+  color: $gray-light;
+}
+
+.form-control::-moz-placeholder {
+  color: $gray-light;
+}
+
+.form-control:-ms-input-placeholder {
+  color: $gray-light;
+}
+
+.form-control:-moz-placeholder {
+  color: $gray-light;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  font-size: 16px; // TODO
+  line-height: 40px;
+  color: #555; // TODO
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-bottom: $standard-border;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all ease 0.08s;
+  -o-transition: all ease 0.08s;
+  transition: all ease 0.08s;
+
+  &[disabled] {
+    background: none;
+  }
+
+  &:focus {
+    border-bottom-color: $brand-border-bottom;
+    border-color: $blue;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  &.input-lg {
+    font-size: 26px; // TODO
+    font-weight: 300; // TODO
+    line-height: 40px;
+    height: 64px;
+    padding: 16px 0;
+  }
+
+  &.input-bordered {
+    border: $standard-border;
+    padding-left: $sm;
+    padding-right: $sm;
+  }
+}
+
+.select {
+  border-radius: 0;
+}
+
+.form-group {
+  margin: 0;
+}
+
+.has-warning .form-control,
+.has-error .form-control,
+.has-warning .form-control:focus,
+.has-error .form-control:focus,
+.has-success .form-control,
+.has-success .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-success .form-control,
+.has-success .form-control:focus {
+  border-color: $green;
+}
+
+.has-warning .form-control,
+.has-warning .form-control:focus {
+  border-color: $brand-primary;
+}
+
+.has-error .form-control,
+.has-error .form-control:focus {
+  border-color: $red;
+}
+
+.has-error .control-label,
+.has-error .help-block,
+.has-warning .control-label,
+.has-warning .help-block,
+.has-success .control-label,
+.has-success .help-block {
+  color: $gray-base;
+}
+
+.has-success {
+  .form-control-feedback {
+    color: $green;
+  }
+
+  .form-control-error {
+    color: $red;
+  }
+}
+
+// Validation
+.form-input-validation.is-error {
+  color: darken($red, 12.5%);
+}
+
+.form-input-validation {
+  color: darken($green, 5%);
+  position: relative;
+  padding: 8px 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  -webkit-animation: appear 0.3s ease-in-out;
+  animation: appear 0.3s ease-in-out;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin: 0;
+}
+
+label {
+  // color: $gray-light;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $font-weight-normal;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  margin-right: $xs;
+}
+
+// `<ToggleWithLabel />` styling
+.form-group-toggle {
+  display: flex;
+  margin-bottom: $sm;
+
+  .form-control-toggle {
+    display: inline-block;
+    margin-right: 0.125em;
+    margin-left: 0.5em;
+    height: 100%; // squash height up to max
+    max-height: 40px;
+
+    .form-control-cliploader {
+      width: 52px;
+      text-align: left;
+    }
+  }
+}
+
+.radio label {
+  padding: 0;
+  min-height: auto;
+  margin: 0;
+  font-size: $font-size-base; // TODO
+  line-height: 24px; // TODO
+  color: $gray-base;
+}
+
+// Radios
+.radio input[type='radio'],
+.radio-inline input[type='radio'] {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 24px;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background: $gray-lighter;
+  border: 0;
+  box-shadow: inset 0 2px 2px 0 rgba(121, 121, 121, 0.5);
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.radio input[type='radio']:before,
+.radio-inline input[type='radio']:before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: transparent;
+  box-shadow: 0;
+  border-radius: 100%;
+  transition: ease 0.16s all;
+}
+
+.radio input[type='radio']:checked,
+.radio-inline input[type='radio']:checked {
+  background-color: $green;
+}
+
+.radio input[type='radio']:checked:before,
+.radio-inline input[type='radio']:checked:before {
+  width: 14px;
+  height: 14px;
+  background-color: $white;
+  // box-shadow: 0 2px 2px 0 rgba(121,121,121,0.5);
+  top: 5px;
+  left: 5px;
+}
+
+.radio-inline,
+.checkbox-inline {
+  padding: 0;
+}
+
+.radio input[type='checkbox'],
+.radio input[type='radio'] {
+  margin-right: 0;
+}

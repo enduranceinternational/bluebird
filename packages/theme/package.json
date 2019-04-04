@@ -1,0 +1,7 @@
+{
+  "name": "@uaf/theme",
+  "version": "1.0.0",
+  "description": "UAF Theme",
+  "main": "src/uaf-theme.scss",
+  "private": true
+}

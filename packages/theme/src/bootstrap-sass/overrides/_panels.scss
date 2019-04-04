@@ -1,0 +1,10 @@
+// panels
+.panel {
+  box-shadow: $depth1;
+
+  .panel-heading {
+    background-color: $snow;
+    color: $gray-base;
+    font-weight: $font-weight-bold;
+  }
+}

@@ -1,0 +1,8 @@
+@media (min-width: $screen-md) {
+  .md-row-gutter-xs {
+    >div[class*="col-"] {
+      padding-left: $xs;
+      padding-right: $xs;
+    }
+  }
+}

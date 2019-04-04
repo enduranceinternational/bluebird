@@ -1,0 +1,17 @@
+.input-group-addon {
+  padding: 0 $xs 0 0;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-normal;
+  line-height: 1;
+  color: $gray-base;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-bottom: $standard-border;
+  border-radius: 0;
+
+  .icon {
+    position: relative;
+    top: 2px;
+  }
+}
