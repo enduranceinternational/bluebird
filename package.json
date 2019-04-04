@@ -1,0 +1,6 @@
+{
+  "name": "@uaf/bluebird",
+  "version": "1.0.0",
+  "main": "src/bluebird.scss",
+  "private": true
+}
