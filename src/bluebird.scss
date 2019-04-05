@@ -12,22 +12,14 @@
  * - uaf-theme brand-specific theme
  */
 
-// variables
-
 // mixins
-@import 'mixins';
+@import 'mixins/mixins';
 
-// base
-@import 'reset';
-@import 'colors';
-@import 'grid';
-@import 'typography';
-@import 'icons';
-@import 'borders';
-@import 'lists';
-@import 'layout';
-@import 'margin';
-@import 'padding';
-@import 'height';
-@import 'width';
-@import 'animations';
+// reset (why?)
+@import 'reset/reset';
+
+// icon sets
+@import 'icons/icons';
+
+// atomic library
+@import 'atomic/atomic';
