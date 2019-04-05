@@ -1,17 +1,18 @@
 /* Icon Font (DEPRECATED) */
 @font-face {
-  font-family: "bluecons";
-  src: url("../../assets/fonts/bluecons/fonts/bluecons.eot");
-  src: url("../../assets/fonts/bluecons/fonts/bluecons.eot?#iefix") format("embedded-opentype"),
-    url("../../assets/fonts/bluecons/fonts/bluecons.woff") format("woff"),
-    url("../../assets/fonts/bluecons/fonts/bluecons.ttf") format("truetype"),
-    url("../../assets/fonts/bluecons/fonts/bluecons.svg#bluecons") format("svg");
+  font-family: 'bluecons';
+  src: url('~@uaf/main/common/assets/fonts/bluecons/fonts/bluecons.eot');
+  src: url('~@uaf/main/common/assets/fonts/bluecons/fonts/bluecons.eot?#iefix')
+      format('embedded-opentype'),
+    url('~@uaf/main/common/assets/fonts/bluecons/fonts/bluecons.woff') format('woff'),
+    url('~@uaf/main/common/assets/fonts/bluecons/fonts/bluecons.ttf') format('truetype'),
+    url('~@uaf/main/common/assets/fonts/bluecons/fonts/bluecons.svg#bluecons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [data-icon]::before {
-  font-family: "bluecons" !important;
+  font-family: 'bluecons' !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -23,10 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-"]::before,
-[class*=" icon-"]::before,
-[class*=" glyphicon-"]::before {
-  font-family: "bluecons" !important;
+[class^='icon-']::before,
+[class*=' icon-']::before,
+[class*=' glyphicon-']::before {
+  font-family: 'bluecons' !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -37,18 +38,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
   position: relative;
+
   /* Adjust these values accordingly */
   top: 3px;
   left: 0;
   line-height: 1;
 }
 
-.large-icon { font-size: 64px; }
+.large-icon {
+  font-size: 64px;
+}
 
-.label-icon { top: 5px; }
+.label-icon {
+  top: 5px;
+}
 
 .notify {
   &::before {
@@ -67,139 +73,139 @@
 }
 
 .icon-arrow-down::before {
-  content: "\61";
+  content: '\61';
 }
 
 .icon-arrow-left::before {
-  content: "\62";
+  content: '\62';
 }
 
 .icon-arrow-right::before {
-  content: "\63";
+  content: '\63';
 }
 
 .icon-arrow-up::before {
-  content: "\64";
+  content: '\64';
 }
 
 .icon-atom::before {
-  content: "\65";
+  content: '\65';
 }
 
 .icon-bell::before {
-  content: "\66";
+  content: '\66';
 }
 
 .icon-cart::before {
-  content: "\67";
+  content: '\67';
 }
 
 .icon-chat::before {
-  content: "\68";
+  content: '\68';
 }
 
 .icon-compass::before {
-  content: "\69";
+  content: '\69';
 }
 
 .icon-cross::before,
 .glyphicon-remove::before {
-  content: "\6a";
+  content: '\6a';
 }
 
 .icon-ellips-vert::before {
-  content: "\6b";
+  content: '\6b';
 }
 
 .icon-email::before {
-  content: "\6c";
+  content: '\6c';
 }
 
 .icon-globe::before {
-  content: "\6d";
+  content: '\6d';
 }
 
 .icon-help::before {
-  content: "\6e";
+  content: '\6e';
 }
 
 .icon-home::before {
-  content: "\6f";
+  content: '\6f';
 }
 
 .icon-lost-data::before {
-  content: "\70";
+  content: '\70';
 }
 
 .icon-question-circle::before {
-  content: "\71";
+  content: '\71';
 }
 
 .icon-search::before {
-  content: "\72";
+  content: '\72';
 }
 
 .icon-tag::before {
-  content: "\73";
+  content: '\73';
 }
 
 .icon-tick::before,
 .glyphicon-ok::before {
-  content: "\74";
+  content: '\74';
 }
 
 .icon-tick-circle::before {
-  content: "\75";
+  content: '\75';
 }
 
 .icon-tick-circle-filled::before {
-  content: "\76";
+  content: '\76';
 }
 
 .icon-user-circle::before {
-  content: "\77";
+  content: '\77';
 }
 
 .icon-warning::before {
-  content: "\78";
+  content: '\78';
 }
 
 .icon-wordpress-logo-only::before {
-  content: "\79";
+  content: '\79';
 }
 
 .icon-chevron-down::before {
-  content: "\7a";
+  content: '\7a';
 }
 
 .icon-chevron-left::before {
-  content: "\41";
+  content: '\41';
 }
 
 .icon-chevron-right::before {
-  content: "\42";
+  content: '\42';
 }
 
 .icon-chevron-up::before {
-  content: "\43";
+  content: '\43';
 }
 
 .icon-caret-down::before {
-  content: "\44";
+  content: '\44';
 }
 
 .icon-caret-left::before {
-  content: "\45";
+  content: '\45';
 }
 
 .icon-caret-right::before {
-  content: "\46";
+  content: '\46';
 }
 
 .icon-caret-up::before {
-  content: "\47";
+  content: '\47';
 }
 
 .icon-credit-card::before {
-  content: "\48";
+  content: '\48';
 }
