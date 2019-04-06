@@ -1,10 +1,10 @@
-# UAF Design System
+# Bluebird Design System
 
-The UAF Design is the new home our universal component library, including globally used elements (like toasts, loaders, etc.) and atomic styles.
+The Bluebird Design is the new home our universal component library, including globally used elements (like toasts, loaders, etc.) and atomic styles.
 
 ## Dependencies
 
-- `uaf-theme` (Bootstrap 3)
+- `@uaf/theme` (Bootstrap 3)
 
 ## Roadmap
 
