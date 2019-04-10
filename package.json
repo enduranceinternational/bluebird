@@ -1,15 +1,20 @@
 {
-  "name": "uaf-ui-library",
+  "name": "@uaf/bluebird",
+  "license": "UNLICENSED",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "^10.15.0",
+    "npm": "^6.4.1",
+    "yarn": "^1.13.0"
+  },
   "dependencies": {
-    "eslint": "^5.9.0",
     "null": "^1.0.1",
-    "react": "^16.6.0",
+    "react": "^16.8.0",
     "react-bootstrap": "^0.32.0",
-    "react-dom": "^16.6.0",
+    "react-dom": "^16.8.0",
     "react-scripts": "2.1.1",
-    "typescript": "*"
+    "typescript": "^3.4.2"
   },
   "resolutions": {
     "ansi-styles": "^3.2.0"
@@ -17,10 +22,7 @@
   "scripts": {
     "start": "docz dev",
     "build": "docz build",
-    "react:start": "react-scripts start",
-    "react:build": "react-scripts build",
-    "react:test": "react-scripts test",
-    "react:eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,10 +34,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "docz": "^0.13.7",
-    "docz-theme-default": "^0.13.7",
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.6",
-    "@emotion/styled-base": "^10.0.5"
-  }
+    "@emotion/styled-base": "^10.0.5",
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7",
+    "lerna": "^3.13.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
