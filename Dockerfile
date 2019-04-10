@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:10.15-alpine
 
 EXPOSE 3000
 
@@ -6,7 +6,6 @@ VOLUME /app
 
 WORKDIR /app
 
-# TODO clear out source caching
 RUN apk update && apk upgrade && \
   apk add --no-cache \
   bash \

@@ -1,17 +1,15 @@
-NPM     = yarn
-
-all: install build start
+all: install build
 
 install:
-	$(NPM) install --ignore-optional --frozen-lockfile
+	yarn install --ignore-optional --frozen-lockfile
 
 test: install
-	$(NPM) run test
+	yarn run test
 
 build: install
-	$(NPM) build
+	yarn run build
 
 start: install
-	$(NPM) run start
+	yarn run start
 
 .PHONY: all install test build start

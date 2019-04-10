@@ -1,6 +1,5 @@
 {
   "name": "@uaf/bluebird",
-  "license": "UNLICENSED",
   "version": "0.1.0",
   "private": true,
   "engines": {
