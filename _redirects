@@ -1,5 +1,6 @@
 # Redirect domain aliases to primary domain
-https://bluerockdesignsystem.com/* https://www.bluerockdesignsystem.com/:splat 301!
+https://bluerockdesignsystem.com/* https://www.bluebirdui.com/:splat 301!
+https://bluebirdui.com/* https://www.bluebirdui.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://romantic-knuth-7ba913.netlify.com/* https:
