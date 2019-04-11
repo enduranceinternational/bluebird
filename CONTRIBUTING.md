@@ -12,7 +12,7 @@ Anyone is open to submit a pull request to this project. We also recommend discu
 
 ## Brand Organization
 
-Our goal is to keep the master branch as clean as possible, with builds always passing. Due to our pace of iteration, we recommend checking our [Release Notes](https://www.bluerockdesignsystem.com/#/release-notes) for notes regarding recent releases and our most stable current version.
+Our goal is to keep the master branch as clean as possible, with builds always passing. Due to our pace of iteration, we recommend checking our [Release Notes](https://bluebirdui.com/#/release-notes) for notes regarding recent releases and our most stable current version.
 
 ## Pull Request Process
 
