@@ -4,7 +4,7 @@ The Bluebird Design is the new home our universal component library, including g
 
 ## Dependencies
 
-- `@uaf/theme` (Bootstrap 3)
+- `@eigi/theme` (Bootstrap 3)
 
 ## Roadmap
 
