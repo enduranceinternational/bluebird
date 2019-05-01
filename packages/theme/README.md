@@ -1,10 +1,10 @@
 # UAF Theme
 
-The current iteration of `@uaf/theme` is strictly the generic (but Bluehost prioritized) Bootstrap Theme.
+The current iteration of `@eigi/theme` is strictly the generic (but Bluehost prioritized) Bootstrap Theme.
 
 ## Usage
 
-`@uaf/theme` is designed to be used directly by specific brand themes, such as `@uaf/theme/src/bluehost/theme`. It should be built with `!default` flags throughout to allow easy overriding by variables only.
+`@eigi/theme` is designed to be used directly by specific brand themes, such as `@eigi/theme/src/bluehost/theme`. It should be built with `!default` flags throughout to allow easy overriding by variables only.
 
 ## Dependencies
 
