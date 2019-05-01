@@ -1,20 +1,20 @@
 {
-  "name": "@uaf/bluebird",
+  "name": "@eigi/bluebird",
   "version": "1.0.0",
   "main": "src/index.js",
   "private": true,
   "dependencies": {
-    "@uaf/theme": "^1.0.0"
+    "@eigi/theme": "^1.0.0"
   },
   "devDependencies": {
-    "@uaf/theme": "^1.0.0",
-    "@uaf/eslint-config": "0.0.0"
+    "@eigi/theme": "^1.0.0",
+    "@eigi/eslint-config": "0.0.0"
   },
   "peerDependencies": {
-    "@uaf/theme": "^1.0.0"
+    "@eigi/theme": "^1.0.0"
   },
   "eslintConfig": {
-    "extends": "@uaf/eslint-config"
+    "extends": "@eigi/eslint-config"
   },
   "scripts": {
     "lint": "eslint '**/*.+(js|jsx)' --quiet",
