@@ -18,3 +18,7 @@ The current iteration of `@eigi/theme` is strictly the generic (but Bluehost pri
 ## Changelog
 
 - February 2018: introduced
+
+## Support
+
+This package is maintained by [Bluebird](mailto:bluebird@endurance.com) and [Team 418](mailto:418-team@endurance.com).
