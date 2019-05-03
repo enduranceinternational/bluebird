@@ -40,7 +40,8 @@
     background: none;
   }
 
-  &:focus {
+  &:focus,
+  &:focus + .input-group-addon {
     border-bottom-color: $brand-border-bottom;
     border-color: $blue;
     outline: 0;
@@ -80,6 +81,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 .has-success .form-control,
 .has-success .form-control:focus {
   border-color: $green;
@@ -91,7 +93,8 @@
 }
 
 .has-error .form-control,
-.has-error .form-control:focus {
+.has-error .form-control:focus,
+.has-error .form-control:focus + .input-group-addon {
   border-color: $red;
 }
 
@@ -112,6 +115,42 @@
   .form-control-error {
     color: $red;
   }
+}
+
+// Help Block Validation
+.has-success .help-block {
+  color: $green;
+}
+
+.has-warning .help-block {
+  color: $brand-primary;
+}
+
+.has-error .help-block {
+  color: $red;
+}
+
+// Input Group Addon Validation
+.has-success,
+.has-warning,
+.has-error {
+  .input-group-addon {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.has-success .input-group-addon {
+  border-color: $green;
+}
+
+.has-warning .input-group-addon {
+  border-color: $brand-primary;
+}
+
+.has-error .input-group-addon {
+  border-color: $red;
 }
 
 // Validation
