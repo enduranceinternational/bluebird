@@ -3,10 +3,8 @@ name: Alerts
 menu: Components
 ---
 
-import {
-  Alert, Button,
-} from 'react-bootstrap';
-import { Playground, PropsTable } from 'docz';
+import { Alert, Button } from "react-bootstrap";
+import { Playground } from "docz";
 
 # Alerts
 
@@ -14,13 +12,16 @@ Basic alert styles.
 
 <Playground>
   <Alert bsStyle="success">
-    <strong>Well done!</strong> You successfully read this important alert message.
+    <strong>Well done!</strong> You successfully read this important alert
+    message.
   </Alert>
   <Alert bsStyle="info">
-    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    <strong>Heads up!</strong> This alert needs your attention, but it's not
+    super important.
   </Alert>
   <Alert bsStyle="warning">
-    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too
+    good.
   </Alert>
   <Alert bsStyle="danger">
     <strong>Oh snap!</strong> Change a few things up and try submitting again.
@@ -72,6 +73,7 @@ Just pass in a `onDismiss` function.
     }
 
     return <AlertDismissable />;
-  }}
-</Playground>
 
+}}
+
+</Playground>
