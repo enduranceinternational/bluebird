@@ -1,19 +1,19 @@
 {
-  "name": "uaf-ui-library",
+  "name": "@eigi/bluebird",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "eslint": "^5.9.0",
     "null": "^1.0.1",
-    "react": "^16.6.0",
-    "react-bootstrap": "^0.32.0",
+    "react": "^16.8.0",
+    "react-bootstrap": "^0.32.4",
     "react-content-loader": "^4.2.1",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1",
+    "react-dom": "^16.8.0",
+    "react-scripts": "3.0.1",
     "typescript": "*"
   },
   "resolutions": {
-    "ansi-styles": "^3.2.0"
+    "docz/**/webpack": "4.28.4"
   },
   "scripts": {
     "start": "docz dev",
@@ -36,7 +36,10 @@
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.6",
     "@emotion/styled-base": "^10.0.5",
-    "docz": "^0.13.7",
-    "docz-theme-default": "^0.13.7"
+    "acorn": "^6.0.5",
+    "docz": "1.2.0",
+    "docz-core": "1.2.0",
+    "docz-theme-default": "1.2.0",
+    "webpack": "4.28.4"
   }
 }

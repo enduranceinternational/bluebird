@@ -5,7 +5,6 @@ export default {
   src: "./",
   dest: "build",
   indexHtml: "./public/index.html",
-  hashRouter: true,
 
   menu: [
     {
@@ -19,7 +18,7 @@ export default {
     "FAQ",
     "Roadmap",
     "Utility Classes",
-    "Support",
+    "Support"
   ],
 
   themeConfig: {
