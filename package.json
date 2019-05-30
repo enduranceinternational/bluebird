@@ -1,6 +1,6 @@
 {
   "name": "@eigi/bluebird",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "private": true,
   "dependencies": {
     "eslint": "^5.9.0",

@@ -6,38 +6,34 @@ We consider our roadmap a living document, with short timeframes and more freque
 
 ## Happening Now
 
-#### Build System Improvements (Q1)
+#### Build System Improvements (Q1-2)
 
 We're looking into ways to improve how this documentation is built so we can provide the most up-to-date view of Bluebird. We aim to have an automated build system that will deploy an updated version of these docs to align with `uaf-main` deployments.
 
 - [x] Transition `uaf-main` to `yarn` to gain `workspaces` ability
-- [ ] Configure `lerna` for easier monorepo management in `uaf-main`
+- [x] Configure `lerna` for easier monorepo management in `uaf-main`
 - [ ] Migrate `@eigi/bluebird` into `uaf-main`
-- [ ] Begin migrating shared/library styles and components from `src` to `@eigi/bluebird`
+- [ ] Migrate Bluebird from `src` to `@eigi/bluebird`
 - [ ] Set version 1.0.0 and install on all `uaf-main` packages
 
-#### Visual Language Updates (Q1-2)
+#### Visual Language Updates (Q1-3)
 
 Our design team is at work on a "2.0" visual language to bring improved readability, design and accessibility features to our app.
 
-- [ ] v1.0 implemented as we have today [EP16-65](https://jira.endurance.com/browse/EP16-65)
-- [ ] v1.1 typography [EP16-55](https://jira.endurance.com/browse/EP16-55)
-- [ ] v1.2 colors [EP16-215](https://jira.endurance.com/browse/EP16-215)
+- [x] v1.0 implemented as we have today [EP16-65](https://jira.endurance.com/browse/EP16-65)
+- [x] v1.1 typography [EP16-55](https://jira.endurance.com/browse/EP16-55)
+- [x] v1.2 colors [EP16-215](https://jira.endurance.com/browse/EP16-215)
 - [ ] v1.3 buttons [EP16-217](https://jira.endurance.com/browse/EP16-217)
 - [ ] v1.4 elevation [EP16-216](https://jira.endurance.com/browse/EP16-216)
 
 ## Coming Up Next
 
-#### Theme Repairs (Q2)
+#### Theme Repairs (Q4)
 
 While viewing the pages that document the current state of our app, your attention may be drawn to components that are improperly themed, which we aim to fix in future iterations.
 
 - broken styles
 - improper theming of Bootstrap elements
-
-#### CSS Modules for `@eigi/main` layouts and business components (Q2)
-
-After we split the Bluebird out from `uaf-main` we would like to research implementing css modules as the primary strategy for app-specific and layout styles. The aim will be to reduce outside collisions, and improve performance by allowing css modules to filter out unused styles.
 
 #### Component Consolidation (Ongoing)
 
