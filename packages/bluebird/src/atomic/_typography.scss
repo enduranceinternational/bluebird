@@ -146,21 +146,6 @@ a,
   text-decoration: none;
 }
 
-button.link {
-  border-width: 0;
-  padding: 0;
-}
-
-.btn-default.link:hover,
-.btn-default.link:active,
-.btn-default.link:focus,
-.btn-default.link:active:focus {
-  background: transparent;
-  text-decoration: none;
-  color: $blue;
-  border: 0;
-}
-
 .link:hover {
   text-decoration: underline;
 }
