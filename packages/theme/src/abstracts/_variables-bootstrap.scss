@@ -177,38 +177,47 @@ $table-border-color: #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight: normal !default;
+$btn-font-weight: $font-weight-normal;
 
-$btn-default-color: $brand-primary !default;
-$btn-default-bg: transparent !default;
-$btn-default-border: $brand-primary !default;
+// TODO: coerced to be outline style, in future iteration we should encourage usage of the bsStyle outline instead
+$btn-default-color: $brand-primary;
+$btn-default-bg: transparent;
+$btn-default-border: $brand-primary;
 
-$btn-primary-color: $white !default;
-$btn-primary-bg: $brand-primary !default;
-$btn-primary-border: darken($btn-primary-bg, 5%) !default;
+$btn-primary-color: $white;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: darken($btn-primary-bg, 5%);
 
-$btn-success-color: #fff !default;
-$btn-success-bg: $brand-success !default;
-$btn-success-border: darken($btn-success-bg, 5%) !default;
+$btn-success-color: $white;
+$btn-success-bg: $brand-success;
+$btn-success-border: darken($btn-success-bg, 5%);
 
-$btn-info-color: #fff !default;
-$btn-info-bg: $brand-info !default;
-$btn-info-border: darken($btn-info-bg, 5%) !default;
+$btn-info-color: $white;
+$btn-info-bg: $brand-info;
+$btn-info-border: darken($btn-info-bg, 5%);
 
-$btn-warning-color: #fff !default;
-$btn-warning-bg: $brand-warning !default;
-$btn-warning-border: darken($btn-warning-bg, 5%) !default;
+$btn-warning-color: $white;
+$btn-warning-bg: $brand-warning;
+$btn-warning-border: darken($btn-warning-bg, 5%);
 
-$btn-danger-color: #fff !default;
-$btn-danger-bg: $brand-danger !default;
-$btn-danger-border: darken($btn-danger-bg, 5%) !default;
+$btn-danger-color: $white;
+$btn-danger-bg: $brand-danger;
+$btn-danger-border: darken($btn-danger-bg, 5%);
+
+// outline btn styles:
+$btn-outline-default-color: $brand-primary;
+$btn-outline-primary-color: $brand-primary;
+$btn-outline-success-color: $brand-success;
+$btn-outline-info-color: $brand-info;
+$btn-outline-warning-color: $brand-warning;
+$btn-outline-danger-color: $brand-danger;
 
 $btn-link-disabled-color: $gray-light !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius-base: $border-radius-base !default;
-$btn-border-radius-large: $border-radius-large !default;
-$btn-border-radius-small: $border-radius-small !default;
+$btn-border-radius-base: $border-radius-small;
+$btn-border-radius-large: $border-radius-small;
+$btn-border-radius-small: $border-radius-small;
 
 //== Forms
 //

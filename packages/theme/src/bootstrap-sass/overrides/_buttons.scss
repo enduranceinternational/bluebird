@@ -1,291 +1,66 @@
-// Buttons
-.btn,
-button {
-  transition: all 0.08s ease;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  -webkit-transition-duration: 0.08s;
-  transition-duration: 0.08s;
-  text-decoration: none;
-  background-color: transparent;
-  border-radius: $radius-s;
+// variants
+.btn-default {
+  @include button-outline-variant($btn-default-color);
 }
 
-.btn:hover:not(.btn-link):not(.btn-danger) {
-  border: 1px solid $brand-primary-alternate;
-  background: $brand-primary-alternate;
-  color: $white;
-  box-shadow: none;
+.btn-light {
+  @include button-variant($gray-darker, $snow, $snow);
 }
 
-.btn:active:not(.btn-link):not(.btn-danger),
-.btn:active:focus:not(.btn-link):not(.btn-danger),
-.btn:focus:not(.btn-link):not(.btn-danger) {
-  color: $white;
-  border-color: $brand-primary-alternate;
-  background-color: $brand-primary-alternate;
-  box-shadow: none;
-  outline: 0;
+.btn-dark {
+  @include button-variant($white, $gray-darker, $gray-darker);
 }
 
-.btn-link:active,
-.btn-link:active:focus,
-.btn-link:focus,
-.btn-link:hover {
-  outline: none;
-  text-decoration: none;
+// outline variants
+.btn-outline-default {
+  @include button-outline-variant($btn-outline-default-color);
 }
 
-// Button Primary
-.btn-primary {
-  border: 1px solid $brand-primary;
-  background-color: $brand-primary;
-  color: #fff;
-
-  &[disabled]:hover {
-    color: $white;
-    background: $gray-dark;
-    border-color: $gray-dark;
-  }
+.btn-outline-primary {
+  @include button-outline-variant($btn-outline-primary-color);
 }
 
-// Button Default
+.btn-outline-success {
+  @include button-outline-variant($btn-outline-success-color);
+}
+
+.btn-outline-info {
+  @include button-outline-variant($btn-outline-info-color);
+}
+
+.btn-outline-warning {
+  @include button-outline-variant($btn-outline-warning-color);
+}
+
+.btn-outline-danger {
+  @include button-outline-variant($btn-outline-danger-color);
+}
+
+.btn-outline-light {
+  @include button-outline-variant($white);
+}
+
+.btn-outline-dark {
+  @include button-outline-variant($gray-darker);
+}
+
 .btn-default,
-button {
-  border: 1px solid $brand-primary;
-  color: $brand-primary;
-}
-
-// Button Ghost
-.btn-ghost {
-  color: $white;
-  background: transparent;
-  border-width: 1px;
-  border-color: $white;
-  &.btn-primary {
-    border-color: $brand-primary;
-    color: $brand-primary;
-  }
-  &.btn-primary:hover {
-    background-color: $brand-primary;
-    color: $white;
+.btn-outline-default,
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-info,
+.btn-outline-warning,
+.btn-outline-danger,
+.btn-outline-light,
+.btn-outline-dark {
+  &:hover {
   }
 }
 
-.btn-ghost:hover,
-.btn-ghost:active,
-.btn-ghost:focus {
-  color: $gray-base;
-  background: $white;
-  border-width: 1px;
-  border-color: $white;
-}
-
-// Button White
-.btn-white {
-  color: $gray-base;
-  background: $white;
-  border: solid 1px $white;
-
-  &:hover,
+// remove shadows from active states
+.btn {
   &:active,
-  &:focus {
-    color: $white;
-    background: $brand-primary;
-    border: solid 1px $brand-primary;
+  &.active {
+    @include box-shadow(none);
   }
-}
-
-.btn-white-border {
-  color: $brand-primary;
-  background: $white;
-  border-width: 1px;
-  border-color: $brand-primary;
-}
-
-// Button Success / Call to Action
-.btn-success,
-.btn-cta {
-  color: $white;
-  background-color: $green;
-  border-color: $green;
-
-  &:hover,
-  &:active,
-  &:focus,
-  &:active:focus,
-  .bg-success-hover:hover {
-    background-color: darken($green, 10%);
-    border-color: darken($green, 10%);
-  }
-}
-
-// Button Danger
-.btn-danger {
-  color: $white;
-  background-color: $red;
-  border-color: $red;
-
-  &[disabled]:hover {
-    color: $white;
-    background: $gray-dark;
-    border-color: $gray-dark;
-  }
-}
-
-.btn-danger:hover,
-.btn-danger:active,
-.btn-danger:focus,
-.btn-danger:active:focus,
-.bg-danger-hover:hover {
-  background-color: darken($red, 10%);
-  border-color: darken($red, 10%);
-}
-
-.btn-danger.btn-default,
-.btn-danger.btn-default {
-  color: $red;
-  border-color: $red;
-  background: transparent;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: darken($red, 10%);
-    border-color: darken($red, 10%);
-  }
-}
-
-// Button Warning
-.btn-warning.btn-default,
-.btn-warning.btn-secondary {
-  color: $orange;
-  border-color: $orange;
-  background: transparent;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $white;
-    background-color: darken($orange, 5%);
-    border-color: darken($orange, 5%);
-  }
-}
-
-.btn-warning.btn-primary {
-  color: $white;
-  background-color: $orange;
-  border-color: $orange;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $white;
-    background-color: darken($orange, 5%);
-    border-color: darken($orange, 5%);
-  }
-}
-
-// Button Sizes
-.btn-sm {
-  font-size: $font-size-small;
-  line-height: $md;
-  padding: $xxxs $sm;
-}
-
-.btn-md {
-  padding: $xs $sm;
-}
-
-.btn-lg {
-  padding: $sm $md;
-}
-
-.btn-xl {
-  padding: $sm $lg;
-}
-
-@media (min-width: $screen-md) {
-  .btn-md {
-    padding: $xs $md;
-  }
-}
-
-@media (min-width: $screen-lg) {
-}
-
-// Button Disabled
-.btn.disabled,
-.btn[disabled],
-fieldset[disabled] .btn {
-  color: $white;
-  background: $gray-light;
-  border-color: $gray-light;
-}
-
-.btn.disabled {
-  pointer-events: none;
-}
-
-.btn-default.disabled:hover,
-.btn-default.disabled:focus,
-.btn-default.disabled.focus,
-.btn-default[disabled]:hover,
-.btn-default[disabled]:focus,
-.btn-default[disabled].focus,
-fieldset[disabled] .btn-default:hover,
-fieldset[disabled] .btn-default:focus,
-fieldset[disabled] .btn-default.focus,
-.btn.btn-default[disabled]:active {
-  color: $white;
-  background: $gray-dark;
-  border-color: $gray-dark;
-}
-
-// Dropdown Toggle
-
-.btn-group .dropdown-toggle {
-  background: transparent;
-  height: auto;
-  line-height: 1.1;
-  min-width: 24px;
-  min-height: 24px;
-  padding: 4px;
-}
-
-.btn-group .dropdown-toggle i {
-  line-height: 1;
-}
-
-.link-dark.dropdown-toggle.btn {
-  color: $gray-dark;
-}
-
-.link-dark.dropdown-toggle.btn:hover,
-.btn-group .dropdown-toggle.btn:hover {
-  color: $gray-base;
-  background-color: transparent;
-}
-
-.btn-group.open .dropdown-toggle,
-.btn-group.open .dropdown-toggle:focus,
-.btn-group.open .dropdown-toggle:active {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  //background-color: $gray-lighter;
-}
-
-.btn-default:active:hover,
-.btn-default:active:focus,
-.btn-default:active.focus,
-.btn-default.active:hover,
-.btn-default.active:focus,
-.btn-default.active.focus,
-.open > .btn-default.dropdown-toggle:hover,
-.open > .btn-default.dropdown-toggle:focus,
-.open > .btn-default.dropdown-toggle.focus {
-  color: $white;
 }
