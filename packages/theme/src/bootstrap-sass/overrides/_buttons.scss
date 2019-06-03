@@ -44,19 +44,6 @@
   @include button-outline-variant($gray-darker);
 }
 
-.btn-default,
-.btn-outline-default,
-.btn-outline-primary,
-.btn-outline-success,
-.btn-outline-info,
-.btn-outline-warning,
-.btn-outline-danger,
-.btn-outline-light,
-.btn-outline-dark {
-  &:hover {
-  }
-}
-
 // remove shadows from active states
 .btn {
   &:active,
