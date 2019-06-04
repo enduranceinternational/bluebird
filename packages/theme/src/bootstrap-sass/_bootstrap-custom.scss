@@ -15,6 +15,7 @@ $icon-font-path: '/node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 // Core CSS
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/type';
+@import 'overrides/type';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/code';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/grid';
 @import 'overrides/grids';
