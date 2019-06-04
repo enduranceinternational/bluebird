@@ -110,7 +110,6 @@
 }
 
 .is-reversed:hover,
-.btn-ghost.is-reversed:hover,
 .c-black-hover:hover {
   color: $brand-primary;
 }
@@ -118,8 +117,4 @@
 .link-dark:hover,
 .link-light:hover {
   color: $gray-base;
-}
-
-.btn-ghost.is-reversed:hover {
-  border-color: transparent;
 }
