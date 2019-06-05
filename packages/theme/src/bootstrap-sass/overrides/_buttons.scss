@@ -1,3 +1,26 @@
+// remove shadows from active states
+.btn {
+  // animate
+  transition: all 0.08s ease;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 0.08s;
+  transition-duration: 0.08s;
+
+  &:active,
+  &.active {
+    // override shadow in active state to preserve flat aesthetic
+    @include box-shadow(none);
+  }
+}
+
+button {
+  // hide white background on unstyled buttons
+  background-color: transparent;
+}
+
 // variants
 .btn-default {
   @include button-outline-variant($btn-default-color);
@@ -9,6 +32,10 @@
 
 .btn-dark {
   @include button-variant($white, $gray-darker, $gray-darker);
+}
+
+.btn-link-dark {
+  @include button-link-variant($gray-darker);
 }
 
 // outline variants
@@ -42,12 +69,4 @@
 
 .btn-outline-dark {
   @include button-outline-variant($gray-darker);
-}
-
-// remove shadows from active states
-.btn {
-  &:active,
-  &.active {
-    @include box-shadow(none);
-  }
 }

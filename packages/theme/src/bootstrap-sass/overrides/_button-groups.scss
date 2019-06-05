@@ -1,7 +1,4 @@
-// https://endurance.invisionapp.com/d/#/console/14024880/297356665/inspect
-// .btn-group {
-//   .btn-default {
-//     border-color: $water;
-//     color: $gray-base;
-//   }
-// }
+// override box-shadow on open button groups to preserve flat aesthetic
+.btn-group.open .dropdown-toggle {
+  @include box-shadow(none);
+}
