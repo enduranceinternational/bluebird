@@ -147,15 +147,14 @@ a,
 }
 
 .link:hover {
-  text-decoration: underline;
+  text-decoration: $link-hover-decoration;
 }
 
-.link-hover-no-decoration:hover {
-  text-decoration: none;
-}
-
-.link-hover-no-decoration:focus {
-  text-decoration: none;
+.link-hover-no-decoration {
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .link-blue {
