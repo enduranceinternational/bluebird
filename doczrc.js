@@ -17,7 +17,7 @@ const BRAND = BRANDS[process.env.BRAND] ? process.env.BRAND : "bluehost";
 // doczrc.js
 export default {
   title: `🐦 Bluebird - ${BRANDS[BRAND].name}`,
-  description: `🐦 Bluebird - ${BRANDS[BRAND].name}`,
+  description: `🐦 Bluebird`,
   src: "./",
   dest: "build",
   indexHtml: `./public/${BRAND}/index.html`,
