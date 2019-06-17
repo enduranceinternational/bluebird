@@ -3,37 +3,37 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
-@mixin button-outline-variant($color) {
+@mixin button-outline-variant($color, $hoverTextColor: $white) {
   color: $color;
   background-color: transparent;
   border-color: $color;
 
   &:focus,
   &.focus {
-    color: darken($color, 25%);
-    background-color: transparent;
+    color: $hoverTextColor;
+    background-color: darken($color, 10%);
     border-color: darken($color, 25%);
   }
 
   &:hover {
-    color: darken($color, 12%);
-    background-color: transparent;
+    color: $hoverTextColor;
+    background-color: darken($color, 10%);
     border-color: darken($color, 12%);
   }
 
   &:active,
   &.active,
   .open > &.dropdown-toggle {
-    color: darken($color, 12%);
-    background-color: transparent;
+    color: $hoverTextColor;
+    background-color: darken($color, 10%);
     background-image: none;
     border-color: darken($color, 12%);
 
     &:hover,
     &:focus,
     &.focus {
-      color: darken($color, 25%);
-      background-color: transparent;
+      color: $hoverTextColor;
+      background-color: darken($color, 17%);
       border-color: darken($color, 25%);
     }
   }
@@ -44,7 +44,7 @@
     &:hover,
     &:focus,
     &.focus {
-      background-color: transparent;
+      background-color: $color;
       border-color: $color;
     }
   }
@@ -65,7 +65,7 @@
   &.active,
   &[disabled],
   fieldset[disabled] & {
-    background-color: transparent;
+    background-color: $color;
 
     @include box-shadow(none);
   }
