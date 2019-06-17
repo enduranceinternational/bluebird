@@ -65,7 +65,7 @@
   &.active,
   &[disabled],
   fieldset[disabled] & {
-    background-color: $color;
+    background-color: transparent;
 
     @include box-shadow(none);
   }
