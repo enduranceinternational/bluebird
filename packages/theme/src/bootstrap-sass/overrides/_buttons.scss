@@ -64,7 +64,7 @@ button {
 }
 
 .btn-outline-light {
-  @include button-outline-variant($white);
+  @include button-outline-variant($white, $gray-darker);
 }
 
 .btn-outline-dark {
