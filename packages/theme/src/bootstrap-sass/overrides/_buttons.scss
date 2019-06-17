@@ -38,6 +38,10 @@ button {
   @include button-link-variant($gray-darker);
 }
 
+.btn-link-light {
+  @include button-link-variant($white, $white);
+}
+
 // outline variants
 .btn-outline-default {
   @include button-outline-variant($btn-outline-default-color);
@@ -65,6 +69,18 @@ button {
 
 .btn-outline-light {
   @include button-outline-variant($white, $gray-darker);
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+  }
 }
 
 .btn-outline-dark {

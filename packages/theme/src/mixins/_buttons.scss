@@ -55,7 +55,7 @@
   }
 }
 
-@mixin button-link-variant($color) {
+@mixin button-link-variant($color, $hoverColor: darken($color, 25%)) {
   font-weight: 400;
   color: $color;
   border-radius: 0;
@@ -79,7 +79,7 @@
 
   &:hover,
   &:focus {
-    color: darken($color, 25%);
+    color: $hoverColor;
     text-decoration: $link-hover-decoration;
     background-color: transparent;
   }
