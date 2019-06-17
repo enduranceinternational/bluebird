@@ -161,13 +161,11 @@ a,
   color: $brand-primary;
 }
 
-.link-light,
-.btn-default.link.link-light {
+.link-light {
   color: $gray;
 }
 
 .link-dark,
-.btn-default.link.link-light:hover,
 .link-light:hover {
   color: $gray-base;
 }
