@@ -1,10 +1,26 @@
+// store brand configurations such as future localization information or provInfo-like data
+const BRANDS = {
+  bluehost: {
+    name: "Bluehost"
+  },
+  justhost: {
+    name: "Justhost"
+  },
+  development: {
+    name: "Bluehost - DEVELOPMENT MODE"
+  }
+};
+
+// confirm brand exists in our configs, otherwise default to `bluehost`
+const BRAND = BRANDS[process.env.BRAND] ? process.env.BRAND : "bluehost";
+
 // doczrc.js
 export default {
-  title: "🐦 Bluebird",
-  description: "🐦 Bluebird",
+  title: `🐦 Bluebird - ${BRANDS[BRAND].name}`,
+  description: `🐦 Bluebird`,
   src: "./",
   dest: "build",
-  indexHtml: "./public/index.html",
+  indexHtml: `./public/${BRAND}/index.html`,
 
   menu: [
     {
