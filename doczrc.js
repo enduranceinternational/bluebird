@@ -5,6 +5,9 @@ const BRANDS = {
   },
   justhost: {
     name: "Justhost"
+  },
+  development: {
+    name: "Bluehost - DEVELOPMENT MODE"
   }
 };
 
