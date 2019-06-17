@@ -13,12 +13,6 @@ import {
 } from "react-bootstrap";
 import { Playground } from "docz";
 
-<!-- Unused Button Styles
-  <Button bsStyle="success">Success</Button>
-  <Button bsStyle="info">Info</Button>
-  <Button bsStyle="warning">Warning</Button>
--->
-
 # Buttons
 
 Buttons are UI elements that clearly communicate to the user that they can complete an action.
@@ -39,9 +33,8 @@ Buttons are UI elements that clearly communicate to the user that they can compl
     <Button bsStyle="danger">Danger</Button>
     <Button bsStyle="warning">Warning</Button>
     <Button bsStyle="info">Info</Button>
-    <Button bsStyle="link">Link</Button>
-    <Button bsStyle="light">Light</Button>
-    <Button bsStyle="dark">Dark</Button>
+    <Button className="btn-light">Light</Button>
+    <Button className="btn-dark">Dark</Button>
   </ButtonToolbar>
 </Playground>
 
@@ -49,14 +42,24 @@ Buttons are UI elements that clearly communicate to the user that they can compl
 
 <Playground>
   <ButtonToolbar>
-    <Button bsStyle="outline-default">Default</Button>
-    <Button bsStyle="outline-primary">Primary</Button>
-    <Button bsStyle="outline-success">Success</Button>
-    <Button bsStyle="outline-danger">Danger</Button>
-    <Button bsStyle="outline-warning">Warning</Button>
-    <Button bsStyle="outline-info">Info</Button>
-    <Button bsStyle="outline-light">Light</Button>
-    <Button bsStyle="outline-dark">Dark</Button>
+    <Button className="btn-outline-default">Default</Button>
+    <Button className="btn-outline-primary">Primary</Button>
+    <Button className="btn-outline-success">Success</Button>
+    <Button className="btn-outline-danger">Danger</Button>
+    <Button className="btn-outline-warning">Warning</Button>
+    <Button className="btn-outline-info">Info</Button>
+    <Button className="btn-outline-light">Light</Button>
+    <Button className="btn-outline-dark">Dark</Button>
+  </ButtonToolbar>
+</Playground>
+
+### Link buttons
+
+<Playground>
+  <ButtonToolbar>
+    <Button bsStyle="link">Link</Button>
+    <Button className="btn-link-dark">Link Dark</Button>
+    <Button className="btn-link-light">Link Light</Button>
   </ButtonToolbar>
 </Playground>
 
