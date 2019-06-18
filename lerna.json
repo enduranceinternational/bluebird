@@ -1,0 +1,12 @@
+{
+  "lerna": "3.13.1",
+  "npmClient": "yarn",
+  "packages": ["packages/*"],
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    }
+  }
+}

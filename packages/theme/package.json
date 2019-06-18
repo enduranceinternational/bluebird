@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "UAF Theme",
   "main": "src/uaf-theme.scss",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "^3.4.0"
+  }
 }
