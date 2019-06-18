@@ -1,0 +1,50 @@
+// Alerts
+
+.alert-success {
+  background-color: darken($green, 5%);
+  border-color: darken($green, 5%);
+  color: $white;
+}
+.alert-warning {
+  background-color: darken($orange, 5%);
+  border-color: darken($orange, 5%);
+  color: $white;
+}
+.alert-info {
+  background-color: darken($blue, 5%);
+  border-color: darken($blue, 5%);
+  color: $white;
+}
+.alert-danger {
+  background-color: darken($red, 5%);
+  border-color: darken($red, 5%);
+  color: $white;
+}
+
+
+// Alert Close Button
+.alert-dismissable .close,
+.alert-dismissible .close {
+  color: $white;
+  text-shadow: none;
+  opacity: 1;
+  font-size: 32px;
+  font-weight: 300;
+  top: -8px;
+}
+
+.alert-dismissible .close:hover,
+.alert-dismissible .close:focus {
+  color: $black;
+}
+
+.alert .btn {
+  color: $white;
+  border-color: $white;
+}
+.alert .btn:hover,
+.alert .btn:active:focus {
+  color: $black;
+  background-color: $white;
+  border-color: $white;
+}

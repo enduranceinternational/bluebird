@@ -1,0 +1,30 @@
+{
+  "name": "@eigi/bluebird",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "private": true,
+  "dependencies": {
+    "@eigi/theme": "^1.0.0"
+  },
+  "devDependencies": {
+    "@eigi/theme": "^1.0.0",
+    "@eigi/eslint-config": "0.0.0"
+  },
+  "peerDependencies": {
+    "@eigi/theme": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@eigi/eslint-config"
+  },
+  "scripts": {
+    "lint": "eslint '**/*.+(js|jsx)' --quiet",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-outline-variant($color, $hoverTextColor: $white) {
+  color: $color;
+  background-color: transparent;
+  border-color: $color;
+
+  &:focus,
+  &.focus {
+    color: $hoverTextColor;
+    background-color: darken($color, 10%);
+    border-color: darken($color, 25%);
+  }
+
+  &:hover {
+    color: $hoverTextColor;
+    background-color: darken($color, 10%);
+    border-color: darken($color, 12%);
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $hoverTextColor;
+    background-color: darken($color, 10%);
+    background-image: none;
+    border-color: darken($color, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $hoverTextColor;
+      background-color: darken($color, 17%);
+      border-color: darken($color, 25%);
+    }
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $color;
+      border-color: $color;
+    }
+  }
+
+  .badge {
+    color: transparent;
+    background-color: $color;
+  }
+}
+
+@mixin button-link-variant($color, $hoverColor: darken($color, 25%)) {
+  font-weight: 400;
+  color: $color;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+
+    @include box-shadow(none);
+  }
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// Colors
+// ------------------------------------ *
+
+// Palette Colors
+// - Grays
+$black: #000;
+$gray-base: #576373;
+$gray-darker: #344154;
+$gray-dark: #758397;
+$gray: #9dafbd;
+$gray-light: #9dafbd;
+$gray-lighter: #d7dbe0; // lighten($gray-base, 93.5%) !default; // DDE0E6
+$white: #fff;
+
+// - Chromatics
+$snow: #fafbfc;
+$blue-light: #f1f5f7;
+$blue: $brand-primary;
+$blue-dark: #2e66ba;
+$green: $brand-success;
+$green-light: #17b212;
+$green-dark: #17b212;
+$orange: $brand-warning;
+$orange-light: #f89c24;
+$red: $brand-danger;
+$athens: #d7dbe0;
+$water: #bfcfdb;
+$dark-snow: #edf4f9;
+$midnight: #16325b;
+// $red-light: #f72f26; // not used
+
+// Third Party Colors
+$jetpack-primary: #66d975;

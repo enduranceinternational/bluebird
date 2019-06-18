@@ -1,0 +1,17 @@
+/**
+ * uaf-theme
+ *
+ * A base bootstrap theme that provides styling to any frontend app
+ * that requires a Bootstrap base.
+ *
+ * This is designed to be consumed by a brand-specific theme
+ * when applied to your application.
+ *
+ */
+
+// abstracts
+@import 'variables';
+@import 'mixins';
+
+// vendors
+@import '~bootstrap-sass/bootstrap-custom';

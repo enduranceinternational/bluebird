@@ -1,0 +1,90 @@
+// TODO: review for proper Bootstrap overriding
+
+/* Tables */
+.table {
+  background: $white;
+  border-radius: $border-radius-small;
+  border: $standard-border;
+}
+
+.table > thead {
+  border-radius: $border-radius-small $border-radius-small 0 0;
+  border: 0;
+}
+
+.table > thead > tr > th {
+  margin: 0;
+  padding: 16px 0;
+  border: 0;
+  color: #7C90A4; // TODO
+  font-size: 14px; // TODO
+  font-weight: 400; // TODO
+  line-height: 24px; // TODO
+}
+
+.table > thead > tr {
+  border: 0;
+  border-radius: $border-radius-small $border-radius-small 0 0;
+  background: $snow;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: $md $lg;
+  border-color: $athens;
+  font-size: $font-size-m;
+  line-height: 24px;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  font-size: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: $snow;
+}
+
+// removes border from table, or direct child table
+.table-borderless,
+.table-borderless > table {
+  border: 0;
+  border-bottom: $standard-border;
+
+  > tfoot > tr > td,
+  > tfoot > tr > th,
+  > tbody > tr > td,
+  > tbody > tr > th,
+  > thead > tr > td,
+  > thead > tr > th {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.table.table-condensed {
+  td,
+  th {
+    padding-top: $table-condensed-cell-padding;
+    padding-bottom: $table-condensed-cell-padding;
+  }
+}
+
+.table.table-no-top {
+  tr:first-child {
+    > td,
+    > th {
+      border-top: 0;
+    }
+  }
+}
+
+.table.table-no-bottom {
+  border-bottom: 0;
+}

@@ -1,0 +1,126 @@
+// Text Colors
+.c-black {
+  color: $gray-base;
+}
+
+.c-dark-gray {
+  color: $gray-base;
+}
+
+.c-gray {
+  color: $gray-dark;
+}
+
+.c-light-gray {
+  color: $gray-light;
+}
+
+.c-white {
+  color: $white;
+}
+
+.c-blue {
+  color: $brand-primary;
+}
+
+.c-positive,
+.c-success,
+.c-green {
+  color: $green;
+}
+
+.c-negative,
+.c-danger,
+.c-red {
+  color: $red;
+}
+
+.c-warning {
+  color: $orange;
+}
+
+// Background Colors
+.bg-brand-primary {
+  background-color: $brand-primary;
+}
+
+.bg-blue {
+  background-color: $brand-primary;
+}
+
+.bg-light-blue {
+  background-color: $blue-light;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-w {
+  background-color: $white;
+}
+
+.bg-snow {
+  background-color: $snow;
+}
+
+.bg-light-gray {
+  background-color: $gray-light;
+}
+
+.bg-dark-gray {
+  background-color: $gray-base;
+}
+
+.bg-warning {
+  background-color: $brand-warning;
+}
+
+.bg-error {
+  background-color: $brand-danger;
+}
+
+// Hover States
+.bg-w,
+.bg-white,
+.bg-white-hover:hover,
+.btn.bg-white-hover:hover {
+  background-color: $white;
+}
+
+// Gradients
+.bg-primary-gradient {
+  background: rgba($brand-primary, 0.85) none;
+}
+
+.bg-dark-gradient {
+  @include bg-dark-gradient;
+}
+
+// Is Reversed
+.is-reversed {
+  color: $white;
+}
+
+.is-reversed:hover,
+.btn-ghost.is-reversed:hover,
+.c-black-hover:hover {
+  color: $brand-primary;
+}
+
+.link-dark:hover,
+.link-light:hover {
+  color: $gray-base;
+}
+
+.btn-ghost.is-reversed:hover {
+  border-color: transparent;
+}
