@@ -1,3 +1,5 @@
+import { css } from 'docz-plugin-css';
+
 // store brand configurations such as future localization information or provInfo-like data
 const BRANDS = {
   bluehost: {
@@ -21,6 +23,13 @@ export default {
   src: "./",
   dest: "build",
   indexHtml: `./public/${BRAND}/index.html`,
+,
+  plugins: [
+    css({
+      preprocessor: 'sass',
+      cssmodules: true,
+    }),
+  ],
 
   menu: [
     {
