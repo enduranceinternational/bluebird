@@ -1,9 +1,9 @@
 {
-  "name": "@eigi/bluebird",
-  "version": "1.2.0",
+  "name": "@eigi/bluebird-ui-com",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "eslint": "^5.9.0",
+    "eslint": "^5.16.0",
     "null": "^1.0.1",
     "react": "^16.8.0",
     "react-bootstrap": "^0.32.4",
