@@ -2,6 +2,7 @@
   "name": "@eigi/bluebird",
   "version": "1.0.0",
   "main": "src/index.js",
+  "description": "Bluebird UI",
   "dependencies": {
     "@eigi/theme": "^1.0.0"
   },

@@ -1,7 +1,7 @@
 {
   "name": "@eigi/theme",
   "version": "1.0.0",
-  "description": "UAF Theme",
+  "description": "Bluebird Theme",
   "main": "src/uaf-theme.scss",
   "dependencies": {
     "bootstrap-sass": "^3.4.0"
