@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "UAF Theme",
   "main": "src/uaf-theme.scss",
-  "private": true,
   "dependencies": {
     "bootstrap-sass": "^3.4.0"
+  },
+  "publishConfig": {
+    "registry": "http://verdaccio.dev.provo1.unifiedlayer.com/"
   }
 }

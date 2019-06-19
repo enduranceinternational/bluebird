@@ -2,7 +2,6 @@
   "name": "@eigi/bluebird",
   "version": "1.0.0",
   "main": "src/index.js",
-  "private": true,
   "dependencies": {
     "@eigi/theme": "^1.0.0"
   },
@@ -26,5 +25,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "publishConfig": {
+    "registry": "http://verdaccio.dev.provo1.unifiedlayer.com/"
   }
 }
