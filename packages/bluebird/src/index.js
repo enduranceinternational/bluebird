@@ -1,3 +1,2 @@
-// TODO: should import correct sheet based on BRAND
 // eslint-disable-next-line import/no-dynamic-require
-module.exports = require(`./bluebird-bluehost.scss`);
+module.exports = require(`./bluebird-${process.env.BRAND || 'bluehost'}.scss`);

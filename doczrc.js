@@ -1,3 +1,4 @@
+import webpack from 'webpack';
 import { css } from 'docz-plugin-css';
 
 // store brand configurations such as future localization information or provInfo-like data
@@ -14,7 +15,9 @@ const BRANDS = {
 };
 
 // confirm brand exists in our configs, otherwise default to `bluehost`
-const BRAND = BRANDS[process.env.BRAND] ? process.env.BRAND : 'bluehost';
+const BRAND = BRANDS[process.env.DOCZ_BRAND]
+  ? process.env.DOCZ_BRAND
+  : 'bluehost';
 
 // doczrc.js
 export default {
@@ -29,6 +32,21 @@ export default {
       preprocessor: 'sass',
     }),
   ],
+
+  wrapper: 'src/utils/Wrapper',
+
+  modifyBundlerConfig: config => ({
+    // return existing config
+    ...config,
+    // return config.plugins with existing plugins and additional new "defineplugin"
+    plugins: [
+      ...config.plugins,
+      new webpack.DefinePlugin({
+        // pass brand to node so webpack can eval it on import/require statements
+        'process.env.BRAND': JSON.stringify(BRAND),
+      }),
+    ],
+  }),
 
   menu: [
     {
