@@ -177,7 +177,7 @@ $table-border-color: #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight: $font-weight-normal;
+$btn-font-weight: $font-weight-bold;
 
 // TODO: coerced to be outline style, in future iteration we should encourage usage of the bsStyle outline instead
 $btn-default-color: $brand-primary;
