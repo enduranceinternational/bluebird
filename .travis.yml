@@ -1,0 +1,14 @@
+# https://github.com/lerna/lerna/issues/2022
+
+after_success:
+  - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+  - git remote add pub https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+  - git checkout master
+
+deploy:
+  - provider: script
+    script: npx lerna publish --git-remote origin --yes
+    skip_cleanup: true
+    keep_history: true
+    on:
+      branch: master
