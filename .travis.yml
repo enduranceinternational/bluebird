@@ -1,3 +1,7 @@
+language: node_js
+
+cache: yarn
+
 # https://github.com/lerna/lerna/issues/2022
 
 after_success:

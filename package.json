@@ -15,6 +15,7 @@
   "scripts": {
     "start": "docz dev",
     "build": "docz build",
+    "test": "docz build",
     "react:start": "react-scripts start",
     "react:build": "react-scripts build",
     "react:test": "react-scripts test",
