@@ -1131,10 +1131,24 @@
   resolved "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
+"@eigi/bluebird@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@eigi/bluebird/-/bluebird-1.0.0.tgz#df53be8b35fb16ea39b63806e5affa6363cac3be"
+  integrity sha512-S8749s2r+aVvTRhXGxfDhdLWBrEm100o7cX0oQZmpdpOGPLVgJzUkx7pvsLvWq5E2BzC/7j+CnbCmfiEx7B6Uw==
+  dependencies:
+    "@eigi/theme" "^1.0.0"
+
 "@eigi/eslint-config@0.0.0":
   version "0.0.0"
   resolved "https://registry.npmjs.org/@eigi/eslint-config/-/eslint-config-0.0.0.tgz#d557423bf411398b03c74f18960fc08ac3bc048f"
   integrity sha512-uBCmlbAaYWwcXCfIRSRgUeF27jkUtHWHzuNYM2+oInbQjvhRtf9DQuLGxgyG4bM1BGuFcGozjMRhkp1lcx5s7Q==
+
+"@eigi/theme@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@eigi/theme/-/theme-1.0.0.tgz#4e4b44ecdfc62dd4bab839ffd786e5955651ab0b"
+  integrity sha512-4XYkVHdB8X4Qo+O6fLGF2WofZAe2fi2PMHiuDcPSN62xIhuRLDOwNFDomnGe7z9E5oceh7nFdw2mMqpMHd+4cw==
+  dependencies:
+    bootstrap-sass "^3.4.0"
 
 "@emotion/cache@^10.0.0", "@emotion/cache@^10.0.9":
   version "10.0.9"
