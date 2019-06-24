@@ -3,9 +3,6 @@
   "version": "1.1.0",
   "description": "Bluebird Theme",
   "main": "src/uaf-theme.scss",
-  "dependencies": {
-    "bootstrap-sass": "^3.4.0"
-  },
   "publishConfig": {
     "registry": "http://verdaccio.dev.provo1.unifiedlayer.com/"
   }
