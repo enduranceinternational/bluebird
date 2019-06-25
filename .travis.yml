@@ -11,7 +11,7 @@ after_success:
 
 deploy:
   - provider: script
-    script: npx lerna publish --git-remote origin --yes
+    script: npx lerna publish --git-remote pub --yes
     skip_cleanup: true
     keep_history: true
     on:
