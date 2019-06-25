@@ -1,6 +1,12 @@
 language: node_js
 
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - yarn --ignore-optional --frozen-lockfile
 
 # https://github.com/lerna/lerna/issues/2022
 
