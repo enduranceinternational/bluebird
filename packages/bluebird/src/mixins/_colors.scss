@@ -1,0 +1,27 @@
+@mixin bg-dark-gradient {
+  background: rgba(87, 99, 115, 1);
+  background: -webkit-linear-gradient(
+    right,
+    rgba(87, 99, 115, 1),
+    rgba(84, 116, 135, 1),
+    rgba(124, 144, 164, 1)
+  );
+  background: -moz-linear-gradient(
+    right,
+    rgba(87, 99, 115, 1),
+    rgba(84, 116, 135, 1),
+    rgba(124, 144, 164, 1)
+  );
+  background: -o-linear-gradient(
+    right,
+    rgba(87, 99, 115, 1),
+    rgba(84, 116, 135, 1),
+    rgba(124, 144, 164, 1)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(87, 99, 115, 1),
+    rgba(84, 116, 135, 1),
+    rgba(124, 144, 164, 1)
+  );
+}
