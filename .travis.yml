@@ -6,8 +6,15 @@ cache: yarn
 
 after_success:
   - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis CI"
   - git remote add pub https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+  - git remote -v
+  - git fetch pub master
+  - git branch -r
+  - git status
   - git checkout master
+  - git status
 
 deploy:
   - provider: script
