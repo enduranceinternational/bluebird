@@ -31,9 +31,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@eigi/bluebird": "1.1.0",
+    "@eigi/bluebird": "1.1.1",
     "@eigi/eslint-config": "0.0.0",
-    "@eigi/theme": "1.1.0",
+    "@eigi/theme": "1.1.1",
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.6",
     "@emotion/styled-base": "^10.0.5",
