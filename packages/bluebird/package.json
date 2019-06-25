@@ -1,6 +1,6 @@
 {
   "name": "@eigi/bluebird",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "src/index.js",
   "description": "Bluebird UI",
   "eslintConfig": {
