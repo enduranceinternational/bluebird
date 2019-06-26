@@ -5,9 +5,6 @@ cache:
   directories:
     - node_modules
 
-install:
-  - yarn --ignore-optional --frozen-lockfile
-
 # https://github.com/lerna/lerna/issues/2022
 
 after_success:
