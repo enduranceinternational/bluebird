@@ -1,4 +1,5 @@
 import webpack from 'webpack';
+import path from 'path';
 import { css } from 'docz-plugin-css';
 
 // store brand configurations such as future localization information or provInfo-like data
@@ -46,6 +47,13 @@ export default {
         'process.env.BRAND': JSON.stringify(BRAND),
       }),
     ],
+    resolve: {
+      ...config.resolve,
+      alias: {
+        ...config.resolve.alias,
+        '@eigi': path.resolve(__dirname, 'packages'),
+      },
+    },
   }),
 
   menu: [
