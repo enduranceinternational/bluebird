@@ -1,21 +1,25 @@
+// the path may need to be overriden if your app builds differently
+$icon-font-path-bluecons: 'icons/' !default;
+$icon-font-name-bluecons: 'bluecons' !default;
+
 /* Icon Font (DEPRECATED) */
 @font-face {
-  font-family: 'bluecons';
-  src: url('~@eigi/main/common/assets/fonts/bluecons/fonts/bluecons.eot');
-  src: url('~@eigi/main/common/assets/fonts/bluecons/fonts/bluecons.eot?#iefix')
+  font-family: $icon-font-name;
+  src: url('#{$icon-font-path-bluecons}#{$icon-font-name-bluecons}.eot');
+  src: url('#{$icon-font-path-bluecons}#{$icon-font-name-bluecons}.eot?#iefix')
       format('embedded-opentype'),
-    url('~@eigi/main/common/assets/fonts/bluecons/fonts/bluecons.woff')
+    url('#{$icon-font-path-bluecons}#{$icon-font-name-bluecons}.woff')
       format('woff'),
-    url('~@eigi/main/common/assets/fonts/bluecons/fonts/bluecons.ttf')
+    url('#{$icon-font-path-bluecons}#{$icon-font-name-bluecons}.ttf')
       format('truetype'),
-    url('~@eigi/main/common/assets/fonts/bluecons/fonts/bluecons.svg#bluecons')
+    url('#{$icon-font-path-bluecons}#{$icon-font-name-bluecons}.svg##{$icon-font-name-bluecons}')
       format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [data-icon]::before {
-  font-family: 'bluecons' !important;
+  font-family: $icon-font-name !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -30,7 +34,7 @@
 [class^='icon-']::before,
 [class*=' icon-']::before,
 [class*=' glyphicon-']::before {
-  font-family: 'bluecons' !important;
+  font-family: $icon-font-name !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
