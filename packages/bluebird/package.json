@@ -16,8 +16,5 @@
       "prettier --write",
       "git add"
     ]
-  },
-  "publishConfig": {
-    "registry": "http://verdaccio.dev.provo1.unifiedlayer.com/"
   }
 }
