@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/enduranceinternational/bluebird/compare/v1.1.3...v1.1.4) (2019-06-26)
+
+
+### Bug Fixes
+
+* **bluebird:** resolved dependencies for bluecons EP16-349 ([eb7947f](https://github.com/enduranceinternational/bluebird/commit/eb7947f))
+
+
+
+
+
 ## [1.1.3](https://github.com/enduranceinternational/bluebird/compare/v1.1.2...v1.1.3) (2019-06-26)
 
 
