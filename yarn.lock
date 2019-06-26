@@ -1131,10 +1131,16 @@
   resolved "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
+"@eigi/bluebird@file:packages/bluebird":
+  version "1.1.2"
+
 "@eigi/eslint-config@0.0.0":
   version "0.0.0"
   resolved "https://registry.npmjs.org/@eigi/eslint-config/-/eslint-config-0.0.0.tgz#d557423bf411398b03c74f18960fc08ac3bc048f"
   integrity sha512-uBCmlbAaYWwcXCfIRSRgUeF27jkUtHWHzuNYM2+oInbQjvhRtf9DQuLGxgyG4bM1BGuFcGozjMRhkp1lcx5s7Q==
+
+"@eigi/theme@file:packages/theme":
+  version "1.1.2"
 
 "@emotion/cache@^10.0.0", "@emotion/cache@^10.0.9":
   version "10.0.9"

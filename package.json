@@ -1,6 +1,6 @@
 {
   "name": "@eigi/bluebird-ui-com",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "eslint": "^5.16.0",
@@ -31,9 +31,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@eigi/bluebird": "1.1.1",
+    "@eigi/bluebird": "file:packages/bluebird",
     "@eigi/eslint-config": "0.0.0",
-    "@eigi/theme": "1.1.1",
+    "@eigi/theme": "file:packages/theme",
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.6",
     "@emotion/styled-base": "^10.0.5",
