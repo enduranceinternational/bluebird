@@ -32,7 +32,6 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-angular": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@commitlint/config-lerna-scopes": "^8.0.0",
     "@eigi/bluebird": "file:packages/bluebird",
