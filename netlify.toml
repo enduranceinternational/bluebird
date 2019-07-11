@@ -1,0 +1,24 @@
+# Redirect domain aliases to primary domain
+[[redirects]]
+  from = "https://www.bluebirdui.com/*"
+  to = "https://bluebirdui.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.bluerockdesignsystem.com/*"
+  to = "https://bluebirdui.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://bluerockdesignsystem.com/*"
+  to = "https://bluebirdui.com/:splat"
+  status = 301
+  force = true
+
+# COMMENT: This a rule for Single Page Applications as Docz site is one
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
