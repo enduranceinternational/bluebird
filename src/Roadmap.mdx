@@ -6,35 +6,31 @@ We consider our roadmap a living document, with short timeframes and more freque
 
 ## Happening Now
 
-#### Build System Improvements (Q1-2)
+#### Visual Language Updates (2019)
+
+Our design team is at work on a visual language to bring improved readability, design and accessibility features to our app. You can track our most up-to-date story status in [JIRA project UXPG](https://jira.endurance.com/secure/RapidBoard.jspa?rapidView=3832&view=detail).
+
+- [x] v1 implemented as we have today [EP16-65](https://jira.endurance.com/browse/EP16-65)
+- [x] typography [EP16-55](https://jira.endurance.com/browse/EP16-55)
+- [x] colors [EP16-215](https://jira.endurance.com/browse/EP16-215)
+- [x] buttons [EP16-217](https://jira.endurance.com/browse/EP16-217)
+- [ ] form inputs [UXPG-96](https://jira.endurance.com/browse/UXPG-96)
+- [ ] selectors [UXPG-82](https://jira.endurance.com/browse/UXPG-82)
+- [ ] icons [UXPG-76](https://jira.endurance.com/browse/UXPG-76)
+- [ ] breadcrumbs [UXPG-81](https://jira.endurance.com/browse/UXPG-81)
+- [ ] elevation [UXPG-74](https://jira.endurance.com/browse/UXPG-74)
+- [ ] menus [UXPG-83](https://jira.endurance.com/browse/UXPG-83)
+- [ ] badges/labels [UXPG-91](https://jira.endurance.com/browse/UXPG-91)
+- [ ] tooltips [UXPG-85](https://jira.endurance.com/browse/UXPG-85)
+- [ ] tabs [UXPG-87](https://jira.endurance.com/browse/UXPG-87)
+- [ ] spacing [UXPG-78](https://jira.endurance.com/browse/UXPG-78)
+- [ ] modals [UXPG-63](https://jira.endurance.com/browse/UXPG-63)
+
+#### Build System Improvements (Q1-3)
 
 We're looking into ways to improve how this documentation is built so we can provide the most up-to-date view of Bluebird. We aim to have an automated build system that will deploy an updated version of these docs to align with `uaf-main` deployments.
 
 - [x] Transition `uaf-main` to `yarn` to gain `workspaces` ability
 - [x] Configure `lerna` for easier monorepo management in `uaf-main`
-- [ ] Migrate `@eigi/bluebird` into `uaf-main`
-- [ ] Migrate Bluebird from `src` to `@eigi/bluebird`
-- [ ] Set version 1.0.0 and install on all `uaf-main` packages
-
-#### Visual Language Updates (Q1-3)
-
-Our design team is at work on a "2.0" visual language to bring improved readability, design and accessibility features to our app.
-
-- [x] v1.0 implemented as we have today [EP16-65](https://jira.endurance.com/browse/EP16-65)
-- [x] v1.1 typography [EP16-55](https://jira.endurance.com/browse/EP16-55)
-- [x] v1.2 colors [EP16-215](https://jira.endurance.com/browse/EP16-215)
-- [ ] v1.3 buttons [EP16-217](https://jira.endurance.com/browse/EP16-217)
-- [ ] v1.4 elevation [EP16-216](https://jira.endurance.com/browse/EP16-216)
-
-## Coming Up Next
-
-#### Theme Repairs (Q4)
-
-While viewing the pages that document the current state of our app, your attention may be drawn to components that are improperly themed, which we aim to fix in future iterations.
-
-- broken styles
-- improper theming of Bootstrap elements
-
-#### Component Consolidation (Ongoing)
-
-Across the app, we have many custom components that veer from Bluebird standards. We will be working to improve our suggestions for which components teams should use with `approved` and `avoid` tags.
+- [x] Set up `bluebird` CICD to autodeploy new package versions
+- [ ] Migrate design system source into `bluebird` repo & install on all `uaf-main` packages
