@@ -8,4 +8,4 @@ https://romantic-knuth-7ba913.netlify.com/* https://bluebirdui.com/:splat 200!
 
 # SPA Fix to ensure index loads for any
 # https://www.netlify.com/docs/redirects/#rewrites-and-proxying
-/* /index.html 200!
+/* /index.html 200
