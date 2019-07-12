@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/enduranceinternational/bluebird/compare/v1.1.4...v1.1.5) (2019-07-12)
+
+
+### Bug Fixes
+
+* btn-outline updated on some views that have white backgrounds - EP16-217 ([7c86dd5](https://github.com/enduranceinternational/bluebird/commit/7c86dd5))
+* remove theme for fresh uaf import ([3b644b0](https://github.com/enduranceinternational/bluebird/commit/3b644b0))
+* **@eigi/main,@eigi/theme:** - btn-outline-default too light (matched disabled) - changed usage on office365 page to use btn-outline-primary - EP16-217 ([56efcf5](https://github.com/enduranceinternational/bluebird/commit/56efcf5))
+* **@eigi/theme:** streamlined button outline variant borders vs fills to be consistent - EP16-217 ([cf7ce6a](https://github.com/enduranceinternational/bluebird/commit/cf7ce6a))
+* **theme:** repair import from uaf-main ([d2ec4f6](https://github.com/enduranceinternational/bluebird/commit/d2ec4f6))
+
+
+
+
+
 ## [1.1.3](https://github.com/enduranceinternational/bluebird/compare/v1.1.2...v1.1.3) (2019-06-26)
 
 

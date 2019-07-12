@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/enduranceinternational/bluebird/compare/v1.1.4...v1.1.5) (2019-07-12)
+
+
+### Bug Fixes
+
+* btn-outline updated on some views that have white backgrounds - EP16-217 ([7c86dd5](https://github.com/enduranceinternational/bluebird/commit/7c86dd5))
+* moved `/*` to top for priority ([4194c91](https://github.com/enduranceinternational/bluebird/commit/4194c91))
+* moved headers and redirects to build dir per netlify specs ([c2ec67b](https://github.com/enduranceinternational/bluebird/commit/c2ec67b))
+* moved redirects to netlify.toml config file ([b407bee](https://github.com/enduranceinternational/bluebird/commit/b407bee))
+* **bluebird:** patch icon fonts ([a3e567f](https://github.com/enduranceinternational/bluebird/commit/a3e567f))
+* proxy issue with link redirection on netlify ([8e54e35](https://github.com/enduranceinternational/bluebird/commit/8e54e35))
+* remove theme for fresh uaf import ([3b644b0](https://github.com/enduranceinternational/bluebird/commit/3b644b0))
+* removed `!` after redirect ([bfa4e34](https://github.com/enduranceinternational/bluebird/commit/bfa4e34))
+* **@eigi/main,@eigi/theme:** - btn-outline-default too light (matched disabled) - changed usage on office365 page to use btn-outline-primary - EP16-217 ([56efcf5](https://github.com/enduranceinternational/bluebird/commit/56efcf5))
+* **@eigi/theme:** streamlined button outline variant borders vs fills to be consistent - EP16-217 ([cf7ce6a](https://github.com/enduranceinternational/bluebird/commit/cf7ce6a))
+* **theme:** repair import from uaf-main ([d2ec4f6](https://github.com/enduranceinternational/bluebird/commit/d2ec4f6))
+
+
+
+
+
 ## [1.1.4](https://github.com/enduranceinternational/bluebird/compare/v1.1.3...v1.1.4) (2019-06-26)
 
 
