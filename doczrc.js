@@ -2,6 +2,10 @@ import webpack from 'webpack';
 import path from 'path';
 import { css } from 'docz-plugin-css';
 
+const FONT_FAMILY =
+  "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+const FONT_FAMILY_MONO = "Menlo, Monaco, Consolas, 'Courier New', monospace";
+
 // store brand configurations such as future localization information or provInfo-like data
 const BRANDS = {
   bluehost: {
@@ -133,12 +137,23 @@ export default {
       // blockquoteColor: colors.gray
     },
 
+    fonts: {
+      display: FONT_FAMILY,
+      /**
+       * Used for code and sometimes numbers in tables.
+       */
+      mono: FONT_FAMILY_MONO,
+      /**
+       * Used for text and UI (which includes almost anything).
+       */
+      ui: FONT_FAMILY,
+    },
+
     /**
      * Styles
      */
     styles: {
       body: {
-        fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
         fontSize: 16,
         lineHeight: 1.6,
       },
@@ -149,14 +164,12 @@ export default {
       },
       h1: {
         margin: ['30px 0 20px', '60px 0 20px', '40px 0'],
-        fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
         fontSize: [36, 42, 48],
         fontWeight: 100,
         letterSpacing: '-0.02em',
       },
       h2: {
         margin: ['20px 0 20px', '35px 0 20px'],
-        fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
         lineHeight: ['1.2em', '1.5em'],
         fontSize: 28,
         fontWeight: 600,
@@ -164,22 +177,18 @@ export default {
       },
       h3: {
         margin: '25px 0 10px',
-        fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
         fontSize: [22, 24],
         fontWeight: 400,
       },
       h4: {
-        fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
         fontSize: 20,
         fontWeight: 400,
       },
       h5: {
-        fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
         fontSize: 18,
         fontWeight: 400,
       },
       h6: {
-        fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
         fontSize: 16,
         fontWeight: 400,
       },
@@ -195,11 +204,9 @@ export default {
         margin: '0 3px',
         padding: '4px 6px',
         borderRadius: '3px',
-        fontFamily: '"Source Code Pro", monospace',
         fontSize: '0.85em',
       },
       pre: {
-        fontFamily: '"Source Code Pro", monospace',
         fontSize: 14,
         lineHeight: 1.8,
       },
@@ -212,7 +219,6 @@ export default {
         display: ['block', 'block', 'block', 'table'],
         width: '100%',
         marginBottom: [20, 40],
-        fontFamily: '"Source Code Pro", monospace',
         fontSize: 14,
       },
       blockquote: {
