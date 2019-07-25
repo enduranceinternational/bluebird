@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A Stylelint configuration for @eigi apps",
   "main": "index.js",
-  "repository": "ssh://git@stash.endurance.com:7999/uaf/uaf-main.git",
   "author": "Endurance International Group",
   "license": "MIT",
   "private": false,
