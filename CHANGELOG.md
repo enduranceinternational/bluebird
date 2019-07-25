@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/enduranceinternational/bluebird/compare/v1.2.1...v1.2.2) (2019-07-25)
+
+
+### Bug Fixes
+
+* **stylelint-config:** replaced stylelint-airbnb ([f083094](https://github.com/enduranceinternational/bluebird/commit/f083094))
+
+
+
+
+
 ## [1.2.1](https://github.com/enduranceinternational/bluebird/compare/v1.2.0...v1.2.1) (2019-07-25)
 
 
