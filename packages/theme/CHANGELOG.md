@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/enduranceinternational/bluebird/compare/v1.1.5...v1.2.0) (2019-07-25)
+
+
+### Features
+
+* **theme:** installed stylelint-config ([40be113](https://github.com/enduranceinternational/bluebird/commit/40be113))
+
+
+
+
+
 ## [1.1.5](https://github.com/enduranceinternational/bluebird/compare/v1.1.4...v1.1.5) (2019-07-12)
 
 

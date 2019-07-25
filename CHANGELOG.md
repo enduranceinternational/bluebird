@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/enduranceinternational/bluebird/compare/v1.1.5...v1.2.0) (2019-07-25)
+
+
+### Bug Fixes
+
+* adjust root fonts for docz theme ([d02c364](https://github.com/enduranceinternational/bluebird/commit/d02c364))
+
+
+### Features
+
+* **bluebird:** installed stylelint-config ([fd53478](https://github.com/enduranceinternational/bluebird/commit/fd53478))
+* **stylelint-config:** stylelint-config pkg added ([ab6b3c7](https://github.com/enduranceinternational/bluebird/commit/ab6b3c7))
+* **stylelint-config:** updated `README.md` with installation ([e42b133](https://github.com/enduranceinternational/bluebird/commit/e42b133))
+* **theme:** installed stylelint-config ([40be113](https://github.com/enduranceinternational/bluebird/commit/40be113))
+
+
+
+
+
 ## [1.1.5](https://github.com/enduranceinternational/bluebird/compare/v1.1.4...v1.1.5) (2019-07-12)
 
 
