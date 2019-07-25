@@ -16,5 +16,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "stylelint": {
+    "extends": "@eigi/stylelint-config"
   }
 }
