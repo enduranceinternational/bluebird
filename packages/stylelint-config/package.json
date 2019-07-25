@@ -1,0 +1,19 @@
+{
+  "name": "@eigi/stylelint-config",
+  "version": "1.0.0",
+  "description": "A Stylelint configuration for @eigi apps",
+  "main": "index.js",
+  "repository": "ssh://git@stash.endurance.com:7999/uaf/uaf-main.git",
+  "author": "Endurance International Group",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "prettier": "^1.16.4",
+    "stylelint": "^9.10.1",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-order": "^2.0.0",
+    "stylelint-prettier": "^1.0.6",
+    "stylelint-scss": "^3.5.2"
+  }
+}

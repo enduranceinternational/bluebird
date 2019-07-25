@@ -36,6 +36,7 @@
     "@commitlint/config-lerna-scopes": "^8.0.0",
     "@eigi/bluebird": "file:packages/bluebird",
     "@eigi/eslint-config": "0.0.0",
+    "@eigi/stylelint-config": "file:packages/stylelint-config",
     "@eigi/theme": "file:packages/theme",
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.6",
@@ -54,6 +55,9 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "stylelint": {
+    "extends": "@eigi/stylelint-config"
   },
   "workspaces": [
     "packages/*"
