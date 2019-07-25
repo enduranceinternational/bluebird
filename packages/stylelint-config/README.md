@@ -4,7 +4,20 @@
 
 ## Installation
 
-TODO
+You can install this package with `yarn add @eigi/stylelint-config`.
+
+To configure it via `package.json`, simply add the following:
+
+```json
+{
+  ...
+  "stylelint": {
+    "extends": "@eigi/stylelint-config"
+  }
+}
+```
+
+You can further customize your stylelint installation to your need by adding rules from this extend within the
 
 ## Support
 
