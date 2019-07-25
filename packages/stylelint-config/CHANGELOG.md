@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/enduranceinternational/bluebird/compare/v1.2.0...v1.2.1) (2019-07-25)
+
+
+### Bug Fixes
+
+* **stylelint-config:** private key removed to allow publish ([e9fe7aa](https://github.com/enduranceinternational/bluebird/commit/e9fe7aa))
+
+
+
+
+
 # [1.2.0](https://github.com/enduranceinternational/bluebird/compare/v1.1.5...v1.2.0) (2019-07-25)
 
 
