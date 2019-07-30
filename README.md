@@ -42,3 +42,13 @@ The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Adding badges
+
+Badges can help identify what state a given component or variant is in. Use the following to indicate:
+
+Component Ready:
+`![Ready Badge](https://img.shields.io/badge/component-ready-green.svg#badge)`
+In Progress: `![In Progress Badge](https://img.shields.io/badge/component-in progress-yellow.svg#badge)`
+Not Ready: `![Not Ready Badge](https://img.shields.io/badge/component-not%20ready-red.svg#badge)`
+Experimental: `![Experimental Badge](https://img.shields.io/badge/component-experimental-blue.svg#badge)`
