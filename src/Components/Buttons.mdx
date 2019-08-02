@@ -19,59 +19,105 @@ import { Playground } from 'docz';
   <Button bsStyle="warning">Warning</Button>
 -->
 
-# Buttons
+# Buttons ![Ready Badge](https://img.shields.io/badge/component-ready-green.svg#badge)
 
-Buttons are UI elements that clearly communicate to the user that they can complete an action.
+Buttons are used to clearly communicate clear action to the user.
 
-- Buttons should indicate that they trigger an action
-- Buttons should be easy to find
-- A buttons action and state should be clear
+## General Usage Guidelines
 
-## Usage
+- Buttons should be used for important action items like submitting forms, saving pages, or completing purchases
+- Buttons can also indicate the beginning of a new task or the next steps in a multi-step process
+- Buttons can also be used when creating new entities like new sites, new blog posts, or new products
 
-Use any of the available button style types to quickly create a styled button. Just modify the bsStyle prop.
+### Label
 
-**Primary** - Primary buttons draw the users attention to a specific action
+Button labels should be verbs that connote action like Save, Delete, or Complete Purchase. 
+
+### Standard (Primary) Button 
+
+- The strongest calls to action on the page.
+- Try to use only one primary call to action per page.
+- Not all pages require a primary call to action.
 
 <Playground>
   <ButtonToolbar>
-    <Button bsStyle="primary">Primary</Button>
+    <Button bsStyle="primary">Standard</Button>
+    <Button bsStyle="primary" active>Active</Button>
+    <Button bsStyle="primary" disabled>Disabled</Button>
   </ButtonToolbar>
 </Playground>
 
-**Secondary** - Secondary buttons emphasize actions that are less important
+### Outline (Secondary) Button 
+
+- Use when the pages primary action is not obvious or when there are complimentary actions the user can perform.
+- There can be multiple outline/secondary buttons on a single page.
 
 <Playground>
   <ButtonToolbar>
-    <Button>Secondary</Button>
+    <Button>Outline</Button>
+    <Button active>Active</Button>
+    <Button disabled>Disabled</Button>
   </ButtonToolbar>
 </Playground>
 
-**Destruction** - Destructive buttons express caution to users and are tied to actions like delete or deactivate
+### Link Button
+
+- Use when trying to give an action the least possible emphasis.
+- Use when there are many actions available and you are trying not to saturate the page with buttons. 
+- Link buttons are not hyperlinks in a pararaph of text, they are to be used like buttons.
+- There can be multiple link buttons on a single page.
 
 <Playground>
   <ButtonToolbar>
-    <Button bsStyle="danger">Destructive</Button>
+    <Button bsStyle="link">Standard</Button>
+    <Button bsStyle="link" active>Active</Button>
+    <Button bsStyle="link" disabled>Disabled</Button>
   </ButtonToolbar>
 </Playground>
 
-**Text** - Text buttons emphasize actions that are the least important
+### Destructive Button
+
+- Use whenever a destructive action is present on a screen. 
+- These buttons are typically used in modals whereby the user must confirm the destructive action.
 
 <Playground>
   <ButtonToolbar>
+    <Button bsStyle="danger">Danger</Button>
+    <Button bsStyle="danger" active>Active</Button>
+    <Button bsStyle="danger" disabled>Disabled</Button>
+  </ButtonToolbar>
+</Playground>
+
+### Button Sizing
+
+<Playground>
+  <ButtonToolbar>
+    <Button bsStyle="primary" bsSize="small">Small Button</Button>
+    <Button bsSize="small">Small Button</Button>
+  </ButtonToolbar>
+  <ButtonToolbar>
+    <Button bsStyle="primary">Regular Button</Button>
+    <Button>Regular Button</Button>
+  </ButtonToolbar>
+  
+  <ButtonToolbar>
+    <Button bsStyle="primary" bsSize="large">Large Button</Button>
+    <Button bsSize="large">Large Button</Button>
+  </ButtonToolbar>
+</Playground>
+
+<!--
+<Playground>
+  <ButtonToolbar>
+    <Button bsStyle="primary">Standard</Button>
+    <Button>Outline</Button>
     <Button bsStyle="link">Link</Button>
+    <Button bsStyle="danger">Danger</Button>
+    <Button bsStyle="light">Light</Button>
+    <Button bsStyle="dark">Dark</Button>
   </ButtonToolbar>
 </Playground>
-
-**Small** - Small buttons \_\_\_
-
-<Playground>
-  <ButtonToolbar>
-    <Button bsStyle="primary" bsSize="small">
-      Small button
-    </Button>
-  </ButtonToolbar>
-</Playground>
+-->
 
 > Button spacing
 
@@ -79,32 +125,13 @@ Use any of the available button style types to quickly create a styled button. J
 
 ## States
 
-### Block level
+### Mobile Buttons (Block Level)
 
 Create block level buttons—those that span the full width of a parent— by adding the block prop.
 
 <Playground>
-  <Button bsStyle="primary" bsSize="large" block>
-    Block level button
-  </Button>
-  <Button bsSize="large" block>
-    Block level button
-  </Button>
-</Playground>
-
-## Active state
-
-To set a buttons active state simply set the components active prop.
-
-<Playground>
-  <ButtonToolbar>
-    <Button bsStyle="primary" bsSize="large" active>
-      Primary button
-    </Button>
-    <Button bsSize="large" active>
-      Button
-    </Button>
-  </ButtonToolbar>
+  <Button bsStyle="primary" block>Block level button</Button>
+  <Button block>Block level button</Button>
 </Playground>
 
 ## Button tags
@@ -115,21 +142,6 @@ The DOM element tag is choosen automatically for you based on the props you supp
   <ButtonToolbar>
     <Button href="#">Link</Button>
     <Button>Button</Button>
-  </ButtonToolbar>
-</Playground>
-
-## Disabled state
-
-Make buttons look unclickable by fading them back 50%. To do this add the disabled attribute to buttons.
-
-<Playground>
-  <ButtonToolbar>
-    <Button bsStyle="primary" bsSize="large" disabled>
-      Primary button
-    </Button>
-    <Button bsSize="large" disabled>
-      Button
-    </Button>
   </ButtonToolbar>
 </Playground>
 
