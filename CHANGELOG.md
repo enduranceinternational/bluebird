@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/enduranceinternational/bluebird/compare/v1.2.2...v1.3.0) (2019-08-02)
+
+
+### Features
+
+* **bluebird,theme:** sync uaf with bluebird ([#13](https://github.com/enduranceinternational/bluebird/issues/13)) EP16-349 ([6227d68](https://github.com/enduranceinternational/bluebird/commit/6227d68))
+
+
+
+
+
 ## [1.2.2](https://github.com/enduranceinternational/bluebird/compare/v1.2.1...v1.2.2) (2019-07-25)
 
 
