@@ -12,7 +12,7 @@
 .border-right-1  {border-right-width: 1px;}
 .border-bottom-1 {border-bottom-width: 1px;}
 .border-left-1   {border-left-width: 1px;}
-
+.border-standard {border: $standard-border;}
 // Border Color
 .border-color-grey {border-color: $gray-lighter;}
 .border-solid      {border-style: solid;}
