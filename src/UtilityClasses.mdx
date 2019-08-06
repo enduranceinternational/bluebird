@@ -10,23 +10,24 @@ Atomic classes used to help maintain consistency across our composed app styles.
 
 ### Border classes
 
-| Variable             | Description               |
-| -------------------- | ------------------------- |
-| `.br1`               | border-radius small       |
-| `.br2`               | border-radius             |
-| `.br3`               | border-radius large       |
-| `.br-circle`         | set round border-radius   |
-| `.no-border`         | remove border             |
-| `.border-top-1`      | add border-top            |
-| `.border-right-1`    | add border-right          |
-| `.border-bottom-1`   | add border-bottom         |
-| `.border-left-1`     | add border-left           |
-| `.border-color-grey` | set border color to grey  |
-| `.border-solid`      | set border to solid       |
-| `.depth1`            | set shadow depth          |
-| `.depth2`            | set shadow depth          |
-| `.depth3`            | set shadow depth          |
-| `.hover-shadow`      | set shadow on hover event |
+| Variable             | Description                               |
+| -------------------- | ----------------------------------------- |
+| `.br1`               | border-radius small (3px)                 |
+| `.br2`               | border-radius medium (6px)                |
+| `.br3`               | border-radius large (24px)                |
+| `.br-circle`         | border-radius max (fully rounded)         |
+| `.no-border`         | border: 0 !important                      |
+| `.border-top-1`      | border-top-width: 1px                     |
+| `.border-right-1`    | border-right-width: 1px                   |
+| `.border-bottom-1`   | border-bottom-width: 1px                  |
+| `.border-left-1`     | border-left-width: 1px                    |
+| `.border-color-grey` | border-color: \$gray-lighter              |
+| `.border-solid`      | border-style: solid                       |
+| `.border-standard`   | border: 1px solid \$gray-lighter to solid |
+| `.depth1`            | set shadow to \$depth1                    |
+| `.depth2`            | set shadow to \$depth2                    |
+| `.depth3`            | set shadow to \$depth3                    |
+| `.hover-shadow`      | set shadow on :hover event                |
 
 ### Border variables
 
