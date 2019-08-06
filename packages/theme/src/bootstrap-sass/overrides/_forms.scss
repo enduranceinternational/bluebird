@@ -128,6 +128,7 @@ input[type='checkbox'] {
 // // input[type="color"]
 .control-label {
   font-size: $font-size-small;
+  line-height: $line-height-small;
 }
 .form-control {
   //   display: block;
@@ -559,15 +560,15 @@ input[type='checkbox'] {
 //     @include make-row;
 //   }
 
-//   // Reset spacing and right align labels, but scope to media queries so that
-//   // labels on narrow viewports stack the same as a default form example.
-//   @media (min-width: $screen-sm-min) {
-//     .control-label {
-//       padding-top: ($padding-base-vertical + 1); // Default padding plus a border
-//       margin-bottom: 0;
-//       text-align: right;
-//     }
+// // Reset spacing and right align labels, but scope to media queries so that
+// // labels on narrow viewports stack the same as a default form example.
+// @media (min-width: $screen-sm-min) {
+//   .control-label {
+//     padding-top: ($padding-base-vertical + 1); // Default padding plus a border
+//     margin-bottom: 0;
+//     text-align: right;
 //   }
+// }
 
 //   // Validation states
 //   //
