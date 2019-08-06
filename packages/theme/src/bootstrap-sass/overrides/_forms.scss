@@ -55,23 +55,23 @@
 //   appearance: none;
 // }
 
-// // Position radios and checkboxes better
-// input[type="radio"],
-// input[type="checkbox"] {
-//   margin: 4px 0 0;
-//   margin-top: 1px \9; // IE8-9
-//   line-height: normal;
+// Position radios and checkboxes better
+input[type='radio'],
+input[type='checkbox'] {
+  margin: 2px 0 0;
+  margin-top: 1px \9; // IE8-9
+  line-height: normal;
 
-//   // Apply same disabled cursor tweak as for inputs
-//   // Some special care is needed because <label>s don't inherit their parent's `cursor`.
-//   //
-//   // Note: Neither radios nor checkboxes can be readonly.
-//   &[disabled],
-//   &.disabled,
-//   fieldset[disabled] & {
-//     cursor: $cursor-disabled;
-//   }
-// }
+  // Apply same disabled cursor tweak as for inputs
+  // Some special care is needed because <label>s don't inherit their parent's `cursor`.
+  //
+  // Note: Neither radios nor checkboxes can be readonly.
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
 
 // input[type="file"] {
 //   display: block;
@@ -146,7 +146,7 @@
   //   @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 
   // Customize the `:focus` state to imitate native WebKit styles.
-  @include bb-form-control-focus;
+  @include form-control-border-focus;
 
   //   // Placeholder
   //   @include placeholder;
@@ -225,60 +225,62 @@
 // //
 // // Indent the labels to position radios/checkboxes as hanging controls.
 
-// .radio,
-// .checkbox {
-//   position: relative;
-//   display: block;
-//   margin-top: 10px;
-//   margin-bottom: 10px;
+.radio,
+.checkbox {
+  // position: relative;
+  // display: block;
+  // margin-top: 10px;
+  // margin-bottom: 10px;
 
-//   // These are used on elements with <label> descendants
-//   &.disabled,
-//   fieldset[disabled] & {
-//     label {
-//       cursor: $cursor-disabled;
-//     }
-//   }
+  // // These are used on elements with <label> descendants
+  // &.disabled,
+  // fieldset[disabled] & {
+  //   label {
+  //     cursor: $cursor-disabled;
+  //   }
+  // }
 
-//   label {
-//     min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
-//     padding-left: 20px;
-//     margin-bottom: 0;
-//     font-weight: 400;
-//     cursor: pointer;
-//   }
-// }
-// .radio input[type="radio"],
-// .radio-inline input[type="radio"],
-// .checkbox input[type="checkbox"],
-// .checkbox-inline input[type="checkbox"] {
-//   position: absolute;
-//   margin-top: 4px \9;
-//   margin-left: -20px;
-// }
+  label {
+    // min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
+    padding-left: 32px;
+    // margin-bottom: 0;
+    // font-weight: 400;
+    // cursor: pointer;
+  }
+}
+.radio input[type='radio'],
+.radio-inline input[type='radio'],
+.checkbox input[type='checkbox'],
+.checkbox-inline input[type='checkbox'] {
+  // position: absolute;
+  // margin-top: 4px \9;
+  margin-left: -30px;
+  width: 20px;
+  height: 20px;
+}
 
 // .radio + .radio,
 // .checkbox + .checkbox {
 //   margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
 // }
 
-// // Radios and checkboxes on same line
-// .radio-inline,
-// .checkbox-inline {
-//   position: relative;
-//   display: inline-block;
-//   padding-left: 20px;
-//   margin-bottom: 0;
-//   font-weight: 400;
-//   vertical-align: middle;
-//   cursor: pointer;
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  // position: relative;
+  // display: inline-block;
+  padding-left: 32px;
+  // margin-bottom: 0;
+  // font-weight: 400;
+  // vertical-align: middle;
+  // cursor: pointer;
 
-//   // These are used directly on <label>s
-//   &.disabled,
-//   fieldset[disabled] & {
-//     cursor: $cursor-disabled;
-//   }
-// }
+  // // These are used directly on <label>s
+  // &.disabled,
+  // fieldset[disabled] & {
+  //   cursor: $cursor-disabled;
+  // }
+}
 // .radio-inline + .radio-inline,
 // .checkbox-inline + .checkbox-inline {
 //   margin-top: 0;

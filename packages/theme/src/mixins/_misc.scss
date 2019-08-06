@@ -15,18 +15,15 @@
       bottom: $size solid $color;
       left: $size solid transparent;
       right: $size solid transparent;
-    }
-    @else if $direction == 'down' {
+    } @else if $direction == 'down' {
       top: $size solid $color;
       left: $size solid transparent;
       right: $size solid transparent;
-    }
-    @else if $direction == 'right' {
+    } @else if $direction == 'right' {
       left: $size solid $color;
       top: $size solid transparent;
       bottom: $size solid transparent;
-    }
-    @else if $direction == 'left' {
+    } @else if $direction == 'left' {
       right: $size solid $color;
       top: $size solid transparent;
       bottom: $size solid transparent;
@@ -43,10 +40,14 @@
     animation: slide-in-#{$direction} 0.5s forwards;
   }
   @keyframes slide-in-#{$direction} {
-    100% { transform: translateX(0%); }
+    100% {
+      transform: translateX(0%);
+    }
   }
   @-webkit-keyframes slide-in-#{$direction} {
-    100% { -webkit-transform: translateX(0%); }
+    100% {
+      -webkit-transform: translateX(0%);
+    }
   }
 
   // slide out right
@@ -56,18 +57,26 @@
   }
 
   @keyframes slide-out-#{$direction} {
-    0% { transform: translateX(0%); }
-    100% { -webkit-transform: translateX($value); }
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      -webkit-transform: translateX($value);
+    }
   }
   @-webkit-keyframes slide-out-#{$direction} {
-    0% { transform: translateX(0%); }
-    100% { -webkit-transform: translateX($value); }
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      -webkit-transform: translateX($value);
+    }
   }
 }
 
 @mixin tablet {
   @media (min-width: $screen-sm) {
-    @content
+    @content;
   }
 }
 
@@ -82,10 +91,13 @@
 
 // If no image exists, uses this as a filler so that the styling keeps its structure.
 @mixin no-image($height) {
-  background-image: linear-gradient(135deg, lighten($brand-primary, 10%), darken($brand-primary, 10%));
+  background-image: linear-gradient(
+    135deg,
+    lighten($brand-primary, 10%),
+    darken($brand-primary, 10%)
+  );
   display: block;
   font-size: 0;
   height: $height;
   line-height: 0;
 }
-
