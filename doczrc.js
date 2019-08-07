@@ -67,11 +67,11 @@ export default {
     },
     'Foundations',
     'Components',
+    'Utility Classes',
     'Release Notes',
     'Sitemap',
     'FAQ',
     'Roadmap',
-    'Utility Classes',
     'Support',
   ],
 
