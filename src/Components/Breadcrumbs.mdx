@@ -2,12 +2,19 @@
 menu: Components
 ---
 
-import { Breadcrumb } from "react-bootstrap";
-import { Playground } from "docz";
+import { Breadcrumb } from 'react-bootstrap';
+import { Playground } from 'docz';
 
-# Breadcrumbs
+# Breadcrumbs ![Ready Badge](https://img.shields.io/badge/component-ready-green.svg#badge)
 
-Breadcrumbs are used to indicate the current page's location. Add `active` attribute to active `Breadcrumb.Item`.
+Breadcrumbs provide a consistent way for users to orient themselves within a hierarchy of pages. Users are able to quickly go back through parent level pages in order to return to a previous screen. 
+
+## General Guidelines
+
+- All links in a set of breadcrumbs should be clickable
+- Breadcrumbs are a secondary navigational element and should not replace primary navigation
+
+Add `active` attribute to make a `Breadcrumb.Item` active.
 
 Do not set both `active` and `href` attributes. `active` overrides `href` and `span` element is rendered instead of `a`.
 
