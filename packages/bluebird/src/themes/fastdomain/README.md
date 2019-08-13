@@ -1,6 +1,6 @@
 # UAF Theme FastDomain
 
-A lightweight, variables-only theme package for `uaf-theme`.
+A lightweight, variables-only theme package for `@eigi/theme`.
 
 ## Changelog
 

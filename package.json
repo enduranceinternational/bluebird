@@ -38,7 +38,6 @@
     "@eigi/bluebird": "file:packages/bluebird",
     "@eigi/eslint-config": "0.0.0",
     "@eigi/stylelint-config": "file:packages/stylelint-config",
-    "@eigi/theme": "file:packages/theme",
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.6",
     "@emotion/styled-base": "^10.0.5",

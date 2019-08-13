@@ -1,17 +1,3 @@
-/**
- * uaf-design-system
- *
- * Expands on `uaf-theme` by exposing global styles, helpers and components.
- *
- * Roadmap:
- * - Pair with https://www.bluerockdesignsystem.com/
- * - Enable different sections of our app to load the design system in at specfic versions.
- *
- * Dependencies:
- * - uaf-theme
- * - uaf-theme brand-specific theme
- */
-
 // mixins
 @import 'mixins/mixins';
 

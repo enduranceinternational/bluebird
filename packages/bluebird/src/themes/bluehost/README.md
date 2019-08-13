@@ -1,6 +1,6 @@
 # UAF Theme Bluehost
 
-A lightweight, variables-only theme package for `uaf-theme`.
+A lightweight, variables-only theme package for `@eigi/theme`.
 
 ## Changelog
 
