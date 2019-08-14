@@ -6,49 +6,36 @@ import { Playground } from "docz";
 
 # Typography ![Ready Badge](https://img.shields.io/badge/component-ready-green.svg#badge)
 
+By consistently tying typographic styles to appropriate functions in the interface, we create a clear visual pattern for users to follow while they’re interacting with our product. 
+
+Bluebird's font family is Open Sans.
+
+## Font Weights
+
+Three of the Open Sans font weights are available for use.
+
+<Playground>
+<p class="fsxl thin">Open Sans Light</p>
+<p class="fsxl regular">Open Sans Regular</p>
+<p class="fsxl bold">Open Sans Semibold</p>
+</Playground>
+
 ## Headings
 
 All HTML headings, `<h1>` through `<h6>`, are available.
-
-<Playground>
-  <h1>h1. Bootstrap heading</h1>
-  <h2>h2. Bootstrap heading</h2>
-  <h3>h3. Bootstrap heading</h3>
-  <h4>h4. Bootstrap heading</h4>
-  <h5>h5. Bootstrap heading</h5>
-  <h6>h6. Bootstrap heading</h6>
-</Playground>
-
-## Heading classes
 
 .h1 through .h6 classes are also available, for when you want to match the font styling of a heading
 but cannot use the associated HTML element.
 
 <Playground>
-  <p className="h1">h1. Bootstrap heading</p>
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
 </Playground>
 
-<!--
-## Heading with secondary
-
-Use the included utility classes to recreate the `small` secondary heading text
-
-<Playground>
-  <h1>
-    h1. Bootstrap heading <small>Secondary text</small>
-  </h1>
-</Playground>
-
-## Lead
-
-Make a paragraph stand out by adding .lead
-
-<Playground>
-  <p className="lead">
-    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-  </p>
-</Playground>
--->
 
 ## Paragraphs
 
@@ -72,87 +59,17 @@ while avoiding any unwanted semantic implications that the tags would bring.
 While not shown below, feel free to use `<b>` and `<i>` in HTML5.
 `<b>` is meant to highlight words or phrases without conveying additional importance while `<i>` is mostly for voice, technical terms, etc.
 
-### Marked text
-
-You can use the mark tag to `highlight` text.
-
 <Playground>
-  <p>
-    You can use the mark tag to <mark>highlight</mark> text.
-  </p>
+  <p>Use the mark tag to <mark>highlight text</mark></p>
+  <p><del>Use the del tag to treat text as deleted</del></p>
+  <p><s>Use the s tag to treet text with a strikethrough</s></p>
+  <p><ins>Use the ins tag to treat text as inserted</ins></p>
+  <p><u>Use the u tag to underline text</u></p>
+  <p><small>Use the small tag to make text smaller</small></p>
+  <p><strong>Use the bold or strong tags to make text bolder</strong></p>
+  <p><em>Use the em tag to make text italicized</em></p>
 </Playground>
 
-### Deleted text
-
-If text is meant to be treated as deleted text
-
-<Playground>
-  <p>
-    <del>This line of text is meant to be treated as deleted text.</del>
-  </p>
-</Playground>
-
-### Strikethrough text
-
-If text is meant to be treated as `no longer accurate`
-
-<Playground>
-  <p>
-    <s>This line of text is meant to be treated as no longer accurate.</s>
-  </p>
-</Playground>
-
-### Inserted text
-
-If line of text is meant to be treated as an `addition` to the document
-
-<Playground>
-  <p>
-    <ins>
-      This line of text is meant to be treated as an addition to the document.
-    </ins>
-  </p>
-</Playground>
-
-### Underlined text
-
-If line of text is to be rendered as underlined
-
-<Playground>
-  <p>
-    <u>This line of text will render as underlined</u>
-  </p>
-</Playground>
-
-### Small text
-
-If line of text is meant to be treated as `fine print`.
-
-<Playground>
-  <p>
-    <small>This line of text is meant to be treated as fine print.</small>
-  </p>
-</Playground>
-
-### Bold
-
-Line rendered as bold text
-
-<Playground>
-  <p>
-    <strong>rendered as bold text</strong>
-  </p>
-</Playground>
-
-### Italics
-
-line rendered as italicized text.
-
-<Playground>
-  <p>
-    <em>rendered as italicized text</em>
-  </p>
-</Playground>
 
 ## Text Utilities
 
@@ -191,6 +108,45 @@ For left, right, and center alignment, responsive classes are available that use
   <p className="text-uppercase">Uppercased text.</p>
   <p className="text-capitalize">Capitalized text.</p>
 </Playground>
+
+## Line Lengths
+
+The number of characters that appear on a given line of text influence the readability of that text. 
+
+- Aim for line lengths between __45–75 characters__ for desktop devices and between __35–50 characters__ for mobile devices
+- Optimal line lengths are __66 characters__ for desktop devices and __39 characters__ for mobile devices
+- Anything above __90 characters__ on desktop devices and above __50 characters__ on mobile devices are too long
+
+These guidelines are recommended for desktop and mobile devices:
+
+__Desktop Line Length Guidelines__
+![Desktop Line Lengths](../assets/DesktopLineLengths.png)
+
+__Mobile Line Length Guidelines__
+![Mobile Line Lengths](../assets/MobileLineLengths.png)
+
+<!--
+## Heading with secondary
+
+Use the included utility classes to recreate the `small` secondary heading text
+
+<Playground>
+  <h1>
+    h1. Bootstrap heading <small>Secondary text</small>
+  </h1>
+</Playground>
+
+## Lead
+
+Make a paragraph stand out by adding .lead
+
+<Playground>
+  <p className="lead">
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+  </p>
+</Playground>
+-->
+
 
 <!--
 ## Abbreviations
