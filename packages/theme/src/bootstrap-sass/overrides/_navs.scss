@@ -26,8 +26,8 @@
       &:hover,
       &:focus {
         background-color: $nav-link-hover-bg;
-        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color
-          $nav-tabs-border-color;
+        border-color: $nav-tabs-link-hover-border-color
+          $nav-tabs-link-hover-border-color $nav-tabs-border-color;
         text-decoration: none;
       }
     }
@@ -144,11 +144,11 @@
     // Make the list-items overlay the bottom border
     margin-bottom: -1px;
     margin-right: $mdlg;
-    
+
     @media (min-width: $screen-xs) {
       margin-right: $lg;
     }
-        
+
     > a,
     > button {
       &:after {
@@ -176,16 +176,19 @@
     }
   }
 
-  > li .active,
-  > li a:hover,
-  > li a:focus {
+  > li .active {
     &:after {
       width: 100%;
       left: 0;
       right: 0;
       border-bottom: 3px solid $brand-primary;
-      color: $brand-primary;
     }
+  }
+
+  > li .active,
+  > li a:hover,
+  > li a:focus {
+    color: $brand-primary;
   }
 
   .nav-item--theme-alt {
