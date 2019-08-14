@@ -4,6 +4,7 @@ menu: Components
 
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
+import { HashRouter as Router, NavLink } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/lib/NavDropdown';
 import MenuItem from 'react-bootstrap/lib/MenuItem';
 import { Playground } from 'docz';
@@ -82,4 +83,41 @@ They can be `justified` to take the full width of their parent.
       <MenuItem eventKey="2.4">Separated link</MenuItem>
     </NavDropdown>
   </Nav>
+</Playground>
+
+## Nav underline style ![Not Ready Badge](https://img.shields.io/badge/component-not%20ready-red.svg#badge)
+
+Underline styled tabs can be build with Router, li, and Navlink elements by using "nav nav-tabs-underline" on a parent and an li element containing a NavLink or Link element.
+
+<Playground>
+  <Router>
+    <div className="nav-slider-wrapper mb5">
+      <ul className="nav nav-tabs-underline">
+        <li>
+          <NavLink
+            activeClassName="active"
+            to={`/oneplace`}
+          >
+            Tab 1
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            to={`/anotherplace`}
+          >
+            Tab 2
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            to={`/athirdplace`}
+          >
+            Tab 3
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+  </Router>
 </Playground>
