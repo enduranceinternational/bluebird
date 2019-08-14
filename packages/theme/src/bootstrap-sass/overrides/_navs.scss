@@ -144,29 +144,24 @@
     // Make the list-items overlay the bottom border
     margin-bottom: -1px;
     margin-right: $mdlg;
-    padding-bottom: $xs;
-
+    
     @media (min-width: $screen-xs) {
       margin-right: $lg;
     }
-
-    &:after {
-      content: '';
-      bottom: 0;
-      position: absolute;
-      display: block;
-      width: 0%;
-      border-bottom: 3px solid transparent;
-      transition: 0.27s all 0.25s ease;
-    }
-
-    &:after {
-      left: 100%;
-      right: 0;
-    }
-
+        
     > a,
     > button {
+      &:after {
+        content: '';
+        bottom: 0;
+        position: absolute;
+        display: block;
+        width: 0%;
+        border-bottom: 3px solid transparent;
+        transition: 0.27s all 0.25s ease;
+        left: 100%;
+        right: 0;
+      }
       border-radius: 0;
       border: 0;
       color: $gray-darker;
@@ -175,41 +170,21 @@
       font-weight: 400;
       line-height: $line-height-base;
       margin-right: 0;
-      padding: $xs 0;
+      padding-top: $xs;
+      padding-bottom: $sm;
       outline: none;
     }
   }
 
-  > li.active,
-  > li.active:hover,
-  > li.active:focus {
+  > li .active,
+  > li a:hover,
+  > li a:focus {
     &:after {
       width: 100%;
       left: 0;
       right: 0;
       border-bottom: 3px solid $brand-primary;
       color: $brand-primary;
-    }
-
-    ~ li::after {
-      left: 0;
-      right: 100%;
-    }
-  }
-
-  > li:hover,
-  > li:focus {
-    &:after {
-      width: 100%;
-      left: 0;
-      right: 0;
-      border-bottom: 3px solid $brand-primary;
-      color: $brand-primary;
-    }
-
-    ~ li::after {
-      left: 0;
-      right: 100%;
     }
   }
 
