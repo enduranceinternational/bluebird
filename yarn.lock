@@ -1346,8 +1346,30 @@
   resolved "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
+"@eigi/bluebird-bluehost@file:packages/bluebird-bluehost":
+  version "1.3.0"
+  dependencies:
+    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-bluehost-1.3.0-fe2af8ed-87d2-42e7-9901-56ac4ce17469-1565890702171/node_modules/@eigi/bluebird"
+
+"@eigi/bluebird-fastdomain@file:packages/bluebird-fastdomain":
+  version "1.3.0"
+  dependencies:
+    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-fastdomain-1.3.0-c1366189-0054-4a6e-8254-cf1d00c45ef6-1565890702181/node_modules/@eigi/bluebird"
+
+"@eigi/bluebird-hostmonster@file:packages/bluebird-hostmonster":
+  version "1.3.0"
+  dependencies:
+    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-hostmonster-1.3.0-5c922b05-f5c9-4d80-92ef-117bd3e11b44-1565890702188/node_modules/@eigi/bluebird"
+
+"@eigi/bluebird-justhost@file:packages/bluebird-justhost":
+  version "1.3.0"
+  dependencies:
+    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-justhost-1.3.0-c9afd485-1a34-4a70-a89d-8afa1af6fd6d-1565890702198/node_modules/@eigi/bluebird"
+
 "@eigi/bluebird@file:packages/bluebird":
   version "1.3.0"
+  dependencies:
+    bootstrap-sass "^3.4.0"
 
 "@eigi/eslint-config@0.0.0":
   version "0.0.0"

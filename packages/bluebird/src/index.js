@@ -1,3 +1,3 @@
-// eslint-disable-next-line import/no-dynamic-require
-module.exports = require(`./themes/${process.env.BRAND ||
-  'bluehost'}/index.scss`);
+module.exports = process.env.BRAND
+  ? require(`@eigi/bluebird-${process.env.BRAND}`)
+  : require('src/index.scss');
