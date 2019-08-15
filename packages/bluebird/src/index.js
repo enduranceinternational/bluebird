@@ -1,3 +1,2 @@
-module.exports = process.env.BRAND
-  ? require(`@eigi/bluebird-${process.env.BRAND}`)
-  : require('@eigi/bluebird-theme-default');
+module.exports = require(`@eigi/bluebird-${process.env.BRAND ||
+  'theme-default'}`);
