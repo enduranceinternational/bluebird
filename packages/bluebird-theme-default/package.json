@@ -1,5 +1,6 @@
 {
   "name": "@eigi/bluebird-theme-default",
+  "license": "MIT",
   "version": "1.3.0",
   "description": "Bluebird theme default",
   "main": "index.js",
