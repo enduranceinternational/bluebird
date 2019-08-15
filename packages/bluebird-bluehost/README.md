@@ -1,4 +1,4 @@
-# UAF Theme Bluehost
+# Bluebird Theme Bluehost
 
 A lightweight, variables-only theme package for `@eigi/theme`.
 

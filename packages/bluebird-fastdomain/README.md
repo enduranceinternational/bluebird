@@ -1,4 +1,4 @@
-# UAF Theme FastDomain
+# Bluebird Theme FastDomain
 
 A lightweight, variables-only theme package for `@eigi/theme`.
 

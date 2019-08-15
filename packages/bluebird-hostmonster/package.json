@@ -4,7 +4,6 @@
   "description": "Bluebird theme for HostMonster",
   "main": "index.js",
   "author": "Endurance International Group",
-  "private": true,
   "dependencies": {
     "@eigi/bluebird": "file:../bluebird"
   },

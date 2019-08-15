@@ -1,4 +1,4 @@
-# UAF Theme JustHost
+# Bluebird Theme JustHost
 
 A lightweight, variables-only theme package for `@eigi/theme`.
 

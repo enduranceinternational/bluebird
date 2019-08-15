@@ -1,7 +1,7 @@
 {
-  "name": "@eigi/bluebird-justhost",
+  "name": "@eigi/bluebird-theme-default",
   "version": "1.3.0",
-  "description": "Bluebird theme for Justhost",
+  "description": "Bluebird theme default",
   "main": "index.js",
   "author": "Endurance International Group",
   "dependencies": {
