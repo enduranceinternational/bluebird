@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/enduranceinternational/bluebird/compare/v1.3.0...v1.3.1) (2019-08-15)
+
+
+### Bug Fixes
+
+* **theme:** nav-tabs-underline repaired to show active and disabled states ([4c337fb](https://github.com/enduranceinternational/bluebird/commit/4c337fb))
+
+
+
+
+
 # [1.3.0](https://github.com/enduranceinternational/bluebird/compare/v1.2.2...v1.3.0) (2019-08-02)
 
 
