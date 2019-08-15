@@ -176,7 +176,9 @@
     }
   }
 
-  > li .active {
+  > li .active,
+  > li.active a,
+  > li.active button {
     &:after {
       width: 100%;
       left: 0;
@@ -186,8 +188,12 @@
   }
 
   > li .active,
+  > li.active a,
+  > li.active button,
   > li a:hover,
-  > li a:focus {
+  > li a:focus,
+  > li button:hover,
+  > li button:focus {
     color: $brand-primary;
   }
 
