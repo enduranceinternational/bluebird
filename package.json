@@ -9,7 +9,6 @@
     "react-bootstrap": "^0.32.4",
     "react-content-loader": "^4.2.1",
     "react-dom": "^16.8.0",
-    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "typescript": "*"
   },
