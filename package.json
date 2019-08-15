@@ -23,7 +23,7 @@
     "react:eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "@eigi/eslint-config"
   },
   "browserslist": [
     ">0.2%",
