@@ -5,12 +5,7 @@
   "main": "src/index.js",
   "description": "Bluebird UI",
   "dependencies": {
-    "bluebird-theme-default": "file:../bluebird-theme-default",
     "bootstrap-sass": "^3.4.0"
-  },
-  "devDependencies": {
-    "@eigi/eslint-config": "0.0.0",
-    "@eigi/stylelint-config": "file:../stylelint-config"
   },
   "eslintConfig": {
     "extends": "@eigi/eslint-config"

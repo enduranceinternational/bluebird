@@ -1347,29 +1347,23 @@
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
 "@eigi/bluebird-bluehost@file:packages/bluebird-bluehost":
-  version "1.3.0"
-  dependencies:
-    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-bluehost-1.3.0-67c07f08-355d-4b09-bb83-65852549124f-1566840757219/node_modules/@eigi/bluebird"
+  version "1.3.3"
 
 "@eigi/bluebird-fastdomain@file:packages/bluebird-fastdomain":
-  version "1.3.0"
-  dependencies:
-    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-fastdomain-1.3.0-b69c53c8-6d59-4674-af05-9f48b018274f-1566840757222/node_modules/@eigi/bluebird"
+  version "1.3.3"
 
 "@eigi/bluebird-hostmonster@file:packages/bluebird-hostmonster":
-  version "1.3.0"
-  dependencies:
-    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-hostmonster-1.3.0-be633aeb-d723-4e65-b3c5-22408d3250a4-1566840757224/node_modules/@eigi/bluebird"
+  version "1.3.3"
 
 "@eigi/bluebird-justhost@file:packages/bluebird-justhost":
+  version "1.3.3"
+
+"@eigi/bluebird-theme-default@file:packages/bluebird-theme-default":
   version "1.3.0"
-  dependencies:
-    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-justhost-1.3.0-509496e0-1a1c-4cbe-89c0-934806998e43-1566840757226/node_modules/@eigi/bluebird"
 
 "@eigi/bluebird@file:packages/bluebird":
-  version "1.3.2"
+  version "1.3.3"
   dependencies:
-    bluebird-theme-default "file:../../Library/Caches/Yarn/v4/npm-@eigi-bluebird-1.3.2-818d3981-4ddc-4cdc-88c4-e51d6713f2b7-1566840757214/node_modules/@eigi/bluebird-theme-default"
     bootstrap-sass "^3.4.0"
 
 "@eigi/eslint-config@0.0.0":
@@ -3984,11 +3978,6 @@ block-stream@*:
   integrity sha1-E+v+d4oDIFz+A3UUgeu0szAMEmo=
   dependencies:
     inherits "~2.0.0"
-
-"bluebird-theme-default@file:packages/bluebird-theme-default":
-  version "1.3.0"
-  dependencies:
-    "@eigi/bluebird" "file:../../Library/Caches/Yarn/v4/npm-bluebird-theme-default-1.3.0-933e524f-ecf5-4574-b55a-71cbfb187ed8-1566840757217/node_modules/bluebird"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.5.5"
