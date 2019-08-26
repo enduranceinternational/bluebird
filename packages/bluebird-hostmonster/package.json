@@ -1,12 +1,12 @@
 {
-  "name": "@eigi/bluebird",
+  "name": "@eigi/bluebird-hostmonster",
   "license": "MIT",
-  "version": "1.3.2",
-  "main": "src/index.js",
-  "description": "Bluebird UI",
+  "version": "1.3.0",
+  "description": "Bluebird theme for HostMonster",
+  "main": "index.js",
+  "author": "Endurance International Group",
   "dependencies": {
-    "bootstrap-sass": "^3.4.0",
-    "bluebird-theme-default": "file:../bluebird-theme-default"
+    "@eigi/bluebird": "file:../bluebird"
   },
   "devDependencies": {
     "@eigi/eslint-config": "0.0.0",

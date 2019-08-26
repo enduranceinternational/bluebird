@@ -1,5 +1,5 @@
 /**
- * uaf-theme
+ * base bootstrap theme
  *
  * A base bootstrap theme that provides styling to any frontend app
  * that requires a Bootstrap base.
@@ -11,7 +11,7 @@
 
 // abstracts
 @import 'variables';
-@import 'mixins';
+@import 'mixins/mixins';
 
 // vendors
 @import 'bootstrap-sass/bootstrap-custom';

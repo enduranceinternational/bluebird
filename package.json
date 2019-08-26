@@ -23,7 +23,7 @@
     "react:eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "@eigi/eslint-config"
   },
   "browserslist": [
     ">0.2%",
@@ -36,14 +36,16 @@
     "@commitlint/config-conventional": "^8.0.0",
     "@commitlint/config-lerna-scopes": "^8.0.0",
     "@eigi/bluebird": "file:packages/bluebird",
+    "@eigi/bluebird-bluehost": "file:packages/bluebird-bluehost",
+    "@eigi/bluebird-fastdomain": "file:packages/bluebird-fastdomain",
+    "@eigi/bluebird-hostmonster": "file:packages/bluebird-hostmonster",
+    "@eigi/bluebird-justhost": "file:packages/bluebird-justhost",
     "@eigi/eslint-config": "0.0.0",
     "@eigi/stylelint-config": "file:packages/stylelint-config",
-    "@eigi/theme": "file:packages/theme",
     "@emotion/cache": "^10.0.0",
     "@emotion/core": "^10.0.6",
     "@emotion/styled-base": "^10.0.5",
     "acorn": "^6.0.5",
-    "bootstrap-sass": "^3.4.0",
     "docz": "1.2.0",
     "docz-core": "1.2.0",
     "docz-plugin-css": "^0.11.0",

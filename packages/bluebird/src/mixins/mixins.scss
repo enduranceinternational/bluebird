@@ -2,7 +2,8 @@
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/mixins';
 
 // theme mixins
-@import '~@eigi/theme/src/mixins';
+@import 'misc';
+@import 'buttons';
 
 // custom design system mixins
 @import 'colors';
