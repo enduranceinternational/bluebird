@@ -1,6 +1,6 @@
 {
   "name": "@eigi/stylelint-config",
-  "version": "1.2.2",
+  "version": "1.3.2",
   "description": "A Stylelint configuration for @eigi apps",
   "main": "index.js",
   "author": "Endurance International Group",
