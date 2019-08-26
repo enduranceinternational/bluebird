@@ -5,13 +5,6 @@
   "description": "Bluebird theme for FastDomain",
   "main": "index.js",
   "author": "Endurance International Group",
-  "dependencies": {
-    "@eigi/bluebird": "file:../bluebird"
-  },
-  "devDependencies": {
-    "@eigi/eslint-config": "0.0.0",
-    "@eigi/stylelint-config": "file:../stylelint-config"
-  },
   "eslintConfig": {
     "extends": "@eigi/eslint-config"
   },

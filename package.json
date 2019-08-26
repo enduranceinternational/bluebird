@@ -3,16 +3,6 @@
   "license": "MIT",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "eslint": "^5.16.0",
-    "null": "^1.0.1",
-    "react": "^16.8.0",
-    "react-bootstrap": "^0.32.4",
-    "react-content-loader": "^4.2.1",
-    "react-dom": "^16.8.0",
-    "react-scripts": "3.0.1",
-    "typescript": "*"
-  },
   "scripts": {
     "start": "docz dev",
     "build": "docz build",
@@ -40,6 +30,7 @@
     "@eigi/bluebird-fastdomain": "file:packages/bluebird-fastdomain",
     "@eigi/bluebird-hostmonster": "file:packages/bluebird-hostmonster",
     "@eigi/bluebird-justhost": "file:packages/bluebird-justhost",
+    "@eigi/bluebird-theme-default": "file:packages/bluebird-theme-default",
     "@eigi/eslint-config": "0.0.0",
     "@eigi/stylelint-config": "file:packages/stylelint-config",
     "@emotion/cache": "^10.0.0",
@@ -50,8 +41,16 @@
     "docz-core": "1.2.0",
     "docz-plugin-css": "^0.11.0",
     "docz-theme-default": "1.2.0",
+    "eslint": "^5.16.0",
     "husky": "^2.5.0",
     "lerna": "^3.15.0",
+    "null": "^1.0.1",
+    "react": "^16.8.0",
+    "react-bootstrap": "^0.32.4",
+    "react-content-loader": "^4.2.1",
+    "react-dom": "^16.8.0",
+    "react-scripts": "3.0.1",
+    "typescript": "*",
     "webpack": "^4.34.0"
   },
   "husky": {
