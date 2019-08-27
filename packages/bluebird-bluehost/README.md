@@ -1,6 +1,6 @@
 # Bluebird Theme Bluehost
 
-A lightweight, variables-only theme package for `@eigi/theme`.
+A lightweight, variables-only theme package for `@eigi/bluebird`.
 
 ## Changelog
 
