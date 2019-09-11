@@ -48,11 +48,11 @@ $default-box-shadow-color: #ccc;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial,
   sans-serif !default;
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 $font-family-blink-mac: -apple-system, BlinkMacSystemFont,
   $font-family-sans-serif;
@@ -120,14 +120,14 @@ $headings-color: inherit !default;
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
 $icon-font-path: if(
   $bootstrap-sass-asset-helper,
-  'bootstrap/',
-  '../fonts/bootstrap/'
+  "bootstrap/",
+  "../fonts/bootstrap/"
 ) !default;
 
 //** File name for all font files.
-$icon-font-name: 'glyphicons-halflings-regular' !default;
+$icon-font-name: "glyphicons-halflings-regular" !default;
 //** Element ID within SVG icon file.
-$icon-font-svg-id: 'glyphicons_halflingsregular' !default;
+$icon-font-svg-id: "glyphicons_halflingsregular" !default;
 
 //== Components
 //
@@ -846,7 +846,7 @@ $breadcrumb-color: $gray-light;
 //** Text color of current page in the breadcrumb
 $breadcrumb-active-color: $nav-text;
 //** Textual separator for between breadcrumb elements
-$breadcrumb-separator: '/' !default;
+$breadcrumb-separator: "/" !default;
 
 //== Carousel
 //

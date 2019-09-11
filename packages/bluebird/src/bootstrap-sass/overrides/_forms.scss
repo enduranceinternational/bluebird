@@ -56,8 +56,8 @@
 // }
 
 // Position radios and checkboxes better
-input[type='radio'],
-input[type='checkbox'] {
+input[type="radio"],
+input[type="checkbox"] {
   margin: 2px 0 0;
   margin-top: 1px \9; // IE8-9
   line-height: normal;
@@ -128,14 +128,15 @@ input[type='checkbox'] {
 // // input[type="color"]
 .control-label {
   font-size: $font-size-small;
-  line-height: $line-height-body-small;
+  // line-height: $line-height-body-small;
 }
+
 .form-control {
   //   display: block;
   //   width: 100%;
   //   height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  padding: 7px $padding-base-horizontal;
-  margin: $padding-base-vertical 0;
+  // padding: 7px $padding-base-horizontal;
+  // margin: $padding-base-vertical 0;
   //   font-size: $font-size-base;
   //   line-height: $line-height-base;
   //   color: $input-color;
@@ -249,10 +250,10 @@ input[type='checkbox'] {
     // cursor: pointer;
   }
 }
-.radio input[type='radio'],
-.radio-inline input[type='radio'],
-.checkbox input[type='checkbox'],
-.checkbox-inline input[type='checkbox'] {
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
   // position: absolute;
   // margin-top: 4px \9;
   margin-left: -30px;
