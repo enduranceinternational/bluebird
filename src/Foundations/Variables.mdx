@@ -1,0 +1,171 @@
+---
+menu: Foundations
+---
+
+import { Swatch } from '../utils/Colors';
+
+# Variables
+
+> Building blocks for custom CSS with Bluebird
+
+## Introduction
+
+Keeping a wide array of applications in visual harmony requires guidelines and patterns, but sometimes Component style building blocks are not enough to achieve the spirit of a design. For Bluebird, that's where _Variables_ (also known as _abstracts_) come into play.
+
+Variables are micro-sized building blocks that enable you to write custom css to achieve the designs you are provided. As you write custom css you begin to own the maintenance of your design and application, but by using variables you can offload some of that maintenance to Bluebird.
+
+As an example, you may be designing a series of paragraphs where each has a set amount of space below it. You could write something like:
+
+```scss
+p {
+  margin-bottom: 16px;
+}
+```
+
+The problem with this approach is that when the UX team decides to move to a different vertical spacing standard, you must _manually_ update your styles to match.
+
+Bluebird provides spacing, typography and many other variables to use throughout your custom stylesheets that will allow you to offset the maintenance burden.
+
+The previous example can be improved with:
+
+```scss
+p {
+  margin-bottom: $sm; // 16px
+}
+```
+
+By using the scss variable `$sm`, the component adopts the UX standard from Bluebird, and if the design system later changes, so will your component.
+
+## Source
+
+The best way to view the docs for _variables_ is to view the source code directly. You might find that cloning the Bluebird repo alongside your project workspace makes it easy to quickly reference the variables files, but you can also bookmark it or use the following link:
+
+[Bluebird Variables & Abstracts on GitHub](https://github.com/enduranceinternational/bluebird/tree/master/packages/bluebird/src/abstracts)
+
+## Spacing
+
+Use spacing to control margins, paddings and other standardized spaces using our standardized values.
+
+| Variable | Value  |
+| -------- | ------ |
+| `$xxxs`  | `2px`  |
+| `$xxs`   | `4px`  |
+| `$xs`    | `8px`  |
+| `$sm`    | `16px` |
+| `$md`    | `24px` |
+| `$mdlg`  | `32px` |
+| `$lg`    | `40px` |
+| `$xl`    | `48px` |
+| `$xxl`   | `64px` |
+| `$xxxl`  | `80px` |
+
+## Type: Font sizes
+
+| Variable                | Value  |
+| ----------------------- | ------ |
+| `$font-size-xxs`        | `12px` |
+| `$font-size-xs`         | `13px` |
+| `$font-size-sm`         | `14px` |
+| `$font-size-m`          | `16px` |
+| `$font-size-l`          | `20px` |
+| `$font-size-xl`         | `24px` |
+| `$font-size-page-title` | `28px` |
+| `$font-size-h1`         | `28px` |
+| `$font-size-h1-tablet`  | `32px` |
+| `$font-size-h2`         | `24px` |
+| `$font-size-h2-tablet`  | `28px` |
+| `$font-size-h3`         | `20px` |
+| `$font-size-h4`         | `16px` |
+| `$font-size-h5`         | `16px` |
+| `$font-size-h6`         | `14px` |
+
+## Type: Font weights
+
+| Variable                | Value |
+| ----------------------- | ----- |
+| `$font-weight-thin`     | `300` |
+| `$font-weight-normal`   | `400` |
+| `$font-weight-bold`     | `600` |
+| `$headings-font-weight` | `600` |
+
+## Type: Line heights
+
+| Variable                 | Value       |
+| ------------------------ | ----------- |
+| `$line-height-base`      | `1.5`       |
+| `$line-height-fit`       | `1.125`     |
+| `$line-height-condensed` | `1.25`      |
+| `$line-height-double`    | `2`         |
+| `$line-height-titles`    | `1.25`      |
+| `$line-height-1`         | `1`         |
+| `$line-height-h1`        | `40px`      |
+| `$line-height-h2`        | `40px`      |
+| `$line-height-h3`        | `32px`      |
+| `$line-height-h4`        | `24px`      |
+| `$line-height-large`     | `1.3333333` |
+| `$line-height-small`     | `1.5`       |
+
+## Borders
+
+| Variable               | Description                   |
+| ---------------------- | ----------------------------- |
+| `$standard-border`     | apply a standard color border |
+| `$brand-border`        | apply a brand color border    |
+| `$radius-s`            | border-radius                 |
+| `$radius-m`            | border-radius                 |
+| `$radius-l`            | border-radius                 |
+| `$width-s`             | set border thickness          |
+| `$width-m`             | set border thickness          |
+| `$width-l`             | set border thickness          |
+| `$style`               | border-radius                 |
+| `$depth1`              | shallow drop shadow           |
+| `$depth2`              | medium drop shadow            |
+| `$depth3`              | deep drop shadow              |
+| `$border-radius-small` | `3px`                         |
+| `$border-radius-base`  | `8px`                         |
+| `$border-radius-large` | `24px`                        |
+
+## Colors
+
+Reference **[abstracts/\_colors.scss](https://github.com/enduranceinternational/bluebird/tree/master/packages/bluebird/src/abstracts/_colors.scss)** for more colors.
+
+**NOTE:** brand themes may override these values.
+
+| Variable           | Value             | Swatch                     |
+| ------------------ | ----------------- | -------------------------- |
+| `$white`           | `#fff;`           | <Swatch color="#fff" />    |
+| `$black`           | `#000;`           | <Swatch color="#000" />    |
+| `$gray-base`       | `#576373;`        | <Swatch color="#576373" /> |
+| `$gray-darker`     | `#344154;`        | <Swatch color="#344154" /> |
+| `$gray-dark`       | `#758397;`        | <Swatch color="#758397" /> |
+| `$gray`            | `#9dafbd;`        | <Swatch color="#9dafbd" /> |
+| `$gray-light`      | `#9dafbd;`        | <Swatch color="#9dafbd" /> |
+| `$gray-lighter`    | `#d7dbe0;`        | <Swatch color="#d7dbe0" /> |
+| `$snow`            | `#fafbfc;`        | <Swatch color="#fafbfc" /> |
+| `$jetpack-primary` | `#66d975;`        | <Swatch color="#66d975" /> |
+| `$blue-light`      | `#f1f5f7;`        | <Swatch color="#f1f5f7" /> |
+| `$body-bg`         | `$blue-light;`    |                            |
+| `$text-color`      | `$gray-base;`     |                            |
+| `$black`           | `#000;`           | <Swatch color="#000" />    |
+| `$gray-base`       | `#576373;`        | <Swatch color="#576373" /> |
+| `$gray-darker`     | `#344154;`        | <Swatch color="#344154" /> |
+| `$gray-dark`       | `#758397;`        | <Swatch color="#758397" /> |
+| `$gray`            | `#9dafbd;`        | <Swatch color="#9dafbd" /> |
+| `$gray-light`      | `#9dafbd;`        | <Swatch color="#9dafbd" /> |
+| `$gray-lighter`    | `#d7dbe0;`        | <Swatch color="#d7dbe0" /> |
+| `$white`           | `#fff;`           | <Swatch color="#fff" />    |
+| `$snow`            | `#fafbfc;`        | <Swatch color="#fafbfc" /> |
+| `$blue-light`      | `#f1f5f7;`        | <Swatch color="#f1f5f7" /> |
+| `$blue`            | `$brand-primary;` |                            |
+| `$blue-dark`       | `#2e66ba;`        | <Swatch color="#2e66ba" /> |
+| `$green`           | `$brand-success;` |                            |
+| `$green-light`     | `#17b212;`        | <Swatch color="#17b212" /> |
+| `$green-dark`      | `#17b212;`        | <Swatch color="#17b212" /> |
+| `$orange`          | `$brand-warning;` |                            |
+| `$orange-light`    | `#f89c24;`        | <Swatch color="#f89c24" /> |
+| `$red`             | `$brand-danger;`  |                            |
+| `$athens`          | `#d7dbe0;`        | <Swatch color="#d7dbe0" /> |
+| `$water`           | `#bfcfdb;`        | <Swatch color="#bfcfdb" /> |
+| `$dark-snow`       | `#edf4f9;`        | <Swatch color="#edf4f9" /> |
+| `$midnight`        | `#16325b;`        | <Swatch color="#16325b" /> |
+| `$jetpack-primary` | `#66d975;`        | <Swatch color="#66d975" /> |

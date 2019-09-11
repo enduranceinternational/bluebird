@@ -2,10 +2,6 @@
 
 The Bluebird Design is the new home our universal component library, including globally used elements (like toasts, loaders, etc.) and atomic styles.
 
-## Dependencies
-
-- `@eigi/theme` (Bootstrap 3)
-
 ## Roadmap
 
 - Q1: Pull in more items out of styles/components like toasts, loaders, switches, sliders, etc.

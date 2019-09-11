@@ -2,14 +2,14 @@
 menu: Components
 ---
 
-import { ProgressBar } from "react-bootstrap";
-import { Playground } from "docz";
+import { ProgressBar } from 'react-bootstrap';
+import { Playground } from 'docz';
 
 # Progress bars
 
 Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
 
-## ~~Basic example~~ (DO NOT USE)
+## Basic Progress Bar ![Experimental Badge](https://img.shields.io/badge/component-experimental-blue.svg#badge)
 
 Default progress bar.
 
@@ -17,7 +17,7 @@ Default progress bar.
   <ProgressBar now={60} />
 </Playground>
 
-## ~~With label~~ (DO NOT USE)
+## With label ![Experimental Badge](https://img.shields.io/badge/component-experimental-blue.svg#badge)
 
 Add a label `prop` to show a visible percentage. For low percentages, consider adding a min-width to ensure the label's text is fully visible.
 
@@ -25,17 +25,15 @@ Add a label `prop` to show a visible percentage. For low percentages, consider a
   <ProgressBar now={60} label="60%" />
 </Playground>
 
-<!--
-## Screenreader only label
+## Screenreader only label ![Experimental Badge](https://img.shields.io/badge/component-experimental-blue.svg#badge)
 
 Add a `srOnly` prop to hide the label visually.
 
 <Playground>
   <ProgressBar now={60} label="60%" srOnly />
 </Playground>
--->
 
-## ~~Contextual alternatives~~ (DO NOT USE)
+## Contextual alternatives ![Experimental Badge](https://img.shields.io/badge/component-experimental-blue.svg#badge)
 
 Progress bars use some of the same button and alert classes for consistent styles.
 
@@ -46,7 +44,7 @@ Progress bars use some of the same button and alert classes for consistent style
   <ProgressBar bsStyle="danger" now={80} />
 </Playground>
 
-## ~~Striped~~ (DO NOT USE)
+<!-- ## Striped
 
 Uses a gradient to create a striped effect. Not available in IE8.
 
@@ -57,7 +55,6 @@ Uses a gradient to create a striped effect. Not available in IE8.
   <ProgressBar striped bsStyle="danger" now={80} />
 </Playground>
 
-<!--
 ## Animated
 
 Add `active` prop to animate the stripes right to left. Not available in IE9 and below.

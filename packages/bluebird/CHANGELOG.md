@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.5](https://github.com/enduranceinternational/bluebird/compare/v1.3.4...v1.3.5) (2019-09-05)
+
+
+### Bug Fixes
+
+* theme updates ([a7dc3cc](https://github.com/enduranceinternational/bluebird/commit/a7dc3cc))
+
+
+
+
+
+## [1.3.4](https://github.com/enduranceinternational/bluebird/compare/v1.3.3...v1.3.4) (2019-08-26)
+
+
+### Bug Fixes
+
+* local file refs created issue with pkgs digested externally ([6be2109](https://github.com/enduranceinternational/bluebird/commit/6be2109))
+
+
+
+
+
+## [1.3.3](https://github.com/enduranceinternational/bluebird/compare/v1.3.2...v1.3.3) (2019-08-26)
+
+
+### Bug Fixes
+
+* **bluebird:** index updated to compatible require method for `uaf-main` ([77103b3](https://github.com/enduranceinternational/bluebird/commit/77103b3))
+* **bluebird:** made deps more explicit to allow `yarn link` to work ([0c06060](https://github.com/enduranceinternational/bluebird/commit/0c06060))
+
+
+
+
+
+## [1.3.2](https://github.com/enduranceinternational/bluebird/compare/v1.3.1...v1.3.2) (2019-08-15)
+
+**Note:** Version bump only for package @eigi/bluebird
+
+
+
+
+
 # [1.3.0](https://github.com/enduranceinternational/bluebird/compare/v1.2.2...v1.3.0) (2019-08-02)
 
 
