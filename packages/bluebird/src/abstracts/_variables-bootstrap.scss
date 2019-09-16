@@ -247,7 +247,7 @@ $input-border: $gray-lighter !default;
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
 $input-border-radius: $border-radius-small !default;
 //** Large `.form-control` border radius
-$input-border-radius-large: $border-radius-large !default;
+$input-border-radius-large: $border-radius-small !default;
 //** Small `.form-control` border radius
 $input-border-radius-small: $border-radius-small !default;
 
