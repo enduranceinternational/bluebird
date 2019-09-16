@@ -11,6 +11,12 @@
 // mixins
 @import "mixins/mixins";
 
+// reset
+// DEPRECATED NOTICE: we are phasing out the reset which may
+// create a shockwave effect throughout the subsequent styles.
+// Please migrate to use `bluebird.scss`.
+@import "reset/reset";
+
 // icon sets
 @import "icons/icons";
 
