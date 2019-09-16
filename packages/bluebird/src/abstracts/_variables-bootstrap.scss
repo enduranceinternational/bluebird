@@ -235,7 +235,7 @@ $btn-border-radius-small: $border-radius-small;
 //** `<input>` background color
 $input-bg: #fff !default;
 //** `<input disabled>` background color
-$input-bg-disabled: $gray-light !default;
+$input-bg-disabled: transparent !default;
 
 //** Text color for `<input>`s
 $input-color: $gray-base !default;
