@@ -3,26 +3,30 @@
 
 // Palette Colors
 // - Grays
-$black: #000;
+$black: #000; // not currently in use
 $gray-base: #576373;
 $gray-darker: #344154;
 $gray-dark: #758397;
 $gray: #9dafbd;
+$gray-bg: #f2f7fa;
 $gray-light: #9dafbd;
 $gray-lighter: #d7dbe0; // lighten($gray-base, 93.5%) !default; // DDE0E6
 $white: #fff;
 
 // - Chromatics
 $snow: #fafbfc;
-$blue-light: #f1f5f7;
 $blue: $brand-primary;
-$blue-dark: #2e66ba;
+$blue-dark: #2a5da8;
+$blue-light: #5e91db;
 $green: $brand-success;
-$green-light: #17b212;
-$green-dark: #17b212;
+$green-light: #46c142;
+$green-dark: #148f10;
 $orange: $brand-warning;
-$orange-light: #f89c24;
+$orange-light: #f9af4f;
+$orange-dark: #c77d1c;
 $red: $brand-danger;
+$red-light: #d93549;
+$red-dark: #a60115;
 $athens: #d7dbe0;
 $water: #bfcfdb;
 $dark-snow: #edf4f9;
