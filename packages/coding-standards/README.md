@@ -1,0 +1,1 @@
+# @eigi/coding-standards
