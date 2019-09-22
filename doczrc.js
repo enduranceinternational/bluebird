@@ -70,7 +70,10 @@ export default {
     'Utility Classes',
     'Release Notes',
     'Sitemap',
-    'Coding Standards',
+    {
+      name: 'Coding Standards',
+      menu: ['Javascript', 'Integration Tests'],
+    },
     'FAQ',
     'Roadmap',
     'Support',

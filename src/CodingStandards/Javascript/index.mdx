@@ -3,9 +3,6 @@ name: Javascript
 menu: Coding Standards
 ---
 
-import GeneralJS from './General';
-import ES6Standards from './ES6';
-
 # Javascript
 
 This guide documents the suggested standards for writing and formatting Javascript code and maintain the same code consistency in all EIGI's client application source code. 
@@ -15,7 +12,50 @@ We would be following the `Airbnb` style guide to maintain consistency and maint
 _Note:_ `Airbnb`guide assumes you are using [Babel](https://babeljs.io/), and requires that you use [babel-preset-airbnb](https://www.npmjs.com/package/babel-preset-airbnb) or the equivalent. It also assumes you are installing shims/polyfills in your app, with [airbnb-browser-shims](https://www.npmjs.com/package/airbnb-browser-shims) or the equivalent.
 
 ## General
-<GeneralJS />
+
+1. [Types](https://github.com/airbnb/javascript#types)
+2. [References](https://github.com/airbnb/javascript#references)
+3. [Objects](https://github.com/airbnb/javascript#objects)
+4. [Arrays](https://github.com/airbnb/javascript#arrays)
+5. [Destructuring](https://github.com/airbnb/javascript#destructuring)
+6. [Strings](https://github.com/airbnb/javascript#strings)
+7. [Functions](https://github.com/airbnb/javascript#functions)
+8. [Arrow Functions](https://github.com/airbnb/javascript#arrow-functions)
+9. [Classes & Constructors](https://github.com/airbnb/javascript#classes--constructors)
+10. [Modules](https://github.com/airbnb/javascript#modules)
+11. [Iterators and Generators](https://github.com/airbnb/javascript#iterators-and-generators)
+12. [Properties](https://github.com/airbnb/javascript#properties)
+13. [Variables](https://github.com/airbnb/javascript#variables)
+14. [Hoisting](https://github.com/airbnb/javascript#hoisting)
+15. [Comparison Operators & Equality](https://github.com/airbnb/javascript#comparison-operators--equality)
+16. [Blocks](https://github.com/airbnb/javascript#blocks)
+17. [Control Statements](https://github.com/airbnb/javascript#control-statements)
+18. [Comments](https://github.com/airbnb/javascript#comments)
+19. [Whitespace](https://github.com/airbnb/javascript#whitespace)
+20. [Commas](https://github.com/airbnb/javascript#commas)
+21. [Semicolons](https://github.com/airbnb/javascript#semicolons)
+22. [Type Casting & Coercion](https://github.com/airbnb/javascript#type-casting--coercion)
+23. [Naming Conventions](https://github.com/airbnb/javascript#naming-conventions)
+24. [Accessors](https://github.com/airbnb/javascript#accessors)
+25. [Events](https://github.com/airbnb/javascript#events)
 
 ## ECMAScript 6 Styles
-<ES6Standards />
+
+_Note:_  Please check browser compatibilty before using the newer ES6 features.
+
+To support browser fallback for older browsers it is suggested to use [polyfills](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) as applicable (MDN has polyfill snippets for most of the newer ES6 features `e.g.` [Array.from](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Polyfill))
+
+1. [Arrow Functions](https://github.com/airbnb/javascript#arrow-functions)
+2. [Classes](https://github.com/airbnb/javascript#classes--constructors)
+3. [Object Shorthand](https://github.com/airbnb/javascript#es6-object-shorthand)
+4. [Object Concise](https://github.com/airbnb/javascript#es6-object-concise)
+5. [Object Computed Properties](https://github.com/airbnb/javascript#es6-computed-properties)
+6. [Template Strings](https://github.com/airbnb/javascript#es6-template-literals)
+7. [Destructuring](https://github.com/airbnb/javascript#destructuring)
+8. [Default Parameters](https://github.com/airbnb/javascript#es6-default-parameters)
+9. [Rest](https://github.com/airbnb/javascript#es6-rest)
+10. [Array Spreads](https://github.com/airbnb/javascript#es6-array-spreads)
+11. [Let and Const](https://github.com/airbnb/javascript#references)
+12. [Exponentiation Operator](https://github.com/airbnb/javascript#es2016-properties--exponentiation-operator)
+13. [Iterators and Generators](https://github.com/airbnb/javascript#iterators-and-generators)
+14. [Modules](https://github.com/airbnb/javascript#modules)

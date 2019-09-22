@@ -1,0 +1,48 @@
+---
+name: Integration Tests
+menu: Coding Standards
+---
+
+# Integration Tests
+
+## Cypress
+
+[Cypress](https://www.cypress.io/) is the automated E2E test framework adopted at EIGI recently.
+
+The motivation for an automated test suite is to increase developer velocity, continuous integration, simulate real user scenarios, ensure health of application and reduce future risks/repetitive bugs.
+
+### Standards while writing Cypress`tests:
+
+- [Organization of Tests](https://docs.cypress.io/guides/references/best-practices.html#Organizing-Tests-Logging-In-Controlling-State)
+- [Selecting Elements](https://docs.cypress.io/guides/references/best-practices.html#Selecting-Elements)
+- [Assigning Return Values](https://docs.cypress.io/guides/references/best-practices.html#Assigning-Return-Values)
+- [Visiting External Sites](https://docs.cypress.io/guides/references/best-practices.html#Visiting-external-sites)
+- [Relying on Previous tests](https://docs.cypress.io/guides/references/best-practices.html#Having-tests-rely-on-the-state-of-previous-tests)
+- [Single vs Multiple assertions](https://docs.cypress.io/guides/references/best-practices.html#Creating-%E2%80%9Ctiny%E2%80%9D-tests-with-a-single-assertion)
+- [`after` and `afterEach` blocks](https://docs.cypress.io/guides/references/best-practices.html#Using-after-or-afterEach-hooks)
+- [Web Servers](https://docs.cypress.io/guides/references/best-practices.html#Web-Servers)
+- [Unnecessary Waiting](https://docs.cypress.io/guides/references/best-practices.html#Unnecessary-Waiting)
+
+In order to keep our tests running as quickly as possible there should be little need to add arbitrary wait statements such as `wait(45000)`.
+
+The Cypress framework has [built-in retry](https://docs.cypress.io/guides/core-concepts/retry-ability.html#Commands-vs-assertions) logic as well as mechanisms to wait for asynchronous calls. In the eventthat such a wait is necessary, it should have a comment that specifies why it is necessary.
+
+- [Global baseUrl](https://docs.cypress.io/guides/references/best-practices.html#Setting-a-global-baseUrl)
+
+The Cypress framework allows for visiting a singular super domain during a test, such as `bluehost.com`.
+
+The requesting api can use relative pathing and will append that to the baseUrl.
+In the interest of consistency the baseUrl should be considered the url without a resource path appended.
+
+- [Mocked XHR calls](https://docs.cypress.io/guides/guides/network-requests.html#Don%E2%80%99t-Stub-Responses)
+
+In the interest of test integrity, XHR calls should be mocked as little as necessary to accomplish the objective of the test. 
+
+Mocked XHRs should be stored in the `fixtures` directory. It is preferred to store all XHRs for a given test in a single file in `cypress/fixtures`.
+
+
+
+_Note:_ This [guide](https://stash.endurance.com/projects/EQA/repos/bh-cypress-integration/browse/docs/coding-standards.md) here documents (it's work in progress) the standards expected on **EQA -> bh-cypress-integration** repo.
+![Not Ready Badge](https://img.shields.io/badge/component-not%20ready-red.svg#badge)
+
+
