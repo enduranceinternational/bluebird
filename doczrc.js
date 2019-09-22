@@ -70,6 +70,7 @@ export default {
     'Utility Classes',
     'Release Notes',
     'Sitemap',
+    'Coding Standards',
     'FAQ',
     'Roadmap',
     'Support',
