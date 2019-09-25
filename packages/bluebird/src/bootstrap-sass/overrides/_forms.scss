@@ -421,16 +421,21 @@ input[type="checkbox"] {
 //   @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
 // }
 
-// // Reposition feedback icon if input has visible label above
-// .has-feedback label {
+// Reposition feedback icon if input has visible label above
+.has-feedback label {
+  & ~ .form-control-feedback {
+    // updated to reflect current label-margin of 0
+    // this may need to be removed when the _reset.scss is updated
+    $label-margin: 0;
+    top: (
+      $line-height-computed + $label-margin
+    ); // Height of the `label` and its margin
+  }
 
-//   & ~ .form-control-feedback {
-//     top: ($line-height-computed + 5); // Height of the `label` and its margin
-//   }
-//   &.sr-only ~ .form-control-feedback {
-//     top: 0;
-//   }
-// }
+  // &.sr-only ~ .form-control-feedback {
+  //   top: 0;
+  // }
+}
 
 // // Help text
 // //
