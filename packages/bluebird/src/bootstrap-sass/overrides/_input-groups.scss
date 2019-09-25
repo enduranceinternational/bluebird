@@ -107,6 +107,10 @@
 
 // Within an input group that has focus, highlight the input-group-addons such
 // that it appears the input as a whole is highlighted
+// TODO: `:focus-within` is not supported in Edge as of 9/25/2019. We could patch this by updating
+// the componet to add a class .focus-within to the parent.
+.input-group.focus-within .input-group-addon,
+.input-group.focus-within .form-control,
 .input-group:focus-within .input-group-addon,
 .input-group:focus-within .form-control {
   border-color: $input-border-focus;
