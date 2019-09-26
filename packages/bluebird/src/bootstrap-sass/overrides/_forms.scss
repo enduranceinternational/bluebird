@@ -129,6 +129,8 @@ input[type="checkbox"] {
 .control-label {
   font-size: $font-size-small;
   // line-height: $line-height-body-small;
+  margin-bottom: $control-label-margin-bottom;
+  margin-top: $control-label-margin-top;
 }
 
 .form-control {
@@ -424,11 +426,9 @@ input[type="checkbox"] {
 // Reposition feedback icon if input has visible label above
 .has-feedback label {
   & ~ .form-control-feedback {
-    // updated to reflect current label-margin of 0
-    // this may need to be removed when the _reset.scss is updated
-    $label-margin: 0;
     top: (
-      $line-height-computed + $label-margin
+      $line-height-computed + $control-label-margin-bottom +
+        $control-label-margin-top
     ); // Height of the `label` and its margin
   }
 

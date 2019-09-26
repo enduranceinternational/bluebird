@@ -272,6 +272,10 @@ $input-height-small: (
     2
 ) !default;
 
+// control-label (custom)
+$control-label-margin-bottom: 8px !default;
+$control-label-margin-top: 0 !default;
+
 //** `.form-group` margin
 $form-group-margin-bottom: 16px !default;
 
