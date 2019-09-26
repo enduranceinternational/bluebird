@@ -257,12 +257,13 @@ input[type="checkbox"] {
     // cursor: pointer;
   }
 }
+
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   // position: absolute;
-  // margin-top: 4px \9;
+  margin-top: 4px;
   margin-left: -30px;
   width: 20px;
   height: 20px;
@@ -290,11 +291,12 @@ input[type="checkbox"] {
   //   cursor: $cursor-disabled;
   // }
 }
-// .radio-inline + .radio-inline,
-// .checkbox-inline + .checkbox-inline {
-//   margin-top: 0;
-//   margin-left: 10px; // space out consecutive inline controls
-// }
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  // margin-left: 10px; // space out consecutive inline controls
+}
 
 // // Static form control text
 // //
