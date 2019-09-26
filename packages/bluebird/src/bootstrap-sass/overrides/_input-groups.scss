@@ -140,6 +140,10 @@
 
 .input-group-addon:first-child {
   border-right: 0;
+
+  // because we are simulating no division between the addon
+  // and the form, we need to reduce the inner padding
+  padding-right: 1px; // extended out slightly to avoid overlap with radio
 }
 
 .input-group .form-control:last-child,
@@ -159,6 +163,10 @@
 
 .input-group-addon:last-child {
   border-left: 0;
+
+  // because we are simulating no division between the addon
+  // and the form, we need to reduce the inner padding
+  padding-left: 1px; // extended out slightly to avoid overlap with radio
 }
 
 // Button input groups
