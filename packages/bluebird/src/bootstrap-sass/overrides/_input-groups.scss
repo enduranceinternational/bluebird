@@ -105,6 +105,12 @@
 //   }
 // }
 
+// custom hover
+.input-group:hover .input-group-addon,
+.input-group:hover .form-control {
+  border-color: $gray-dark;
+}
+
 // Within an input group that has focus, highlight the input-group-addons such
 // that it appears the input as a whole is highlighted
 // TODO: `:focus-within` is not supported in Edge as of 9/25/2019. We could patch this by updating

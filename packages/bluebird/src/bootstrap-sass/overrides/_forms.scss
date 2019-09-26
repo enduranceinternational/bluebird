@@ -149,6 +149,11 @@ input[type="checkbox"] {
   @include box-shadow(inset 0 0 0 $input-bg);
   //   @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 
+  // custom hover styling
+  &:hover {
+    border-color: $gray-dark;
+  }
+
   // Customize the `:focus` state to imitate native WebKit styles.
   @include form-control-border-focus;
 
