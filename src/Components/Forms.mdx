@@ -16,24 +16,21 @@ import {
   Row,
   Glyphicon,
   DropdownButton,
-  MenuItem
-} from "react-bootstrap";
-import { Playground } from "docz";
+  MenuItem,
+} from 'react-bootstrap';
+import { Playground } from 'docz';
 
 # Forms
 
 The `<FormControl>` component renders a form control with Bootstrap styling. The `<FormGroup>` component wraps a form control with proper spacing, along with support for a label, help text, and validation state. To ensure accessibility, set controlId on `<FormGroup>`, and use `<ControlLabel>` for the label.
 
-<!-- TODO: Make glyphicons great again -->
-
 <Playground>
   {() => {
+    // import { ControlLabel, FormGroup, HelpBlock } from 'react-bootstrap';
     class FormExample extends React.Component {
       constructor(props, context) {
         super(props, context);
-
         this.handleChange = this.handleChange.bind(this);
-
         this.state = {
           value: ''
         };
@@ -89,13 +86,12 @@ Examples of standard form controls supported in an example form layout, using a 
 
 <Playground>
   {() => {
-    {/* TODO: had to remove spread op `props` */}
+    {/* import { Button, FormControl, FieldGroup, FormGroup, ControlLabel, Checkbox, Radio } from 'react-bootstrap'; */}
     const FieldGroup = ({ id, label, help, }) => {
       return (
         <FormGroup controlId={id}>
           <ControlLabel>{label}</ControlLabel>
-          {/* TODO: missing spread of props */}
-          <FormControl  />
+          <FormControl id={id} label={label} help={help} />
           {help && <HelpBlock>{help}</HelpBlock>}
         </FormGroup>
       );
@@ -186,15 +182,16 @@ Examples of standard form controls supported in an example form layout, using a 
 Use `<Form inline>` instead of `<form>`. JSX strips whitespace between lines, so you will need to manually add spaces. Additionally, Bootstrap assigns inline form controls `width: auto` by default, so you may need to set custom widths.
 
 <Playground>
+  {/* import { ControlLabel, FormGroup, HelpBlock } from 'react-bootstrap'; */}
   <Form inline>
     <FormGroup controlId="formInlineName">
-      <ControlLabel>Name</ControlLabel>{" "}
+      <ControlLabel>Name</ControlLabel>{' '}
       <FormControl type="text" placeholder="Jane Doe" />
-    </FormGroup>{" "}
+    </FormGroup>{' '}
     <FormGroup controlId="formInlineEmail">
-      <ControlLabel>Email</ControlLabel>{" "}
+      <ControlLabel>Email</ControlLabel>{' '}
       <FormControl type="email" placeholder="jane.doe@example.com" />
-    </FormGroup>{" "}
+    </FormGroup>{' '}
     <Button type="submit">Send invitation</Button>
   </Form>
 </Playground>
@@ -204,38 +201,36 @@ Use `<Form inline>` instead of `<form>`. JSX strips whitespace between lines, so
 Use `<Form horizontal>` instead of `<form>`, then use `<Col>`s to align labels and controls. Do not use `<Row>` here, as `<FormGroup>` will already serve as a grid row in a horizontal form.
 
 <Playground>
-  <Form horizontal>
-    <FormGroup controlId="formHorizontalEmail">
-      <Col componentClass={ControlLabel} sm={2}>
-        Email
-      </Col>
-      <Col sm={10}>
-        <FormControl type="email" placeholder="Email" />
-      </Col>
-    </FormGroup>
+{/* import { Form, FormGroup, Col, FormControl, Checkbox, Button } from 'react-bootstrap'; */}
+    <Form horizontal>
+      <FormGroup controlId="formHorizontalEmail">
+        <Col componentClass={ControlLabel} sm={2}>
+          Email
+        </Col>
+        <Col sm={10}>
+          <FormControl type="email" placeholder="Email" />
+        </Col>
+      </FormGroup>
+      <FormGroup controlId="formHorizontalPassword">
+        <Col componentClass={ControlLabel} sm={2}>
+          Password
+        </Col>
+        <Col sm={10}>
+          <FormControl type="password" placeholder="Password" />
+        </Col>
+      </FormGroup>
+      <FormGroup>
+        <Col smOffset={2} sm={10}>
+          <Checkbox>Remember me</Checkbox>
+        </Col>
+      </FormGroup>
+      <FormGroup>
+        <Col smOffset={2} sm={10}>
+          <Button type="submit">Sign in</Button>
+        </Col>
+      </FormGroup>
+    </Form>
 
-    <FormGroup controlId="formHorizontalPassword">
-      <Col componentClass={ControlLabel} sm={2}>
-        Password
-      </Col>
-      <Col sm={10}>
-        <FormControl type="password" placeholder="Password" />
-      </Col>
-    </FormGroup>
-
-    <FormGroup>
-      <Col smOffset={2} sm={10}>
-        <Checkbox>Remember me</Checkbox>
-      </Col>
-    </FormGroup>
-
-    <FormGroup>
-      <Col smOffset={2} sm={10}>
-        <Button type="submit">Sign in</Button>
-      </Col>
-    </FormGroup>
-
-  </Form>
 </Playground>
 
 ## Input
@@ -245,6 +240,7 @@ Use `<Form horizontal>` instead of `<form>`, then use `<Col>`s to align labels a
 Wrap your form control in an `<InputGroup>`, then use for normal add-ons and for button add-ons. Exotic configurations may require CSS on your side.
 
 <Playground>
+  {/* import { FormGroup, InputGroup, FormControl, Glyphicon, Button, DropdownButton, MenuItem } from 'react-bootstrap'; */}
   <form>
     <FormGroup>
       <InputGroup>
@@ -321,6 +317,7 @@ Wrap your form control in an `<InputGroup>`, then use for normal add-ons and for
 Use bsSize on `<FormGroup>` or `<InputGroup>` to change the size of inputs. It also works with add-ons and most other options.
 
 <Playground>
+  {/* import { FormGroup, FormControl } from 'react-bootstrap'; */}
   <form>
     <FormGroup bsSize="large">
       <FormControl type="text" placeholder="Large text" />
@@ -339,6 +336,7 @@ Use bsSize on `<FormGroup>` or `<InputGroup>` to change the size of inputs. It a
 Set `validationState` to one of 'success', 'warning' or 'error' to show validation state. Set `validationState` to `null` (or `undefined`) to hide validation state. Add `<FormControl.Feedback>` for a feedback icon when validation state is set.
 
 <Playground>
+  {/* import { Form, FormGroup, ControlLabel, FormControl, HelpBlock, Col, Checkbox, Radio } from 'react-bootstrap'; */}
   <form>
     <FormGroup controlId="formValidationSuccess1" validationState="success">
       <ControlLabel>Input with success</ControlLabel>
