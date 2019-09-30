@@ -1,9 +1,7 @@
 // bootstrap mixins
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+@import "../bootstrap-sass/mixins/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
-// theme mixins
-@import 'misc';
-@import 'buttons';
-
-// custom design system mixins
-@import 'colors';
+// bluebird mixins
+@import "misc";
+@import "colors";

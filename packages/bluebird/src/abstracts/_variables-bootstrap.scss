@@ -1,4 +1,4 @@
-$bootstrap-sass-asset-helper: true;
+$bootstrap-sass-asset-helper: false;
 //
 // Variables
 // --------------------------------------------------
@@ -48,12 +48,14 @@ $default-box-shadow-color: #ccc;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+  sans-serif !default;
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
-$font-family-blink-mac: -apple-system, BlinkMacSystemFont, $font-family-sans-serif;
+$font-family-blink-mac: -apple-system, BlinkMacSystemFont,
+  $font-family-sans-serif;
 
 $font-size-base: 16px;
 $font-size-large: ceil(($font-size-base * 1.25)) !default; // ~20px
@@ -84,6 +86,7 @@ $font-weight-bold: 600;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base: 1.5; // 24/16
+$line-height-body-small: 1.7; // 24px line-height calculated for 'body-small' 14px font-sizes
 $line-height-titles: 1.25;
 $line-height-1: 1;
 $line-height-h1: 40px;
@@ -91,7 +94,9 @@ $line-height-h2: 40px;
 $line-height-h3: 32px;
 $line-height-h4: 24px;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-$line-height-computed: floor(($font-size-base * $line-height-base)) !default; // ~20px
+$line-height-computed: floor(
+  ($font-size-base * $line-height-base)
+) !default; // ~20px
 
 // custom line-heights
 $line-height: $line-height-base;
@@ -113,12 +118,16 @@ $headings-color: inherit !default;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icon-font-path: if($bootstrap-sass-asset-helper, 'bootstrap/', '../fonts/bootstrap/') !default;
+$icon-font-path: if(
+  $bootstrap-sass-asset-helper,
+  "bootstrap/",
+  "../fonts/bootstrap/"
+) !default;
 
 //** File name for all font files.
-$icon-font-name: 'glyphicons-halflings-regular' !default;
+$icon-font-name: "glyphicons-halflings-regular" !default;
 //** Element ID within SVG icon file.
-$icon-font-svg-id: 'glyphicons_halflingsregular' !default;
+$icon-font-svg-id: "glyphicons_halflingsregular" !default;
 
 //== Components
 //
@@ -226,19 +235,19 @@ $btn-border-radius-small: $border-radius-small;
 //** `<input>` background color
 $input-bg: #fff !default;
 //** `<input disabled>` background color
-$input-bg-disabled: $gray-light !default;
+$input-bg-disabled: $body-bg !default;
 
 //** Text color for `<input>`s
 $input-color: $gray-base !default;
 //** `<input>` border color
-$input-border: #ccc !default;
+$input-border: $gray-lighter !default;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-$input-border-radius: $border-radius-base !default;
+$input-border-radius: $border-radius-small !default;
 //** Large `.form-control` border radius
-$input-border-radius-large: $border-radius-large !default;
+$input-border-radius-large: $border-radius-small !default;
 //** Small `.form-control` border radius
 $input-border-radius-small: $border-radius-small !default;
 
@@ -249,15 +258,23 @@ $input-border-focus: $brand-primary !default;
 $input-color-placeholder: $gray !default;
 
 //** Default `.form-control` height
-$input-height-base: ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+$input-height-base: (
+  $line-height-computed + ($padding-base-vertical * 2) + 2
+) !default;
 //** Large `.form-control` height
 $input-height-large: (
-  ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2
+  ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) +
+    2
 ) !default;
 //** Small `.form-control` height
 $input-height-small: (
-  floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2
+  floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) +
+    2
 ) !default;
+
+// control-label (custom)
+$control-label-margin-bottom: 8px !default;
+$control-label-margin-top: 0 !default;
 
 //** `.form-group` margin
 $form-group-margin-bottom: 16px !default;
@@ -266,7 +283,7 @@ $legend-color: $gray-dark !default;
 $legend-border-color: $gray-lighter !default;
 
 //** Background color for textual input addons
-$input-group-addon-bg: $gray-lighter !default;
+$input-group-addon-bg: $input-bg !default;
 //** Border color for textual input addons
 $input-group-addon-border-color: $input-border !default;
 
@@ -405,7 +422,9 @@ $navbar-height: 48px !default;
 $navbar-margin-bottom: $line-height-computed !default;
 $navbar-border-radius: 0;
 $navbar-padding-horizontal: floor(($grid-gutter-width / 2)) !default;
-$navbar-padding-vertical: (($navbar-height - $line-height-computed) / 2) !default;
+$navbar-padding-vertical: (
+  ($navbar-height - $line-height-computed) / 2
+) !default;
 $navbar-collapse-max-height: 340px !default;
 
 $navbar-default-color: $gray-base !default;
@@ -423,7 +442,10 @@ $navbar-default-link-disabled-bg: transparent !default;
 
 // Navbar brand label
 $navbar-default-brand-color: $navbar-default-link-color !default;
-$navbar-default-brand-hover-color: darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-brand-hover-color: darken(
+  $navbar-default-brand-color,
+  10%
+) !default;
 $navbar-default-brand-hover-bg: transparent !default;
 
 // Navbar toggle
@@ -596,7 +618,10 @@ $popover-arrow-outer-width: ($popover-arrow-width + 1) !default;
 //** Popover outer arrow color
 $popover-arrow-outer-color: fade_in($popover-border-color, 0.05) !default;
 //** Popover outer arrow fallback color
-$popover-arrow-outer-fallback-color: darken($popover-fallback-border-color, 20%) !default;
+$popover-arrow-outer-fallback-color: darken(
+  $popover-fallback-border-color,
+  20%
+) !default;
 
 //== Labels
 //
@@ -825,7 +850,7 @@ $breadcrumb-color: $gray-light;
 //** Text color of current page in the breadcrumb
 $breadcrumb-active-color: $nav-text;
 //** Textual separator for between breadcrumb elements
-$breadcrumb-separator: '/' !default;
+$breadcrumb-separator: "/" !default;
 
 //== Carousel
 //

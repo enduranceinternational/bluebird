@@ -1,0 +1,18 @@
+// `<ToggleWithLabel />` styling
+.form-group-toggle {
+  display: flex;
+  margin-bottom: $sm;
+
+  .form-control-toggle {
+    display: inline-block;
+    margin-right: 0.125em;
+    margin-left: 0.5em;
+    height: 100%; // squash height up to max
+    max-height: 40px;
+
+    .form-control-cliploader {
+      width: 52px;
+      text-align: left;
+    }
+  }
+}
