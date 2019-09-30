@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/enduranceinternational/bluebird/compare/v1.3.5...v1.4.0) (2019-09-30)
+
+
+### Features
+
+* **bluebird:** Forms - Inputs, Input Groups, Input Addons, Validation ([#16](https://github.com/enduranceinternational/bluebird/issues/16)) ([4f4cf09](https://github.com/enduranceinternational/bluebird/commit/4f4cf09))
+
+
+
+
+
 ## [1.3.5](https://github.com/enduranceinternational/bluebird/compare/v1.3.4...v1.3.5) (2019-09-05)
 
 
