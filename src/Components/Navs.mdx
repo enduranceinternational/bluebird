@@ -1,13 +1,10 @@
 ---
 menu: Components
 ---
-import { useState } from 'react';
-import Nav from 'react-bootstrap/lib/Nav';
-import NavItem from 'react-bootstrap/lib/NavItem';
-import NavDropdown from 'react-bootstrap/lib/NavDropdown';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
-import { Playground } from 'docz';
 
+import { useState } from 'react';
+import { Nav, NavItem, NavDropdown, MenuItem } from '@eigi/bluebird-react';
+import { Playground } from 'docz';
 
 # Navs
 
@@ -88,24 +85,29 @@ They can be `justified` to take the full width of their parent.
 ## Nav underline style ![Ready Badge](https://img.shields.io/badge/component-ready-green.svg#badge)
 
 Underline styled tabs can be build with one of:
- * Nav element with nav-tabs-underline class
- * Router, li, and Navlink elements by using "nav nav-tabs-underline" on a parent and an li element containing a NavLink or Link element.
+
+- Nav element with nav-tabs-underline class
+- Router, li, and Navlink elements by using "nav nav-tabs-underline" on a parent and an li element containing a NavLink or Link element.
 
 <Playground>
   {() => {
     const [activeKey, setActiveKey] = useState('1');
-    return (<Nav
-              className="nav-tabs-underline"
-              activeKey={activeKey}
-              onSelect={e => setActiveKey(e)}
-            >
-              <NavItem eventKey="1">All</NavItem>
-              <NavItem eventKey="2">eCommerce</NavItem>
-              <NavItem eventKey="3">Blog</NavItem>
-              <NavItem eventKey="4">Portfolio</NavItem>
-              <NavItem eventKey="5">Entertainment</NavItem>
-              <NavItem eventKey="6">Food &amp; Drink</NavItem>
-              <NavItem eventKey="7" disabled>News</NavItem>
-            </Nav>);
+    return (
+      <Nav
+        className="nav-tabs-underline"
+        activeKey={activeKey}
+        onSelect={e => setActiveKey(e)}
+      >
+        <NavItem eventKey="1">All</NavItem>
+        <NavItem eventKey="2">eCommerce</NavItem>
+        <NavItem eventKey="3">Blog</NavItem>
+        <NavItem eventKey="4">Portfolio</NavItem>
+        <NavItem eventKey="5">Entertainment</NavItem>
+        <NavItem eventKey="6">Food &amp; Drink</NavItem>
+        <NavItem eventKey="7" disabled>
+          News
+        </NavItem>
+      </Nav>
+    );
   }}
 </Playground>
