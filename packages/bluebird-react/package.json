@@ -1,47 +1,59 @@
 {
   "name": "@eigi/bluebird-react",
-  "description": "React components for Bluebird UI",
-  "authors": "Endurance International Group, Inc.",
   "version": "0.0.0",
-  "sideEffects": false,
-  "main": "lib/index.js",
-  "jsnext:main": "es/index.js",
-  "module": "es/index.js",
+  "description": "React presentational component library for Bluebird UI",
+  "license": "UNLICENSED",
+  "files": [
+    "dist/index.js",
+    "dist/index.js.map"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "scripts": {
-    "build": "babel src --out-dir ./lib",
-    "build:modules": "babel src --out-dir ./es",
-    "watch": "babel src --out-dir ./lib --watch"
+    "build": "node scripts/check-env.js && webpack",
+    "start": "node scripts/check-env.js && watch 'yarn run build' src",
+    "test": "jest",
+    "test:coverage": "jest --coverage --colors",
+    "test:watch": "jest --watch"
   },
   "eslintConfig": {
     "extends": "@eigi/eslint-config"
   },
-  "files": [
-    "CHANGELOG.md",
-    "lib",
-    "dist",
-    "es"
-  ],
-  "peerDependencies": {
-    "react": "^0.14.9 || >=15.3.0",
-    "react-bootstrap": "0.32.4",
-    "react-dom": "^0.14.9 || >=15.3.0"
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupEnzyme.js"
   },
   "dependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-export-default-from": "^7.5.2",
-    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
-    "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "babel-plugin-add-module-exports": "^1.0.2",
-    "babel-plugin-dev-expression": "^0.2.2",
-    "babel-plugin-istanbul": "^5.2.0",
-    "react": "^16.10.2"
+    "react-bootstrap": "0.32.4"
   },
   "devDependencies": {
-    "@eigi/eslint-config": "0.0.0",
-    "react-bootstrap": "0.32.4"
-  }
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.4.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "watch": "^1.0.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.3.9",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "engines": {
+    "node": ">=10.13.0",
+    "npm": ">=6.4.1",
+    "yarn": "^1"
+  },
+  "author": "Endurance International Group, Inc."
 }
