@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icon / 24px /  chevron-down-regular</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-24px-/--chevron-down-regular" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20.5117188,8.53515623 L19.7382813,7.76171873 C19.5546875,7.57812498 19.2578125,7.57812498 19.0742188,7.76171873 L12,14.8203125 L4.92578121,7.76171873 C4.74218746,7.57812498 4.44531246,7.57812498 4.26171871,7.76171873 L3.48828121,8.53515623 C3.30468746,8.71874998 3.30468746,9.01562499 3.48828121,9.19921874 L11.6679687,17.3789063 C11.8515625,17.5625 12.1484375,17.5625 12.3320313,17.3789063 L20.5117188,9.19921874 C20.6953125,9.01562499 20.6953125,8.71874998 20.5117188,8.53515623 Z" id="chevron-down-regular" fill="#5C5C5C"></path>
+    </g>
+</svg>

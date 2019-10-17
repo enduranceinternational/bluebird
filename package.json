@@ -29,6 +29,7 @@
     "@eigi/bluebird-bluehost": "file:packages/bluebird-bluehost",
     "@eigi/bluebird-fastdomain": "file:packages/bluebird-fastdomain",
     "@eigi/bluebird-hostmonster": "file:packages/bluebird-hostmonster",
+    "@eigi/bluebird-icons": "1.0.0",
     "@eigi/bluebird-justhost": "file:packages/bluebird-justhost",
     "@eigi/bluebird-theme-default": "file:packages/bluebird-theme-default",
     "@eigi/eslint-config": "0.0.0",

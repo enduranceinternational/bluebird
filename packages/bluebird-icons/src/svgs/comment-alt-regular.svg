@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icon / 24px / comment-alt-regular</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-24px-/-comment-alt-regular" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M19.5,2 L4.5,2 C3.12109375,2 2,3.12109375 2,4.5 L2,15.75 C2,17.1289062 3.12109375,18.25 4.5,18.25 L8.25,18.25 L8.25,21.53125 C8.25,21.8085938 8.4765625,22 8.71875,22 C8.8125,22 8.91015625,21.9726562 8.99609375,21.90625 L13.875,18.25 L19.5,18.25 C20.8789063,18.25 22,17.1289062 22,15.75 L22,4.5 C22,3.12109375 20.8789063,2 19.5,2 Z M20.125,15.75 C20.125,16.09375 19.84375,16.375 19.5,16.375 L13.25,16.375 L12.75,16.75 L10.125,18.71875 L10.125,16.375 L4.5,16.375 C4.15625,16.375 3.875,16.09375 3.875,15.75 L3.875,4.5 C3.875,4.15625 4.15625,3.875 4.5,3.875 L19.5,3.875 C19.84375,3.875 20.125,4.15625 20.125,4.5 L20.125,15.75 Z" id="comment-alt-regular" fill="#5C5C5C"></path>
+    </g>
+</svg>

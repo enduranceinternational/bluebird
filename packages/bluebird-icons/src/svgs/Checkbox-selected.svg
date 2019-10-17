@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icon / 24px / Checkbox-selected</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.7777778,2 L4.22222222,2 C3,2 2,3 2,4.22222222 L2,19.7777778 C2,21 3,22 4.22222222,22 L19.7777778,22 C21,22 22,21 22,19.7777778 L22,4.22222222 C22,3 21,2 19.7777778,2 L19.7777778,2 Z M10.1111111,17.5555556 L5.11111111,12.7478632 L6.51111111,11.4017094 L10.1111111,14.8632479 L17.7111111,7.55555556 L19.1111111,8.9017094 L10.1111111,17.5555556 L10.1111111,17.5555556 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-24px-/-Checkbox-selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Checkbox" fill="#5C5C5C" xlink:href="#path-1"></use>
+    </g>
+</svg>

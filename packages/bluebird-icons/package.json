@@ -1,0 +1,49 @@
+{
+  "name": "@eigi/bluebird-icons",
+  "description": "Bluebird icons made available as SVG or React Components",
+  "author": "Endurance International Group",
+  "license": "MIT",
+  "version": "1.0.0",
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@eigi/prettier-config": "^0.0.1",
+    "@svgr/cli": "^4.3.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "jest": "^23.4.2",
+    "prettier": "^1.18.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "watch": "^1.0.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.3.9",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "scripts": {
+    "build": "yarn generateComponents && yarn generateIndex && webpack && svgr --config-file svgr.config.js  --out-dir dist src/svgs",
+    "start": "yarn generateComponents && yarn generateIndex && watch 'yarn run build' src",
+    "test": "jest",
+    "generateIndex": "node scripts/generate-index.js src/components > src/index.js",
+    "generateComponents": "svgr --config-file svgr.config.js --out-dir src/components src/svgs"
+  }
+}
