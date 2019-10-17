@@ -4,13 +4,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "docz dev",
-    "build": "docz build",
-    "test": "docz build",
-    "react:start": "react-scripts start",
-    "react:build": "react-scripts build",
-    "react:test": "react-scripts test",
-    "react:eject": "react-scripts eject"
+    "start": "lerna run build && docz dev",
+    "build": "lerna run build && docz build",
+    "test": "lerna run build && docz build"
   },
   "eslintConfig": {
     "extends": "@eigi/eslint-config"
