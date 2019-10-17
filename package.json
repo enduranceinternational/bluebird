@@ -6,7 +6,7 @@
   "scripts": {
     "start": "lerna run --stream start && docz dev",
     "build": "lerna run --stream build && docz build",
-    "test": "lerna run --stream test && docz build"
+    "test": "lerna run --stream test"
   },
   "eslintConfig": {
     "extends": "@eigi/eslint-config"
