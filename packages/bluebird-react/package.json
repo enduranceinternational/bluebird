@@ -2,7 +2,7 @@
   "name": "@eigi/bluebird-react",
   "version": "0.0.0",
   "description": "React presentational component library for Bluebird UI",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "files": [
     "dist/index.js",
     "dist/index.js.map"
