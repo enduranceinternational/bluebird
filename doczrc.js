@@ -26,8 +26,8 @@ const BRAND = BRANDS[process.env.DOCZ_BRAND]
 
 // doczrc.js
 export default {
-  title: `🐦 ${BRANDS[BRAND].name}`,
-  description: `🐦 ${BRANDS[BRAND].name}`,
+  title: `🐦 Bluebird`,
+  description: `🐦 Bluebird`,
   src: './',
   dest: 'build',
   indexHtml: `./public/${BRAND}/index.html`,
@@ -68,8 +68,12 @@ export default {
     'Foundations',
     'Components',
     'Utility Classes',
+    {
+      name: 'Github',
+      href: 'https://github.com/enduranceinternational/bluebird/',
+      target: '_blank',
+    },
     'Release Notes',
-    'Sitemap',
     'FAQ',
     'Roadmap',
     'Support',
