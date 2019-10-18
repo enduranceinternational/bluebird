@@ -11,6 +11,7 @@ import { Playground } from 'docz';
 ## Tabs example ![Not Ready Badge](https://img.shields.io/badge/component-not%20ready-red.svg#badge)
 
 <Playground>
+  {/* import { Nav, NavItem } from '@eigi/bluebird-react'; */}
   <Nav bsStyle="tabs" activeKey="2" onSelect={() => {}}>
     <NavItem eventKey="1" href="">
       NavItem 1 content
@@ -49,6 +50,7 @@ Navs can also be `stacked` vertically.
 Add dropdowns using the `NavDropdown` component.
 
 <Playground>
+  {/* import { Nav, NavItem, NavDropdown, MenuItem } from '@eigi/bluebird-react'; */}
   <Nav bsStyle="tabs" activeKey="1" onSelect={() => {}}>
     <NavItem eventKey="1" href="">
       NavItem 1 content
@@ -68,6 +70,7 @@ Add dropdowns using the `NavDropdown` component.
 They can be `justified` to take the full width of their parent.
 
 <Playground>
+  {/* import { Nav, NavItem, NavDropdown, MenuItem } from '@eigi/bluebird-react'; */}
   <Nav bsStyle="tabs" activeKey="1" onSelect={() => {}} justified>
     <NavItem eventKey="1" href="">
       NavItem 1 content
@@ -91,6 +94,7 @@ Underline styled tabs can be build with one of:
 
 <Playground>
   {() => {
+  {/* import { Nav, NavItem } from '@eigi/bluebird-react'; */}
     const [activeKey, setActiveKey] = useState('1');
     return (
       <Nav
