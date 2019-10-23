@@ -2,7 +2,7 @@
 menu: Components
 ---
 
-import { Pager, Pagination } from 'react-bootstrap';
+import { Pager, Pagination } from '@eigi/bluebird-react';
 import { Playground } from 'docz';
 
 # Pagination
@@ -12,6 +12,7 @@ import { Playground } from 'docz';
 Provides quick previous and next links. `centers` by default
 
 <Playground>
+  {/* import { Pager } from '@eigi/bluebird-react'; */}
   <Pager>
     <Pager.Item href="#">Previous</Pager.Item>{' '}
     <Pager.Item href="#">Next</Pager.Item>
@@ -23,6 +24,7 @@ Provides quick previous and next links. `centers` by default
 Set the `previous` or `next` prop to true, to align left or right.
 
 <Playground>
+  {/* import { Pager } from '@eigi/bluebird-react'; */}
   <Pager>
     <Pager.Item previous href="#">
       &larr; Previous Page
@@ -38,6 +40,7 @@ Set the `previous` or `next` prop to true, to align left or right.
 Set the `disabled` prop to true to disable the link.
 
 <Playground>
+  {/* import { Pager } from '@eigi/bluebird-react'; */}
   <Pager>
     <Pager.Item previous href="#">
       &larr; Previous
@@ -54,6 +57,7 @@ A set of presentational components for building pagination UI.
 
 <Playground>
   {() => {
+    {/* import { Pagination } from '@eigi/bluebird-react'; */}
     let active = 7;
     let items = [];
     for (let number = 1; number <= 10; number++) {
@@ -86,6 +90,7 @@ For building more complex pagination UI, there are few convenient sub-components
 for adding `First`, `Previous`, `Next`, `Last` buttons, as well as an `Ellipsis` item for indicating previous or continuing results.
 
 <Playground>
+  {/* import { Pagination } from '@eigi/bluebird-react'; */}
   <Pagination>
     <Pagination.First />
     <Pagination.Prev />

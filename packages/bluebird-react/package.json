@@ -1,0 +1,55 @@
+{
+  "name": "@eigi/bluebird-react",
+  "version": "0.0.0",
+  "description": "React presentational component library for Bluebird UI",
+  "license": "MIT",
+  "files": [
+    "dist/index.js",
+    "dist/index.js.map"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "scripts": {
+    "build": "node scripts/check-env.js && webpack",
+    "start": "node scripts/check-env.js && watch 'yarn run build' src",
+    "test": "jest",
+    "test:coverage": "jest --coverage --colors",
+    "test:watch": "jest --watch"
+  },
+  "eslintConfig": {
+    "extends": "@eigi/eslint-config"
+  },
+  "jest": {},
+  "dependencies": {
+    "react-bootstrap": "0.32.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "jest": "^23.4.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "watch": "^1.0.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.3.9",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "engines": {
+    "node": ">=10.13.0",
+    "npm": ">=6.4.1",
+    "yarn": "^1"
+  },
+  "author": "Endurance International Group, Inc."
+}

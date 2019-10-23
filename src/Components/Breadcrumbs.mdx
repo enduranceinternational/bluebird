@@ -2,12 +2,12 @@
 menu: Components
 ---
 
-import { Breadcrumb } from 'react-bootstrap';
+import { Breadcrumb } from '@eigi/bluebird-react';
 import { Playground } from 'docz';
 
 # Breadcrumbs ![Ready Badge](https://img.shields.io/badge/component-ready-green.svg#badge)
 
-Breadcrumbs provide a consistent way for users to orient themselves within a hierarchy of pages. Users are able to quickly go back through parent level pages in order to return to a previous screen. 
+Breadcrumbs provide a consistent way for users to orient themselves within a hierarchy of pages. Users are able to quickly go back through parent level pages in order to return to a previous screen.
 
 ## General Guidelines
 
@@ -19,6 +19,7 @@ Add `active` attribute to make a `Breadcrumb.Item` active.
 Do not set both `active` and `href` attributes. `active` overrides `href` and `span` element is rendered instead of `a`.
 
 <Playground>
+  {/* import { Breadcrumb } from '@eigi/bluebird-react'; */}
   <Breadcrumb>
     <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
     <Breadcrumb.Item href="http://getbootstrap.com/components/#breadcrumbs">

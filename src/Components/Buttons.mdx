@@ -10,7 +10,7 @@ import {
   ToggleButton,
   DropdownButton,
   MenuItem,
-} from 'react-bootstrap';
+} from '@eigi/bluebird-react';
 import { Playground } from 'docz';
 
 <!-- Unused Button Styles
@@ -40,6 +40,7 @@ Button labels should be verbs that connote action like Save, Delete, or Complete
 - Not all pages require a primary call to action.
 
 <Playground>
+  {/* import { Button, ButtonToolbar } from '@eigi/bluebird-react'; */}
   <ButtonToolbar>
     <Button bsStyle="primary">Standard</Button>
     <Button bsStyle="primary" active>
@@ -57,6 +58,7 @@ Button labels should be verbs that connote action like Save, Delete, or Complete
 - There can be multiple outline/secondary buttons on a single page.
 
 <Playground>
+  {/* import { Button, ButtonToolbar } from '@eigi/bluebird-react'; */}
   <ButtonToolbar>
     <Button>Outline</Button>
     <Button active>Active</Button>
@@ -72,6 +74,7 @@ Button labels should be verbs that connote action like Save, Delete, or Complete
 - There can be multiple link buttons on a single page.
 
 <Playground>
+  {/* import { Button, ButtonToolbar } from '@eigi/bluebird-react'; */}
   <ButtonToolbar>
     <Button bsStyle="link">Standard</Button>
     <Button bsStyle="link" active>
@@ -89,6 +92,7 @@ Button labels should be verbs that connote action like Save, Delete, or Complete
 - These buttons are typically used in modals whereby the user must confirm the destructive action.
 
 <Playground>
+  {/* import { Button, ButtonToolbar } from '@eigi/bluebird-react'; */}
   <ButtonToolbar>
     <Button bsStyle="danger">Danger</Button>
     <Button bsStyle="danger" active>
@@ -103,6 +107,7 @@ Button labels should be verbs that connote action like Save, Delete, or Complete
 ### Button Sizing
 
 <Playground>
+  {/* import { Button, ButtonToolbar } from '@eigi/bluebird-react'; */}
   <ButtonToolbar className="mb2">
     <Button bsStyle="primary" bsSize="small">
       Small Button
@@ -121,19 +126,6 @@ Button labels should be verbs that connote action like Save, Delete, or Complete
   </ButtonToolbar>
 </Playground>
 
-<!--
-<Playground>
-  <ButtonToolbar>
-    <Button bsStyle="primary">Standard</Button>
-    <Button>Outline</Button>
-    <Button bsStyle="link">Link</Button>
-    <Button bsStyle="danger">Danger</Button>
-    <Button bsStyle="light">Light</Button>
-    <Button bsStyle="dark">Dark</Button>
-  </ButtonToolbar>
-</Playground>
--->
-
 > Button spacing
 
 > Because React doesn't output newlines between elements, buttons on the same line are displayed flush against each other. To preserve the spacing between multiple inline buttons, wrap your button group in `<ButtonToolbar />`.
@@ -145,6 +137,7 @@ Button labels should be verbs that connote action like Save, Delete, or Complete
 Create block level buttons—those that span the full width of a parent— by adding the block prop.
 
 <Playground>
+  {/* import { Button } from '@eigi/bluebird-react'; */}
   <Button bsStyle="primary" block>
     Block level button
   </Button>
@@ -156,6 +149,7 @@ Create block level buttons—those that span the full width of a parent— by ad
 The DOM element tag is choosen automatically for you based on the props you supply. Passing a href will result in the button using a `<a />` element otherwise a `<button />` element will be used.
 
 <Playground>
+  {/* import { Button, ButtonToolbar } from '@eigi/bluebird-react'; */}
   <ButtonToolbar>
     <Button href="#">Link</Button>
     <Button>Button</Button>

@@ -4,13 +4,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "docz dev",
-    "build": "docz build",
-    "test": "docz build",
-    "react:start": "react-scripts start",
-    "react:build": "react-scripts build",
-    "react:test": "react-scripts test",
-    "react:eject": "react-scripts eject"
+    "start": "lerna run --stream start && docz dev",
+    "build": "lerna run --stream build && docz build",
+    "test": "lerna run --stream test"
   },
   "eslintConfig": {
     "extends": "@eigi/eslint-config"
@@ -30,6 +26,7 @@
     "@eigi/bluebird-fastdomain": "file:packages/bluebird-fastdomain",
     "@eigi/bluebird-hostmonster": "file:packages/bluebird-hostmonster",
     "@eigi/bluebird-justhost": "file:packages/bluebird-justhost",
+    "@eigi/bluebird-react": "0.0.0",
     "@eigi/bluebird-theme-default": "file:packages/bluebird-theme-default",
     "@eigi/eslint-config": "0.0.0",
     "@eigi/stylelint-config": "file:packages/stylelint-config",

@@ -17,7 +17,7 @@ import {
   Glyphicon,
   DropdownButton,
   MenuItem,
-} from 'react-bootstrap';
+} from '@eigi/bluebird-react';
 import { Playground } from 'docz';
 
 # Forms
@@ -26,7 +26,7 @@ The `<FormControl>` component renders a form control with Bootstrap styling. The
 
 <Playground>
   {() => {
-    // import { ControlLabel, FormGroup, HelpBlock } from 'react-bootstrap';
+    // import { ControlLabel, FormGroup, HelpBlock } from '@eigi/bluebird-react';
     class FormExample extends React.Component {
       constructor(props, context) {
         super(props, context);
@@ -86,7 +86,7 @@ Examples of standard form controls supported in an example form layout, using a 
 
 <Playground>
   {() => {
-    {/* import { Button, FormControl, FieldGroup, FormGroup, ControlLabel, Checkbox, Radio } from 'react-bootstrap'; */}
+    {/* import { Button, FormControl, FieldGroup, FormGroup, ControlLabel, Checkbox, Radio } from '@eigi/bluebird-react'; */}
     const FieldGroup = ({ id, label, help, }) => {
       return (
         <FormGroup controlId={id}>
@@ -182,7 +182,7 @@ Examples of standard form controls supported in an example form layout, using a 
 Use `<Form inline>` instead of `<form>`. JSX strips whitespace between lines, so you will need to manually add spaces. Additionally, Bootstrap assigns inline form controls `width: auto` by default, so you may need to set custom widths.
 
 <Playground>
-  {/* import { ControlLabel, FormGroup, HelpBlock } from 'react-bootstrap'; */}
+  {/* import { ControlLabel, FormGroup, HelpBlock } from '@eigi/bluebird-react'; */}
   <Form inline>
     <FormGroup controlId="formInlineName">
       <ControlLabel>Name</ControlLabel>{' '}
@@ -201,7 +201,7 @@ Use `<Form inline>` instead of `<form>`. JSX strips whitespace between lines, so
 Use `<Form horizontal>` instead of `<form>`, then use `<Col>`s to align labels and controls. Do not use `<Row>` here, as `<FormGroup>` will already serve as a grid row in a horizontal form.
 
 <Playground>
-{/* import { Form, FormGroup, Col, FormControl, Checkbox, Button } from 'react-bootstrap'; */}
+{/* import { Form, FormGroup, Col, FormControl, Checkbox, Button } from '@eigi/bluebird-react'; */}
     <Form horizontal>
       <FormGroup controlId="formHorizontalEmail">
         <Col componentClass={ControlLabel} sm={2}>
@@ -240,7 +240,7 @@ Use `<Form horizontal>` instead of `<form>`, then use `<Col>`s to align labels a
 Wrap your form control in an `<InputGroup>`, then use for normal add-ons and for button add-ons. Exotic configurations may require CSS on your side.
 
 <Playground>
-  {/* import { FormGroup, InputGroup, FormControl, Glyphicon, Button, DropdownButton, MenuItem } from 'react-bootstrap'; */}
+  {/* import { FormGroup, InputGroup, FormControl, Glyphicon, Button, DropdownButton, MenuItem } from '@eigi/bluebird-react'; */}
   <form>
     <FormGroup>
       <InputGroup>
@@ -317,7 +317,7 @@ Wrap your form control in an `<InputGroup>`, then use for normal add-ons and for
 Use bsSize on `<FormGroup>` or `<InputGroup>` to change the size of inputs. It also works with add-ons and most other options.
 
 <Playground>
-  {/* import { FormGroup, FormControl } from 'react-bootstrap'; */}
+  {/* import { FormGroup, FormControl } from '@eigi/bluebird-react'; */}
   <form>
     <FormGroup bsSize="large">
       <FormControl type="text" placeholder="Large text" />
@@ -336,7 +336,7 @@ Use bsSize on `<FormGroup>` or `<InputGroup>` to change the size of inputs. It a
 Set `validationState` to one of 'success', 'warning' or 'error' to show validation state. Set `validationState` to `null` (or `undefined`) to hide validation state. Add `<FormControl.Feedback>` for a feedback icon when validation state is set.
 
 <Playground>
-  {/* import { Form, FormGroup, ControlLabel, FormControl, HelpBlock, Col, Checkbox, Radio } from 'react-bootstrap'; */}
+  {/* import { Form, FormGroup, ControlLabel, FormControl, HelpBlock, Col, Checkbox, Radio } from '@eigi/bluebird-react'; */}
   <form>
     <FormGroup controlId="formValidationSuccess1" validationState="success">
       <ControlLabel>Input with success</ControlLabel>
