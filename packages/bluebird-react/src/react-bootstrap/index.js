@@ -3,7 +3,7 @@ export Alert from 'react-bootstrap/lib/Alert';
 export Badge from 'react-bootstrap/lib/Badge';
 export Breadcrumb from 'react-bootstrap/lib/Breadcrumb';
 export BreadcrumbItem from 'react-bootstrap/lib/BreadcrumbItem';
-export Button from 'react-bootstrap/lib/Button';
+export Button from './Button';
 export ButtonGroup from 'react-bootstrap/lib/ButtonGroup';
 export ButtonToolbar from 'react-bootstrap/lib/ButtonToolbar';
 export Carousel from 'react-bootstrap/lib/Carousel';
