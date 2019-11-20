@@ -7,9 +7,43 @@ import { Playground } from "docz";
 
 # Grid System
 
+## Breakpoints
+
+Breakpoints are the minimum and maximum widths at which a browser responds to different screen sizes, orientations and devices. The breakpoints listed below are the Bluebird Design System recommendations based on common widths of devices. As a rule for best practice, create any designs at the lowest end of the breakpoint. This will help ensure any design will not break on the lowest end of the breakpoint spectrum.
+
+![Breakpoints](../assets/Breakpoints@2x.png)
+
+| Design Token         | Display Size         | Value         |
+| -------------------- | -------------------- | ------------- |
+| `$screen-xs-min`     | Extra Small          | 480px         |
+| `$screen-sm-min`     | Small                | 768px         |
+| `$screen-md-min`     | Medium               | 992px         |
+| `$screen-lg-min`     | Large                | 1200px        |
+| `$screen-xl-desktop` | Extra Large          | 1440px        |
+
+## Media Queries
+Media queries can be used to manipulate or modify a screen. Media queries for screen widths should always be written using the `min-width` property.
+
+| Media Query                                      | What it does                          |
+| ------------------------------------------------ | ------------------------------------- |
+| `@media (min-width: $screen-xs-min) {...}`       | Targets screen widths 480px and up    |
+| `@media (min-width: $screen-sm-min) {...}`       | Targets screen widths 768px and up    |
+| `@media (min-width: $screen-md-min) {...}`       | Targets screen widths 992px and up    |
+| `@media (min-width: $screen-lg-min) {...}`       | Targets screen widths 1200px and up   |
+| `@media (min-width: $screen-xl-desktop) {...}`   | Targets screen widths 1440px and up   |
+
 ## Basic Grid
 
-Bootstrap's grid system consists of `<Row>` elements that contain `<Col>` elements. Columns can be split into segments that sum to 12, according to the screen size. So, `<Col lg={6}>` is a column that on large screens is 6/12 (or 1/2) the size of the row. `<Col md={9}>` is a column that on medium and large screens is 9/12 (or 3/4) the size of the row. By mixing and matching screen sizes you can adjust the columns to collapse in the desired fashion. Also common is to hide or show columns at certain screen sizes, eg. `xsHidden`. Rows with columns that sum to more than 12 automatically cascade.
+Bootstrap's grid system consists of `<Row>` elements that contain `<Col>` elements. 
+
+![GridRowsColumns](../assets/GridRowsColumns@2x.png)
+
+Columns can be split into segments that sum to 12, according to the screen size. So, `<Col lg={6}>` is a column that on large screens is 6/12 (or 1/2) the size of the row. `<Col md={9}>` is a column that on medium and large screens is 9/12 (or 3/4) the size of the row. 
+
+
+![GridColumnWidths](../assets/GridColumnWidths@2x.png)
+
+By mixing and matching screen sizes you can adjust the columns to collapse in the desired fashion. Also common is to hide or show columns at certain screen sizes, eg. `xsHidden`. Rows with columns that sum to more than 12 automatically cascade.
 
 Below examples include borders for convenience.
 
@@ -17,37 +51,53 @@ Below examples include borders for convenience.
   <Grid fluid={true}>
     <Row>
       <Col xs={12} md={8}>
-        <pre className="mb2">{'<Col xs={12} md={8} />'};</pre>
+        <div className="mb3 border-color-grey border-top-1 border-right-1 border-bottom-1 border-left-1 border-solid">
+          <pre className="mb2">{'<Col xs={12} md={8} />'}</pre>
+        </div>
       </Col>
       <Col xs={6} md={4}>
-        <pre className="mb2">{'<Col xs={6} md={4} />'}</pre>
+        <div className="mb3 border-color-grey border-top-1 border-right-1 border-bottom-1 border-left-1 border-solid">
+          <pre className="mb2">{'<Col xs={6} md={4} />'}</pre>
+        </div>
       </Col>
     </Row>
 
     <Row>
       <Col xs={6} md={4}>
-        <pre className="mb2">{'<Col xs={6} md={4} />'}</pre>
+        <div className="mb3 border-color-grey border-top-1 border-right-1 border-bottom-1 border-left-1 border-solid">
+          <pre className="mb2">{'<Col xs={6} md={4} />'}</pre>
+        </div>
       </Col>
       <Col xs={6} md={4}>
-        <pre className="mb2">{'<Col xs={6} md={4} />'}</pre>
+        <div className="mb3 border-color-grey border-top-1 border-right-1 border-bottom-1 border-left-1 border-solid">
+          <pre className="mb2">{'<Col xs={6} md={4} />'}</pre>
+        </div>
       </Col>
       <Col xsHidden md={4}>
-        <pre className="mb2">{'<Col xsHidden md={4} />'}</pre>
+        <div className="mb3 border-color-grey border-top-1 border-right-1 border-bottom-1 border-left-1 border-solid">
+          <pre className="mb2">{'<Col xsHidden md={4} />'}</pre>
+        </div>
       </Col>
     </Row>
 
     <Row>
       <Col xs={6} xsOffset={6}>
-        <pre className="mb2">{'<Col xs={6} xsOffset={6} />'}</pre>
+        <div className="mb3 border-color-grey border-top-1 border-right-1 border-bottom-1 border-left-1 border-solid">
+          <pre className="mb2">{'<Col xs={6} xsOffset={6} />'}</pre>
+        </div>
       </Col>
     </Row>
 
     <Row>
       <Col md={6} mdPush={6}>
-        <pre className="mb2">{'<Col md={6} mdPush={6} />'}</pre>
+        <div className="mb3 border-color-grey border-top-1 border-right-1 border-bottom-1 border-left-1 border-solid">
+          <pre className="mb2">{'<Col md={6} mdPush={6} />'}</pre>
+        </div>
       </Col>
       <Col md={6} mdPull={6}>
-        <pre className="mb2">{'<Col md={6} mdPull={6} />'}</pre>
+        <div className="mb3 border-color-grey border-top-1 border-right-1 border-bottom-1 border-left-1 border-solid">
+          <pre className="mb2">{'<Col md={6} mdPull={6} />'}</pre>
+        </div>
       </Col>
     </Row>
 
@@ -129,3 +179,64 @@ Use Clearfix and set to visible for the viewports with columning issues, so that
 }}
 
 </Playground>
+
+## Props
+
+### Grid
+
+| Name                 | Type            | Default         | Description |
+| -------------------- | --------------- | --------------- | -------------  |
+| `fluid`              | boolean         | false           | Turn any fixed-width grid layout into a full-width layout by this property. Adds `container-fluid` class. |
+| `componentClass`     | elementType     | 'div'           | You can use a custom element for this component |
+| `bsClass`            | string          | 'container'     | Base CSS class and prefix for the component. Generally one should only change `bsClass` to provide new, non-Bootstrap, CSS styles for a component. |
+
+### Row
+
+| Name                 | Type                  | Default         | Description |
+| -------------------- | -------------------- | ---------------- | -------------  |
+| `componentClass`     | elementType          | 'div'            | You can use a custom element for this component |
+| `bsClass`            | string               | 'row'            | Base CSS class and prefix for the component. Generally one should only change `bsClass` to provide new, non-Bootstrap, CSS styles for a component. |
+
+### Col
+
+| Name                 | Type                 | Default | Description |
+| -------------------- | ------------ | ------  | -------------  |
+| `componentClass`     | elementType  | 'div'   | You can use a custom element for this component |
+| `xs`                 | number       |         | The number of columns you wish to span for Extra Small devices Phones (<480px) class-prefix `col-xs-`  |
+| `sm`                 | number       |         | The number of columns you wish to span for Small devices Phones (<768px) class-prefix `col-sm-`  |
+| `md`                 | number       |         | The number of columns you wish to span for Medium devices Phones (<992px) class-prefix `col-md-`  |
+| `lg`                 | number       |         | The number of columns you wish to span for Large devices Phones (<1200px) class-prefix `col-lg-` |
+| `xl`                 | number       |         | The number of columns you wish to span for Extra Large devices Phones (<1440px) class-prefix `col-xl-` |
+| `xsHidden`           | boolean      |         | Hide column on Extra small devices Phones adds class `hidden-xs` |
+| `smHidden`           | boolean      |         | Hide column on Small devices Phones adds class `hidden-sm` |
+| `mdHidden`           | boolean      |         | Hide column on Medium devices Phones adds class `hidden-md` |
+| `lgHidden`           | boolean      |         | Hide column on Large devices Phones adds class `hidden-lg` |
+| `xlHidden`           | boolean      |         | Hide column on Extra Large devices Phones adds class `hidden-xl` |
+| `xsOffset`           | number       |         | Move columns to the right for Extra Small devices Tablets class-prefix `col-xs-offset-` |
+| `smOffset`           | number       |         | Move columns to the right for Small devices Tablets class-prefix `col-sm-offset-`  |
+| `mdOffset`           | number       |         | Move columns to the right for Medium devices Tablets class-prefix `col-md-offset-`  |
+| `lgOffset`           | number       |         | Move columns to the right for Large devices Tablets class-prefix `col-lg-offset-`  |
+| `xlOffset`           | number       |         | Move columns to the right for Extra Large devices Tablets class-prefix `col-xl-offset-`  |
+| `xspush`             | number       |         | Change the order of grid columns to the right for Extra Small devices Phones class-prefix `col-xs-push-` |
+| `smpush`             | number       |         | Change the order of grid columns to the right for Small devices Phones class-prefix `col-sm-push-` |
+| `mdpush`             | number       |         | Change the order of grid columns to the right for Medium devices Phones class-prefix `col-md-push-` |
+| `lgpush`             | number       |         | Change the order of grid columns to the right for Large devices Phones class-prefix `col-lg-push-` |
+| `xlpush`             | number       |         | Change the order of grid columns to the right for Extra Large devices Phones class-prefix `col-xl-push-` |
+| `xspull`             | number       |         | Change the order of grid columns to the left for Extra Small devices Phones class-prefix `col-xs-pull-` |
+| `smpull`             | number       |         | Change the order of grid columns to the left for Small devices Phones class-prefix `col-sm-pull-` |
+| `mdpull`             | number       |         | Change the order of grid columns to the left for Medium small devices Phones class-prefix `col-md-pull-` |
+| `lgpull`             | number       |         | Change the order of grid columns to the left for Large devices Phones class-prefix `col-lg-pull-` |
+| `xlpull`             | number       |         | Change the order of grid columns to the left for Extra Large devices Phones class-prefix `col-xl-pull-` |
+| `bsClass`            | string       | 'col'   | Base CSS class and prefix for the component. Generally one should only change `bsClass` to provide new, non-Bootstrap, CSS styles for a component. |
+
+### Clearfix
+
+| Name                 | Type         | Default          | Description |
+| -------------------- | ------------ | ---------------- | -------------  |
+| `componentClass`     | elementType  | 'div'            | You can use a custom element for this component |
+| `visibleXsBlock`     | boolean      |                  | Apply clearfix on Extra Small devices Phones adds class `visible-xs-block` |
+| `visibleSmBlock`     | boolean      |                  | Apply clearfix on Small devices Phones adds class `visible-sm-block` |
+| `visibleMdBlock`     | boolean      |                  | Apply clearfix on Medium devices Phones adds class `visible-md-block` |
+| `visibleLgBlock`     | boolean      |                  | Apply clearfix on Large devices Phones adds class `visible-lg-block` |
+| `visibleXlBlock`     | boolean      |                  | Apply clearfix on Extra Large devices Phones adds class `visible-xl-block` |
+| `bsClass`            | string       | 'clearfix'      | Base CSS class and prefix for the component. Generally one should only change `bsClass` to provide new, non-Bootstrap, CSS styles for a component. |
