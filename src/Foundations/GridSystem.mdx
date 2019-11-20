@@ -40,16 +40,16 @@ Bootstrap's grid system consists of `<Row>` elements that contain `<Col>` elemen
   <Grid fluid={true}>
     
     <div className="red-element">
-      <div className="p3">{'<Row />'}</div>
+      <div className="py3">{'<Row />'}</div>
       <Row>
         <Col md={6}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col />'}</div>
           </div>
         </Col>
         <Col md={6}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col />'}</div>
           </div>
         </Col>
       </Row>
@@ -64,16 +64,16 @@ Columns can be split into segments that sum to 12, according to the screen size.
   <Grid fluid={true}>
     
     <div className="red-element">
-      <div className="p3">{'<Row />'}</div>
+      <div className="py3">{'<Row />'}</div>
       <Row>
         <Col md={6}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col md={6}/>'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col md={6}/>'}</div>
           </div>
         </Col>
         <Col md={9}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col md={9}/>'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col md={9}/>'}</div>
           </div>
         </Col>
       </Row>
@@ -90,64 +90,64 @@ Below examples include borders for convenience.
   <Grid fluid={true}>
     
     <div className="red-element mb3">
-      <div className="p3">{'<Row />'}</div>
+      <div className="py3">{'<Row />'}</div>
       <Row>
         <Col xs={12} md={8}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col xs={12} md={8} />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col xs={12} md={8} />'}</div>
           </div>
         </Col>
         <Col xs={6} md={4}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col xs={6} md={4} />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col xs={6} md={4} />'}</div>
           </div>
         </Col>
       </Row>
     </div>  
 
     <div className="red-element mb3">
-      <div className="p3">{'<Row />'}</div>
+      <div className="py3">{'<Row />'}</div>
       <Row>
         <Col xs={12} md={8}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col xs={6} md={4}  />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col xs={6} md={4}  />'}</div>
           </div>
         </Col>
         <Col xs={12} md={8}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col xs={6} md={4} />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col xs={6} md={4} />'}</div>
           </div>
         </Col>
         <Col xsHidden md={4} >
-          <div className="blue-element m1">
-            <div className="p3">{'<Col xsHidden md={4} />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col xsHidden md={4} />'}</div>
           </div>
         </Col>
       </Row>
     </div>  
   
     <div className="red-element mb3">
-      <div className="p3">{'<Row />'}</div>
+      <div className="py3">{'<Row />'}</div>
       <Row>
         <Col xs={6} xsOffset={6}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col xs={6} xsOffset={6} />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col xs={6} xsOffset={6} />'}</div>
           </div>
         </Col>
       </Row>
     </div>  
 
     <div  className="red-element mb3">
-      <div className="p3">{'<Row />'}</div>
+      <div className="py3">{'<Row />'}</div>
       <Row>
         <Col md={6} mdPush={6}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col md={6} mdPush={6} />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col md={6} mdPush={6} />'}</div>
           </div>
         </Col>
         <Col md={6} mdPull={6}>
-          <div className="blue-element m1">
-            <div className="p3">{'<Col md={6} mdPull={6} />'}</div>
+          <div className="blue-element">
+            <div className="py3">{'<Col md={6} mdPull={6} />'}</div>
           </div>
         </Col>
       </Row>
@@ -179,11 +179,11 @@ Use Clearfix and set to visible for the viewports with columning issues, so that
     return (
       <Grid fluid={true}>
         <div className="red-element">
-          <div className="p3">{'<Row />'}</div>
+          <div className="py3">{'<Row />'}</div>
           <Row>
             <Col sm={6} md={3}>
-              <div className="blue-element m1 ">
-                <div className="p3">
+              <div className="blue-element">
+                <div className="py3">
                   &lt;
                   {'Col sm={6} md={3}'} /&gt;
                 </div>
@@ -192,8 +192,8 @@ Use Clearfix and set to visible for the viewports with columning issues, so that
               </div>
             </Col>
             <Col sm={6} md={3}>
-              <div className="blue-element m1 ">
-                <div className="p3">
+              <div className="blue-element">
+                <div className="py3">
                   &lt;
                   {'Col sm={6} md={3}'} /&gt;
                 </div>
@@ -207,8 +207,8 @@ Use Clearfix and set to visible for the viewports with columning issues, so that
               </code>
             </Clearfix>
             <Col sm={6} md={3}>
-              <div className="blue-element m1 ">
-                <div className="p3">
+              <div className="blue-element">
+                <div className="py3">
                   &lt;
                   {'Col sm={6} md={3}'} /&gt;
                 </div>
@@ -217,8 +217,8 @@ Use Clearfix and set to visible for the viewports with columning issues, so that
               </div>
             </Col>
             <Col sm={6} md={3}>
-              <div className="blue-element m1 ">
-                <div className="p3">
+              <div className="blue-element">
+                <div className="py3">
                   &lt;
                   {'Col sm={6} md={3}'} /&gt;
                 </div>
