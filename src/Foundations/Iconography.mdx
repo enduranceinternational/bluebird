@@ -3,174 +3,179 @@ menu: Foundations
 ---
 
 import {
-  BarsRegular,
-  BellRegular,
-  BlueSkyDifference,
-  BlueSkyDifferenceSubtract,
-  BlueSkyDifferenceUnion,
-  BoxFullRegular,
+  Bars,
+  Bell,
+  BoxFull,
+  Browser,
   BrowserOff,
   BrowserOffline,
   BrowserOnline,
-  BrowserRegular,
   BrowserWarning,
-  BuildingRegular,
-  BuildingRegularOff,
-  CalendarDayRegular,
-  CheckCircleRegular,
-  CheckRegular,
-  CheckboxDisabled,
-  CheckboxHover,
-  CheckboxNotSelected,
-  CheckboxSelected,
-  ChevronDownRegular,
-  ChevronLeftRegular,
-  ChevronRightRegular,
-  ChevronUpRegular,
+  Building,
+  BuildingOff,
+  CalendarDay,
+  CaretDownSolid,
+  CaretUpSolid,
+  Check,
+  CheckCircle,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  ChevronUp,
   Close,
-  CommentAltRegular,
-  CommentsAltSolid,
-  CompassRegular,
-  CreditCardRegular,
-  EditRegular,
-  EllipsisVRegular,
-  ExclamationCircleRegular,
-  ExclamationTriangleRegular,
+  Comment,
+  CommentsSolid,
+  Compass,
+  CreditCard,
+  Edit,
+  Ellipsis,
+  ExclamationCircle,
+  ExclamationTriangle,
   Expired,
-  ExternalLinkSquareAltRegular,
-  EyeRegular,
-  EyeSlashRegular,
+  ExternalLinkSquareAlt,
+  Eye,
+  EyeSlash,
   Filter,
-  HomeLgRegular,
-  IdCardAltRegular,
-  InfoCircleRegular,
+  Home,
+  IdCard,
+  InfoCircle,
   LineChart,
+  Lock,
   LockOff,
-  LockOpenRegular,
-  LockRegular,
+  LockOpen,
   LockSolid,
-  LongArrowLeftRegular,
-  LongArrowRightRegular,
-  MailBulkRegular,
-  MinusCircleRegular,
+  LogoBlueSkyDifference,
+  LogoBlueSkySubtract,
+  LogoBlueSkyUnion,
+  LogoWordpress,
+  LongArrowLeft,
+  LongArrowRight,
+  MailBulk,
+  MinusCircle,
   MobileAndroidAltSolid,
   PaperAirplane,
-  PlusCircleRegular,
-  PlusRegular,
+  Plus,
+  PlusCircle,
   QrcodeLight,
-  QuestionCircleRegular,
-  RadioButtonDisabled,
-  RadioButtonNotSelected,
-  RadioButtonNotSelectedHover,
-  RadioButtonSelected,
-  SearchRegular,
-  ShieldCheckRegular,
-  ShoppingBagRegular,
-  ShoppingCartRegular,
-  SignOutRegular,
-  SlidersHRegular,
-  SortAmountDownRegular,
-  SortAmountUpRegular,
-  SortDownSolid,
-  SortUpSolid,
-  SpinnerThirdRegular,
+  QuestionCircle,
+  Search,
+  ShieldCheck,
+  ShoppingBag,
+  ShoppingCart,
+  SignOut,
+  Sliders,
+  SortAscending,
+  SortDescending,
+  SpinnerThird,
   Star,
-  TextField,
   TimesCircle,
   TimesLight,
-  TrashRegular,
-  UndoRegular,
+  Trash,
+  Undo,
   UserAltSolid,
   UserAstronautLight,
   UserAstronautSolid,
   UserCircleSolid,
-  WordpressSimpleBrands,
 } from '@eigi/bluebird-icons';
 const iconProps = { className: 'm3', height: '48px', width: '48px' };
+const iconWrapper = { className: 'docs-wrapper--icon depth1 col-md-3 col-sm-3 col-xs-6' };
+const iconText = {  className: 'docs-wrapper--icon-text fsxs' };
 
 # Iconography
 
+<!-- ## Resources
+
+[Download Icon Library for Sketch](https://www.google.com)
+
+[Download Icon Library for XD](https://www.google.com)  -->
+
+## Using Icons 
+
+Include React Component in your project:
+
+    import Icon from '@eigi/bluebird-icons';
+
+| Property   | Description                    | Type       | Default |
+|------------|--------------------------------|------------|---------|
+| width      | The width of the `svg` element | string     | '1em'   |
+| height     | The height of the `svg` element| string     | '1em'   |
+| fill       | The color used for the `svg` element | string | 'currentColor'
+| className  | The width of the `svg` element | string | -  |
+| style      | The width of the `svg` element | CSSProperties | - | 
+
+
 <Playground>
-  <BarsRegular {...iconProps} />
-  <BellRegular {...iconProps} />
-  <BlueSkyDifference {...iconProps} />
-  <BlueSkyDifferenceSubtract {...iconProps} />
-  <BlueSkyDifferenceUnion {...iconProps} />
-  <BoxFullRegular {...iconProps} />
-  <BrowserOff {...iconProps} />
-  <BrowserOffline {...iconProps} />
-  <BrowserOnline {...iconProps} />
-  <BrowserRegular {...iconProps} />
-  <BrowserWarning {...iconProps} />
-  <BuildingRegular {...iconProps} />
-  <BuildingRegularOff {...iconProps} />
-  <CalendarDayRegular {...iconProps} />
-  <CheckCircleRegular {...iconProps} />
-  <CheckRegular {...iconProps} />
-  <CheckboxDisabled {...iconProps} />
-  <CheckboxHover {...iconProps} />
-  <CheckboxNotSelected {...iconProps} />
-  <CheckboxSelected {...iconProps} />
-  <ChevronDownRegular {...iconProps} />
-  <ChevronLeftRegular {...iconProps} />
-  <ChevronRightRegular {...iconProps} />
-  <ChevronUpRegular {...iconProps} />
-  <Close {...iconProps} />
-  <CommentAltRegular {...iconProps} />
-  <CommentsAltSolid {...iconProps} />
-  <CompassRegular {...iconProps} />
-  <CreditCardRegular {...iconProps} />
-  <EditRegular {...iconProps} />
-  <EllipsisVRegular {...iconProps} />
-  <ExclamationCircleRegular {...iconProps} />
-  <ExclamationTriangleRegular {...iconProps} />
-  <Expired {...iconProps} />
-  <ExternalLinkSquareAltRegular {...iconProps} />
-  <EyeRegular {...iconProps} />
-  <EyeSlashRegular {...iconProps} />
-  <Filter {...iconProps} />
-  <HomeLgRegular {...iconProps} />
-  <IdCardAltRegular {...iconProps} />
-  <InfoCircleRegular {...iconProps} />
-  <LineChart {...iconProps} />
-  <LockOff {...iconProps} />
-  <LockOpenRegular {...iconProps} />
-  <LockRegular {...iconProps} />
-  <LockSolid {...iconProps} />
-  <LongArrowLeftRegular {...iconProps} />
-  <LongArrowRightRegular {...iconProps} />
-  <MailBulkRegular {...iconProps} />
-  <MinusCircleRegular {...iconProps} />
-  <MobileAndroidAltSolid {...iconProps} />
-  <PaperAirplane {...iconProps} />
-  <PlusCircleRegular {...iconProps} />
-  <PlusRegular {...iconProps} />
-  <QrcodeLight {...iconProps} />
-  <QuestionCircleRegular {...iconProps} />
-  <RadioButtonDisabled {...iconProps} />
-  <RadioButtonNotSelected {...iconProps} />
-  <RadioButtonNotSelectedHover {...iconProps} />
-  <RadioButtonSelected {...iconProps} />
-  <SearchRegular {...iconProps} />
-  <ShieldCheckRegular {...iconProps} />
-  <ShoppingBagRegular {...iconProps} />
-  <ShoppingCartRegular {...iconProps} />
-  <SignOutRegular {...iconProps} />
-  <SlidersHRegular {...iconProps} />
-  <SortAmountDownRegular {...iconProps} />
-  <SortAmountUpRegular {...iconProps} />
-  <SortDownSolid {...iconProps} />
-  <SortUpSolid {...iconProps} />
-  <SpinnerThirdRegular {...iconProps} />
-  <Star {...iconProps} />
-  <TextField {...iconProps} />
-  <TimesCircle {...iconProps} />
-  <TimesLight {...iconProps} />
-  <TrashRegular {...iconProps} />
-  <UndoRegular {...iconProps} />
-  <UserAltSolid {...iconProps} />
-  <UserAstronautLight {...iconProps} />
-  <UserAstronautSolid {...iconProps} />
-  <UserCircleSolid {...iconProps} />
-  <WordpressSimpleBrands {...iconProps} />
+  <div{...iconWrapper}><div{...iconText}>Bars</div><Bars {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Bell</div><Bell {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>BoxFull</div><BoxFull {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Browser</div><Browser {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>BrowserOff</div><BrowserOff {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>BrowserOffline</div><BrowserOffline {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>BrowserOnline</div><BrowserOnline {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>BrowserWarning</div><BrowserWarning {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Building</div><Building {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>BuildingOff</div><BuildingOff {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>CalendarDay</div><CalendarDay {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>CaretDownSolid</div><CaretDownSolid {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>CaretUpSolid</div><CaretUpSolid {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Check</div><Check {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>CheckCircle</div><CheckCircle {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ChevronDown</div><ChevronDown {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ChevronLeft</div><ChevronLeft {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ChevronRight</div><ChevronRight {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ChevronUp</div><ChevronUp {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Close</div><Close {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Comment</div><Comment {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>CommentsSolid</div><CommentsSolid {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Compass</div><Compass {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>CreditCard</div><CreditCard {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Edit</div><Edit {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Ellipsis</div><Ellipsis {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ExclamationCircle</div><ExclamationCircle {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ExclamationTriangle</div><ExclamationTriangle {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Expired</div><Expired {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ExternalLinkSquareAlt</div><ExternalLinkSquareAlt {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Eye</div><Eye {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>EyeSlash</div><EyeSlash {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Filter</div><Filter {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Home</div><Home {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>IdCard</div><IdCard {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>InfoCircle</div><InfoCircle {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LineChart</div><LineChart {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Lock</div><Lock {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LockOff</div><LockOff {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LockOpen</div><LockOpen {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LockSolid</div><LockSolid {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LogoBlueSkyDifference</div><LogoBlueSkyDifference {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LogoBlueSkySubtract</div><LogoBlueSkySubtract {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LogoBlueSkyUnion</div><LogoBlueSkyUnion {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LogoWordpress</div><LogoWordpress {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LongArrowLeft</div><LongArrowLeft {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>LongArrowRight</div><LongArrowRight {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>MailBulk</div><MailBulk {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>MinusCircle</div><MinusCircle {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>MobileAndroidAltSolid</div><MobileAndroidAltSolid {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>PaperAirplane</div><PaperAirplane {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Plus</div><Plus {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>PlusCircle</div><PlusCircle {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>QrcodeLight</div><QrcodeLight {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>QuestionCircle</div><QuestionCircle {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Search</div><Search {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ShieldCheck</div><ShieldCheck {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ShoppingBag</div><ShoppingBag {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>ShoppingCart</div><ShoppingCart {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>SignOut</div><SignOut {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Sliders</div><Sliders {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>SortAscending</div><SortAscending {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>SortDescending</div><SortDescending {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>SpinnerThird</div><SpinnerThird {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Star</div><Star {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>TimesCircle</div><TimesCircle {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>TimesLight</div><TimesLight {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Trash</div><Trash {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>Undo</div><Undo {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>UserAltSolid</div><UserAltSolid {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>UserAstronautLight</div><UserAstronautLight {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>UserAstronautSolid</div><UserAstronautSolid {...iconProps} /></div>
+  <div{...iconWrapper}><div{...iconText}>UserCircleSolid</div><UserCircleSolid {...iconProps} /></div>
 </Playground>

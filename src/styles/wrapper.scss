@@ -1,3 +1,25 @@
 img[src$="#badge"] {
   width: auto;
 }
+
+.docs-wrapper--icon {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* set aspect ratio of element to 1:1 */
+  }
+  .docs-wrapper--icon-text {
+    position:absolute;
+    top: 8px;
+    left: 8px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+  svg {
+  }
+}
