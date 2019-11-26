@@ -31,7 +31,7 @@
   min-width: max-content;
   margin: 0em;
   padding: 0em 0em;
-  background: #ffffff;
+  background: $white;
   font-size: 1em;
   text-shadow: none;
   text-align: left;
@@ -331,7 +331,7 @@
   transform: rotateZ(0deg);
   min-width: 14em;
   min-height: 2.71428571em;
-  background: #ffffff;
+  background: $white;
   display: inline-block;
   padding: 0.78571429em 2.1em 0.78571429em 1em;
   color: rgba(0, 0, 0, 0.87);
@@ -345,16 +345,19 @@
   transition: box-shadow 0.1s ease, width 0.1s ease,
     -webkit-box-shadow 0.1s ease;
 }
+
 .ui.selection.dropdown.visible,
 .ui.selection.dropdown.active {
   z-index: 10;
 }
+
 select.ui.dropdown {
   height: 38px;
   padding: 0.5em;
   border: 1px solid rgba(34, 36, 38, 0.15);
   visibility: visible;
 }
+
 .ui.selection.dropdown > .search.icon,
 .ui.selection.dropdown > .delete.icon,
 .ui.selection.dropdown > .dropdown.icon {
@@ -397,6 +400,7 @@ select.ui.dropdown {
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
+
 .ui.selection.dropdown .menu:after,
 .ui.selection.dropdown .menu:before {
   display: none;
