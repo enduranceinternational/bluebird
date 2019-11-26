@@ -2,10 +2,12 @@
 menu: Components
 ---
 
-import { Dropdown } from 'semantic-ui-react';
+import { Dropdown, Menu, Item, Divider } from 'semantic-ui-react';
 import { Playground } from 'docz';
 
 # Dropdowns
+
+## Dropdown 
 
 <Playground>
   <Dropdown text='File'>
@@ -23,4 +25,132 @@ import { Playground } from 'docz';
       <Dropdown.Item text='E-mail Collaborators' />
     </Dropdown.Menu>
   </Dropdown>
+</Playground>
+
+## Selection
+
+<Playground>
+  {() => {
+    const friendOptions = [
+      {
+        key: 'Jenny Hess',
+        text: 'Jenny Hess',
+        value: 'Jenny Hess',
+        image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
+      },
+      {
+        key: 'Elliot Fu',
+        text: 'Elliot Fu',
+        value: 'Elliot Fu',
+        image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
+      },
+      {
+        key: 'Stevie Feliciano',
+        text: 'Stevie Feliciano',
+        value: 'Stevie Feliciano',
+        image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
+      },
+      {
+        key: 'Christian',
+        text: 'Christian',
+        value: 'Christian',
+        image: { avatar: true, src: '/images/avatar/small/christian.jpg' },
+      },
+      {
+        key: 'Matt',
+        text: 'Matt',
+        value: 'Matt',
+        image: { avatar: true, src: '/images/avatar/small/matt.jpg' },
+      },
+      {
+        key: 'Justen Kitsune',
+        text: 'Justen Kitsune',
+        value: 'Justen Kitsune',
+        image: { avatar: true, src: '/images/avatar/small/justen.jpg' },
+      },
+    ]
+
+    return (
+      <Dropdown
+        placeholder='Select Friend'
+        fluid
+        selection
+        options={friendOptions}
+      />
+    )
+  }}
+</Playground>
+
+
+## Search Selection
+
+<Playground>
+  {() => {
+    const countryOptions = [
+      { key: 'af', value: 'af', flag: 'af', text: 'Afghanistan' },
+      { key: 'ax', value: 'ax', flag: 'ax', text: 'Aland Islands' },
+      { key: 'al', value: 'al', flag: 'al', text: 'Albania' },
+      { key: 'dz', value: 'dz', flag: 'dz', text: 'Algeria' },
+      { key: 'as', value: 'as', flag: 'as', text: 'American Samoa' },
+      { key: 'ad', value: 'ad', flag: 'ad', text: 'Andorra' },
+      { key: 'ao', value: 'ao', flag: 'ao', text: 'Angola' },
+      { key: 'ai', value: 'ai', flag: 'ai', text: 'Anguilla' },
+      { key: 'ag', value: 'ag', flag: 'ag', text: 'Antigua' },
+      { key: 'ar', value: 'ar', flag: 'ar', text: 'Argentina' },
+      { key: 'am', value: 'am', flag: 'am', text: 'Armenia' },
+      { key: 'aw', value: 'aw', flag: 'aw', text: 'Aruba' },
+      { key: 'au', value: 'au', flag: 'au', text: 'Australia' },
+      { key: 'at', value: 'at', flag: 'at', text: 'Austria' },
+      { key: 'az', value: 'az', flag: 'az', text: 'Azerbaijan' },
+      { key: 'bs', value: 'bs', flag: 'bs', text: 'Bahamas' },
+      { key: 'bh', value: 'bh', flag: 'bh', text: 'Bahrain' },
+      { key: 'bd', value: 'bd', flag: 'bd', text: 'Bangladesh' },
+      { key: 'bb', value: 'bb', flag: 'bb', text: 'Barbados' },
+      { key: 'by', value: 'by', flag: 'by', text: 'Belarus' },
+      { key: 'be', value: 'be', flag: 'be', text: 'Belgium' },
+      { key: 'bz', value: 'bz', flag: 'bz', text: 'Belize' },
+      { key: 'bj', value: 'bj', flag: 'bj', text: 'Benin' },
+    ]
+
+    return (
+      <Dropdown
+        placeholder='Select Country'
+        fluid
+        search
+        selection
+        options={countryOptions}
+      />
+    )
+  }}
+</Playground>
+
+## Multiple Selection
+
+<Playground>
+  {() => {
+    const options = [
+      { key: 'angular', text: 'Angular', value: 'angular' },
+      { key: 'css', text: 'CSS', value: 'css' },
+      { key: 'design', text: 'Graphic Design', value: 'design' },
+      { key: 'ember', text: 'Ember', value: 'ember' },
+      { key: 'html', text: 'HTML', value: 'html' },
+      { key: 'ia', text: 'Information Architecture', value: 'ia' },
+      { key: 'javascript', text: 'Javascript', value: 'javascript' },
+      { key: 'mech', text: 'Mechanical Engineering', value: 'mech' },
+      { key: 'meteor', text: 'Meteor', value: 'meteor' },
+      { key: 'node', text: 'NodeJS', value: 'node' },
+      { key: 'plumbing', text: 'Plumbing', value: 'plumbing' },
+      { key: 'python', text: 'Python', value: 'python' },
+      { key: 'rails', text: 'Rails', value: 'rails' },
+      { key: 'react', text: 'React', value: 'react' },
+      { key: 'repair', text: 'Kitchen Repair', value: 'repair' },
+      { key: 'ruby', text: 'Ruby', value: 'ruby' },
+      { key: 'ui', text: 'UI Design', value: 'ui' },
+      { key: 'ux', text: 'User Experience', value: 'ux' },
+    ]
+
+    return (
+      <Dropdown placeholder='Skills' fluid multiple selection options={options} />
+    )
+  }}
 </Playground>

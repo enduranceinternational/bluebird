@@ -324,7 +324,7 @@
 .ui.selection.dropdown {
   cursor: pointer;
   word-wrap: break-word;
-  line-height: 1em;
+  line-height: $line-height-small;
   white-space: normal;
   outline: 0;
   -webkit-transform: rotateZ(0deg);
@@ -333,12 +333,12 @@
   min-height: 2.71428571em;
   background: $white;
   display: inline-block;
-  padding: 0.78571429em 2.1em 0.78571429em 1em;
-  color: rgba(0, 0, 0, 0.87);
+  padding: $padding-base-vertical ($padding-large-horizontal + $padding-base-horizontal) $padding-base-vertical $padding-base-horizontal ;
+  color: $gray-light;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  border-radius: 0.28571429rem;
+  border: 1px solid $input-border;
+  border-radius: $border-radius-small;
   -webkit-transition: width 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: width 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: box-shadow 0.1s ease, width 0.1s ease;
@@ -559,13 +559,13 @@ select.ui.dropdown {
 
 /* Search Selection */
 .ui.search.selection.dropdown > input.search {
-  line-height: 1.21428571em;
-  padding: 0.67857143em 2.1em 0.67857143em 1em;
+  line-height: $line-height-small;
+  padding: $padding-base-vertical ($padding-large-horizontal + $padding-base-horizontal) $padding-base-vertical $padding-base-horizontal ;
 }
 
 /* Used to size multi select input to character width */
 .ui.search.selection.dropdown > span.sizer {
-  line-height: 1.21428571em;
+  line-height: $line-height-small;
   padding: 0.67857143em 2.1em 0.67857143em 1em;
   display: none;
   white-space: pre;
@@ -826,7 +826,7 @@ select.ui.dropdown {
 
 .ui.dropdown:not(.button) > .default.text,
 .ui.default.dropdown:not(.button) > .text {
-  color: rgba(191, 191, 191, 0.87);
+  color: $gray-light;
 }
 .ui.dropdown:not(.button) > input:focus ~ .default.text,
 .ui.default.dropdown:not(.button) > input:focus ~ .text {
