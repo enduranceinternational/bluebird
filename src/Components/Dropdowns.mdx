@@ -4,6 +4,7 @@ menu: Components
 
 import { Dropdown, Menu, Item, Divider } from 'semantic-ui-react';
 import { Playground } from 'docz';
+import '../../packages/bluebird/src/semantic-ui-react/dropdown.js';
 
 # Dropdowns
 
@@ -112,15 +113,7 @@ import { Playground } from 'docz';
       { key: 'bj', value: 'bj', flag: 'bj', text: 'Benin' },
     ]
 
-    return (
-      <Dropdown
-        placeholder='Select Country'
-        fluid
-        search
-        selection
-        options={countryOptions}
-      />
-    )
+    return <Dropdown placeholder='Select Country' fluid search selection options={countryOptions} />
   }}
 </Playground>
 
@@ -149,8 +142,21 @@ import { Playground } from 'docz';
       { key: 'ux', text: 'User Experience', value: 'ux' },
     ]
 
-    return (
-      <Dropdown placeholder='Skills' fluid multiple selection options={options} />
-    )
+    return <Dropdown placeholder='Skills' fluid multiple selection options={options} />
   }}
+</Playground>
+
+## Clearable
+
+<Playground>
+  {() => {
+    const options = [
+      { key: 1, text: 'Choice 1', value: 1 },
+      { key: 2, text: 'Choice 2', value: 2 },
+      { key: 3, text: 'Choice 3', value: 3 },
+    ]
+
+    return <Dropdown clearable options={options} selection />
+  }}
+
 </Playground>
