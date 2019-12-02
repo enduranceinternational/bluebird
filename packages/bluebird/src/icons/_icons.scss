@@ -179,7 +179,7 @@ $icon-font-name-bluecons: "bluecons" !default;
 }
 
 .icon-chevron-down::before {
-  content: "\7a";
+  content: "\7a" !important;
 }
 
 .icon-chevron-left::before {
