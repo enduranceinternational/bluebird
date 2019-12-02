@@ -37,7 +37,7 @@
   //   text-align: left;
   -webkit-box-shadow: $shadow-depth-3;
   box-shadow: $shadow-depth-3;
-  border: none;
+  border: 0;
   border-radius: $input-border-radius;
   //   -webkit-transition: opacity 0.1s ease;
   //   transition: opacity 0.1s ease;
@@ -438,7 +438,7 @@
 
 // /* Menu Item */
 .ui.selection.dropdown .menu > .item {
-  border-top: none;
+  border-top: 0;
   padding: $padding-base-vertical $padding-base-horizontal !important;
   //   white-space: normal;
   //   word-wrap: normal;
@@ -1453,6 +1453,7 @@
   // .ui.dropdown > .dropdown.icon {
   //   width: auto;
 }
+
 .ui.dropdown > .dropdown.icon:before {
   content: "\7a";
 }
