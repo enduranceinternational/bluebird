@@ -34,37 +34,37 @@ import { Playground } from 'docz';
         key: 'Jenny Hess',
         text: 'Jenny Hess',
         value: 'Jenny Hess',
-        image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Elliot Fu',
         text: 'Elliot Fu',
         value: 'Elliot Fu',
-        image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Stevie Feliciano',
         text: 'Stevie Feliciano',
         value: 'Stevie Feliciano',
-        image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Christian',
         text: 'Christian',
         value: 'Christian',
-        image: { avatar: true, src: '/images/avatar/small/christian.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Matt',
         text: 'Matt',
         value: 'Matt',
-        image: { avatar: true, src: '/images/avatar/small/matt.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Justen Kitsune',
         text: 'Justen Kitsune',
         value: 'Justen Kitsune',
-        image: { avatar: true, src: '/images/avatar/small/justen.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
     ]
 
@@ -151,25 +151,25 @@ import { Playground } from 'docz';
         key: 'Jenny Hess',
         text: 'Jenny Hess',
         value: 'Jenny Hess',
-        image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Elliot Fu',
         text: 'Elliot Fu',
         value: 'Elliot Fu',
-        image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Stevie Feliciano',
         text: 'Stevie Feliciano',
         value: 'Stevie Feliciano',
-        image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Christian',
         text: 'Christian',
         value: 'Christian',
-        image: { avatar: true, src: '/images/avatar/small/christian.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
     ]
 
@@ -260,6 +260,45 @@ import { Playground } from 'docz';
             label={{ color: 'black', empty: true, circular: true }}
             text='Discussion'
           />
+        </Dropdown.Menu>
+      </Dropdown>
+    )
+  }}
+</Playground>
+
+## Image
+
+<Playground>
+  {() => {
+
+    const friendOptions = [
+      {
+        key: 'Jenny Hess',
+        text: 'Jenny Hess',
+        value: 'Jenny Hess',
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
+      },
+      {
+        key: 'Elliot Fu',
+        text: 'Elliot Fu',
+        value: 'Elliot Fu',
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
+      },
+      {
+        key: 'Stevie Feliciano',
+        text: 'Stevie Feliciano',
+        value: 'Stevie Feliciano',
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
+      },
+    ]
+
+    return (
+      <Dropdown text='Show Images' inline>
+        <Dropdown.Menu>
+          <Dropdown.Header content='People You Might Know' />
+          {friendOptions.map((option) => (
+            <Dropdown.Item key={option.value} {...option} />
+          ))}
         </Dropdown.Menu>
       </Dropdown>
     )
