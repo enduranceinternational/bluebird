@@ -79,7 +79,6 @@ import { Playground } from 'docz';
   }}
 </Playground>
 
-
 ## Search Selection
 
 <Playground>
@@ -143,17 +142,46 @@ import { Playground } from 'docz';
   }}
 </Playground>
 
-## Clearable
+## Inline
 
 <Playground>
   {() => {
-    const options = [
-      { key: 1, text: 'Choice 1', value: 1 },
-      { key: 2, text: 'Choice 2', value: 2 },
-      { key: 3, text: 'Choice 3', value: 3 },
+    const friendOptions = [
+      {
+        key: 'Jenny Hess',
+        text: 'Jenny Hess',
+        value: 'Jenny Hess',
+        image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
+      },
+      {
+        key: 'Elliot Fu',
+        text: 'Elliot Fu',
+        value: 'Elliot Fu',
+        image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
+      },
+      {
+        key: 'Stevie Feliciano',
+        text: 'Stevie Feliciano',
+        value: 'Stevie Feliciano',
+        image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
+      },
+      {
+        key: 'Christian',
+        text: 'Christian',
+        value: 'Christian',
+        image: { avatar: true, src: '/images/avatar/small/christian.jpg' },
+      },
     ]
 
-    return <Dropdown clearable options={options} selection />
+    return (
+      <span>
+        Show me posts by{' '}
+        <Dropdown
+          inline
+          options={friendOptions}
+          defaultValue={friendOptions[0].value}
+        />
+      </span>
+    )
   }}
-
 </Playground>
