@@ -185,3 +185,57 @@ import { Playground } from 'docz';
     )
   }}
 </Playground>
+
+## Header
+
+<Playground>
+  {() => {
+    return (
+      <Dropdown text='Filter' inline>
+        <Dropdown.Menu>
+          <Dropdown.Header icon='tags' content='Filter by tag' />
+          <Dropdown.Item>Important</Dropdown.Item>
+          <Dropdown.Item>Announcement</Dropdown.Item>
+          <Dropdown.Item>Discussion</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    )
+  }}
+</Playground>
+
+## Divider
+
+<Playground>
+  {() => {
+    return (
+      <Dropdown text='Filter' inline>
+        <Dropdown.Menu>
+          <Dropdown.Header icon='tags' content='Filter by tag' />
+          <Dropdown.Divider />
+          <Dropdown.Item>Important</Dropdown.Item>
+          <Dropdown.Item>Announcement</Dropdown.Item>
+          <Dropdown.Item>Discussion</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    )
+  }}
+</Playground>
+
+## Description
+
+<Playground>
+  {() => {
+    return (
+      <Dropdown text='Filter' inline>
+        <Dropdown.Menu>
+          <Dropdown.Header icon='tags' content='Filter by tag' />
+          <Dropdown.Divider />
+          <Dropdown.Item description='2 new' text='Important Things' />
+          <Dropdown.Item description='10 new' text='Hopper' />
+          <Dropdown.Item description='5 new' text='Discussion' />
+        </Dropdown.Menu>
+      </Dropdown>
+    )
+  }}
+</Playground>
+
