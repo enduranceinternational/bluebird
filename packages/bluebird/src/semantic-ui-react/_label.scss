@@ -514,20 +514,20 @@
 
 // /*--- Red ---*/
 
-// .ui.red.labels .label,
-// .ui.red.label {
-//   background-color: #DB2828 !important;
-//   border-color: #DB2828 !important;
-//   color: #FFFFFF !important;
-// }
+.ui.red.labels .label,
+.ui.red.label {
+  background-color: $brand-danger !important;
+  border-color: $brand-danger!important;
+  // color: #FFFFFF !important;
+}
 
 // /* Link */
-// .ui.red.labels .label:hover,
-// a.ui.red.label:hover {
-//   background-color: #d01919 !important;
-//   border-color: #d01919 !important;
-//   color: #FFFFFF !important;
-// }
+.ui.red.labels .label:hover,
+a.ui.red.label:hover {
+  background-color: darken($brand-danger, 50%) !important;
+  border-color: darken($brand-danger, 50%) !important;
+  // color: #FFFFFF !important;
+}
 
 // /* Corner */
 // .ui.red.corner.label,
@@ -760,20 +760,20 @@
 
 // /*--- Blue ---*/
 
-// .ui.blue.labels .label,
-// .ui.blue.label {
-//   background-color: #2185D0 !important;
-//   border-color: #2185D0 !important;
+.ui.blue.labels .label,
+.ui.blue.label {
+  background-color: $brand-primary !important;
+  border-color: $brand-primary !important;
 //   color: #FFFFFF !important;
-// }
+}
 
 // /* Link */
-// .ui.blue.labels .label:hover,
-// a.ui.blue.label:hover {
-//   background-color: #1678c2 !important;
-//   border-color: #1678c2 !important;
+.ui.blue.labels .label:hover,
+a.ui.blue.label:hover {
+  background-color: darken($brand-primary, 50%) !important;
+  border-color: darken($brand-primary, 50%) !important;
 //   color: #FFFFFF !important;
-// }
+}
 
 // /* Corner */
 // .ui.blue.corner.label,
@@ -1006,20 +1006,20 @@
 
 // /*--- Black ---*/
 
-// .ui.black.labels .label,
-// .ui.black.label {
-//   background-color: #1B1C1D !important;
-//   border-color: #1B1C1D !important;
+.ui.black.labels .label,
+.ui.black.label {
+  background-color: $gray-base !important;
+  border-color: $gray-base !important;
 //   color: #FFFFFF !important;
-// }
+}
 
 // /* Link */
-// .ui.black.labels .label:hover,
-// a.ui.black.label:hover {
-//   background-color: #27292a !important;
-//   border-color: #27292a !important;
+.ui.black.labels .label:hover,
+a.ui.black.label:hover {
+  background-color: darken($gray-base, 50%) !important;
+  border-color: darken($gray-base, 50%) !important;
 //   color: #FFFFFF !important;
-// }
+}
 
 // /* Corner */
 // .ui.black.corner.label,

@@ -226,13 +226,40 @@ import { Playground } from 'docz';
 <Playground>
   {() => {
     return (
-      <Dropdown text='Filter' inline>
+      <Dropdown text='Show Description' inline>
         <Dropdown.Menu>
           <Dropdown.Header icon='tags' content='Filter by tag' />
           <Dropdown.Divider />
           <Dropdown.Item description='2 new' text='Important Things' />
           <Dropdown.Item description='10 new' text='Hopper' />
           <Dropdown.Item description='5 new' text='Discussion' />
+        </Dropdown.Menu>
+      </Dropdown>
+    )
+  }}
+</Playground>
+
+## Label
+
+<Playground>
+  {() => {
+    return (
+      <Dropdown text='Show Labels' inline>
+        <Dropdown.Menu>
+          <Dropdown.Header icon='tags' content='Filter by tag' />
+          <Dropdown.Divider />
+          <Dropdown.Item
+            label={{ color: 'red', empty: true, circular: true }}
+            text='Important'
+          />
+          <Dropdown.Item
+            label={{ color: 'blue', empty: true, circular: true }}
+            text='Announcement'
+          />
+          <Dropdown.Item
+            label={{ color: 'black', empty: true, circular: true }}
+            text='Discussion'
+          />
         </Dropdown.Menu>
       </Dropdown>
     )
