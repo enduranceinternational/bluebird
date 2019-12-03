@@ -79,16 +79,22 @@
 // }
 
 // /* Removable label */
-// .ui.label > .close.icon,
-// .ui.label > .delete.icon {
+.ui.label > .close.icon,
+.ui.label > .delete.icon {
 //   cursor: pointer;
 //   margin-right: 0em;
 //   margin-left: 0.5em;
-//   font-size: 0.92857143em;
+  font-size: $font-size-base;
+  font-family: $icon-font-name !important;
 //   opacity: 0.5;
 //   -webkit-transition: background 0.1s ease;
 //   transition: background 0.1s ease;
-// }
+}
+
+.ui.label > .delete.icon:before {
+  content: "\6a";
+}
+
 // .ui.label > .delete.icon:hover {
 //   opacity: 1;
 // }
