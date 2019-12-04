@@ -8,27 +8,27 @@
 //  *
 //  */
 
-
 // /*******************************
 //             Label
 // *******************************/
 
-// .ui.label {
-//   display: inline-block;
-//   line-height: 1;
-//   vertical-align: baseline;
-//   margin: 0em 0.14285714em;
-//   background-color: #E8E8E8;
-//   background-image: none;
-//   padding: 0.5833em 0.833em;
-//   color: rgba(0, 0, 0, 0.6);
-//   text-transform: none;
-//   font-weight: bold;
-//   border: 0px solid transparent;
-//   border-radius: 0.28571429rem;
-//   -webkit-transition: background 0.1s ease;
-//   transition: background 0.1s ease;
-// }
+.ui.label {
+  border-radius: 40px;
+  //   display: inline-block;
+  //   line-height: 1;
+  //   vertical-align: baseline;
+  //   margin: 0em 0.14285714em;
+  //   background-color: #E8E8E8;
+  //   background-image: none;
+  //   padding: 0.5833em 0.833em;
+  //   color: rgba(0, 0, 0, 0.6);
+  //   text-transform: none;
+  //   font-weight: bold;
+  //   border: 0px solid transparent;
+  //   border-radius: 0.28571429rem;
+  //   -webkit-transition: background 0.1s ease;
+  //   transition: background 0.1s ease;
+}
 // .ui.label:first-child {
 //   margin-left: 0em;
 // }
@@ -81,14 +81,17 @@
 // /* Removable label */
 .ui.label > .close.icon,
 .ui.label > .delete.icon {
-//   cursor: pointer;
-//   margin-right: 0em;
-//   margin-left: 0.5em;
+  //   cursor: pointer;
+  //   margin-right: 0em;
+  //   margin-left: 0.5em;
   font-size: $font-size-xxs;
   font-family: $icon-font-name !important;
-//   opacity: 0.5;
-//   -webkit-transition: background 0.1s ease;
-//   transition: background 0.1s ease;
+  font-style: normal;
+  position: relative;
+  top: 1px;
+  //   opacity: 0.5;
+  //   -webkit-transition: background 0.1s ease;
+  //   transition: background 0.1s ease;
 }
 
 .ui.label > .delete.icon:before {
@@ -140,7 +143,6 @@
 //   margin-top: 0em;
 //   margin-bottom: 2rem !important;
 // }
-
 
 // /*******************************
 //              Types
@@ -419,11 +421,9 @@
 //   border-radius: 0.28571429rem 0em 0.21428571rem 0em;
 // }
 
-
 // /*******************************
 //              States
 // *******************************/
-
 
 // /*-------------------
 //       Disabled
@@ -501,23 +501,20 @@
 //   display: none !important;
 // }
 
-
 // /*******************************
 //            Variations
 // *******************************/
 
-
 // /*-------------------
 //        Colors
 // --------------------*/
-
 
 // /*--- Red ---*/
 
 .ui.red.labels .label,
 .ui.red.label {
   background-color: $brand-danger !important;
-  border-color: $brand-danger!important;
+  border-color: $brand-danger !important;
   // color: #FFFFFF !important;
 }
 
@@ -764,7 +761,7 @@ a.ui.red.label:hover {
 .ui.blue.label {
   background-color: $brand-primary !important;
   border-color: $brand-primary !important;
-//   color: #FFFFFF !important;
+  //   color: #FFFFFF !important;
 }
 
 // /* Link */
@@ -772,7 +769,7 @@ a.ui.red.label:hover {
 a.ui.blue.label:hover {
   background-color: darken($brand-primary, 50%) !important;
   border-color: darken($brand-primary, 50%) !important;
-//   color: #FFFFFF !important;
+  //   color: #FFFFFF !important;
 }
 
 // /* Corner */
@@ -1010,7 +1007,7 @@ a.ui.blue.label:hover {
 .ui.black.label {
   background-color: $gray-base !important;
   border-color: $gray-base !important;
-//   color: #FFFFFF !important;
+  //   color: #FFFFFF !important;
 }
 
 // /* Link */
@@ -1018,7 +1015,7 @@ a.ui.blue.label:hover {
 a.ui.black.label:hover {
   background-color: darken($gray-base, 50%) !important;
   border-color: darken($gray-base, 50%) !important;
-//   color: #FFFFFF !important;
+  //   color: #FFFFFF !important;
 }
 
 // /* Corner */
@@ -1306,14 +1303,10 @@ a.ui.black.label:hover {
 //   font-size: 1.71428571rem;
 // }
 
-
 // /*******************************
 //          Theme Overrides
 // *******************************/
 
-
-
 // /*******************************
 //          Site Overrides
 // *******************************/
-
