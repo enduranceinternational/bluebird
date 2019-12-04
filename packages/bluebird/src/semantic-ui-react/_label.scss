@@ -18,13 +18,13 @@
   //   line-height: 1;
   //   vertical-align: baseline;
   //   margin: 0em 0.14285714em;
-  //   background-color: #E8E8E8;
+  background-color: $body-bg;
   //   background-image: none;
   //   padding: 0.5833em 0.833em;
   //   color: rgba(0, 0, 0, 0.6);
   //   text-transform: none;
-  //   font-weight: bold;
-  //   border: 0px solid transparent;
+  font-weight: normal;
+  border: 0;
   //   border-radius: 0.28571429rem;
   //   -webkit-transition: background 0.1s ease;
   //   transition: background 0.1s ease;
@@ -83,7 +83,7 @@
 .ui.label > .delete.icon {
   //   cursor: pointer;
   //   margin-right: 0em;
-  //   margin-left: 0.5em;
+  margin-left: ($padding-large-horizontal / 2);
   font-size: $font-size-xxs;
   font-family: $icon-font-name !important;
   font-style: normal;
@@ -437,13 +437,13 @@
 //         Hover
 // --------------------*/
 
-// a.ui.labels .label:hover,
-// a.ui.label:hover {
-//   background-color: #E0E0E0;
+a.ui.labels .label:hover,
+a.ui.label:hover {
+  background-color: darken($body-bg, 5%);
 //   border-color: #E0E0E0;
 //   background-image: none;
 //   color: rgba(0, 0, 0, 0.8);
-// }
+}
 // .ui.labels a.label:hover:before,
 // a.ui.label:hover:before {
 //   color: rgba(0, 0, 0, 0.8);
@@ -453,12 +453,12 @@
 //         Active
 // --------------------*/
 
-// .ui.active.label {
-//   background-color: #D0D0D0;
+.ui.active.label {
+  background-color: darken($body-bg, 10%);
 //   border-color: #D0D0D0;
 //   background-image: none;
 //   color: rgba(0, 0, 0, 0.95);
-// }
+}
 // .ui.active.label:before {
 //   background-color: #D0D0D0;
 //   background-image: none;
@@ -469,13 +469,13 @@
 //      Active Hover
 // --------------------*/
 
-// a.ui.labels .active.label:hover,
-// a.ui.active.label:hover {
-//   background-color: #C8C8C8;
+a.ui.labels .active.label:hover,
+a.ui.active.label:hover {
+  background-color: darken($body-bg, 10%);  
 //   border-color: #C8C8C8;
 //   background-image: none;
 //   color: rgba(0, 0, 0, 0.95);
-// }
+}
 // .ui.labels a.active.label:ActiveHover:before,
 // a.ui.active.label:ActiveHover:before {
 //   background-color: #C8C8C8;

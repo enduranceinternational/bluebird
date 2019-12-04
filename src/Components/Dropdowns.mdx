@@ -7,7 +7,7 @@ import { Playground } from 'docz';
 # Dropdowns
 A type of menu that gives users the ability to select from multiple items or to navigate.
 
-Use this in place of other selection elements when the user needs to pick one option from a large set of options. Dropdown menus are appropriate inside forms, but can also be used on pages when a selection is required. (Example: a filter or sortion option)
+Use this in place of other selection elements when the user needs to pick one option from a large set of options. Dropdown menus are appropriate inside forms, but can also be used on pages when a selection is required. (Example: a filter or sorting option)
 
 ## Types
 
@@ -92,29 +92,29 @@ A selection dropdown can allow a user to search through a large list of choices.
 <Playground>
   {() => {
     const countryOptions = [
-      { key: 'af', value: 'af', flag: 'af', text: 'Afghanistan' },
-      { key: 'ax', value: 'ax', flag: 'ax', text: 'Aland Islands' },
-      { key: 'al', value: 'al', flag: 'al', text: 'Albania' },
-      { key: 'dz', value: 'dz', flag: 'dz', text: 'Algeria' },
-      { key: 'as', value: 'as', flag: 'as', text: 'American Samoa' },
-      { key: 'ad', value: 'ad', flag: 'ad', text: 'Andorra' },
-      { key: 'ao', value: 'ao', flag: 'ao', text: 'Angola' },
-      { key: 'ai', value: 'ai', flag: 'ai', text: 'Anguilla' },
-      { key: 'ag', value: 'ag', flag: 'ag', text: 'Antigua' },
-      { key: 'ar', value: 'ar', flag: 'ar', text: 'Argentina' },
-      { key: 'am', value: 'am', flag: 'am', text: 'Armenia' },
-      { key: 'aw', value: 'aw', flag: 'aw', text: 'Aruba' },
-      { key: 'au', value: 'au', flag: 'au', text: 'Australia' },
-      { key: 'at', value: 'at', flag: 'at', text: 'Austria' },
-      { key: 'az', value: 'az', flag: 'az', text: 'Azerbaijan' },
-      { key: 'bs', value: 'bs', flag: 'bs', text: 'Bahamas' },
-      { key: 'bh', value: 'bh', flag: 'bh', text: 'Bahrain' },
-      { key: 'bd', value: 'bd', flag: 'bd', text: 'Bangladesh' },
-      { key: 'bb', value: 'bb', flag: 'bb', text: 'Barbados' },
-      { key: 'by', value: 'by', flag: 'by', text: 'Belarus' },
-      { key: 'be', value: 'be', flag: 'be', text: 'Belgium' },
-      { key: 'bz', value: 'bz', flag: 'bz', text: 'Belize' },
-      { key: 'us', value: 'us', flag: 'us', text: 'United States' },
+      { key: 'af', value: 'af', text: 'Afghanistan' },
+      { key: 'ax', value: 'ax', text: 'Aland Islands' },
+      { key: 'al', value: 'al', text: 'Albania' },
+      { key: 'dz', value: 'dz', text: 'Algeria' },
+      { key: 'as', value: 'as', text: 'American Samoa' },
+      { key: 'ad', value: 'ad', text: 'Andorra' },
+      { key: 'ao', value: 'ao', text: 'Angola' },
+      { key: 'ai', value: 'ai', text: 'Anguilla' },
+      { key: 'ag', value: 'ag', text: 'Antigua' },
+      { key: 'ar', value: 'ar', text: 'Argentina' },
+      { key: 'am', value: 'am', text: 'Armenia' },
+      { key: 'aw', value: 'aw', text: 'Aruba' },
+      { key: 'au', value: 'au', text: 'Australia' },
+      { key: 'at', value: 'at', text: 'Austria' },
+      { key: 'az', value: 'az', text: 'Azerbaijan' },
+      { key: 'bs', value: 'bs', text: 'Bahamas' },
+      { key: 'bh', value: 'bh', text: 'Bahrain' },
+      { key: 'bd', value: 'bd', text: 'Bangladesh' },
+      { key: 'bb', value: 'bb', text: 'Barbados' },
+      { key: 'by', value: 'by', text: 'Belarus' },
+      { key: 'be', value: 'be', text: 'Belgium' },
+      { key: 'bz', value: 'bz', text: 'Belize' },
+      { key: 'us', value: 'us', text: 'United States' },
     ]
 
     return <Dropdown placeholder='Select Country' fluid search selection options={countryOptions} />
@@ -148,6 +148,36 @@ A selection dropdown can allow multiple search selections.
     ]
 
     return <Dropdown placeholder='Skills' fluid multiple selection options={options} />
+  }}
+</Playground>
+
+### Multiple Search Selection
+A selection dropdown can allow multiple search selections.
+
+<Playground>
+  {() => {
+    const options = [
+      { key: 'angular', text: 'Angular', value: 'angular' },
+      { key: 'css', text: 'CSS', value: 'css' },
+      { key: 'design', text: 'Graphic Design', value: 'design' },
+      { key: 'ember', text: 'Ember', value: 'ember' },
+      { key: 'html', text: 'HTML', value: 'html' },
+      { key: 'ia', text: 'Information Architecture', value: 'ia' },
+      { key: 'javascript', text: 'Javascript', value: 'javascript' },
+      { key: 'mech', text: 'Mechanical Engineering', value: 'mech' },
+      { key: 'meteor', text: 'Meteor', value: 'meteor' },
+      { key: 'node', text: 'NodeJS', value: 'node' },
+      { key: 'plumbing', text: 'Plumbing', value: 'plumbing' },
+      { key: 'python', text: 'Python', value: 'python' },
+      { key: 'rails', text: 'Rails', value: 'rails' },
+      { key: 'react', text: 'React', value: 'react' },
+      { key: 'repair', text: 'Kitchen Repair', value: 'repair' },
+      { key: 'ruby', text: 'Ruby', value: 'ruby' },
+      { key: 'ui', text: 'UI Design', value: 'ui' },
+      { key: 'ux', text: 'User Experience', value: 'ux' },
+    ]
+
+    return <Dropdown placeholder='Skills' fluid multiple search selection options={options} />
   }}
 </Playground>
 
@@ -455,19 +485,19 @@ A dropdown that opens when it is focussed on.
         key: 'Jenny Hess',
         text: 'Jenny Hess',
         value: 'Jenny Hess',
-        image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Elliot Fu',
         text: 'Elliot Fu',
         value: 'Elliot Fu',
-        image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Stevie Feliciano',
         text: 'Stevie Feliciano',
         value: 'Stevie Feliciano',
-        image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
     ]
 
@@ -501,19 +531,19 @@ A dropdown that closes when it blurs (or loses focus).
         key: 'Jenny Hess',
         text: 'Jenny Hess',
         value: 'Jenny Hess',
-        image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Elliot Fu',
         text: 'Elliot Fu',
         value: 'Elliot Fu',
-        image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Stevie Feliciano',
         text: 'Stevie Feliciano',
         value: 'Stevie Feliciano',
-        image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
     ]
 
@@ -547,19 +577,19 @@ A dropdown that closes when the user presses the escape key.
         key: 'Jenny Hess',
         text: 'Jenny Hess',
         value: 'Jenny Hess',
-        image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Elliot Fu',
         text: 'Elliot Fu',
         value: 'Elliot Fu',
-        image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Stevie Feliciano',
         text: 'Stevie Feliciano',
         value: 'Stevie Feliciano',
-        image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
     ]
 
@@ -593,19 +623,19 @@ A multiple selection dropdown can close when the user changes its value.
         key: 'Jenny Hess',
         text: 'Jenny Hess',
         value: 'Jenny Hess',
-        image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Elliot Fu',
         text: 'Elliot Fu',
         value: 'Elliot Fu',
-        image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
       {
         key: 'Stevie Feliciano',
         text: 'Stevie Feliciano',
         value: 'Stevie Feliciano',
-        image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
+        image: { avatar: true, src: 'https://source.unsplash.com/random/20x20' },
       },
     ]
 
@@ -618,7 +648,7 @@ A multiple selection dropdown can close when the user changes its value.
           closeOnChange
           options={friendOptions}
           placeholder='I close on change'
-        />{' '}
+        />
         <Dropdown
           multiple
           search
