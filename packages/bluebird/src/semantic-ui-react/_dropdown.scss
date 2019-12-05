@@ -65,7 +65,7 @@
 //   position: relative;
 //   width: auto;
 //   font-size: 0.85714286em;
-  margin: 0em 0em 0em 1em;
+  margin: 0 0 0 $padding-base-horizontal;
 }
 // .ui.dropdown .menu > .item .dropdown.icon {
 //   width: auto;
@@ -369,10 +369,10 @@
   //   height: auto;
   font-size: $font-size-large;
   line-height: $line-height-1;
-  //   top: 0.78571429em;
-  right: $padding-large-horizontal;
+  top: 0;
+  right: $padding-small-horizontal;
   //   z-index: 3;
-  margin: -$padding-large-vertical;
+  margin: 0 0 0 $padding-base-horizontal;
   padding: ($padding-small-vertical - 1) $padding-small-horizontal $padding-base-vertical;
   //   opacity: 0.8;
   //   -webkit-transition: opacity 0.1s ease;
