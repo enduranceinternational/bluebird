@@ -330,7 +330,7 @@
   //   -webkit-transform: rotateZ(0deg);
   //   transform: rotateZ(0deg);
   //   min-width: 14em;
-  min-height: $input-height-base; // need variable
+  min-height: $input-height-base;
   background: $white;
   //   display: inline-block;
   padding: ($padding-base-vertical - 1) ($padding-large-horizontal * 2)
@@ -366,7 +366,7 @@
   //   position: absolute;
   //   width: auto;
   //   height: auto;
-  font-size: $font-size-large;
+  font-size: $font-size-base;
   line-height: $line-height-1;
   top: 0;
   right: $padding-small-horizontal;
