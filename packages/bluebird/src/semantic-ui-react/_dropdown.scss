@@ -62,9 +62,9 @@
 //   ---------------*/
 
 .ui.dropdown > .dropdown.icon {
-//   position: relative;
-//   width: auto;
-//   font-size: 0.85714286em;
+  //   position: relative;
+  //   width: auto;
+  //   font-size: 0.85714286em;
   margin: 0 0 0 $padding-base-horizontal;
 }
 // .ui.dropdown .menu > .item .dropdown.icon {
@@ -330,11 +330,10 @@
   //   -webkit-transform: rotateZ(0deg);
   //   transform: rotateZ(0deg);
   //   min-width: 14em;
-  min-height: 40px; // need variable
+  min-height: $input-height-base; // need variable
   background: $white;
   //   display: inline-block;
-  padding: ($padding-base-vertical - 1)
-    ($padding-large-horizontal * 2)
+  padding: ($padding-base-vertical - 1) ($padding-large-horizontal * 2)
     ($padding-base-vertical - 1) $padding-base-horizontal;
   color: $text-color;
   //   -webkit-box-shadow: none;
@@ -373,7 +372,8 @@
   right: $padding-small-horizontal;
   //   z-index: 3;
   margin: 0 0 0 $padding-base-horizontal;
-  padding: ($padding-small-vertical - 1) $padding-small-horizontal $padding-base-vertical;
+  padding: ($padding-small-vertical - 1) $padding-small-horizontal
+    $padding-base-vertical;
   //   opacity: 0.8;
   //   -webkit-transition: opacity 0.1s ease;
   //   transition: opacity 0.1s ease;
@@ -417,22 +417,22 @@
 .ui.selection.dropdown .menu > .message {
   padding: $padding-base-vertical $padding-base-horizontal;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $screen-sm) {
   .ui.selection.dropdown .menu {
     max-height: 11rem;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $screen-sm) {
   .ui.selection.dropdown .menu {
     max-height: 15rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: $screen-md) {
   .ui.selection.dropdown .menu {
     max-height: 19.2rem;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: $screen-lg) {
   .ui.selection.dropdown .menu {
     max-height: 23.1rem;
   }
@@ -633,8 +633,8 @@
 
 // /* Multiple Selection */
 .ui.multiple.dropdown {
-  padding: $padding-small-vertical ($padding-large-horizontal * 2) $padding-small-vertical
-    $padding-small-horizontal;
+  padding: $padding-small-vertical ($padding-large-horizontal * 2)
+    $padding-small-vertical $padding-small-horizontal;
 }
 // .ui.multiple.dropdown .menu {
 //   cursor: auto;
@@ -673,7 +673,8 @@
   //   position: static;
   //   padding: 0;
   //   max-width: 100%;
-  margin: ($padding-small-vertical - 1) 0 ($padding-small-vertical - 1) $padding-small-horizontal;
+  margin: ($padding-small-vertical - 1) 0 ($padding-small-vertical - 1)
+    $padding-small-horizontal;
   line-height: $line-height-base;
 }
 // .ui.multiple.dropdown > .label ~ input.search {
@@ -689,12 +690,13 @@
 
 // /* Prompt Text */
 .ui.multiple.search.dropdown > .text {
-//   display: inline-block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
+  //   display: inline-block;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
   padding: 0;
-  margin: $padding-base-vertical 0 $padding-base-vertical $padding-base-horizontal;
+  margin: $padding-base-vertical 0 $padding-base-vertical
+    $padding-base-horizontal;
   line-height: 1.5;
 }
 // .ui.multiple.search.dropdown > .label ~ .text {
@@ -703,11 +705,12 @@
 
 // /* Search */
 .ui.multiple.search.dropdown > input.search {
-//   position: static;
+  //   position: static;
   padding: 0;
-//   max-width: 100%;
-  margin: $padding-small-vertical 0em $padding-small-vertical $padding-small-horizontal;
-//   width: 2.2em;
+  //   max-width: 100%;
+  margin: $padding-small-vertical 0em $padding-small-vertical
+    $padding-small-horizontal;
+  //   width: 2.2em;
   line-height: $line-height-1;
 }
 

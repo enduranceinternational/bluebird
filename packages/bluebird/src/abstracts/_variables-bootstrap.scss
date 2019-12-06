@@ -259,17 +259,15 @@ $input-color-placeholder: $gray !default;
 
 //** Default `.form-control` height
 $input-height-base: (
-  $line-height-computed + ($padding-base-vertical * 2) + 2
+  $line-height-computed + ($padding-base-vertical * 2)
 ) !default;
 //** Large `.form-control` height
 $input-height-large: (
-  ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) +
-    2
+  ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2)
 ) !default;
 //** Small `.form-control` height
 $input-height-small: (
-  floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) +
-    2
+  floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2)
 ) !default;
 
 // control-label (custom)
