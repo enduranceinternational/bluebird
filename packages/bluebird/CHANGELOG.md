@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/enduranceinternational/bluebird/compare/v1.4.0...v1.5.0) (2019-12-12)
+
+
+### Features
+
+* **bluebird:** adding dropdown components ([#52](https://github.com/enduranceinternational/bluebird/issues/52)) ([2d3941e](https://github.com/enduranceinternational/bluebird/commit/2d3941e))
+
+
+
+
+
 # [1.4.0](https://github.com/enduranceinternational/bluebird/compare/v1.3.5...v1.4.0) (2019-09-30)
 
 
