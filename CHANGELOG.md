@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/enduranceinternational/bluebird/compare/v1.4.0...v1.5.0) (2019-12-12)
+
+
+### Bug Fixes
+
+* codeowners update ([dc18ea7](https://github.com/enduranceinternational/bluebird/commit/dc18ea7))
+* codeowners update ([#50](https://github.com/enduranceinternational/bluebird/issues/50)) ([ba2c4fb](https://github.com/enduranceinternational/bluebird/commit/ba2c4fb))
+
+
+### Features
+
+* added gh link ([#47](https://github.com/enduranceinternational/bluebird/issues/47)) ([ee2a9cd](https://github.com/enduranceinternational/bluebird/commit/ee2a9cd))
+* **bluebird:** adding dropdown components ([#52](https://github.com/enduranceinternational/bluebird/issues/52)) ([2d3941e](https://github.com/enduranceinternational/bluebird/commit/2d3941e))
+
+
+
+
+
 # [1.4.0](https://github.com/enduranceinternational/bluebird/compare/v1.3.5...v1.4.0) (2019-09-30)
 
 
