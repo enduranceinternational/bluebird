@@ -30,10 +30,12 @@ Bluebird can be imported directly, or as a variables sheet via [Sass](https://sa
 
 ```scss
 // import everything
-@import "~@eigi/bluebird";
+@import '~@eigi/bluebird/src/bluebird';
 
-// import variables only
-@import "~@eigi/bluebird/assets/stylesheets/variables";
+// import variables only to allow custom theming
+// @import 'my-custom-theme/variables';
+@import '~@eigi/bluebird/src/variables';
+@import '~@eigi/bluebird/src/mixins/mixins';
 ```
 
 > Tip
@@ -44,37 +46,10 @@ Bluebird can be imported directly, or as a variables sheet via [Sass](https://sa
 
 ```js
 // import directly to app
-import "@eigi/bluebird";
+import '@eigi/bluebird';
 
 // import as object
-import styles from "@eigi/bluebird";
-```
-
-> Tip
-
-> Consult your webpack loader for the proper import strategy for your usage.
-
-#### CSS
-
-To add the compiled css to your page:
-
-```html
-<link rel="stylesheet" href="@eigi/bluebird/dist/styles.css" />
-```
-
-> Tip
-
-> Consult your bundler for the proper reference to the `node_modules` package.
-
-#### CDN
-
-To add our styles from our CDN, you can install Bluebird by adding the following tag to your app's HTML:
-
-```html
-<link
-  rel="stylesheet"
-  href="https://bluehost-cdn.com/media/app/1.0.0/styles.css"
-/>
+import styles from '@eigi/bluebird';
 ```
 
 ## Running locally
