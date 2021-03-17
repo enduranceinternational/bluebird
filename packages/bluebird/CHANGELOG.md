@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/enduranceinternational/bluebird/compare/v1.5.0...v1.6.0) (2021-03-17)
+
+
+### Features
+
+* remove conflicting table overrides - use bluebird-ui ([a1f82fa](https://github.com/enduranceinternational/bluebird/commit/a1f82fa))
+
+
+
+
+
 # [1.5.0](https://github.com/enduranceinternational/bluebird/compare/v1.4.0...v1.5.0) (2019-12-12)
 
 
