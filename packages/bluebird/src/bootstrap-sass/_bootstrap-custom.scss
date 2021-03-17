@@ -2,18 +2,15 @@
 // Use this file to DISABLE or OVERRIDE stock Bootstrap modules
 $bootstrap-sass-asset-helper: false;
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-
 // Core variables and mixins
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 // NOTE: we are overriding all mixins with a control-switch style mixins file
 // @import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "mixins/mixins";
-
 // Reset and dependencies
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/normalize";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/print";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
-
 // Core CSS
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/type";
@@ -22,13 +19,11 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "overrides/grids";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/tables";
-@import "overrides/tables";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/forms";
 @import "overrides/forms";
 @import "overrides/forms-toggle";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 @import "overrides/buttons";
-
 // Components
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
@@ -57,7 +52,6 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/wells";
 @import "overrides/wells";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/close";
-
 // Components w/ JavaScript
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/modals";
 @import "overrides/modals";
@@ -65,7 +59,6 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/popovers";
 @import "overrides/popovers";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/carousel";
-
 // Utility classes
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
