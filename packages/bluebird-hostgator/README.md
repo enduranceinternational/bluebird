@@ -1,4 +1,4 @@
-# Bluebird Theme JustHost
+# Bluebird Theme HostGator
 
 A lightweight, variables-only theme package for `@eigi/bluebird`.
 
