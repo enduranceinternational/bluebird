@@ -14,6 +14,9 @@ const BRANDS = {
   justhost: {
     name: 'Justhost',
   },
+  hostgator: {
+    name: 'HostGator',
+  },
   development: {
     name: 'Bluehost - DEVELOPMENT MODE',
   },

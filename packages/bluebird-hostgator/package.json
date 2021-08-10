@@ -23,6 +23,6 @@
     "extends": "@eigi/stylelint-config"
   },
   "dependencies": {
-    "@hostgator/design-system-tokens": "^1.8.1"
+    "@hostgator/design-system-tokens": "~1.7.5"
   }
 }

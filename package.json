@@ -5,6 +5,9 @@
   "private": true,
   "scripts": {
     "start": "docz dev",
+    "start:bh": "DOCZ_BRAND=bluehost docz dev",
+    "start:hg": "DOCZ_BRAND=hostgator docz dev",
+    "start:jh": "DOCZ_BRAND=justhost docz dev",
     "build": "docz build",
     "test": "docz build",
     "react:start": "react-scripts start",
