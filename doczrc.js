@@ -95,7 +95,7 @@ export default {
     /**
      * Customize codemirror theme
      */
-    codemirrorTheme: 'docz-light',
+    codemirrorTheme: 'docz-dark',
     /**
      * Logo
      */
